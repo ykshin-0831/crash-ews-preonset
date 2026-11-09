@@ -1,0 +1,54 @@
+{
+  "status": "exploratory_posthoc",
+  "not_holdout_or_prospective": true,
+  "spec_sha256": "c98996ecd684daa168adff719495a80abf5a0bb69b61b759d84db2325545afc2",
+  "models": [
+    "Base_Logit",
+    "HS_Linear",
+    "HS_Interactions",
+    "HGB_Base",
+    "HGB_HS"
+  ],
+  "eval_events_4h": 83,
+  "eval_events_24h": 218,
+  "calibration_alerts": {
+    "Base_Logit": 240,
+    "HS_Linear": 240,
+    "HS_Interactions": 240,
+    "HGB_Base": 240,
+    "HGB_HS": 240
+  },
+  "development_alerts": {
+    "Base_Logit": 800,
+    "HS_Linear": 800,
+    "HS_Interactions": 800,
+    "HGB_Base": 800,
+    "HGB_HS": 800
+  },
+  "baseline_M0_reproduction_passed": true,
+  "screens": [
+    {
+      "baseline": "HS_Linear",
+      "candidate": "HS_Interactions",
+      "base_catches": 18,
+      "candidate_catches": 14,
+      "baseline_alerts": 800,
+      "candidate_alerts": 800,
+      "d_auc_pre_within_rv_decile": -0.00028423047899894804,
+      "d_pre_catches_per_100_alerts": -0.5,
+      "screen_hurdle_met": false
+    },
+    {
+      "baseline": "HGB_Base",
+      "candidate": "HGB_HS",
+      "base_catches": 13,
+      "candidate_catches": 12,
+      "baseline_alerts": 800,
+      "candidate_alerts": 800,
+      "d_auc_pre_within_rv_decile": 0.0026640394406977075,
+      "d_pre_catches_per_100_alerts": -0.125,
+      "screen_hurdle_met": false
+    }
+  ],
+  "note": "Screening only, negative results must be kept, no new claim of validated predictive improvement."
+}

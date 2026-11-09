@@ -1,0 +1,105 @@
+{
+  "H1_skill": {
+    "alpha": 0.05,
+    "claim": "frozen calendar V+F (20/month, 240/yr) catches more pre-onset events than its own alerts shifted in time",
+    "test": "one-sided circular-shift permutation, 10000 shifts of 7 days to (period - 7 days), seed 20261029"
+  },
+  "H2_scheduler": {
+    "alpha": 0.05,
+    "claim": "calendar cap beats rolling30, paced and token_bucket (notebook-4 designs, B=240, 2022 thresholds, warm-up from 2017-12-01)",
+    "test": "one-sided exact McNemar on pre-onset hits, Holm over 3 comparisons"
+  },
+  "H3_capacity": "descriptive: share of calendar-missed events with no monthly room left during their whole warning window; signal-reachable events",
+  "H4_candidates": {
+    "candidates": [],
+    "capacity_candidate": {
+      "parameters": null,
+      "rule": "among P2 and P3: most pre-onset hits; passed to notebook 11 only if strictly more pre-onset hits than P0 AND realized alerts <= 1.02 x P0 alerts; ties -> P3 (no recalibration needed)",
+      "selected": null,
+      "spec_sha256": "a7f0ea2bcd71d0d65c677fd042d625e73cb4cf093394de5472d4a42faf4889c5",
+      "table": {
+        "P0_calendar": {
+          "alarms": 800,
+          "before_1pct": 22,
+          "caught": 39
+        },
+        "P1_constant_bucket": {
+          "alarms": 795,
+          "before_1pct": 18,
+          "caught": 48
+        },
+        "P2_risk_bucket_budget_neutral": {
+          "alarms": 808,
+          "before_1pct": 14,
+          "caught": 35
+        },
+        "P3_surge_reserve_calendar": {
+          "alarms": 792,
+          "before_1pct": 21,
+          "caught": 36
+        }
+      }
+    },
+    "crossvenue_candidate": {
+      "baseline_common_mask": {
+        "alarms": 800,
+        "before_1pct": 22,
+        "caught": 39,
+        "threshold_2022": 0.6697523129776579
+      },
+      "best_challenger": {
+        "alarms": 800,
+        "before_1pct": 18,
+        "caught": 34,
+        "model": "M1_VF_basis"
+      },
+      "features": null,
+      "rule": "challenger (M1-M4) with the most pre-onset hits; ties -> fewer features; passed to notebook 11 only if strictly more pre-onset hits than M0_VF on the same comparison mask, otherwise no candidate",
+      "selected": null,
+      "spec_sha256": "a3561a711d906ef2b09d5a86cea218b5f9fb17e7709e96f911b613f2c45b4b0c",
+      "threshold_2022": null
+    },
+    "crossvenue_not_evaluable_if": "downloaded futures 2020 do not match the futures cache exactly, or cross-venue features do not match",
+    "crossvenue_window": [
+      "2019-11-01",
+      "2021-01-01"
+    ],
+    "test": "one-sided exact McNemar (candidate better) on pre-onset hits vs the matching calendar baseline, Holm over candidates"
+  },
+  "data": {
+    "futures": "Binance USD-M BTCUSDT monthly 1m 2019-09..2020-12 (only if a cross-venue candidate exists)",
+    "spot": "Binance spot BTCUSDT monthly 1m archives 2017-08..2020-12, SHA-256 verified"
+  },
+  "events": "notebook-2 price-only rule (4% below prior 240-min peak, 5 closes, 24h refractory) on the downloaded series; evaluation events: breach in [2018-01-01 04:00, 2021-01-01)",
+  "frozen_thresholds": {
+    "TH_BUCKET": 0.7166067355142407,
+    "TH_CAL": 0.6698990591069133,
+    "TH_HIGH": 0.6864782740093911,
+    "notebook4_B240": {
+      "calendar": 0.6698990591069133,
+      "paced": 0.6397062594184642,
+      "rolling30": 0.6161494575616816,
+      "token_bucket": 0.6397062594184642
+    }
+  },
+  "guards": [
+    "downloaded 2020 spot prices equal the spot cache",
+    "recomputed 2020-06..12 features equal the cache",
+    "recomputed 2020-03..12 events equal the spot catalog",
+    "model refit reproduces notebook-5 threshold",
+    "candidate thresholds reproduce notebooks 8-9"
+  ],
+  "model": "V+F logistic, 2021 spot cache (identical to notebook 5), applied backwards (backcast)",
+  "primary_endpoint": "alert 30-240 min before the 4% breach AND before the 1% onset (pre-onset hit), one alert per event",
+  "prior_use": "not evaluated by this pipeline; GitHub hS-vs-volatility study used 2018-01..2020-09 once with a different event definition",
+  "rules": "all outcomes reported as observed; no rule changes after reading outcomes; second evaluation refused (lock file)",
+  "secondary": "high-score calendar and constant bucket (notebooks 5-6 frozen thresholds); any-hit endpoint; year-by-year",
+  "source_sha256": {
+    "capacity_candidate.json": "7ad2abcf665ba742f97d7ee41d105b96b517ac107b2f3abd9fd93042f93f71e8",
+    "crossvenue_candidate.json": "afd451a3904f09debb3e7f653077d41ceb64a9fd745a325bebcc4f2243a2adb8",
+    "spot_frozen_thresholds.json": "faef731db6f7612faf2adc8a01e6c5cffbcfc3515b6c43eaa080c47356de0412",
+    "spot_reference.json": "df54cddf8263cfa8bdd1b5483d891c32ff7d25f3f622cef05a45a7f67ca5aa90",
+    "threshold_calibration_2022.csv": "832b46985483f3108c1b7b112aaa18e00914769f7a5728a3c37072376f17bdf5"
+  },
+  "title": "One-shot confirmatory holdout, BTCUSDT spot 1m, 2018-01-01 to 2021-01-01 (exclusive)"
+}

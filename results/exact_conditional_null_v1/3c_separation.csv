@@ -1,0 +1,16 @@
+alpha,component,first,second,diff,diff_lo,diff_hi,only_first,only_second,mcnemar_p
+0.01,"old vs exact (total, Q row)",p_old,p_exact,0.002,-0.0067636332191620165,0.010763633219162017,3,2,1.0
+0.01,own-original exclusion,p_old,p_old_noexcl,0.0,-0.00784,0.00784,2,2,1.0
+0.01,sequential placement and nearest-decile fallback,p_old_noexcl,p_valid_mc,0.004,-0.0015326186205087368,0.009532618620508738,2,0,0.5
+0.01,Monte Carlo resolution,p_valid_mc,p_exact,-0.002,-0.005916078038037546,0.001916078038037546,0,1,1.0
+0.01,old vs valid MC from the exact law (same B),p_old,p_valid_mc,0.004,-0.003832156076075092,0.011832156076075092,3,1,0.625
+0.05,"old vs exact (total, Q row)",p_old,p_exact,0.008,0.0001914229721414664,0.015808577027858532,4,0,0.125
+0.05,own-original exclusion,p_old,p_old_noexcl,0.002,-0.008369863412793825,0.012369863412793825,4,3,1.0
+0.05,sequential placement and nearest-decile fallback,p_old_noexcl,p_valid_mc,0.002,-0.0067636332191620165,0.010763633219162017,3,2,1.0
+0.05,Monte Carlo resolution,p_valid_mc,p_exact,0.004,-0.0015326186205087368,0.009532618620508738,2,0,0.5
+0.05,old vs valid MC from the exact law (same B),p_old,p_valid_mc,0.004,-0.003832156076075092,0.011832156076075092,3,1,0.625
+0.1,"old vs exact (total, Q row)",p_old,p_exact,0.02,0.007728458939481155,0.03227154106051885,10,0,0.001953125
+0.1,own-original exclusion,p_old,p_old_noexcl,0.014,0.0010568746896277032,0.026943125310372296,9,2,0.0654296875
+0.1,sequential placement and nearest-decile fallback,p_old_noexcl,p_valid_mc,-0.004,-0.015081889225217873,0.007081889225217873,3,5,0.7265625
+0.1,Monte Carlo resolution,p_valid_mc,p_exact,0.01,-0.00033423823994782956,0.02033423823994783,6,1,0.125
+0.1,old vs valid MC from the exact law (same B),p_old,p_valid_mc,0.01,-0.005156770104478065,0.025156770104478067,10,5,0.30175781249999994

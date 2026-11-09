@@ -1,0 +1,36 @@
+{
+  "notebook": "49",
+  "status": "exploratory_posthoc_mechanism_plus_conditional_independent",
+  "source": "BTC spot frozen 47/48 inputs",
+  "original_47_primary": "4h breach-anchored HGB Base vs HGB_HS; spectral fails +0.02 AUC and +0.5 catch /100 alert screen",
+  "selected_secondary": "4h onset-anchored 9 vs 16, selected after viewing development results",
+  "fixed_training": "2021",
+  "fixed_threshold_calibration": "2022 unlabeled",
+  "development": "2023-01 through 2026-04",
+  "tie_policy": ">= original; > using nextafter cut-off; no development retuning",
+  "match_tolerances_minutes": [
+    0,
+    5,
+    15,
+    30,
+    60
+  ],
+  "spectral_replacement": "2021 z_hs median, all 2022 and dev timestamps; fixed and 2022 recalibrated threshold",
+  "later_inspected": "2026-05 through before 2026-12 when available; never an independent holdout",
+  "excluded_future_registration": "2026-12-01 through 2027-12-01",
+  "genuine_independent_gate": "separate never-inspected, hash-attested BTC spot parquet from 2027-12-01 onward, if later available",
+  "no_tuning_on_2023_2026_outcomes": true,
+  "model_hyperparameters": {
+    "max_iter": 100,
+    "max_leaf_nodes": 7,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 100,
+    "l2_regularization": 5.0,
+    "max_bins": 127,
+    "early_stopping": false,
+    "random_state": 20261147,
+    "class_weight": "balanced_via_sample_weight"
+  },
+  "eight_original_47_new_only_rescues": 8,
+  "primary_report_all_results": true
+}

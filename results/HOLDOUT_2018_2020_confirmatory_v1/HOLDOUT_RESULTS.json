@@ -1,0 +1,59 @@
+{
+  "H1": {
+    "events": 199,
+    "alarms": 713,
+    "pre_onset_hits": 13,
+    "any_hits": 36,
+    "null_mean_pre_onset": 11.3724,
+    "null_p95_pre_onset": 17.0,
+    "p_one_sided": 0.3531646835316468,
+    "p_any_hit_secondary": 9.999000099990002e-05,
+    "supported": false
+  },
+  "H2": [
+    {
+      "comparison": "calendar_vs_rolling30",
+      "calendar_alarms": 713,
+      "other_alarms": 709,
+      "calendar_pre1pct": 13,
+      "other_pre1pct": 14,
+      "calendar_only": 8,
+      "other_only": 9,
+      "p_one_sided": 0.6854705810546875,
+      "p_holm": 1.0,
+      "supported": false
+    },
+    {
+      "comparison": "calendar_vs_paced",
+      "calendar_alarms": 713,
+      "other_alarms": 704,
+      "calendar_pre1pct": 13,
+      "other_pre1pct": 13,
+      "calendar_only": 6,
+      "other_only": 6,
+      "p_one_sided": 0.61279296875,
+      "p_holm": 1.0,
+      "supported": false
+    },
+    {
+      "comparison": "calendar_vs_token_bucket",
+      "calendar_alarms": 713,
+      "other_alarms": 704,
+      "calendar_pre1pct": 13,
+      "other_pre1pct": 9,
+      "calendar_only": 7,
+      "other_only": 3,
+      "p_one_sided": 0.171875,
+      "p_holm": 0.515625,
+      "supported": false
+    }
+  ],
+  "H3": {
+    "missed_no_room": 103,
+    "missed_some_room": 60,
+    "caught": 36,
+    "share_of_misses_with_no_room": 0.6319018404907976,
+    "signal_reachable": 100
+  },
+  "H4": []
+}

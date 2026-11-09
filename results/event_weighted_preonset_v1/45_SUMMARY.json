@@ -1,0 +1,262 @@
+{
+  "spec_sha256": "94cf5cfa241d5cfe6b366563ce4dd4b60fd4f2d4766dd33e7ff210a7978d63ed",
+  "run_time": "2026-11-04 16:27:12+00:00",
+  "status": "exploratory; post hoc; development sample only; no confirmatory plan changed",
+  "mock_bypass_used": false,
+  "guards": [
+    {
+      "guard": "spec41_parsed",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "draw counts of notebook 41 not recognised in 41_SPEC.json"
+    },
+    {
+      "guard": "catalog_nb2",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "H=240 catalog differs from the notebook-2 catalog"
+    },
+    {
+      "guard": "m0_refit_nb16",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "M0 refit differs from notebook 16"
+    },
+    {
+      "guard": "gbm_sha_nb16",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "notebook-16 GBM file SHA-256 differs"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=240, M0_VF_logit) by 0.00e+00"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=240, M1_vol_threshold) by 0.00e+00"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=240, M3_GBM_rich) by 0.00e+00"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=240, B0_RV24h_baseline) by 0.00e+00"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=1440, M0_VF_logit) by 0.00e+00"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=1440, M1_vol_threshold) by 0.00e+00"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=1440, M3_GBM_rich) by 0.00e+00"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=1440, B0_RV24h_baseline) by 0.00e+00"
+    },
+    {
+      "guard": "nb33_point",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "GBM - M0 point differences differ from notebook 33 by 6.25e-17"
+    },
+    {
+      "guard": "unit_ones_vs_make_parts",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "unit calculator differs from make_parts at H=240 M3_GBM_rich by 0.00e+00"
+    },
+    {
+      "guard": "minute_weighted_identity",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "minute-weighted mean of per-event AUCs differs from the per-minute AUC at H=240 M3_GBM_rich by 0.00e+00"
+    },
+    {
+      "guard": "unit_ones_vs_make_parts",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "unit calculator differs from make_parts at H=240 M0_VF_logit by 0.00e+00"
+    },
+    {
+      "guard": "minute_weighted_identity",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "minute-weighted mean of per-event AUCs differs from the per-minute AUC at H=240 M0_VF_logit by 0.00e+00"
+    },
+    {
+      "guard": "unit_ones_vs_make_parts",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "unit calculator differs from make_parts at H=1440 M3_GBM_rich by 0.00e+00"
+    },
+    {
+      "guard": "minute_weighted_identity",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "minute-weighted mean of per-event AUCs differs from the per-minute AUC at H=1440 M3_GBM_rich by 0.00e+00"
+    },
+    {
+      "guard": "unit_ones_vs_make_parts",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "unit calculator differs from make_parts at H=1440 M0_VF_logit by 0.00e+00"
+    },
+    {
+      "guard": "minute_weighted_identity",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "minute-weighted mean of per-event AUCs differs from the per-minute AUC at H=1440 M0_VF_logit by 0.00e+00"
+    },
+    {
+      "guard": "intervals_nb41",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "notebook-41 all-event auc_pre intervals at H=240 not reproduced (5.90e-17)"
+    },
+    {
+      "guard": "intervals_nb41",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "notebook-41 all-event auc_pre_within_regime intervals at H=240 not reproduced (9.54e-17)"
+    },
+    {
+      "guard": "intervals_nb41",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "notebook-41 all-event auc_pre intervals at H=1440 not reproduced (8.33e-17)"
+    },
+    {
+      "guard": "intervals_nb41",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "notebook-41 all-event auc_pre_within_regime intervals at H=1440 not reproduced (4.86e-17)"
+    }
+  ],
+  "readings": {
+    "R2": {
+      "events_with_pre_onset_minutes": 30,
+      "m0_higher": 20,
+      "gbm_higher": 10,
+      "ties": 0,
+      "minute_minus_event": 0.0038402459184501275,
+      "top5_contributions": [
+        {
+          "event_id": 437,
+          "breach_utc": "2024-07-29 16:40:00+00:00",
+          "onset_to_breach_min": 175.0,
+          "pre_onset_minutes": 65,
+          "diff": -0.6448614895084301,
+          "contribution_minute_minus_event": 0.010939856209993597
+        },
+        {
+          "event_id": 546,
+          "breach_utc": "2026-02-12 17:53:00+00:00",
+          "onset_to_breach_min": 189.0,
+          "pre_onset_minutes": 51,
+          "diff": -0.4196485676695204,
+          "contribution_minute_minus_event": 0.008598691796199943
+        },
+        {
+          "event_id": 381,
+          "breach_utc": "2023-10-16 13:40:00+00:00",
+          "onset_to_breach_min": 9.0,
+          "pre_onset_minutes": 211,
+          "diff": -0.38075213475383846,
+          "contribution_minute_minus_event": -0.007539614588133174
+        },
+        {
+          "event_id": 374,
+          "breach_utc": "2023-06-14 20:56:00+00:00",
+          "onset_to_breach_min": 169.0,
+          "pre_onset_minutes": 71,
+          "diff": -0.4167785158151619,
+          "contribution_minute_minus_event": 0.0064407726652876114
+        },
+        {
+          "event_id": 457,
+          "breach_utc": "2024-10-15 15:06:00+00:00",
+          "onset_to_breach_min": 50.0,
+          "pre_onset_minutes": 190,
+          "diff": -0.35553463469704794,
+          "contribution_minute_minus_event": -0.005160072050627012
+        }
+      ]
+    },
+    "R5": {
+      "loo_min": -0.11142566433399269,
+      "loo_max": -0.07515982779616212
+    },
+    "R1": {
+      "reading": "M0 lead holds with equal event weights",
+      "point": -0.09414988318657103,
+      "block": [
+        -0.18544568404504844,
+        -0.012731342777988588
+      ],
+      "event": [
+        -0.17637286540812597,
+        -0.016148905291853418
+      ],
+      "minute_weighted": -0.09030963726812091
+    },
+    "R3": {
+      "reading": "M0 lead holds with equal event weights",
+      "point": -0.1422456093230457,
+      "block": [
+        -0.23985423316427848,
+        -0.055468537000671135
+      ],
+      "event": [
+        -0.2326149688838603,
+        -0.06090199570201317
+      ],
+      "minute_weighted": -0.1393590581311711
+    },
+    "R4": {
+      "m0_event_weighted": 0.6946425705138665,
+      "m0_minute_weighted": 0.6728493993998537,
+      "diff_event_weighted": -0.023282327490649735,
+      "block": [
+        -0.06381114693630247,
+        0.020750492398550403
+      ],
+      "event": [
+        -0.06923296881899818,
+        0.01683369506014486
+      ]
+    }
+  },
+  "outputs": [
+    "1_guards.csv",
+    "2_event_weighted.csv",
+    "3_per_event_preonset.csv",
+    "45_SPEC.json",
+    "45_SPEC.sha256",
+    "fig_event_weighted_24h.pdf",
+    "fig_event_weighted_24h.png",
+    "45_SUMMARY.json"
+  ]
+}

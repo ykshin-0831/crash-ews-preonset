@@ -1,0 +1,208 @@
+{
+  "budget": {
+    "alerting_systems": [
+      "M0",
+      "M1",
+      "GBM"
+    ],
+    "cooldown_days": 20,
+    "quarter_cap": 1,
+    "scheduler_starts": "2005-01-01 (empty state)",
+    "threshold_rule": "per index and system on calibration days: most alerts allowed, then strictest",
+    "year_cap": 4,
+    "year_cap_note": "never binds given the quarter cap (stated, not tuned)"
+  },
+  "core_sha256": "273f0f7df0f5ac939db8015a211a94272eb75c5c107b9ebb8795ee465dab04ea",
+  "core_version": "38-core-1",
+  "data": {
+    "cleaning": "drop missing or non-positive closes and duplicate dates (keep last); nothing else",
+    "download_end": "2026-01-01",
+    "download_start": "1950-01-01",
+    "indices": [
+      "^GSPC",
+      "^IXIC",
+      "^GSPTSE",
+      "^FTSE",
+      "^GDAXI",
+      "^FCHI",
+      "^SSMI",
+      "^N225",
+      "^HSI",
+      "^AXJO"
+    ],
+    "min_days_before_calibration": 1000,
+    "min_days_in_evaluation": 4500,
+    "min_indices": 6,
+    "outputs_carry_no_index_levels": true,
+    "source_order": [
+      "yahoo (yfinance, Close, auto_adjust=False)",
+      "stooq (whole series; never mixed with yahoo)"
+    ],
+    "stooq_symbols": {
+      "^FCHI": "^cac",
+      "^FTSE": "^ukx",
+      "^GDAXI": "^dax",
+      "^GSPC": "^spx",
+      "^GSPTSE": "^tsx",
+      "^HSI": "^hsi",
+      "^IXIC": "^ndq",
+      "^N225": "^nkx",
+      "^SSMI": "^smi"
+    }
+  },
+  "event_level": {
+    "definition": "D20",
+    "effect": "excess per 100 alerts = 100 x sum_e (o_e - p_e) / alerts, p_e from the primary null",
+    "episode_bootstrap": {
+      "draws": 10000,
+      "seed": 20261105
+    },
+    "episodes": {
+      "link_gap_calendar_days": 28,
+      "secondary_gap_calendar_days": 7
+    },
+    "nulls": {
+      "budget_preserving_regime": {
+        "draws": 5000,
+        "role": "primary",
+        "rule": "alerts re-placed in random order within their own calendar quarter on evaluation days, >= 20 trading days from their own original and from every alert already placed; own rv_20 decile first, then the nearest deciles, original kept only if nothing qualifies; shares of each placement type reported"
+      },
+      "joint_circular": {
+        "draws": 5000,
+        "role": "secondary",
+        "shift_calendar_days": [
+          365,
+          "span - 365"
+        ]
+      },
+      "short_joint_shift": {
+        "draws": 1000,
+        "role": "secondary",
+        "shift_calendar_days": "+/- U[28, 84]"
+      }
+    },
+    "p_value": "(1 + #(null >= observed)) / (draws + 1), one-sided",
+    "primary_statistic": "number of market episodes with at least one catch (pre-onset; in-progress)",
+    "seed_nulls": 20261106,
+    "systems": [
+      "M0",
+      "M1",
+      "GBM"
+    ]
+  },
+  "events": {
+    "main_H": 20,
+    "new_peak_after_previous_breach": true,
+    "onset_fraction_of_theta": 0.25,
+    "refractory_days": 20,
+    "secondary_H": [
+      10,
+      60
+    ],
+    "sustain_days": 1,
+    "theta": 0.1
+  },
+  "feasibility": {
+    "H": [
+      10,
+      20,
+      60
+    ],
+    "check": "F = 1 whenever H <= wmax (stop if not)",
+    "wmax": [
+      5,
+      10,
+      20,
+      40,
+      60
+    ]
+  },
+  "notebook": "38_External_Equity_Indices",
+  "per_day": {
+    "S_in": "mean_i[pi_i (AUC_in,i - 1/2)] / mean_i[AUC_i - 1/2]",
+    "average": "equal-weighted mean over indices of within-index AUCs",
+    "bootstrap": {
+      "draws": 2000,
+      "seed": 20261104,
+      "unit": "calendar quarter, common to all indices"
+    },
+    "pooled_over_indices": "secondary",
+    "within_regime": "pairs within the same index x rv_20-decile stratum (deciles over each index evaluation days)"
+  },
+  "periods": {
+    "calibration": [
+      "2000-01-01",
+      "2005-01-01"
+    ],
+    "evaluation": [
+      "2005-01-01",
+      "2026-01-01"
+    ],
+    "event_must_breach_after_eval_start_days": 20,
+    "training": [
+      "first valid feature day",
+      "1999-12-31"
+    ],
+    "training_drop_last_days": 25
+  },
+  "prior_contact": "no model was run on these series before this specification was frozen; notebook 30 used daily S&P 500 labels only (Appendix C.2 of the Bitcoin manuscript); general knowledge of market history is acknowledged",
+  "readings": {
+    "Q1 (primary)": "M0, D20: supported if the 95% interval of S_in lies above 1/4, contradicted if below 1/4, inconclusive otherwise; not evaluable (inconclusive) if mean_i[AUC_i - 1/2] <= 0.02 in more than 2.5% of bootstrap draws; S_in > 1/2 reported descriptively",
+    "Q2 (key, event level)": "H1 (in-progress) and H2 (pre-onset): episode counts above the primary null, Holm-adjusted one-sided p < 0.05 across M0, M1, GBM. Supported if H1 holds for >= 2 systems and, for each of them, the episode-bootstrap 95% interval of (in-progress excess - pre-onset excess) per 100 alerts lies above 0; contradicted if that interval lies below 0 for >= 2 systems; inconclusive otherwise",
+    "Q3 (diagnostic)": "F for D60 at wmax = 20 reported; F < 1 expected by construction; F = 1 for D10 and D20 is a check",
+    "Q4 (secondary)": "D60, GBM - M0 on averaged standard and pre-onset AUC: supported if both 95% intervals exclude 0 on opposite sides, contradicted if both exclude 0 on the same side, inconclusive otherwise; no direction predicted",
+    "reporting": "all outputs reported as observed, whatever they show"
+  },
+  "registration": "OSF Registries, a separate registration linked to 10.17605/OSF.IO/TB245; data are downloaded only after it",
+  "status": "pre-specified one-shot backcast (historical, not prospective)",
+  "systems": {
+    "B0": "rv_20 (no-forecast volatility)",
+    "B1": "dd_20 (no-forecast drawdown)",
+    "GBM": {
+      "features": [
+        "z_vol",
+        "ret_1",
+        "ret_5",
+        "ret_20",
+        "ret_60",
+        "rv_5",
+        "rv_20",
+        "rv_60",
+        "rv_ratio_5_60",
+        "dd_20",
+        "dd_60",
+        "dd_250",
+        "dist_ma200"
+      ],
+      "params": {
+        "class_weight": "balanced",
+        "early_stopping": false,
+        "l2_regularization": 1.0,
+        "learning_rate": 0.05,
+        "max_iter": 300,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 50,
+        "random_state": 17
+      }
+    },
+    "M0": {
+      "features": [
+        "z_vol",
+        "ret_5"
+      ],
+      "model": "StandardScaler + LogisticRegression(C=0.2, class_weight=balanced, max_iter=400, lbfgs, random_state=17)"
+    },
+    "M1": "z_vol (volatility threshold)",
+    "missing": "a day is scored only if every feature is finite; the same days are used for every system",
+    "training": "pooled over indices; label = day lies in a D20 judging window (pre-onset and in-progress both positive); catalog built only from data before 2000-01-01; last 25 trading days before 2000 dropped"
+  },
+  "title": "Pre-registered historical external validation of onset-aware crash-warning evaluation across international equity indices",
+  "window": {
+    "alert_time": "close of day a; credits breaches on days a+1 ... a+20",
+    "negatives": "all other evaluation days with valid scores",
+    "pre_onset": "a < onset day",
+    "secondary_negatives": "also exclude days b ... b+20 after each breach",
+    "wmax": 20,
+    "wmin": 1
+  }
+}

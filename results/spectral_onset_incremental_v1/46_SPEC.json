@@ -1,0 +1,29 @@
+{
+  "notebook": "46",
+  "status": "exploratory_posthoc",
+  "train": "2021",
+  "threshold_calibration": "2022_unlabeled",
+  "evaluation": "2023-01 through 2026-04",
+  "feature": "z_hs existing FFT spectral feature",
+  "models": [
+    "Breach_M0",
+    "Breach_M0_HS",
+    "Onset_M0",
+    "Onset_M0_HS"
+  ],
+  "lead_minutes": [
+    30,
+    240
+  ],
+  "monthly_cap": 20,
+  "annual_cap": 240,
+  "cooldown_minutes": 240,
+  "evaluation_primary": "breach-anchored pre-onset catches at H=240",
+  "evaluation_secondary": "onset-anchored pre-onset catches; pre-onset AUC and within-RV-decile AUC; H=1440",
+  "random_seed": 17,
+  "no_holdout_or_prospective_inputs": true,
+  "screening_thresholds_posthoc": {
+    "auc_gain": 0.02,
+    "catch_gain_per_100_alerts": 0.5
+  }
+}

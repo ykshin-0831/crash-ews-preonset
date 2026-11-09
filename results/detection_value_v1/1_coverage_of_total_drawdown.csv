@@ -1,0 +1,9 @@
+policy,period,endpoint,events_all,hits,share_of_all_crash_drawdown_avoided
+calendar,dev,pre-onset hit,83,22,0.2242452889664794
+calendar,dev,post-onset hit,83,17,0.17574046142565083
+calendar,holdout,pre-onset hit,199,13,0.05562960523676498
+calendar,holdout,post-onset hit,199,23,0.06584690657653249
+constant_bucket,dev,pre-onset hit,83,18,0.1680966165775992
+constant_bucket,dev,post-onset hit,83,30,0.27343225725708464
+constant_bucket,holdout,pre-onset hit,199,15,0.02936288783526789
+constant_bucket,holdout,post-onset hit,199,25,0.06671060797778934

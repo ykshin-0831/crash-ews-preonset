@@ -1,0 +1,3 @@
+period,events,episodes,alarms,eligible_pre,eligible_post,gap_lt30,gap_gt240,median_gap_min,pre_hits,post_hits,caught_composite,pre_rate_of_eligible,post_rate_of_eligible,median_minutes_before_onset_pre,median_minutes_after_onset_post,median_lead_to_breach_post,onset_anchored_hits,pre_precision_per_alarm,post_precision_per_alarm
+dev,83,55,800,83,75,8,0,119.0,22,17,39,0.26506024096385544,0.22666666666666666,25.0,29.0,96.0,29,0.0275,0.02125
+holdout,199,80,713,199,169,30,0,106.0,13,23,36,0.06532663316582915,0.13609467455621302,81.0,17.0,66.0,22,0.0182328190743338,0.03225806451612903

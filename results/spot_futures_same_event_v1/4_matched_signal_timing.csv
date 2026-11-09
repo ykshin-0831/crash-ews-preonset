@@ -1,0 +1,84 @@
+spot_event_id,futures_event_id,common_breach_utc,common_onset_utc,onset_in_window,raw_signal_order,raw_signal_spot_min_before_common_onset,raw_signal_futures_min_before_common_onset,raw_signal_futures_minus_spot_min,alert_order,alert_spot_min_before_common_onset,alert_futures_min_before_common_onset,alert_futures_minus_spot_min,zvol_q99_order,zvol_q99_spot_min_before_common_onset,zvol_q99_futures_min_before_common_onset,zvol_q99_futures_minus_spot_min,tsr_q99_order,tsr_q99_spot_min_before_common_onset,tsr_q99_futures_min_before_common_onset,tsr_q99_futures_minus_spot_min
+187,188,2023-01-18 16:21:00+00:00,2023-01-18 14:37:00+00:00,True,same minute,64.0,64.0,0.0,neither,,,,neither,,,,neither,,,
+188,189,2023-02-16 23:24:00+00:00,2023-02-16 20:22:00+00:00,True,spot first,-11.0,-13.0,2.0,spot first,-11.0,-13.0,2.0,neither,,,,neither,,,
+189,190,2023-03-03 01:31:00+00:00,2023-03-03 01:18:00+00:00,False,neither,,,,neither,,,,neither,,,,futures only,,199.0,
+190,191,2023-03-09 20:04:00+00:00,2023-03-09 17:02:00+00:00,True,same minute,-88.0,-88.0,0.0,same minute,-88.0,-88.0,0.0,neither,,,,futures only,,46.0,
+191,192,2023-03-14 19:12:00+00:00,2023-03-14 16:25:00+00:00,True,same minute,73.0,73.0,0.0,neither,,,,neither,,,,neither,,,
+192,193,2023-03-22 19:05:00+00:00,2023-03-22 18:10:00+00:00,True,same minute,185.0,185.0,0.0,neither,,,,neither,,,,neither,,,
+193,194,2023-03-27 15:02:00+00:00,2023-03-27 12:50:00+00:00,True,neither,,,,neither,,,,neither,,,,spot only,77.0,,
+194,195,2023-04-26 19:38:00+00:00,2023-04-26 19:09:00+00:00,False,neither,,,,neither,,,,neither,,,,spot first,178.0,37.0,141.0
+195,196,2023-05-10 17:20:00+00:00,2023-05-10 17:13:00+00:00,False,same minute,233.0,233.0,0.0,neither,,,,neither,,,,spot only,152.0,,
+196,197,2023-06-05 17:09:00+00:00,2023-06-05 15:25:00+00:00,True,futures first,21.0,22.0,-1.0,futures first,21.0,22.0,-1.0,same minute,-36.0,-36.0,0.0,spot only,95.0,,
+197,199,2023-07-06 14:35:00+00:00,2023-07-06 11:52:00+00:00,True,futures first,-8.0,-7.0,-1.0,spot only,-67.0,,,neither,,,,spot only,77.0,,
+198,200,2023-07-14 19:02:00+00:00,2023-07-14 17:16:00+00:00,True,spot first,26.0,25.0,1.0,spot first,26.0,25.0,1.0,neither,,,,futures first,97.0,134.0,-37.0
+199,201,2023-08-17 21:42:00+00:00,2023-08-17 20:42:00+00:00,True,same minute,-8.0,-8.0,0.0,same minute,-8.0,-8.0,0.0,neither,,,,same minute,180.0,180.0,0.0
+200,202,2023-10-16 13:39:00+00:00,2023-10-16 13:31:00+00:00,False,neither,,,,neither,,,,neither,,,,spot first,210.0,186.0,24.0
+201,203,2023-10-23 23:02:00+00:00,2023-10-23 22:44:00+00:00,False,same minute,222.0,222.0,0.0,neither,,,,neither,,,,neither,,,
+202,204,2023-11-09 16:35:00+00:00,2023-11-09 15:22:00+00:00,True,futures first,71.0,131.0,-60.0,spot first,71.0,51.0,20.0,neither,,,,spot first,140.0,113.0,27.0
+203,205,2023-12-11 02:12:00+00:00,2023-12-11 01:08:00+00:00,True,neither,,,,neither,,,,neither,,,,spot first,176.0,170.0,6.0
+204,206,2024-01-03 12:00:00+00:00,2024-01-03 10:46:00+00:00,True,futures first,-38.0,-37.0,-1.0,futures first,-38.0,-37.0,-1.0,neither,,,,same minute,154.0,154.0,0.0
+205,207,2024-01-09 21:25:00+00:00,2024-01-09 21:15:00+00:00,False,neither,,,,neither,,,,neither,,,,spot only,136.0,,
+206,208,2024-01-11 15:49:00+00:00,2024-01-11 15:04:00+00:00,True,same minute,93.0,93.0,0.0,neither,,,,futures first,9.0,11.0,-2.0,neither,,,
+207,209,2024-01-12 16:16:00+00:00,2024-01-12 13:41:00+00:00,True,same minute,-54.0,-54.0,0.0,neither,,,,neither,,,,neither,,,
+208,210,2024-02-28 17:30:00+00:00,2024-02-28 17:17:00+00:00,False,same minute,227.0,227.0,0.0,neither,,,,same minute,227.0,227.0,0.0,neither,,,
+209,211,2024-02-29 17:47:00+00:00,2024-02-29 14:46:00+00:00,True,same minute,59.0,59.0,0.0,neither,,,,neither,,,,neither,,,
+210,212,2024-03-05 16:06:00+00:00,2024-03-05 15:05:00+00:00,True,same minute,22.0,22.0,0.0,same minute,22.0,22.0,0.0,same minute,0.0,0.0,0.0,neither,,,
+211,213,2024-03-08 16:02:00+00:00,2024-03-08 15:31:00+00:00,True,same minute,3.0,3.0,0.0,spot only,3.0,,,same minute,-1.0,-1.0,0.0,spot first,181.0,140.0,41.0
+212,214,2024-03-12 17:13:00+00:00,2024-03-12 14:09:00+00:00,True,same minute,0.0,0.0,0.0,neither,,,,neither,,,,futures only,,-91.0,
+213,215,2024-03-15 02:45:00+00:00,2024-03-15 01:52:00+00:00,True,neither,,,,neither,,,,neither,,,,spot first,151.0,7.0,144.0
+214,216,2024-03-19 03:34:00+00:00,2024-03-19 00:40:00+00:00,True,neither,,,,neither,,,,neither,,,,spot first,56.0,52.0,4.0
+215,217,2024-03-27 16:12:00+00:00,2024-03-27 13:36:00+00:00,True,same minute,-9.0,-9.0,0.0,neither,,,,neither,,,,spot first,81.0,61.0,20.0
+216,218,2024-04-02 02:39:00+00:00,2024-04-02 00:38:00+00:00,True,neither,,,,neither,,,,neither,,,,spot first,81.0,54.0,27.0
+217,219,2024-04-12 18:32:00+00:00,2024-04-12 16:11:00+00:00,True,same minute,-77.0,-77.0,0.0,same minute,-77.0,-77.0,0.0,neither,,,,spot only,97.0,,
+218,220,2024-04-13 19:54:00+00:00,2024-04-13 17:14:00+00:00,True,neither,,,,neither,,,,neither,,,,spot first,75.0,-74.0,149.0
+219,221,2024-04-15 17:47:00+00:00,2024-04-15 14:09:00+00:00,True,same minute,-29.0,-29.0,0.0,same minute,-29.0,-29.0,0.0,neither,,,,spot only,15.0,,
+220,222,2024-04-17 15:29:00+00:00,2024-04-17 12:27:00+00:00,True,spot first,-93.0,-98.0,5.0,spot only,-93.0,,,neither,,,,spot only,3.0,,
+221,223,2024-04-19 02:06:00+00:00,2024-04-19 00:12:00+00:00,True,neither,,,,neither,,,,neither,,,,spot first,123.0,71.0,52.0
+222,224,2024-05-01 07:31:00+00:00,2024-05-01 06:31:00+00:00,True,neither,,,,neither,,,,neither,,,,spot only,168.0,,
+223,225,2024-05-10 15:08:00+00:00,2024-05-10 13:29:00+00:00,True,spot first,-56.0,-60.0,4.0,spot first,-56.0,-60.0,4.0,neither,,,,same minute,137.0,137.0,0.0
+224,226,2024-07-05 02:59:00+00:00,2024-07-04 23:41:00+00:00,True,same minute,7.0,7.0,0.0,same minute,7.0,7.0,0.0,futures first,-4.0,0.0,-4.0,spot first,35.0,-140.0,175.0
+225,227,2024-07-08 01:01:00+00:00,2024-07-07 21:19:00+00:00,True,same minute,-25.0,-25.0,0.0,same minute,-25.0,-25.0,0.0,neither,,,,spot first,18.0,17.0,1.0
+226,228,2024-07-29 16:40:00+00:00,2024-07-29 13:45:00+00:00,True,futures first,-11.0,-8.0,-3.0,neither,,,,neither,,,,spot only,64.0,,
+227,229,2024-08-02 15:18:00+00:00,2024-08-02 14:10:00+00:00,True,futures first,91.0,93.0,-2.0,futures first,91.0,93.0,-2.0,neither,,,,spot first,146.0,133.0,13.0
+228,230,2024-08-04 17:10:00+00:00,2024-08-04 14:31:00+00:00,True,same minute,-11.0,-11.0,0.0,same minute,-11.0,-11.0,0.0,neither,,,,spot first,76.0,65.0,11.0
+229,231,2024-08-05 19:07:00+00:00,2024-08-05 16:34:00+00:00,True,same minute,87.0,87.0,0.0,spot first,20.0,-70.0,90.0,same minute,87.0,87.0,0.0,spot only,-99.0,,
+230,232,2024-08-14 14:10:00+00:00,2024-08-14 12:32:00+00:00,True,same minute,2.0,2.0,0.0,neither,,,,neither,,,,spot first,122.0,19.0,103.0
+231,233,2024-08-15 19:10:00+00:00,2024-08-15 17:19:00+00:00,True,same minute,-53.0,-53.0,0.0,neither,,,,neither,,,,spot only,111.0,,
+232,234,2024-08-27 22:09:00+00:00,2024-08-27 21:17:00+00:00,True,futures first,-6.0,0.0,-6.0,neither,,,,neither,,,,spot first,169.0,135.0,34.0
+233,235,2024-09-06 14:51:00+00:00,2024-09-06 13:39:00+00:00,True,same minute,69.0,69.0,0.0,same minute,69.0,69.0,0.0,spot first,65.0,58.0,7.0,same minute,166.0,166.0,0.0
+234,236,2024-10-15 15:06:00+00:00,2024-10-15 14:16:00+00:00,True,futures first,24.0,27.0,-3.0,futures first,24.0,27.0,-3.0,same minute,0.0,0.0,0.0,spot first,187.0,146.0,41.0
+235,237,2024-11-12 10:46:00+00:00,2024-11-12 07:59:00+00:00,True,futures first,57.0,73.0,-16.0,neither,,,,neither,,,,spot only,-101.0,,
+236,238,2024-11-13 21:04:00+00:00,2024-11-13 19:05:00+00:00,True,same minute,121.0,121.0,0.0,neither,,,,futures first,-22.0,-21.0,-1.0,spot only,26.0,,
+237,239,2024-12-05 22:26:00+00:00,2024-12-05 18:59:00+00:00,True,spot first,-50.0,-51.0,1.0,spot first,-50.0,-51.0,1.0,neither,,,,futures first,-63.0,-27.0,-36.0
+238,240,2024-12-18 20:42:00+00:00,2024-12-18 19:05:00+00:00,True,same minute,-6.0,-6.0,0.0,same minute,-6.0,-6.0,0.0,same minute,-64.0,-64.0,0.0,spot first,137.0,128.0,9.0
+239,241,2024-12-19 20:48:00+00:00,2024-12-19 17:18:00+00:00,True,same minute,-31.0,-31.0,0.0,same minute,-90.0,-90.0,0.0,same minute,-40.0,-40.0,0.0,neither,,,
+240,242,2025-01-19 23:02:00+00:00,2025-01-19 21:24:00+00:00,True,same minute,-6.0,-6.0,0.0,neither,,,,futures first,-49.0,-48.0,-1.0,spot first,108.0,69.0,39.0
+241,243,2025-02-03 01:45:00+00:00,2025-02-02 23:24:00+00:00,True,same minute,53.0,53.0,0.0,same minute,38.0,38.0,0.0,futures first,-85.0,-81.0,-4.0,spot only,70.0,,
+242,244,2025-02-04 21:54:00+00:00,2025-02-04 19:47:00+00:00,True,same minute,1.0,1.0,0.0,same minute,1.0,1.0,0.0,neither,,,,spot only,40.0,,
+243,245,2025-02-25 10:11:00+00:00,2025-02-25 07:10:00+00:00,True,same minute,0.0,0.0,0.0,same minute,0.0,0.0,0.0,same minute,-25.0,-25.0,0.0,spot first,53.0,37.0,16.0
+244,246,2025-02-26 18:36:00+00:00,2025-02-26 15:56:00+00:00,True,same minute,80.0,80.0,0.0,neither,,,,neither,,,,neither,,,
+245,247,2025-02-28 02:31:00+00:00,2025-02-28 01:23:00+00:00,True,same minute,-7.0,-7.0,0.0,neither,,,,same minute,-12.0,-12.0,0.0,futures first,70.0,169.0,-99.0
+246,248,2025-03-03 14:56:00+00:00,2025-03-03 14:35:00+00:00,False,neither,,,,neither,,,,neither,,,,futures first,126.0,166.0,-40.0
+247,249,2025-03-07 00:21:00+00:00,2025-03-07 00:14:00+00:00,False,same minute,131.0,131.0,0.0,neither,,,,neither,,,,futures first,208.0,212.0,-4.0
+248,250,2025-03-10 14:12:00+00:00,2025-03-10 12:25:00+00:00,True,futures first,4.0,6.0,-2.0,neither,,,,neither,,,,spot first,117.0,72.0,45.0
+249,251,2025-04-02 21:09:00+00:00,2025-04-02 20:22:00+00:00,True,same minute,9.0,9.0,0.0,same minute,9.0,9.0,0.0,same minute,6.0,6.0,0.0,spot first,153.0,68.0,85.0
+250,252,2025-04-06 18:43:00+00:00,2025-04-06 16:59:00+00:00,True,same minute,-53.0,-53.0,0.0,same minute,-53.0,-53.0,0.0,neither,,,,futures first,124.0,126.0,-2.0
+251,253,2025-04-08 17:19:00+00:00,2025-04-08 13:37:00+00:00,True,same minute,6.0,6.0,0.0,same minute,6.0,6.0,0.0,neither,,,,spot only,-90.0,,
+252,254,2025-04-10 15:48:00+00:00,2025-04-10 12:50:00+00:00,True,futures first,4.0,16.0,-12.0,futures first,4.0,16.0,-12.0,neither,,,,spot only,38.0,,
+253,255,2025-10-10 21:12:00+00:00,2025-10-10 19:11:00+00:00,True,same minute,119.0,119.0,0.0,spot only,82.0,,,futures first,-23.0,-22.0,-1.0,spot first,94.0,-16.0,110.0
+254,256,2025-11-04 18:31:00+00:00,2025-11-04 15:50:00+00:00,True,spot first,69.0,68.0,1.0,spot first,69.0,68.0,1.0,neither,,,,spot only,9.0,,
+255,257,2025-11-13 18:31:00+00:00,2025-11-13 15:28:00+00:00,True,same minute,47.0,47.0,0.0,same minute,47.0,47.0,0.0,neither,,,,spot only,-84.0,,
+256,258,2025-11-20 16:35:00+00:00,2025-11-20 14:02:00+00:00,True,same minute,-5.0,-5.0,0.0,neither,,,,neither,,,,spot only,-82.0,,
+257,259,2025-12-01 00:45:00+00:00,2025-11-30 23:53:00+00:00,True,same minute,-19.0,-19.0,0.0,same minute,-19.0,-19.0,0.0,neither,,,,same minute,183.0,183.0,0.0
+258,260,2025-12-15 16:46:00+00:00,2025-12-15 14:46:00+00:00,True,same minute,8.0,8.0,0.0,same minute,8.0,8.0,0.0,neither,,,,spot first,117.0,104.0,13.0
+259,261,2025-12-17 16:21:00+00:00,2025-12-17 15:38:00+00:00,True,same minute,46.0,46.0,0.0,neither,,,,same minute,44.0,44.0,0.0,spot first,190.0,145.0,45.0
+260,262,2025-12-18 19:01:00+00:00,2025-12-18 16:01:00+00:00,True,same minute,60.0,60.0,0.0,neither,,,,neither,,,,spot only,45.0,,
+261,263,2026-01-29 16:07:00+00:00,2026-01-29 14:57:00+00:00,True,same minute,-3.0,-3.0,0.0,neither,,,,neither,,,,spot first,168.0,148.0,20.0
+262,264,2026-01-31 17:08:00+00:00,2026-01-31 14:23:00+00:00,True,same minute,-3.0,-3.0,0.0,neither,,,,neither,,,,spot first,45.0,-113.0,158.0
+263,265,2026-02-02 03:34:00+00:00,2026-02-02 01:09:00+00:00,True,same minute,95.0,95.0,0.0,same minute,43.0,43.0,0.0,same minute,95.0,95.0,0.0,spot only,-42.0,,
+264,266,2026-02-03 17:42:00+00:00,2026-02-03 14:54:00+00:00,True,same minute,14.0,14.0,0.0,same minute,14.0,14.0,0.0,neither,,,,spot only,-99.0,,
+265,267,2026-02-04 17:50:00+00:00,2026-02-04 14:56:00+00:00,True,futures first,47.0,51.0,-4.0,futures first,47.0,51.0,-4.0,neither,,,,neither,,,
+266,268,2026-02-05 19:46:00+00:00,2026-02-05 17:04:00+00:00,True,same minute,78.0,78.0,0.0,neither,,,,neither,,,,futures only,,-73.0,
+267,269,2026-02-07 07:04:00+00:00,2026-02-07 04:37:00+00:00,True,neither,,,,neither,,,,neither,,,,futures first,64.0,81.0,-17.0
+268,270,2026-02-12 17:53:00+00:00,2026-02-12 14:44:00+00:00,True,futures first,-129.0,-48.0,-81.0,neither,,,,neither,,,,neither,,,
+269,271,2026-02-23 01:45:00+00:00,2026-02-23 00:46:00+00:00,True,futures only,,-29.0,,neither,,,,neither,,,,futures only,,164.0,

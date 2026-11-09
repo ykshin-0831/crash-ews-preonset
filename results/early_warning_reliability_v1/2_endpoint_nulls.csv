@@ -1,0 +1,13 @@
+period,endpoint,observed,null_mean,null_p95,p_one_sided,endpoint_class
+dev,pre,22,4.6666,9.0,9.999000099990002e-05,early warning
+dev,post,17,3.2934,7.0,9.999000099990002e-05,in-progress detection
+dev,caught,39,7.96,15.0,9.999000099990002e-05,composite (reference)
+dev,onset_anchored,29,9.0713,16.0,0.00029997000299970003,early warning (secondary)
+dev,episodes_pre,16,4.4728,9.0,9.999000099990002e-05,"early warning, episode level"
+dev,episodes_caught,27,7.197,13.0,9.999000099990002e-05,"composite, episode level"
+holdout,pre,13,11.3724,17.0,0.3531646835316468,early warning
+holdout,post,23,7.6778,12.0,9.999000099990002e-05,in-progress detection
+holdout,caught,36,19.0502,26.0,9.999000099990002e-05,composite (reference)
+holdout,onset_anchored,22,21.624,29.0,0.5063493650634937,early warning (secondary)
+holdout,episodes_pre,10,9.1075,13.0,0.4243575642435756,"early warning, episode level"
+holdout,episodes_caught,28,13.3535,18.0,9.999000099990002e-05,"composite, episode level"

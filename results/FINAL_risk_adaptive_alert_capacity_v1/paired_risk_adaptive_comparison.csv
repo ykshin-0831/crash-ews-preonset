@@ -1,0 +1,6 @@
+policy,baseline_alerts,policy_alerts,baseline_pre1pct,policy_pre1pct,baseline_only_early,policy_only_early,mcnemar_pre1pct_p,baseline_caught,policy_caught,baseline_only_caught,policy_only_caught,mcnemar_caught_p
+high_score_published,800,800,22,19,5,2,0.453125,39,41,3,5,0.7265625
+constant_bucket_fixedscore,800,816,22,10,15,3,0.007537841796875,39,28,21,10,0.07075554598122835
+risk_bucket_fixedscore,800,565,22,7,17,2,0.000728607177734375,39,20,25,6,0.0008779102936387062
+constant_bucket_recalibrated,800,795,22,18,11,7,0.480682373046875,39,48,10,19,0.13604594767093658
+risk_bucket_recalibrated,800,565,22,7,17,2,0.000728607177734375,39,20,25,6,0.0008779102936387062

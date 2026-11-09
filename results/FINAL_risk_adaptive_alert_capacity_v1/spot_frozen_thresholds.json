@@ -1,0 +1,8 @@
+{
+  "venue": "spot",
+  "TH_CAL": 0.6698990591069133,
+  "TH_HIGH": 0.6864782740093911,
+  "TH_BUCKET": 0.7166067355142407,
+  "TH_RISK_BUCKET": 0.6698990591069133,
+  "note": "TH_CAL/TH_HIGH from notebook 5; buckets from 2022 alert counts here. Read by notebook 7."
+}

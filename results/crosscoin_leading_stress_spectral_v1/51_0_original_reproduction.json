@@ -1,0 +1,33 @@
+{
+  "models": {
+    "M0": {
+      "breach": 22,
+      "onset": 15,
+      "alerts": 800
+    },
+    "HGB_Base": {
+      "breach": 13,
+      "onset": 9,
+      "alerts": 800
+    },
+    "HGB_HS": {
+      "breach": 12,
+      "onset": 16,
+      "alerts": 800
+    }
+  },
+  "calibration": {
+    "M0": [
+      240,
+      0.6698990591069133
+    ],
+    "HGB_Base": [
+      240,
+      0.6213147944479045
+    ],
+    "HGB_HS": [
+      240,
+      0.6266591400580771
+    ]
+  }
+}

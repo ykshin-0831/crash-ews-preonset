@@ -1,0 +1,3 @@
+alpha,lambda_star,bracket_lo,bracket_hi,note
+0.05,1.7954692410260404,1.7954692410260404,1.8280439820021792,largest lambda with worst-case p <= alpha (within the bracket)
+0.01,1.6118548977353129,1.6118548977353129,1.6410983704638369,largest lambda with worst-case p <= alpha (within the bracket)

@@ -1,0 +1,187 @@
+{
+  "symbol": "TRXUSDT",
+  "spec_sha256": "e1e10288ceb9a2d440b3707f48f49ad009e94d642cbe8488f2a02e0862bc588c",
+  "frozen_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee",
+  "manifest_sha256": "418e088d6f861f4561fec778199781cc58019a83ce9c171f3612d1a70416213d",
+  "phase1_reproduced": {
+    "train_events_2021": 113,
+    "calibration": {
+      "M0_VF_logit": {
+        "threshold": 0.6939146973964834,
+        "threshold_17": 0.6939146973964834,
+        "alerts": 240,
+        "alerts_17": 240
+      },
+      "M1_vol_threshold": {
+        "threshold": 1.733059983700515,
+        "threshold_17": 1.733059983700515,
+        "alerts": 240,
+        "alerts_17": 240
+      },
+      "M3_GBM_rich": {
+        "threshold": 0.033571004704620745,
+        "threshold_17": 0.033571004704620745,
+        "alerts": 240,
+        "alerts_17": 240
+      }
+    }
+  },
+  "eval_start": "2023-01-01 00:00:00+00:00",
+  "eval_end": "2026-05-01 00:00:00+00:00",
+  "eval_days": 1216.0,
+  "coverage": {
+    "eval_minutes": 1750795,
+    "valid_minutes": 1750612,
+    "excluded_gap_ahead": 173,
+    "missing_months": [],
+    "common_minutes": 1750439,
+    "common_share": 0.9997966638013017,
+    "caution": false
+  },
+  "events": {
+    "240": 34,
+    "1440": 96
+  },
+  "F": {
+    "240": {
+      "feasible": 34,
+      "events": 34,
+      "F": 1.0
+    },
+    "1440": {
+      "feasible": 12,
+      "events": 96,
+      "F": 0.125
+    }
+  },
+  "positives": {
+    "240": {
+      "pre": 4131,
+      "in_progress": 3043,
+      "negatives": 1743265,
+      "events_with_positives": 34,
+      "boundary_events": 0,
+      "boundary_positive_minutes": 0
+    },
+    "1440": {
+      "pre": 1671,
+      "in_progress": 18585,
+      "negatives": 1730183,
+      "events_with_positives": 96,
+      "boundary_events": 0,
+      "boundary_positive_minutes": 0
+    }
+  },
+  "common_minutes": 1750439,
+  "blocks_with_minutes": 174,
+  "guards": [
+    {
+      "guard": "phase1_manifest_exists|TRXUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT: notebook-17 phase-1 manifest not found (/content/drive/MyDrive/btc_lead_cost_results_77months_spot/HOLDOUT17_multicoin_2018_2019_v1/phase1/TRXUSDT_train_manifest.csv)"
+    },
+    {
+      "guard": "phase1_manifest|TRXUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT: 2020-11..2022-12 archives differ from the notebook-17 phase-1 manifest in []"
+    },
+    {
+      "guard": "train_events_2021|TRXUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT: 2021 events 113 / training positives 23843 differ from notebook 17 (113 / 23843)"
+    },
+    {
+      "guard": "model_sha|TRXUSDT|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT M0_VF_logit d4: model file missing or SHA-256 differs from the freeze"
+    },
+    {
+      "guard": "model_sha|TRXUSDT|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT M3_GBM_rich d4: model file missing or SHA-256 differs from the freeze"
+    },
+    {
+      "guard": "m0_refit|TRXUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT: M0 refit on 2021 differs from the frozen notebook-17 model"
+    },
+    {
+      "guard": "calibration_2022|TRXUSDT|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT M0_VF_logit: 2022 threshold 0.6939146973964834 / alerts 240 differ from notebook 17 (0.6939146973964834 / 240)"
+    },
+    {
+      "guard": "calibration_2022|TRXUSDT|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT M1_vol_threshold: 2022 threshold 1.733059983700515 / alerts 240 differ from notebook 17 (1.733059983700515 / 240)"
+    },
+    {
+      "guard": "calibration_2022|TRXUSDT|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT M3_GBM_rich: 2022 threshold 0.033571004704620745 / alerts 240 differ from notebook 17 (0.033571004704620745 / 240)"
+    },
+    {
+      "guard": "F_corollary1|TRXUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT: F at H=240 is 1.0 although Corollary 1 requires 1"
+    },
+    {
+      "guard": "decomposition_identity|TRXUSDT|240|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT H=240 M0_VF_logit: AUC decomposition identity off by 5.55e-17"
+    },
+    {
+      "guard": "decomposition_identity|TRXUSDT|240|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT H=240 M1_vol_threshold: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|TRXUSDT|240|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT H=240 M3_GBM_rich: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|TRXUSDT|240|B0_RV24h_baseline",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT H=240 B0_RV24h_baseline: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|TRXUSDT|1440|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT H=1440 M0_VF_logit: AUC decomposition identity off by 2.78e-17"
+    },
+    {
+      "guard": "decomposition_identity|TRXUSDT|1440|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT H=1440 M1_vol_threshold: AUC decomposition identity off by 2.78e-17"
+    },
+    {
+      "guard": "decomposition_identity|TRXUSDT|1440|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT H=1440 M3_GBM_rich: AUC decomposition identity off by 1.11e-16"
+    },
+    {
+      "guard": "decomposition_identity|TRXUSDT|1440|B0_RV24h_baseline",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "TRXUSDT H=1440 B0_RV24h_baseline: AUC decomposition identity off by 0.00e+00"
+    }
+  ]
+}

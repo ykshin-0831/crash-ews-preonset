@@ -1,0 +1,39 @@
+{
+  "design": "/content/drive/MyDrive/btc_lead_cost_results_77months_spot/design_constant_v1/39_design.npz",
+  "found": {
+    "positions": 1414298,
+    "alerts": 800,
+    "months": 40,
+    "cells_with_alerts": 262,
+    "cooldown": 240
+  },
+  "groups": 20,
+  "alerts_largest_group": 120,
+  "alerts_per_group": [
+    120,
+    99,
+    99,
+    60,
+    60,
+    60,
+    40,
+    40,
+    40,
+    38,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    20,
+    2,
+    1,
+    1
+  ],
+  "month_boundaries_linked": 23,
+  "month_boundaries": 39,
+  "lemma_H3_exponent": 120,
+  "trivial_lower_bound_gamma_star": 1.0048869441996442,
+  "reading": "20 groups: Lemma H.3 gives Lambda = Gamma^120; the trivial bound becomes Gamma*_0.05 >= 1.795^(1/120) = 1.00489"
+}

@@ -1,0 +1,31 @@
+{
+  "title": "crash-ews-preonset: replication materials for \"How Much of Crash Early Warning Is Early? Separating Pre-Onset Warning from In-Progress Detection\"",
+  "upload_type": "software",
+  "description": "Analysis notebooks, frozen model files, specification files, stored result tables and a SHA-256 manifest for the article. The repository holds no index levels; the only exchange prices are event closes, a cache fingerprint and one Binance–Coinbase spread file. All rights reserved; values derived from Binance Vision datasets are under CC BY-NC-SA 4.0.",
+  "creators": [
+    {
+      "name": "Shin, Yeong Kyeong",
+      "affiliation": "Kyung Hee University",
+      "orcid": "0009-0008-9079-6642"
+    }
+  ],
+  "keywords": [
+    "crash early warning",
+    "Bitcoin",
+    "ROC-AUC",
+    "pre-onset warning",
+    "alert budget"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.17605/OSF.IO/TB245",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.17605/OSF.IO/BKJUQ",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "research_status": "retrospective exploratory; 2023-Apr2026 repeatedly inspected",
+  "model_training_year": "2021",
+  "threshold_calibration_year": "2022",
+  "historical_evaluation": "2023-01-01 through 2026-04-30",
+  "model": "fixed V+F logistic from prior alert-selection notebook",
+  "events": "fixed 4pct / 24h-refractory independent price-only catalog, pre1pct primary",
+  "B": 240,
+  "calendar_month_cap": 20,
+  "cooldown_minutes": 240,
+  "risk_stat": "1m squared log-return, past seven complete UTC days; 2021 reference median",
+  "risk_weight_clipping": [
+    0.5,
+    2.0
+  ],
+  "risk_refill_rate_per_min": 0.00045631783449808465,
+  "token_burst": 20,
+  "annual_hard_cap": 240,
+  "risk_multiplier_selection": "pre-specified, no historical test labels",
+  "bucket_threshold_selection": "2022 alert count only; strictest threshold on ties",
+  "primary_endpoint": "alert 30-240m before 4pct breach and before onset_1pct",
+  "no_new_prospective_test": true,
+  "cannot_claim": "forecast accuracy improvement or economically optimal B without independent validation"
+}

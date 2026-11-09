@@ -1,0 +1,58 @@
+{
+  "bootstrap": "500 resamples of 7-day blocks, percentile 95% CI, seed 20261101",
+  "calm_start": "both classes restricted to minutes less than x/4 below the trailing-240-min high",
+  "decomposition": "AUC_standard = (1-pi)*AUC(pre-onset positives vs negatives) + pi*AUC(in-decline positives vs negatives); Kamran-style restricted AUC = AUC(pre-onset positives vs all negatives); in-decline share of above-chance AUC = pi*(AUC_in-0.5)/(AUC_standard-0.5)",
+  "definitions": {
+    "3pct": 0.03,
+    "4pct": 0.04,
+    "5pct": 0.05
+  },
+  "evaluation_minutes": "2023-01-01 to 2026-05-01 minus 245 min, notebook-16 VALID mask",
+  "event_study": "score percentile vs the 2022 distribution, minutes (-480, 240) around the 1% onset, dev events, L1 models",
+  "features": [
+    "z_vol",
+    "tsr",
+    "z_hs",
+    "ret_5",
+    "ret_15",
+    "ret_60",
+    "ret_240",
+    "rv_15",
+    "rv_60",
+    "rv_240",
+    "rv_ratio_15_240",
+    "dd_240",
+    "dd_1440",
+    "vol_intensity_15",
+    "sell_ratio_15",
+    "sell_ratio_60",
+    "vpin"
+  ],
+  "gbm_params": {
+    "class_weight": "balanced",
+    "early_stopping": false,
+    "l2_regularization": 1.0,
+    "learning_rate": 0.05,
+    "max_iter": 300,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 200,
+    "random_state": 17
+  },
+  "holdouts": "not used (BTC 2018-2020 and alt 2018-2019 are locked)",
+  "in_decline_split": {
+    "event": "L1 only: t >= 1% onset of the event that makes the label positive (notebooks 12/16 endpoint definition)",
+    "state": "close_t at least x/4 below the trailing-240-min high (observable at t)"
+  },
+  "labels": {
+    "L1_event": "catalog breach (x% below trailing-240-min peak, 5-min sustain, 24h refractory) 30-240 min after minute t; the notebook 4-17 training label",
+    "L2_forward": "min close over (t, t+240] <= (1-x) * close_t; the common forward-drawdown label"
+  },
+  "models": {
+    "L1": "notebook-16 frozen models (M0 coefficient guard, M3 SHA-256 guard); M1 z_vol and M2 VPIN raw scores",
+    "L2": "notebook-16 features and settings, trained on 2021 minus the last 245 minutes with the L2 label"
+  },
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "thresholds": "2022 score quantiles (0.99, 0.95)",
+  "title": "Standard per-sample evaluation vs pre-onset-only evaluation (dev 2023-01..2026-04, exploratory)",
+  "within_regime": "AUC over positive-negative pairs in the same 24h realized-volatility decile (deciles over evaluation minutes)"
+}

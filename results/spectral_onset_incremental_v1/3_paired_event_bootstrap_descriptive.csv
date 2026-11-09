@@ -1,0 +1,17 @@
+H,anchor,base,new,base_catches,new_catches,diff_catches,event_boot_lo,event_boot_hi,base_only,new_only,reading
+240,breach,Breach_M0,Breach_M0_HS,22,18,-4,-8.0,-1.0,4,0,descriptive; shared development events; post hoc
+240,breach,Onset_M0,Onset_M0_HS,15,15,0,-3.0,3.0,1,1,descriptive; shared development events; post hoc
+240,breach,Breach_M0,Onset_M0,22,15,-7,-12.024999999999999,-3.0,7,0,descriptive; shared development events; post hoc
+240,breach,Breach_M0_HS,Onset_M0_HS,18,15,-3,-7.0,1.0,4,1,descriptive; shared development events; post hoc
+240,onset,Breach_M0,Breach_M0_HS,15,13,-2,-6.0,2.0,3,1,descriptive; shared development events; post hoc
+240,onset,Onset_M0,Onset_M0_HS,14,11,-3,-7.0,0.0,3,0,descriptive; shared development events; post hoc
+240,onset,Breach_M0,Onset_M0,15,14,-1,-5.0,3.0,3,2,descriptive; shared development events; post hoc
+240,onset,Breach_M0_HS,Onset_M0_HS,13,11,-2,-7.0,3.0,4,2,descriptive; shared development events; post hoc
+1440,breach,Breach_M0,Breach_M0_HS,5,3,-2,-5.0,0.0,2,0,descriptive; shared development events; post hoc
+1440,breach,Onset_M0,Onset_M0_HS,3,4,1,0.0,3.0,0,1,descriptive; shared development events; post hoc
+1440,breach,Breach_M0,Onset_M0,5,3,-2,-5.0,0.0,2,0,descriptive; shared development events; post hoc
+1440,breach,Breach_M0_HS,Onset_M0_HS,3,4,1,0.0,3.0,0,1,descriptive; shared development events; post hoc
+1440,onset,Breach_M0,Breach_M0_HS,30,31,1,-5.0,7.0,4,5,descriptive; shared development events; post hoc
+1440,onset,Onset_M0,Onset_M0_HS,31,27,-4,-11.0,3.0,8,4,descriptive; shared development events; post hoc
+1440,onset,Breach_M0,Onset_M0,30,31,1,-6.0,8.0,5,6,descriptive; shared development events; post hoc
+1440,onset,Breach_M0_HS,Onset_M0_HS,31,27,-4,-11.0,2.0,8,4,descriptive; shared development events; post hoc

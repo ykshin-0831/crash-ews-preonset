@@ -1,0 +1,178 @@
+{
+  "reproduced": [
+    {
+      "venue": "spot",
+      "threshold_2022": 0.6698990591069133,
+      "events": 83,
+      "alarms": 800,
+      "caught": 39,
+      "pre_onset": 22,
+      "post_onset": 17
+    },
+    {
+      "venue": "futures",
+      "threshold_2022": 0.6710872482458041,
+      "events": 84,
+      "alarms": 800,
+      "caught": 35,
+      "pre_onset": 19,
+      "post_onset": 16
+    }
+  ],
+  "matching_sensitivity": [
+    {
+      "tolerance_min": 15,
+      "matched": 82,
+      "spot_only": 1,
+      "futures_only": 2
+    },
+    {
+      "tolerance_min": 60,
+      "matched": 83,
+      "spot_only": 0,
+      "futures_only": 1
+    },
+    {
+      "tolerance_min": 240,
+      "matched": 83,
+      "spot_only": 0,
+      "futures_only": 1
+    }
+  ],
+  "unmatched_reasons": [
+    {
+      "venue": "futures",
+      "reason": "other venue touched 4% (5-min/other rule failed)",
+      "n": 1
+    }
+  ],
+  "price_order": [
+    {
+      "milestone": "peak",
+      "pairs": 83,
+      "futures_first": 7,
+      "same_minute": 74,
+      "spot_first": 2,
+      "median_diff_min": 0.0,
+      "mean_abs_diff_min": 0.9759036144578314
+    },
+    {
+      "milestone": "onset_1pct",
+      "pairs": 83,
+      "futures_first": 10,
+      "same_minute": 65,
+      "spot_first": 8,
+      "median_diff_min": 0.0,
+      "mean_abs_diff_min": 1.8072289156626506
+    },
+    {
+      "milestone": "breach",
+      "pairs": 83,
+      "futures_first": 6,
+      "same_minute": 71,
+      "spot_first": 6,
+      "median_diff_min": 0.0,
+      "mean_abs_diff_min": 0.7951807228915663
+    },
+    {
+      "milestone": "confirmed",
+      "pairs": 83,
+      "futures_first": 6,
+      "same_minute": 71,
+      "spot_first": 6,
+      "median_diff_min": 0.0,
+      "mean_abs_diff_min": 0.7951807228915663
+    }
+  ],
+  "signal_order": [
+    {
+      "signal": "raw_signal",
+      "spot first": 6,
+      "futures first": 13,
+      "same minute": 49,
+      "spot only": 0,
+      "futures only": 1,
+      "neither": 14
+    },
+    {
+      "signal": "alert",
+      "spot first": 7,
+      "futures first": 6,
+      "same minute": 22,
+      "spot only": 4,
+      "futures only": 0,
+      "neither": 44
+    },
+    {
+      "signal": "zvol_q99",
+      "spot first": 1,
+      "futures first": 6,
+      "same minute": 13,
+      "spot only": 0,
+      "futures only": 0,
+      "neither": 63
+    },
+    {
+      "signal": "tsr_q99",
+      "spot first": 28,
+      "futures first": 7,
+      "same minute": 5,
+      "spot only": 24,
+      "futures only": 5,
+      "neither": 14
+    }
+  ],
+  "signal_relative_to_onset": [
+    {
+      "signal": "raw_signal",
+      "venue": "spot",
+      "events_with_signal": 68,
+      "before_common_onset": 39,
+      "after_common_onset": 29,
+      "median_min_before_onset": 5.0
+    },
+    {
+      "signal": "raw_signal",
+      "venue": "futures",
+      "events_with_signal": 69,
+      "before_common_onset": 39,
+      "after_common_onset": 30,
+      "median_min_before_onset": 6.0
+    },
+    {
+      "signal": "alert",
+      "venue": "spot",
+      "events_with_signal": 39,
+      "before_common_onset": 22,
+      "after_common_onset": 17,
+      "median_min_before_onset": 4.0
+    },
+    {
+      "signal": "alert",
+      "venue": "futures",
+      "events_with_signal": 35,
+      "before_common_onset": 19,
+      "after_common_onset": 16,
+      "median_min_before_onset": 6.0
+    }
+  ],
+  "score_cofiring": {
+    "minutes": 1750613,
+    "score_correlation": 0.9931312985882264,
+    "both_above": 89877,
+    "spot_only_above": 3180,
+    "futures_only_above": 6579,
+    "jaccard": 0.9020534746477177
+  },
+  "lead_lag_peak": {
+    "evaluation period": {
+      "returns_k": 0,
+      "abs_returns_k": 0
+    },
+    "pre-event windows (240 min before matched breaches)": {
+      "returns_k": 0,
+      "abs_returns_k": 0
+    }
+  },
+  "basis_change_window_to_breach_bp_median": -0.5659553022141495
+}

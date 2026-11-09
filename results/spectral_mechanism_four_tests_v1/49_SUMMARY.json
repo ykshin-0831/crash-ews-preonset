@@ -1,0 +1,190 @@
+{
+  "notebook": "49",
+  "status": "exploratory_diagnostics",
+  "reproduction_guards": {
+    "onset_HGB_Base": 9,
+    "onset_HGB_HS": 16,
+    "breach_HGB_Base": 13,
+    "breach_HGB_HS": 12,
+    "base_alerts": 800,
+    "hs_alerts": 800
+  },
+  "experiment_1": {
+    "plateau_table": "49_1_score_plateaus.csv",
+    "threshold_replay": "49_1_strict_threshold_replay.csv",
+    "rescue_on_threshold": 3,
+    "strict_cutoff_note": "strict > may reduce number of alerts; not equal-budget"
+  },
+  "experiment_2": [
+    {
+      "tolerance_minutes": 0,
+      "base_alerts": 800,
+      "hs_alerts": 800,
+      "pair_matches": 102,
+      "pair_overlap_pct": 12.75,
+      "median_absolute_time_difference_minutes": 0.0,
+      "median_signed_hs_minus_base_minutes": 0.0
+    },
+    {
+      "tolerance_minutes": 5,
+      "base_alerts": 800,
+      "hs_alerts": 800,
+      "pair_matches": 165,
+      "pair_overlap_pct": 20.625,
+      "median_absolute_time_difference_minutes": 0.0,
+      "median_signed_hs_minus_base_minutes": 0.0
+    },
+    {
+      "tolerance_minutes": 15,
+      "base_alerts": 800,
+      "hs_alerts": 800,
+      "pair_matches": 256,
+      "pair_overlap_pct": 32.0,
+      "median_absolute_time_difference_minutes": 2.0,
+      "median_signed_hs_minus_base_minutes": 0.0
+    },
+    {
+      "tolerance_minutes": 30,
+      "base_alerts": 800,
+      "hs_alerts": 800,
+      "pair_matches": 346,
+      "pair_overlap_pct": 43.25,
+      "median_absolute_time_difference_minutes": 7.0,
+      "median_signed_hs_minus_base_minutes": 0.0
+    },
+    {
+      "tolerance_minutes": 60,
+      "base_alerts": 800,
+      "hs_alerts": 800,
+      "pair_matches": 438,
+      "pair_overlap_pct": 54.75,
+      "median_absolute_time_difference_minutes": 11.0,
+      "median_signed_hs_minus_base_minutes": 0.0
+    }
+  ],
+  "experiment_3": {
+    "2021_median_z_hs": -0.07467103749513626,
+    "full_scheduler_policy": [
+      {
+        "policy": "HGB_Base",
+        "anchor": "onset",
+        "alerts": 800,
+        "calibration_2022_alerts": 240,
+        "threshold": 0.6213147944479045,
+        "pre_catches": 9,
+        "catches_per_100_alerts": 1.125
+      },
+      {
+        "policy": "HGB_Base",
+        "anchor": "breach",
+        "alerts": 800,
+        "calibration_2022_alerts": 240,
+        "threshold": 0.6213147944479045,
+        "pre_catches": 13,
+        "catches_per_100_alerts": 1.625
+      },
+      {
+        "policy": "HGB_HS_original",
+        "anchor": "onset",
+        "alerts": 800,
+        "calibration_2022_alerts": 240,
+        "threshold": 0.6266591400580771,
+        "pre_catches": 16,
+        "catches_per_100_alerts": 2.0
+      },
+      {
+        "policy": "HGB_HS_original",
+        "anchor": "breach",
+        "alerts": 800,
+        "calibration_2022_alerts": 240,
+        "threshold": 0.6266591400580771,
+        "pre_catches": 12,
+        "catches_per_100_alerts": 1.5
+      },
+      {
+        "policy": "HS_median_fixed_2022_threshold",
+        "anchor": "onset",
+        "alerts": 800,
+        "calibration_2022_alerts": 240,
+        "threshold": 0.6266591400580771,
+        "pre_catches": 14,
+        "catches_per_100_alerts": 1.75
+      },
+      {
+        "policy": "HS_median_fixed_2022_threshold",
+        "anchor": "breach",
+        "alerts": 800,
+        "calibration_2022_alerts": 240,
+        "threshold": 0.6266591400580771,
+        "pre_catches": 9,
+        "catches_per_100_alerts": 1.125
+      },
+      {
+        "policy": "HS_median_recalibrated_2022_only",
+        "anchor": "onset",
+        "alerts": 800,
+        "calibration_2022_alerts": 240,
+        "threshold": 0.6266591400580771,
+        "pre_catches": 14,
+        "catches_per_100_alerts": 1.75
+      },
+      {
+        "policy": "HS_median_recalibrated_2022_only",
+        "anchor": "breach",
+        "alerts": 800,
+        "calibration_2022_alerts": 240,
+        "threshold": 0.6266591400580771,
+        "pre_catches": 9,
+        "catches_per_100_alerts": 1.125
+      }
+    ],
+    "eight_event_fates": [
+      {
+        "policy": "HS_median_fixed_2022_threshold",
+        "original_onset_hits": 16,
+        "neutral_onset_hits": 14,
+        "original_only": 4,
+        "neutral_only": 2,
+        "among_original_eight_rescues_maintained": 5,
+        "among_original_eight_rescues_lost": 3,
+        "original_alerts": 800,
+        "neutral_alerts": 800
+      },
+      {
+        "policy": "HS_median_recalibrated_2022_only",
+        "original_onset_hits": 16,
+        "neutral_onset_hits": 14,
+        "original_only": 4,
+        "neutral_only": 2,
+        "among_original_eight_rescues_maintained": 5,
+        "among_original_eight_rescues_lost": 3,
+        "original_alerts": 800,
+        "neutral_alerts": 800
+      }
+    ],
+    "causal_effect_established": false
+  },
+  "experiment_4a": {
+    "status": "NOT_AVAILABLE",
+    "label": "previously_inspected_retrospective_stress",
+    "never_treat_as_unused_holdout": true,
+    "observed_cache_stop_utc": "2026-05-01 00:00:00+00:00",
+    "period_start_utc": "2026-05-01 00:00:00+00:00",
+    "period_end_exclusive_utc": "2026-05-01 00:00:00+00:00"
+  },
+  "experiment_4b": {
+    "status": "PENDING_TRUE_HOLDOUT",
+    "reason": "An untouched genuinely independent dataset outside previous development, prior inspected holdouts, and the separate prospective registration has not been supplied.",
+    "prospective_registration_reserved_interval_utc": "2026-12-01 to 2027-12-01",
+    "earliest_permitted_independent_start_utc": "2027-12-01T00:00:00Z",
+    "previously_inspected_period_is_not_independent": true,
+    "original_primary_47_screen": "FAILED",
+    "missing_input_files": [
+      "/content/drive/MyDrive/btc_lead_cost_results_77months_spot/49_optional_independent_holdout/price_1m.parquet",
+      "/content/drive/MyDrive/btc_lead_cost_results_77months_spot/49_optional_independent_holdout/signals_1m.parquet",
+      "/content/drive/MyDrive/btc_lead_cost_results_77months_spot/49_optional_independent_holdout/HOLDOUT_MANIFEST.json"
+    ]
+  },
+  "no_confirmatory_claim": true,
+  "interpretation": "Post-hoc exploratory diagnostic. Original primary HGB spectral screen negative; secondary onset win not independent validation."
+}

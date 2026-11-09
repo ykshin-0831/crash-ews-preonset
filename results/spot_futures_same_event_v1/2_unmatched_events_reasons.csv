@@ -1,0 +1,2 @@
+venue,event_id,breach_utc,own_decline_pct,missing_minutes_other,other_refractory,other_max_drawdown_pct,reason
+futures,198,2023-06-14 20:57:00+00:00,-4.30741912298841,0,False,4.278780837160124,other venue touched 4% (5-min/other rule failed)

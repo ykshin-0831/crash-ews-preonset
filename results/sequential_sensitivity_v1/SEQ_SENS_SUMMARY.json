@@ -1,0 +1,135 @@
+{
+  "spec_sha256": "46a060b418a44d1baa596727925c44016925e29281d3a01a72522a69a85956a0",
+  "run_time": "2026-11-02 16:30:52+00:00",
+  "status": "exploratory; appendix; no confirmatory plan changed",
+  "verification": {
+    "small_designs": 307,
+    "max_error": 8.881784197001252e-16,
+    "lambda1_relative_difference": 4.298442690618074e-15,
+    "lambda1_whole_tail_max_relative_difference": 5.585969688540846e-13,
+    "monotone_in_lambda": true
+  },
+  "m0": {
+    "alerts": 800,
+    "T_obs": 22,
+    "exact_p_nb34": 7.38959148888151e-08,
+    "exact_mean_nb34": 6.700735224560067
+  },
+  "sequential": {
+    "grid": [
+      {
+        "lam": 1.25,
+        "p_worst": 3.7381572739392405e-05
+      },
+      {
+        "lam": 1.5,
+        "p_worst": 0.0022425532725233
+      },
+      {
+        "lam": 1.6118548977,
+        "p_worst": 0.0084929107410147
+      },
+      {
+        "lam": 1.6118548977,
+        "p_worst": 0.0084929107410147
+      },
+      {
+        "lam": 1.6410983705,
+        "p_worst": 0.0115366246412772
+      },
+      {
+        "lam": 1.6410983705,
+        "p_worst": 0.0115366246412772
+      },
+      {
+        "lam": 1.6708724001,
+        "p_worst": 0.0155025110942443
+      },
+      {
+        "lam": 1.6708724001,
+        "p_worst": 0.0155025110942443
+      },
+      {
+        "lam": 1.7320508076,
+        "p_worst": 0.0270905254349103
+      },
+      {
+        "lam": 1.795469241,
+        "p_worst": 0.0453008794999131
+      },
+      {
+        "lam": 1.828043982,
+        "p_worst": 0.0576154718659261
+      },
+      {
+        "lam": 1.8612097182,
+        "p_worst": 0.0724688528828464
+      },
+      {
+        "lam": 2.0,
+        "p_worst": 0.1624052306172861
+      },
+      {
+        "lam": 3.0,
+        "p_worst": 0.959929088616225
+      }
+    ],
+    "lambda_star": [
+      {
+        "alpha": 0.05,
+        "lambda_star": 1.7954692410260404,
+        "bracket_lo": 1.7954692410260404,
+        "bracket_hi": 1.8280439820021792,
+        "note": "largest lambda with worst-case p <= alpha (within the bracket)"
+      },
+      {
+        "alpha": 0.01,
+        "lambda_star": 1.6118548977353129,
+        "bracket_lo": 1.6118548977353129,
+        "bracket_hi": 1.6410983704638369,
+        "note": "largest lambda with worst-case p <= alpha (within the bracket)"
+      }
+    ]
+  },
+  "rosenbaum_tilt": {
+    "grid": [
+      {
+        "gamma": 1.0,
+        "p_tilt_lower_bound": 7.389591488881505e-08
+      },
+      {
+        "gamma": 1.25,
+        "p_tilt_lower_bound": 2.0486414537159166e-06
+      },
+      {
+        "gamma": 1.5,
+        "p_tilt_lower_bound": 2.469745512694411e-05
+      },
+      {
+        "gamma": 2.0,
+        "p_tilt_lower_bound": 0.0007846471587271901
+      },
+      {
+        "gamma": 3.0,
+        "p_tilt_lower_bound": 0.0334959481768525
+      },
+      {
+        "gamma": 4.0,
+        "p_tilt_lower_bound": 0.1992657346378811
+      }
+    ],
+    "gamma_star_upper_bound": [
+      {
+        "alpha": 0.05,
+        "gamma_star_upper_bound_from_truncated_tilt": 3.170366813732877,
+        "tilted_last_bin_mass": 1.5837584223933133e-15
+      },
+      {
+        "alpha": 0.01,
+        "gamma_star_upper_bound_from_truncated_tilt": 2.5868753053092854,
+        "tilted_last_bin_mass": 3.513794458076292e-18
+      }
+    ],
+    "last_bin_mass": 1.2319946818644728e-32
+  }
+}

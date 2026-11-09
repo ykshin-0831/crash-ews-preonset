@@ -1,0 +1,9 @@
+arm,alerts,original_score_cutoff_equal_alerts,median_alert_day_of_month,day_1to15_alerts,day_16plus_alerts
+BASE,800,0,5.0,792,8
+HS_ORIGINAL,800,128,4.0,800,0
+HS_STRICT,800,0,5.0,800,0
+HS_TIE_LEVEL,800,103,4.0,800,0
+HS_TIE_RISE15,800,44,5.0,800,0
+HS_JITTER_LEVEL,800,0,5.0,800,0
+HS_HALFMONTH,800,126,12.5,400,400
+HS_JITTER_HALFMONTH,800,0,12.5,400,400

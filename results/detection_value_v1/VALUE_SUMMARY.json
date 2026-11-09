@@ -1,0 +1,227 @@
+{
+  "spec_sha256": "51cae38eaec8ef0fc744673473c178b59cc7e6437c0623487ab7b12572359e69",
+  "calendar/dev": {
+    "post_onset_hits": {
+      "policy": "calendar",
+      "period": "dev",
+      "endpoint": "post-onset hit",
+      "events": 17,
+      "median_minutes_before_breach": 96.0,
+      "median_drawdown_at_entry_pct": 1.945132787213133,
+      "median_avoided_to_breach_pct": 2.5185534473758153,
+      "median_avoided_to_trough4h_pct": 4.002693836397686,
+      "median_avoided_to_trough24h_pct": 5.671366921738619,
+      "median_share_of_drawdown_avoided": 0.7648453099902842,
+      "median_avoided_hold_240m_pct": 2.6839430324258506
+    },
+    "pre_onset_hits": {
+      "policy": "calendar",
+      "period": "dev",
+      "endpoint": "pre-onset hit",
+      "events": 22,
+      "median_minutes_before_breach": 166.0,
+      "median_drawdown_at_entry_pct": 0.6756796395221032,
+      "median_avoided_to_breach_pct": 3.455537162186878,
+      "median_avoided_to_trough4h_pct": 4.55830413339573,
+      "median_avoided_to_trough24h_pct": 5.5966363565164094,
+      "median_share_of_drawdown_avoided": 0.9028544961492107,
+      "median_avoided_hold_240m_pct": 3.4836451320452264
+    },
+    "coverage": {
+      "pre-onset hit": 0.2242452889664794,
+      "post-onset hit": 0.17574046142565083
+    },
+    "alert_classes": {
+      "after breach (<=24h)": 120,
+      "late (<30 min before breach)": 11,
+      "no event within 24h": 577,
+      "post-onset hit": 17,
+      "pre-onset hit": 22,
+      "too early (4-24h before breach)": 53
+    },
+    "net_per_year_all_alerts_pct": {
+      "0": 13.48600155817209,
+      "5": -10.543603704985806,
+      "10": -34.5732089681437,
+      "25": -106.66202475761737
+    },
+    "timing_value_240m": {
+      "circular shift >=7d": {
+        "excess_bp": 7.676722290626798,
+        "p": 0.010197960407918417
+      },
+      "regime-matched (+-30d)": {
+        "excess_bp": 8.25525146172263,
+        "p": 0.013797240551889621
+      }
+    }
+  },
+  "calendar/holdout": {
+    "post_onset_hits": {
+      "policy": "calendar",
+      "period": "holdout",
+      "endpoint": "post-onset hit",
+      "events": 23,
+      "median_minutes_before_breach": 66.0,
+      "median_drawdown_at_entry_pct": 2.782782820319074,
+      "median_avoided_to_breach_pct": 1.6056754053124012,
+      "median_avoided_to_trough4h_pct": 3.3315517241379267,
+      "median_avoided_to_trough24h_pct": 4.340282053108091,
+      "median_share_of_drawdown_avoided": 0.6347964060781282,
+      "median_avoided_hold_240m_pct": 1.484174548822137
+    },
+    "pre_onset_hits": {
+      "policy": "calendar",
+      "period": "holdout",
+      "endpoint": "pre-onset hit",
+      "events": 13,
+      "median_minutes_before_breach": 147.0,
+      "median_drawdown_at_entry_pct": 2.0076099881093934,
+      "median_avoided_to_breach_pct": 2.17408714307209,
+      "median_avoided_to_trough4h_pct": 4.383212840449236,
+      "median_avoided_to_trough24h_pct": 5.149153759907577,
+      "median_share_of_drawdown_avoided": 0.7153694431800937,
+      "median_avoided_hold_240m_pct": 2.4655962378666185
+    },
+    "coverage": {
+      "pre-onset hit": 0.05562960523676498,
+      "post-onset hit": 0.06584690657653249
+    },
+    "alert_classes": {
+      "after breach (<=24h)": 168,
+      "late (<30 min before breach)": 18,
+      "no event within 24h": 430,
+      "post-onset hit": 23,
+      "pre-onset hit": 13,
+      "too early (4-24h before breach)": 61
+    },
+    "net_per_year_all_alerts_pct": {
+      "0": -25.51127875341085,
+      "5": -49.272524191367054,
+      "10": -73.03376962932325,
+      "25": -144.3175059431919
+    },
+    "timing_value_240m": {
+      "circular shift >=7d": {
+        "excess_bp": -9.920348460843972,
+        "p": 0.9628074385122976
+      },
+      "regime-matched (+-30d)": {
+        "excess_bp": -11.14331862500181,
+        "p": 0.9696060787842431
+      }
+    }
+  },
+  "constant_bucket/dev": {
+    "post_onset_hits": {
+      "policy": "constant_bucket",
+      "period": "dev",
+      "endpoint": "post-onset hit",
+      "events": 30,
+      "median_minutes_before_breach": 102.5,
+      "median_drawdown_at_entry_pct": 1.9479549984125044,
+      "median_avoided_to_breach_pct": 2.317300601138955,
+      "median_avoided_to_trough4h_pct": 3.713028694713877,
+      "median_avoided_to_trough24h_pct": 4.622537948259858,
+      "median_share_of_drawdown_avoided": 0.7154247703124896,
+      "median_avoided_hold_240m_pct": 2.2160458303368435
+    },
+    "pre_onset_hits": {
+      "policy": "constant_bucket",
+      "period": "dev",
+      "endpoint": "pre-onset hit",
+      "events": 18,
+      "median_minutes_before_breach": 141.5,
+      "median_drawdown_at_entry_pct": 1.1146046830011913,
+      "median_avoided_to_breach_pct": 3.051272421851292,
+      "median_avoided_to_trough4h_pct": 4.578243578665825,
+      "median_avoided_to_trough24h_pct": 5.238382731813901,
+      "median_share_of_drawdown_avoided": 0.8447519531987473,
+      "median_avoided_hold_240m_pct": 2.907072477080108
+    },
+    "coverage": {
+      "pre-onset hit": 0.1680966165775992,
+      "post-onset hit": 0.27343225725708464
+    },
+    "alert_classes": {
+      "after breach (<=24h)": 119,
+      "late (<30 min before breach)": 20,
+      "no event within 24h": 557,
+      "post-onset hit": 30,
+      "pre-onset hit": 18,
+      "too early (4-24h before breach)": 51
+    },
+    "net_per_year_all_alerts_pct": {
+      "0": -10.865056950098758,
+      "5": -34.74447718036191,
+      "10": -58.62389741062507,
+      "25": -130.26215810141457
+    },
+    "timing_value_240m": {
+      "circular shift >=7d": {
+        "excess_bp": -2.475827895410874,
+        "p": 0.7810437912417516
+      },
+      "regime-matched (+-30d)": {
+        "excess_bp": -1.605602065554917,
+        "p": 0.6620675864827035
+      }
+    }
+  },
+  "constant_bucket/holdout": {
+    "post_onset_hits": {
+      "policy": "constant_bucket",
+      "period": "holdout",
+      "endpoint": "post-onset hit",
+      "events": 25,
+      "median_minutes_before_breach": 92.0,
+      "median_drawdown_at_entry_pct": 2.9156889809063724,
+      "median_avoided_to_breach_pct": 1.4078992264105583,
+      "median_avoided_to_trough4h_pct": 2.4661084851124615,
+      "median_avoided_to_trough24h_pct": 3.113769903898156,
+      "median_share_of_drawdown_avoided": 0.5709924014600231,
+      "median_avoided_hold_240m_pct": 1.376980090103186
+    },
+    "pre_onset_hits": {
+      "policy": "constant_bucket",
+      "period": "holdout",
+      "endpoint": "pre-onset hit",
+      "events": 15,
+      "median_minutes_before_breach": 99.0,
+      "median_drawdown_at_entry_pct": 3.2129928389384776,
+      "median_avoided_to_breach_pct": 0.8234481744857192,
+      "median_avoided_to_trough4h_pct": 3.6053873019300964,
+      "median_avoided_to_trough24h_pct": 4.395210373114578,
+      "median_share_of_drawdown_avoided": 0.5206305114060717,
+      "median_avoided_hold_240m_pct": 0.47856015529023077
+    },
+    "coverage": {
+      "pre-onset hit": 0.02936288783526789,
+      "post-onset hit": 0.06671060797778934
+    },
+    "alert_classes": {
+      "after breach (<=24h)": 157,
+      "late (<30 min before breach)": 36,
+      "no event within 24h": 400,
+      "post-onset hit": 25,
+      "pre-onset hit": 15,
+      "too early (4-24h before breach)": 71
+    },
+    "net_per_year_all_alerts_pct": {
+      "0": -25.667584424290375,
+      "5": -49.128898292903514,
+      "10": -72.59021216151665,
+      "25": -142.97415376735606
+    },
+    "timing_value_240m": {
+      "circular shift >=7d": {
+        "excess_bp": -10.054485226442853,
+        "p": 0.9584083183363328
+      },
+      "regime-matched (+-30d)": {
+        "excess_bp": -10.804468425765002,
+        "p": 0.9640071985602879
+      }
+    }
+  }
+}

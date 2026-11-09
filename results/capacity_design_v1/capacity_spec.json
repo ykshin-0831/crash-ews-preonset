@@ -1,0 +1,15 @@
+{
+  "P0": "calendar 20/month, TH_CAL",
+  "P1": "constant bucket burst 20 (notebook 6), TH_BUCKET",
+  "P2": "risk bucket with weights / trailing-365-day mean weight (previous days only), clipped [0.5, 2]; threshold: 2022 alert count closest to 240, strictest on ties",
+  "P3": "calendar with base quota 16/month plus a reserve accruing 4/month (max 48/UTC year, reset each year) usable only after the month quota is used AND while a 4% crash was confirmed within the previous 9 days; annual cap 240; TH_CAL",
+  "annual_hard_cap": 240,
+  "candidate_rule": "among P2 and P3: most pre-onset hits; passed to notebook 11 only if strictly more pre-onset hits than P0 AND realized alerts <= 1.02 x P0 alerts; ties -> P3 (no recalibration needed)",
+  "cooldown_minutes": 240,
+  "evaluation": "2023-01-01 to 2026-05-01 exclusive",
+  "primary_endpoint": "pre-1%-onset hits (30-240 min before breach)",
+  "score": "V+F logistic, 2021 train (identical to notebook 5)",
+  "status": "exploratory; 2023-2026 previously inspected",
+  "study": "alert capacity design, exploratory",
+  "surge_days_source": "ceil(mean_excitation_life_days=8.854) from notebook-4 Hawkes fit on 2021-22"
+}

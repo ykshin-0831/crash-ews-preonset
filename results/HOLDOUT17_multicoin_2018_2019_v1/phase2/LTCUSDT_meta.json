@@ -1,0 +1,26 @@
+{
+  "symbol": "LTCUSDT",
+  "eval_start": "2018-01-01",
+  "eval_days": 730.0,
+  "frozen_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee",
+  "manifest_sha256": "33ef94b70b076a012461142cec7096e21383b50c6599e6a673387520054bd5b1",
+  "events": {
+    "d3": 169,
+    "d4": 102,
+    "d5": 59
+  },
+  "alerts": {
+    "M0_VF_logit|d3": 467,
+    "M1_vol_threshold|d3": 474,
+    "M2_VPIN|d3": 476,
+    "M3_GBM_rich|d3": 480,
+    "M0_VF_logit|d4": 464,
+    "M1_vol_threshold|d4": 474,
+    "M2_VPIN|d4": 476,
+    "M3_GBM_rich|d4": 480,
+    "M0_VF_logit|d5": 461,
+    "M1_vol_threshold|d5": 474,
+    "M2_VPIN|d5": 476,
+    "M3_GBM_rich|d5": 480
+  }
+}

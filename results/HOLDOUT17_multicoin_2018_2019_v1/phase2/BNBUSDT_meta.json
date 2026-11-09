@@ -1,0 +1,26 @@
+{
+  "symbol": "BNBUSDT",
+  "eval_start": "2018-01-01",
+  "eval_days": 730.0,
+  "frozen_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee",
+  "manifest_sha256": "3fd8db2099dfdaee5d5ff796f68b5bc6304de9dd1361a07a82785e8a72ae2e9f",
+  "events": {
+    "d3": 230,
+    "d4": 151,
+    "d5": 100
+  },
+  "alerts": {
+    "M0_VF_logit|d3": 474,
+    "M1_vol_threshold|d3": 444,
+    "M2_VPIN|d3": 480,
+    "M3_GBM_rich|d3": 136,
+    "M0_VF_logit|d4": 474,
+    "M1_vol_threshold|d4": 444,
+    "M2_VPIN|d4": 480,
+    "M3_GBM_rich|d4": 110,
+    "M0_VF_logit|d5": 468,
+    "M1_vol_threshold|d5": 444,
+    "M2_VPIN|d5": 480,
+    "M3_GBM_rich|d5": 452
+  }
+}

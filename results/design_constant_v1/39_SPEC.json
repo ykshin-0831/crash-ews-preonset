@@ -1,0 +1,34 @@
+{
+  "design_export": "39_design.npz: minute stamps, month index, decile, pre-onset flag, counts per cell, M0 alert positions; no prices",
+  "gamma_or": [
+    1.5,
+    2.0
+  ],
+  "gamma_tail": [
+    2.5,
+    3.0
+  ],
+  "holdouts": "not used",
+  "lambda_star_nb35": 1.7954692410260404,
+  "n_draw": 10,
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "null_model": "Q_nu of notebook 34 (uniform over alert sets with the observed counts per calendar month x RV decile and spacing >= 240 minutes)",
+  "outputs": {
+    "odds_ratios": "exact step odds ratio OR_v(t, H) = odds under weights v / odds under Q at every free decision of the observed M0 path and of N_DRAW exact draws from Q; max |log OR| / log Gamma per weighting; each value is a lower bound on the design constant kappa_D(Gamma)",
+    "packing": "per cell: eligible minutes, greedy maximum number of alerts with spacing >= 240 (K_c), count nu_c, nu_c / K_c",
+    "weighted_tails": "exact P_{Q_v}(T >= T_obs) under fixed weightings v on a Gamma grid; each is a lower bound on the Rosenbaum-type worst-case p, hence an upper bound on Gamma*"
+  },
+  "prospective_folder": "not read",
+  "readings": "kappa lower bounds and Gamma* upper bounds only; no lower bound on Gamma* follows from this notebook (that needs a proof of kappa_D(Gamma) <= Gamma^k); packing is descriptive; development sample was inspected repeatedly, so every output is exploratory",
+  "seed": 20261104,
+  "status": "exploratory; appendix; no confirmatory plan changed",
+  "title": "Design-specific relation between a Rosenbaum-type Gamma and the step-wise Lambda in M0's development design (exploratory; appendix)",
+  "weightings": {
+    "avoid_block": "1 on the 239 minutes before each pre-onset window start, Gamma elsewhere",
+    "cell_constant": "check only: a constant per (month, decile) cell; every admissible set has the same weight, so OR must equal 1",
+    "phase": "Gamma on minutes whose 240-minute phase since the month start is even",
+    "random_blocks": "Gamma on random 60-minute blocks (probability 1/2, seed 20261104)",
+    "tilt": "Gamma on pre-onset window minutes (h = 1)",
+    "tilt_avoid": "Gamma on pre-onset minutes, 1 on the 239 minutes before each pre-onset window start, sqrt(Gamma) elsewhere"
+  }
+}

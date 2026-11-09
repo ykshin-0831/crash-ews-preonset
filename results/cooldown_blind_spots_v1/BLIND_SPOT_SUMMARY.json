@@ -1,0 +1,399 @@
+{
+  "spec_sha256": "867a8b5ad508cc7e5d9146048cc47ccaf205f91f75f8db5570199a227f5085b4",
+  "status": "descriptive; development sample seen before; replays other than \"actual\" are comparisons, not rules",
+  "dev_events": 83,
+  "thresholds": {
+    "M0_VF_logit": 0.6698990591069133,
+    "M1_vol_threshold": 1.6760284010320905,
+    "M2_VPIN": 0.03600086644291878,
+    "M3_GBM_rich": 0.11353132038571002
+  },
+  "window_min": 210,
+  "cooldown_min": 240,
+  "blind_zone_lead_min": [
+    240,
+    270
+  ],
+  "stage_counts": [
+    {
+      "method": "M0_VF_logit",
+      "target": "any",
+      "events": 83,
+      "0 ineligible": 0,
+      "1 no signal": 2,
+      "2 outside window": 13,
+      "3 cooldown": 8,
+      "4 budget": 21,
+      "caught": 39,
+      "cooldown: window hidden by an earlier alert": 7,
+      "cooldown: signal ended before the cooldown expired": 1,
+      "cooldown: alert in window matched another event": 0,
+      "cooldown: hidden, blocking alert 240-270 min before breach": 7,
+      "cooldown cases caught by cooldown_only_cd210": 6
+    },
+    {
+      "method": "M0_VF_logit",
+      "target": "pre",
+      "events": 83,
+      "0 ineligible": 0,
+      "1 no signal": 32,
+      "2 outside window": 12,
+      "3 cooldown": 10,
+      "4 budget": 7,
+      "caught": 22,
+      "cooldown: window hidden by an earlier alert": 9,
+      "cooldown: signal ended before the cooldown expired": 1,
+      "cooldown: alert in window matched another event": 0,
+      "cooldown: hidden, blocking alert 240-270 min before breach": 7,
+      "cooldown cases caught by cooldown_only_cd210": 1
+    },
+    {
+      "method": "M1_vol_threshold",
+      "target": "any",
+      "events": 83,
+      "0 ineligible": 0,
+      "1 no signal": 2,
+      "2 outside window": 14,
+      "3 cooldown": 7,
+      "4 budget": 22,
+      "caught": 38,
+      "cooldown: window hidden by an earlier alert": 5,
+      "cooldown: signal ended before the cooldown expired": 2,
+      "cooldown: alert in window matched another event": 0,
+      "cooldown: hidden, blocking alert 240-270 min before breach": 5,
+      "cooldown cases caught by cooldown_only_cd210": 6
+    },
+    {
+      "method": "M1_vol_threshold",
+      "target": "pre",
+      "events": 83,
+      "0 ineligible": 0,
+      "1 no signal": 34,
+      "2 outside window": 13,
+      "3 cooldown": 10,
+      "4 budget": 6,
+      "caught": 20,
+      "cooldown: window hidden by an earlier alert": 8,
+      "cooldown: signal ended before the cooldown expired": 2,
+      "cooldown: alert in window matched another event": 0,
+      "cooldown: hidden, blocking alert 240-270 min before breach": 5,
+      "cooldown cases caught by cooldown_only_cd210": 2
+    },
+    {
+      "method": "M2_VPIN",
+      "target": "any",
+      "events": 83,
+      "0 ineligible": 0,
+      "1 no signal": 2,
+      "2 outside window": 0,
+      "3 cooldown": 8,
+      "4 budget": 60,
+      "caught": 13,
+      "cooldown: window hidden by an earlier alert": 8,
+      "cooldown: signal ended before the cooldown expired": 0,
+      "cooldown: alert in window matched another event": 0,
+      "cooldown: hidden, blocking alert 240-270 min before breach": 8,
+      "cooldown cases caught by cooldown_only_cd210": 8
+    },
+    {
+      "method": "M2_VPIN",
+      "target": "pre",
+      "events": 83,
+      "0 ineligible": 0,
+      "1 no signal": 3,
+      "2 outside window": 0,
+      "3 cooldown": 33,
+      "4 budget": 38,
+      "caught": 9,
+      "cooldown: window hidden by an earlier alert": 33,
+      "cooldown: signal ended before the cooldown expired": 0,
+      "cooldown: alert in window matched another event": 0,
+      "cooldown: hidden, blocking alert 240-270 min before breach": 9,
+      "cooldown cases caught by cooldown_only_cd210": 9
+    },
+    {
+      "method": "M3_GBM_rich",
+      "target": "any",
+      "events": 83,
+      "0 ineligible": 0,
+      "1 no signal": 0,
+      "2 outside window": 6,
+      "3 cooldown": 11,
+      "4 budget": 40,
+      "caught": 26,
+      "cooldown: window hidden by an earlier alert": 9,
+      "cooldown: signal ended before the cooldown expired": 2,
+      "cooldown: alert in window matched another event": 0,
+      "cooldown: hidden, blocking alert 240-270 min before breach": 9,
+      "cooldown cases caught by cooldown_only_cd210": 8
+    },
+    {
+      "method": "M3_GBM_rich",
+      "target": "pre",
+      "events": 83,
+      "0 ineligible": 0,
+      "1 no signal": 26,
+      "2 outside window": 10,
+      "3 cooldown": 25,
+      "4 budget": 15,
+      "caught": 7,
+      "cooldown: window hidden by an earlier alert": 19,
+      "cooldown: signal ended before the cooldown expired": 6,
+      "cooldown: alert in window matched another event": 0,
+      "cooldown: hidden, blocking alert 240-270 min before breach": 9,
+      "cooldown cases caught by cooldown_only_cd210": 5
+    }
+  ],
+  "policies": [
+    {
+      "method": "M0_VF_logit",
+      "policy": "actual",
+      "alerts": 800,
+      "caught_any": 39,
+      "caught_pre": 22,
+      "caught_any_per_100_alerts": 4.875,
+      "caught_pre_per_100_alerts": 2.75,
+      "blind_zone_events": 3,
+      "blind_zone_share_of_misses": 0.06818181818181818
+    },
+    {
+      "method": "M0_VF_logit",
+      "policy": "cooldown_only",
+      "alerts": 1598,
+      "caught_any": 60,
+      "caught_pre": 29,
+      "caught_any_per_100_alerts": 3.7546933667083855,
+      "caught_pre_per_100_alerts": 1.8147684605757197,
+      "blind_zone_events": 7,
+      "blind_zone_share_of_misses": 0.30434782608695654
+    },
+    {
+      "method": "M0_VF_logit",
+      "policy": "actual_cd210",
+      "alerts": 800,
+      "caught_any": 38,
+      "caught_pre": 20,
+      "caught_any_per_100_alerts": 4.75,
+      "caught_pre_per_100_alerts": 2.5,
+      "blind_zone_events": 1,
+      "blind_zone_share_of_misses": 0.022222222222222223
+    },
+    {
+      "method": "M0_VF_logit",
+      "policy": "cooldown_only_cd210",
+      "alerts": 1690,
+      "caught_any": 66,
+      "caught_pre": 29,
+      "caught_any_per_100_alerts": 3.905325443786982,
+      "caught_pre_per_100_alerts": 1.7159763313609468,
+      "blind_zone_events": 1,
+      "blind_zone_share_of_misses": 0.058823529411764705
+    },
+    {
+      "method": "M1_vol_threshold",
+      "policy": "actual",
+      "alerts": 800,
+      "caught_any": 38,
+      "caught_pre": 20,
+      "caught_any_per_100_alerts": 4.75,
+      "caught_pre_per_100_alerts": 2.5,
+      "blind_zone_events": 2,
+      "blind_zone_share_of_misses": 0.044444444444444446
+    },
+    {
+      "method": "M1_vol_threshold",
+      "policy": "cooldown_only",
+      "alerts": 1500,
+      "caught_any": 60,
+      "caught_pre": 26,
+      "caught_any_per_100_alerts": 4.0,
+      "caught_pre_per_100_alerts": 1.7333333333333334,
+      "blind_zone_events": 5,
+      "blind_zone_share_of_misses": 0.21739130434782608
+    },
+    {
+      "method": "M1_vol_threshold",
+      "policy": "actual_cd210",
+      "alerts": 800,
+      "caught_any": 38,
+      "caught_pre": 20,
+      "caught_any_per_100_alerts": 4.75,
+      "caught_pre_per_100_alerts": 2.5,
+      "blind_zone_events": 0,
+      "blind_zone_share_of_misses": 0.0
+    },
+    {
+      "method": "M1_vol_threshold",
+      "policy": "cooldown_only_cd210",
+      "alerts": 1587,
+      "caught_any": 66,
+      "caught_pre": 27,
+      "caught_any_per_100_alerts": 4.158790170132325,
+      "caught_pre_per_100_alerts": 1.7013232514177694,
+      "blind_zone_events": 0,
+      "blind_zone_share_of_misses": 0.0
+    },
+    {
+      "method": "M2_VPIN",
+      "policy": "actual",
+      "alerts": 800,
+      "caught_any": 13,
+      "caught_pre": 9,
+      "caught_any_per_100_alerts": 1.625,
+      "caught_pre_per_100_alerts": 1.125,
+      "blind_zone_events": 0,
+      "blind_zone_share_of_misses": 0.0
+    },
+    {
+      "method": "M2_VPIN",
+      "policy": "cooldown_only",
+      "alerts": 6927,
+      "caught_any": 71,
+      "caught_pre": 42,
+      "caught_any_per_100_alerts": 1.0249747365381838,
+      "caught_pre_per_100_alerts": 0.606323083585968,
+      "blind_zone_events": 10,
+      "blind_zone_share_of_misses": 0.8333333333333334
+    },
+    {
+      "method": "M2_VPIN",
+      "policy": "actual_cd210",
+      "alerts": 800,
+      "caught_any": 12,
+      "caught_pre": 6,
+      "caught_any_per_100_alerts": 1.5,
+      "caught_pre_per_100_alerts": 0.75,
+      "blind_zone_events": 0,
+      "blind_zone_share_of_misses": 0.0
+    },
+    {
+      "method": "M2_VPIN",
+      "policy": "cooldown_only_cd210",
+      "alerts": 7916,
+      "caught_any": 80,
+      "caught_pre": 35,
+      "caught_any_per_100_alerts": 1.010611419909045,
+      "caught_pre_per_100_alerts": 0.4421424962102072,
+      "blind_zone_events": 0,
+      "blind_zone_share_of_misses": 0.0
+    },
+    {
+      "method": "M3_GBM_rich",
+      "policy": "actual",
+      "alerts": 768,
+      "caught_any": 26,
+      "caught_pre": 7,
+      "caught_any_per_100_alerts": 3.3854166666666665,
+      "caught_pre_per_100_alerts": 0.9114583333333334,
+      "blind_zone_events": 3,
+      "blind_zone_share_of_misses": 0.05263157894736842
+    },
+    {
+      "method": "M3_GBM_rich",
+      "policy": "cooldown_only",
+      "alerts": 1975,
+      "caught_any": 66,
+      "caught_pre": 22,
+      "caught_any_per_100_alerts": 3.3417721518987342,
+      "caught_pre_per_100_alerts": 1.1139240506329113,
+      "blind_zone_events": 9,
+      "blind_zone_share_of_misses": 0.5294117647058824
+    },
+    {
+      "method": "M3_GBM_rich",
+      "policy": "actual_cd210",
+      "alerts": 776,
+      "caught_any": 28,
+      "caught_pre": 7,
+      "caught_any_per_100_alerts": 3.6082474226804124,
+      "caught_pre_per_100_alerts": 0.9020618556701031,
+      "blind_zone_events": 0,
+      "blind_zone_share_of_misses": 0.0
+    },
+    {
+      "method": "M3_GBM_rich",
+      "policy": "cooldown_only_cd210",
+      "alerts": 2166,
+      "caught_any": 74,
+      "caught_pre": 25,
+      "caught_any_per_100_alerts": 3.4164358264081254,
+      "caught_pre_per_100_alerts": 1.154201292705448,
+      "blind_zone_events": 0,
+      "blind_zone_share_of_misses": 0.0
+    }
+  ],
+  "cooldown210_gained_lost": [
+    {
+      "method": "M0_VF_logit",
+      "target": "any",
+      "actual": 39,
+      "actual_cd210": 38,
+      "gained": 2,
+      "lost": 3
+    },
+    {
+      "method": "M0_VF_logit",
+      "target": "pre",
+      "actual": 22,
+      "actual_cd210": 20,
+      "gained": 0,
+      "lost": 2
+    },
+    {
+      "method": "M1_vol_threshold",
+      "target": "any",
+      "actual": 38,
+      "actual_cd210": 38,
+      "gained": 3,
+      "lost": 3
+    },
+    {
+      "method": "M1_vol_threshold",
+      "target": "pre",
+      "actual": 20,
+      "actual_cd210": 20,
+      "gained": 1,
+      "lost": 1
+    },
+    {
+      "method": "M2_VPIN",
+      "target": "any",
+      "actual": 13,
+      "actual_cd210": 12,
+      "gained": 0,
+      "lost": 1
+    },
+    {
+      "method": "M2_VPIN",
+      "target": "pre",
+      "actual": 9,
+      "actual_cd210": 6,
+      "gained": 0,
+      "lost": 3
+    },
+    {
+      "method": "M3_GBM_rich",
+      "target": "any",
+      "actual": 26,
+      "actual_cd210": 28,
+      "gained": 3,
+      "lost": 1
+    },
+    {
+      "method": "M3_GBM_rich",
+      "target": "pre",
+      "actual": 7,
+      "actual_cd210": 7,
+      "gained": 2,
+      "lost": 2
+    }
+  ],
+  "holdout_post_hoc": {
+    "events": 199,
+    "alerts": 713,
+    "caught": 36,
+    "missed": 163,
+    "blind_zone_events": 3,
+    "blind_zone_share_of_misses": 0.018404907975460124
+  }
+}

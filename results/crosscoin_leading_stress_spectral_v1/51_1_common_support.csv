@@ -1,0 +1,4 @@
+period,btc_valid_minutes,common_support_minutes,retained_fraction
+train_2021,524087,523823,0.9994962668411924
+cal_2022,525600,525600,1.0
+dev_2023_2026Apr,1750612,1750568,0.9999748659325995

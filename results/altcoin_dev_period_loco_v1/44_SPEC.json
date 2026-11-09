@@ -1,0 +1,61 @@
+{
+  "aggregation": "equal weight among retained coins, nanmean across valid coins within each draw",
+  "analysis": "44 — leave-one-coin-out of frozen notebook-43 10-altcoin equal-weight AUC evaluation",
+  "bootstrap": "exact same 1,000 common 7-day calendar block draws as notebook 43 (seed 20261143); fixed per-coin parts; percentile 95% intervals",
+  "coin_parts_sha256": {
+    "ADAUSDT": "2de2a2671f89c676ec3108d7cff4b42b863f8918996b0832a4f670a7c387d76c",
+    "BNBUSDT": "ef2920846a7ed381b4369847caeddad2894ad4daa0d2c3eba7dc7784ac23daf4",
+    "EOSUSDT": "530edf5e85e1930047dc6438250b74928f94c83b594aab620683adbb79326ffa",
+    "ETCUSDT": "34db1f857b8a645e79b48bcc2d352f2e847b90d5cb8f5ca9b172e787a9e3d7d7",
+    "ETHUSDT": "85f89ca7c7dd9bab705495b6cfeea717a0d06341d41b7f00983019447b3c0c01",
+    "LTCUSDT": "f130749061e00895b8af54e697e4e1aa4ea855c3163a7b90c8006028335e0bde",
+    "NEOUSDT": "922de2d1e896bb46eaf9a3a2f38f3797966bd99e11f52b80b010d139fca149f2",
+    "TRXUSDT": "bbb64f88b2e2c60e911188ff6ad49f8288f48b57f2c29a8d1ee30fe553cc7453",
+    "XLMUSDT": "76f480f62ece95879a5c9f44c085e110cc40be7d56422fd5e5b4e71bffeda657",
+    "XRPUSDT": "179c3f67fe41b6d37eb928275879a678b0663a03ec3df15f227efd9eda584fff"
+  },
+  "coins": [
+    "ETHUSDT",
+    "XRPUSDT",
+    "LTCUSDT",
+    "BNBUSDT",
+    "ADAUSDT",
+    "EOSUSDT",
+    "TRXUSDT",
+    "ETCUSDT",
+    "XLMUSDT",
+    "NEOUSDT"
+  ],
+  "difference_metrics": [
+    "auc_standard",
+    "auc_pre",
+    "auc_in",
+    "auc_pre_within_regime"
+  ],
+  "finite_share_min_for_interval_reading": 0.95,
+  "guard": "point, CI endpoints and finite share of 43 per-coin and pooled results must reproduce within 1e-10",
+  "horizons_minutes": [
+    240,
+    1440
+  ],
+  "interpretation": "LOCO interval changes are exploratory; no per-coin selection or confirmatory multiple-testing claim",
+  "left_out": [
+    "NONE",
+    "ETHUSDT",
+    "XRPUSDT",
+    "LTCUSDT",
+    "BNBUSDT",
+    "ADAUSDT",
+    "EOSUSDT",
+    "TRXUSDT",
+    "ETCUSDT",
+    "XLMUSDT",
+    "NEOUSDT"
+  ],
+  "source_folder": "/content/drive/MyDrive/btc_lead_cost_results_77months_spot/altcoin_dev_period_v1",
+  "source_frozen_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee",
+  "source_spec43_sha256": "e1e10288ceb9a2d440b3707f48f49ad009e94d642cbe8488f2a02e0862bc588c",
+  "source_summary43_sha256": "a9d00da407f2212cbd5247526b8b060e111457058138d45b735db57a98bb6364",
+  "status": "exploratory and post hoc; EOS influence known before designing LOCO; not preregistered",
+  "target": "GBM minus M0 per-minute AUC; ancillary M0 S_in at 4h"
+}

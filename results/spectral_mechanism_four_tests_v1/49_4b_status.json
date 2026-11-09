@@ -1,0 +1,13 @@
+{
+  "status": "PENDING_TRUE_HOLDOUT",
+  "reason": "An untouched genuinely independent dataset outside previous development, prior inspected holdouts, and the separate prospective registration has not been supplied.",
+  "prospective_registration_reserved_interval_utc": "2026-12-01 to 2027-12-01",
+  "earliest_permitted_independent_start_utc": "2027-12-01T00:00:00Z",
+  "previously_inspected_period_is_not_independent": true,
+  "original_primary_47_screen": "FAILED",
+  "missing_input_files": [
+    "/content/drive/MyDrive/btc_lead_cost_results_77months_spot/49_optional_independent_holdout/price_1m.parquet",
+    "/content/drive/MyDrive/btc_lead_cost_results_77months_spot/49_optional_independent_holdout/signals_1m.parquet",
+    "/content/drive/MyDrive/btc_lead_cost_results_77months_spot/49_optional_independent_holdout/HOLDOUT_MANIFEST.json"
+  ]
+}

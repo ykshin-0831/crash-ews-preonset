@@ -1,0 +1,32 @@
+{
+  "notebook": "48",
+  "status": "exploratory_posthoc_diagnostic_only",
+  "source": "BTC spot frozen 47 inputs; models reconstructed from 2021",
+  "model_types": [
+    "HGB_Base",
+    "HGB_HS"
+  ],
+  "endpoint_primary_original": "4h breach-anchored pre-onset catches; 47 screen failed",
+  "endpoint_diagnostic": "4h onset-anchored pre-onset catches; selected after observed gain",
+  "total_event_count": 83,
+  "base_onset_catches": 9,
+  "hs_onset_catches": 16,
+  "base_breach_catches": 13,
+  "hs_breach_catches": 12,
+  "discordant_onset": {
+    "neither": 66,
+    "new_only": 8,
+    "both": 8,
+    "base_only": 1
+  },
+  "rescue_before_peak": 8,
+  "rescue_outside_breach_window": 3,
+  "rescue_baseline_below_threshold": 5,
+  "rescue_rival_nonalert_reasons": {
+    "below_own_threshold": 5,
+    "blocked_by_own_cooldown": 3
+  },
+  "rescue_spectral_median_counterfactual_below_threshold": 2,
+  "same_minute_alert_overlap": 102,
+  "data_snooping_note": "Exploratory forensic reading, no new policy developed or out-of-sample validation, no p-value confirmation."
+}

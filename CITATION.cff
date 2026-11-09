@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you refer to these materials, please cite the article and this repository. All rights reserved (see LICENSE); values derived from Binance Vision datasets are under CC BY-NC-SA 4.0."
+license-url: "https://github.com/ykshin-0831/crash-ews-preonset/blob/main/LICENSE"
+type: software
+title: "crash-ews-preonset: replication materials for 'How Much of Crash Early Warning Is Early? Separating Pre-Onset Warning from In-Progress Detection'"
+authors:
+  - family-names: Shin
+    given-names: Yeong Kyeong
+    affiliation: Kyung Hee University
+    orcid: "https://orcid.org/0009-0008-9079-6642"
+repository-code: "https://github.com/ykshin-0831/crash-ews-preonset"
+keywords:
+  - crash early warning
+  - Bitcoin
+  - ROC-AUC
+  - pre-onset warning
+  - alert budget
+preferred-citation:
+  type: article
+  title: "How Much of Crash Early Warning Is Early? Separating Pre-Onset Warning from In-Progress Detection"
+  authors:
+    - family-names: Shin
+      given-names: Yeong Kyeong
+      affiliation: Kyung Hee University
+      orcid: "https://orcid.org/0009-0008-9079-6642"
+  year: 2026
+  notes: "Manuscript submitted for publication."

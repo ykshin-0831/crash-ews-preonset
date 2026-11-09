@@ -1,0 +1,35 @@
+{
+  "bootstrap": "500 x 7-day blocks",
+  "draws": 1000,
+  "fixed": {
+    "decline": 0.04,
+    "lead_window_min": [
+      30,
+      240
+    ],
+    "null_draws": "the same shifted alert sets are scored against every H (common random numbers)",
+    "nulls": {
+      "circular": ">= 7 days",
+      "regime": "24h-RV decile, +-30 days, >= 240 min away",
+      "short": "+-(240, 1440) minutes"
+    },
+    "per_minute": "notebook-18/21 decomposition (eval_case) with labels and in-decline split from each H catalog",
+    "scores_and_alerts": "notebook-16 frozen models and dev alarms (4%), not refitted"
+  },
+  "holdouts": "not used",
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "reading_rule": "Main quantity: M0 in-decline share of the above-chance per-minute AUC with its 7-day block-bootstrap 95% interval. The claim that in-progress detection is a substantial part of standard skill is called robust to H if the lower bound is >= 0.25 at every H; otherwise the H at which it fails is reported. Expected mechanical direction: share rises with H.",
+  "secondary_reading": "At an H where the rule fails, the larger pre-onset share is read as timing information only if M0 within-regime pre-onset AUC at that H lies above its H=240 value with non-overlapping 95% intervals; otherwise it is attributed to the changed event set (shorter falls), not to warning skill. Written before any result on real data.",
+  "seed": 20261105,
+  "title": "Reviewer check: look-back window of the crash peak (dev 2023-01..2026-04, exploratory)",
+  "varied": {
+    "H_minutes": [
+      120,
+      240,
+      480,
+      1440
+    ],
+    "reference": 240,
+    "rule": "notebook-2 price_only_catalog(close, volume, index, H=H, decline=0.04); peak = max close in the H minutes before the breach; onset = first close after the peak at least 1% below it; sustain 5, refractory 1440 and new-peak rules unchanged"
+  }
+}

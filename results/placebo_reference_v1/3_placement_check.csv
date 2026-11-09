@@ -1,0 +1,5 @@
+family,H,events,placed_share_mean,placed_share_min,events_without_tier1_minute,events_without_any_minute,share_tier1_mean,share_tier2_mean,share_tier3_mean,real_pre,placebo_pre_mean,placebo_pre_min,placebo_pre_max,real_in,placebo_in_mean,placebo_in_min,placebo_in_max,positives_rel_diff_median,positives_rel_diff_max,real_pi,pi_abs_diff_median,pi_abs_diff_max,placement_caution
+a,240,83,1.0,1.0,0,0,1.0,0.0,0.0,10268,10268.0,10268,10268,7245,7245.0,7245,7245,0.0,0.0,0.4136926854336778,0.0,0.0,False
+a,1440,218,1.0,1.0,0,0,1.0,0.0,0.0,3971,3971.0,3971,3971,42027,42027.0,42027,42027,0.0,0.0,0.9136701595721554,0.0,0.0,False
+b,240,83,1.0,1.0,0,0,0.9870481927710842,0.012951807228915665,0.0,10268,10268.0,10268,10268,7245,7245.0,7245,7245,0.0,0.0,0.4136926854336778,0.0,0.0,False
+b,1440,218,1.0,1.0,0,0,1.0,0.0,0.0,3971,3971.0,3971,3971,42027,42026.956,42006,42027,0.0,0.0004565415887647289,0.9136701595721554,0.0,3.9431164473247016e-05,False

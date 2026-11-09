@@ -1,0 +1,4 @@
+policy,baseline_hits,policy_hits,baseline_pre1pct,policy_pre1pct,baseline_only,policy_only,mcnemar_exact_p,mcnemar_pre1pct_p
+absolute_high_score,39,41,22,19,3,5,0.7265625,0.453125
+relative_surprise_7d,39,41,22,13,5,7,0.7744140625,0.01171875
+past_peak_breakout_1h,39,39,22,19,2,2,1.0,0.25

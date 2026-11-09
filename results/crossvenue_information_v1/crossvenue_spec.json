@@ -1,0 +1,44 @@
+{
+  "calibration": "2022 (calendar, 240/yr, 20/month; notebook-5 rule)",
+  "candidate_rule": "challenger (M1-M4) with the most pre-onset hits; ties -> fewer features; passed to notebook 11 only if strictly more pre-onset hits than M0_VF on the same comparison mask, otherwise no candidate",
+  "comparison_mask": "minutes where spot V+F inputs AND all cross-venue features are valid",
+  "evaluation": "2023-01-01 to 2026-05-01 exclusive",
+  "features": [
+    "z_basis",
+    "d_flow",
+    "z_vr"
+  ],
+  "models": {
+    "M0_VF": [
+      "z_vol",
+      "tsr"
+    ],
+    "M1_VF_basis": [
+      "z_vol",
+      "tsr",
+      "z_basis"
+    ],
+    "M2_VF_flowgap": [
+      "z_vol",
+      "tsr",
+      "d_flow"
+    ],
+    "M3_VF_volratio": [
+      "z_vol",
+      "tsr",
+      "z_vr"
+    ],
+    "M4_VF_all3": [
+      "z_vol",
+      "tsr",
+      "z_basis",
+      "d_flow",
+      "z_vr"
+    ]
+  },
+  "primary_endpoint": "alert 30-240 min before 4% breach and before 1% onset",
+  "status": "exploratory; 2023-2026 previously inspected",
+  "study": "cross-venue information, exploratory",
+  "train": "2021",
+  "window_minutes": 15
+}

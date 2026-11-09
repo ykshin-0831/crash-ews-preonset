@@ -1,0 +1,187 @@
+{
+  "symbol": "BNBUSDT",
+  "spec_sha256": "e1e10288ceb9a2d440b3707f48f49ad009e94d642cbe8488f2a02e0862bc588c",
+  "frozen_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee",
+  "manifest_sha256": "c74ec07afc404846d922608233e9d7e8ae8616a18f67fcd066f9c3fdc0700357",
+  "phase1_reproduced": {
+    "train_events_2021": 99,
+    "calibration": {
+      "M0_VF_logit": {
+        "threshold": 0.71187574166973,
+        "threshold_17": 0.71187574166973,
+        "alerts": 240,
+        "alerts_17": 240
+      },
+      "M1_vol_threshold": {
+        "threshold": 1.798346022889019,
+        "threshold_17": 1.798346022889019,
+        "alerts": 240,
+        "alerts_17": 240
+      },
+      "M3_GBM_rich": {
+        "threshold": 0.5884098944183167,
+        "threshold_17": 0.5884098944183167,
+        "alerts": 240,
+        "alerts_17": 240
+      }
+    }
+  },
+  "eval_start": "2023-01-01 00:00:00+00:00",
+  "eval_end": "2026-05-01 00:00:00+00:00",
+  "eval_days": 1216.0,
+  "coverage": {
+    "eval_minutes": 1750795,
+    "valid_minutes": 1750612,
+    "excluded_gap_ahead": 173,
+    "missing_months": [],
+    "common_minutes": 1750439,
+    "common_share": 0.9997966638013017,
+    "caution": false
+  },
+  "events": {
+    "240": 51,
+    "1440": 157
+  },
+  "F": {
+    "240": {
+      "feasible": 51,
+      "events": 51,
+      "F": 1.0
+    },
+    "1440": {
+      "feasible": 13,
+      "events": 157,
+      "F": 0.08280254777070063
+    }
+  },
+  "positives": {
+    "240": {
+      "pre": 4618,
+      "in_progress": 6143,
+      "negatives": 1739678,
+      "events_with_positives": 51,
+      "boundary_events": 0,
+      "boundary_positive_minutes": 0
+    },
+    "1440": {
+      "pre": 996,
+      "in_progress": 32131,
+      "negatives": 1717312,
+      "events_with_positives": 157,
+      "boundary_events": 0,
+      "boundary_positive_minutes": 0
+    }
+  },
+  "common_minutes": 1750439,
+  "blocks_with_minutes": 174,
+  "guards": [
+    {
+      "guard": "phase1_manifest_exists|BNBUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT: notebook-17 phase-1 manifest not found (/content/drive/MyDrive/btc_lead_cost_results_77months_spot/HOLDOUT17_multicoin_2018_2019_v1/phase1/BNBUSDT_train_manifest.csv)"
+    },
+    {
+      "guard": "phase1_manifest|BNBUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT: 2020-11..2022-12 archives differ from the notebook-17 phase-1 manifest in []"
+    },
+    {
+      "guard": "train_events_2021|BNBUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT: 2021 events 99 / training positives 20889 differ from notebook 17 (99 / 20889)"
+    },
+    {
+      "guard": "model_sha|BNBUSDT|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT M0_VF_logit d4: model file missing or SHA-256 differs from the freeze"
+    },
+    {
+      "guard": "model_sha|BNBUSDT|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT M3_GBM_rich d4: model file missing or SHA-256 differs from the freeze"
+    },
+    {
+      "guard": "m0_refit|BNBUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT: M0 refit on 2021 differs from the frozen notebook-17 model"
+    },
+    {
+      "guard": "calibration_2022|BNBUSDT|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT M0_VF_logit: 2022 threshold 0.71187574166973 / alerts 240 differ from notebook 17 (0.71187574166973 / 240)"
+    },
+    {
+      "guard": "calibration_2022|BNBUSDT|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT M1_vol_threshold: 2022 threshold 1.798346022889019 / alerts 240 differ from notebook 17 (1.798346022889019 / 240)"
+    },
+    {
+      "guard": "calibration_2022|BNBUSDT|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT M3_GBM_rich: 2022 threshold 0.5884098944183167 / alerts 240 differ from notebook 17 (0.5884098944183167 / 240)"
+    },
+    {
+      "guard": "F_corollary1|BNBUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT: F at H=240 is 1.0 although Corollary 1 requires 1"
+    },
+    {
+      "guard": "decomposition_identity|BNBUSDT|240|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT H=240 M0_VF_logit: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|BNBUSDT|240|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT H=240 M1_vol_threshold: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|BNBUSDT|240|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT H=240 M3_GBM_rich: AUC decomposition identity off by 8.33e-17"
+    },
+    {
+      "guard": "decomposition_identity|BNBUSDT|240|B0_RV24h_baseline",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT H=240 B0_RV24h_baseline: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|BNBUSDT|1440|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT H=1440 M0_VF_logit: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|BNBUSDT|1440|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT H=1440 M1_vol_threshold: AUC decomposition identity off by 8.33e-17"
+    },
+    {
+      "guard": "decomposition_identity|BNBUSDT|1440|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT H=1440 M3_GBM_rich: AUC decomposition identity off by 7.63e-17"
+    },
+    {
+      "guard": "decomposition_identity|BNBUSDT|1440|B0_RV24h_baseline",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "BNBUSDT H=1440 B0_RV24h_baseline: AUC decomposition identity off by 2.78e-17"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "designed_after": "notebook 41 (greedy deletion path) results were known",
+  "estimands": {
+    "event_weighted": "mean of AUC_e over events with at least one pre-onset minute",
+    "minute_weighted": "sum_e n_e AUC_e / sum_e n_e (n_e pre-onset minutes of e) = the per-minute pre-onset AUC of Tables 3 and 6",
+    "per_event": "AUC_e = Pr{s(pre-onset minute of event e) > s(negative minute)} + 1/2 Pr{tie}, negatives common to all events",
+    "within_regime": "same with pairs counted only inside RV deciles (per-event within-regime AUC, then the mean)"
+  },
+  "guards": "notebook-22 per-minute AUCs; notebook-33 GBM - M0 points; unit calculator with unit weights equals make_parts/stats_from; minute-weighted mean of per-event AUCs equals the per-minute AUC; notebook-41 all-event pre-onset block and event intervals reproduced with the notebook-41 draws",
+  "inputs": "spot cache, notebook-2 catalog, notebook-16 frozen models; stored results of notebooks 22, 33 and 41 for guards; holdouts and the prospective folder not read",
+  "intervals": {
+    "block": "2000 draws of 7-day blocks (seed 20261145 + 1), shared by both systems; event weight = mean block multiplicity of its pre-onset minutes",
+    "event_a": "2000 draws: all events of the definition resampled with replacement (seed 20261145 + 100 + H), negatives fixed; event weight = multiplicity",
+    "level": "95% percentile intervals over finite draws"
+  },
+  "minutes": "notebook-33 common minutes (valid, finite M0, M1, GBM, B0 scores, RV decile assigned, evaluation period)",
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "readings": {
+    "R1": "H=1440 GBM - M0 event-weighted pre-onset AUC: block and event intervals both below zero -> M0 lead holds with equal event weights; both above -> GBM ahead with equal event weights; otherwise not distinguishable with equal event weights (the per-minute lead rests on weighting by pre-onset minutes)",
+    "R2": "H=1440: number of events with pre-onset minutes in which M0 AUC_e exceeds GBM AUC_e (descriptive; events are not independent); five largest contributions to minute-weighted minus event-weighted difference",
+    "R3": "H=1440 event-weighted within-regime pre-onset difference: rule of R1 (secondary)",
+    "R4": "H=240: M0 event-weighted pre-onset AUC and GBM - M0 event-weighted difference (descriptive)",
+    "R5": "H=1440: leave-one-event-out range of the event-weighted difference (descriptive)",
+    "undetermined": "an interval with a non-finite end or fewer than 95% finite draws is undetermined; fewer than 5 events with pre-onset minutes -> not interpretable"
+  },
+  "seed": 20261145,
+  "status": "exploratory; post hoc; development sample only; no confirmatory plan changed",
+  "title": "Event-weighted pre-onset AUC: is the 24-hour M0 pre-onset lead a product of minute weighting? (exploratory, post hoc; development sample)"
+}

@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-10-29T14:19:40.052699+00:00",
+  "files": {
+    "00_README.md": "c168fdfade9ab5a125b857198b66a503e33469df021ee7ed5fb36b6d32232ef8",
+    "DATA_PROVENANCE.csv": "7709dd286e30b720f739030f63ef76c8308f2cf0a816cc9f8e3684cde22ab930",
+    "DATA_PROVENANCE_SUMMARY.csv": "9e8c46475a887b40649b1e84159cd7231fa002f81f02e7dedaaa0cea64628ac6",
+    "DATA_SOURCE_spot_cache.json": "468292c6801de6cc8fc503009c58972958b143aa10499a17dc299aca29da1018",
+    "DEFINITIONS.json": "40b3c2205bb99db74c6f3b1885fdf61efa56672fea4397d9ca3a1c37dff11e6d",
+    "EXPERIMENTS.csv": "301a4807f049ae75c08cfa5dc688ffe41aff5a612dd9d4c6cfbe7ae96e8f8d63",
+    "FILE_HASHES.csv": "09f01acb1e69fb5473237d84d62334b2f4b05edbf57bb54f05570c23e8363f6b",
+    "RESULTS_COUNTS.csv": "b321645f3fe8a59322da954c196d776f87ddd96960856d918f542324297a47ce",
+    "RESULTS_TESTS.csv": "462d5e3eabf61b93829eed8ce47b5980adcea848cf537537fab2580e69f8e3e5"
+  },
+  "experiments_spec_sha256": {
+    "F1-F7": "",
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "f5d82820355fe19988c81b2c5f3b69f454986e694031497f315daef61763cc10",
+    "5": "d3978e1530cb4801e0b0172f6ecf0ea02cb8d49fb9c828be9adf74a4ff152d56",
+    "6": "1703156f64803c870af65fcc7a0b1d12d1bdd6bef1e6b7b4d34d46f645416839",
+    "7": "3b3c50393b028d5b98d4103bea51170e56f73c042bd5a69236914ad2b6d875cc",
+    "8": "a3561a711d906ef2b09d5a86cea218b5f9fb17e7709e96f911b613f2c45b4b0c",
+    "9": "a7f0ea2bcd71d0d65c677fd042d625e73cb4cf093394de5472d4a42faf4889c5",
+    "10": "f9bea9e937c0a7fe685535ff668a5d161287161142e7a4c8ced7e335f5568e8c",
+    "11": "5e759b32b6d01c83a13ed826f4c48f6c11d8a6d7e47a1409aa60979c32887caa",
+    "12": "5a344cf58728c6043d1b26cb42b1b4ab327b59b910fb04674ccb93d124b57162",
+    "13": "915805b01a8a73a5d55374eda3660d2f1aa8f07b0cb69e766eb82067a85ab389"
+  },
+  "result_files_hashed": 322,
+  "note": "price data (caches, archives, files with price columns) are hashed in FILE_HASHES.csv but not included"
+}

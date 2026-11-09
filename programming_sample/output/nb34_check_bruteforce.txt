@@ -1,0 +1,3 @@
+admissible alert sets: 180 by enumeration, 180 by the DP
+P(T = 0, 1, 2, 3, >= 4) DP: [0.1667 0.3556 0.3222 0.1333 0.0222]   E[T], Var[T]: [1.4889 0.9832]
+                enumeration: [0.1667 0.3556 0.3222 0.1333 0.0222]                 [1.4889 0.9832]

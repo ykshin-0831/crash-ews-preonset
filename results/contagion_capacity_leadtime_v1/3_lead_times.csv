@@ -1,0 +1,666 @@
+sample,method,event_id,pre_onset,minutes_from_onset,decline_at_alert,share_of_drop_realised
+BTC dev 2023-2026,M0_VF_logit,188,False,11.0,0.01343359727948279,0.3333499342603286
+BTC dev 2023-2026,M0_VF_logit,190,False,88.0,0.02364524564172865,0.5792245959082187
+BTC dev 2023-2026,M0_VF_logit,196,True,-21.0,0.005038460735140138,0.12469999630764769
+BTC dev 2023-2026,M0_VF_logit,197,False,67.0,0.02137068120225627,0.5300720269069661
+BTC dev 2023-2026,M0_VF_logit,198,True,-26.0,0.0035645711734123564,0.08329917192752147
+BTC dev 2023-2026,M0_VF_logit,199,False,8.0,0.015394311274351424,0.21929570376244778
+BTC dev 2023-2026,M0_VF_logit,202,True,-72.0,0.009058739746650613,0.20672440755443605
+BTC dev 2023-2026,M0_VF_logit,204,False,17.0,0.021026329678552336,0.49381779133819537
+BTC dev 2023-2026,M0_VF_logit,210,True,-22.0,0.009663391195902649,0.23635007988638193
+BTC dev 2023-2026,M0_VF_logit,211,True,-4.0,0.0047684715968564495,0.11037400249975945
+BTC dev 2023-2026,M0_VF_logit,217,False,77.0,0.03267151037601623,0.7273783860377614
+BTC dev 2023-2026,M0_VF_logit,219,False,29.0,0.01807000618056287,0.42723183736313763
+BTC dev 2023-2026,M0_VF_logit,220,False,93.0,0.00889709257933391,0.21269675188790976
+BTC dev 2023-2026,M0_VF_logit,223,False,56.0,0.01724656936216229,0.41603777530234504
+BTC dev 2023-2026,M0_VF_logit,224,True,-7.0,0.008597704054098432,0.21483845713769428
+BTC dev 2023-2026,M0_VF_logit,225,False,25.0,0.01538618738210018,0.377605740666915
+BTC dev 2023-2026,M0_VF_logit,227,True,-91.0,0.015783391848572803,0.3858097014925389
+BTC dev 2023-2026,M0_VF_logit,228,False,11.0,0.017449605406357094,0.39077938350401165
+BTC dev 2023-2026,M0_VF_logit,229,True,-20.0,0.009262958838666568,0.22674069627851323
+BTC dev 2023-2026,M0_VF_logit,233,True,-69.0,0.007982980963242348,0.19756404689535265
+BTC dev 2023-2026,M0_VF_logit,234,True,-24.0,0.010546945333167135,0.24740347493683662
+BTC dev 2023-2026,M0_VF_logit,237,False,50.0,0.01716168851886113,0.42686058771052665
+BTC dev 2023-2026,M0_VF_logit,238,False,6.0,0.01124509392980988,0.28081235325043674
+BTC dev 2023-2026,M0_VF_logit,239,False,90.0,0.023864841095734945,0.5957780965571845
+BTC dev 2023-2026,M0_VF_logit,241,True,-38.0,0.005218764407702303,0.11908598519953756
+BTC dev 2023-2026,M0_VF_logit,242,True,-1.0,0.009249232887410197,0.22464505488146277
+BTC dev 2023-2026,M0_VF_logit,243,False,0.0,0.015026512440201367,0.36808001878776314
+BTC dev 2023-2026,M0_VF_logit,249,True,-9.0,0.014407604030827414,0.34331225464705506
+BTC dev 2023-2026,M0_VF_logit,250,False,53.0,0.022977987796601096,0.5619399502637469
+BTC dev 2023-2026,M0_VF_logit,251,True,-54.0,0.004513532377122154,0.11244670882384167
+BTC dev 2023-2026,M0_VF_logit,252,True,-4.0,0.00786586550133539,0.18859012156683833
+BTC dev 2023-2026,M0_VF_logit,253,True,-82.0,0.003750193705730931,0.08519211701497775
+BTC dev 2023-2026,M0_VF_logit,254,True,-69.0,0.010717317983562347,0.2632028035959151
+BTC dev 2023-2026,M0_VF_logit,255,True,-47.0,0.008689161765478515,0.2098567185001928
+BTC dev 2023-2026,M0_VF_logit,257,False,19.0,0.026080024399698698,0.6446810813736351
+BTC dev 2023-2026,M0_VF_logit,258,True,-8.0,0.0038858917484576594,0.09512875407889168
+BTC dev 2023-2026,M0_VF_logit,263,True,-43.0,0.0031520866442300566,0.076073589301498
+BTC dev 2023-2026,M0_VF_logit,264,True,-14.0,0.0048009692724960695,0.11906184879157862
+BTC dev 2023-2026,M0_VF_logit,265,True,-47.0,0.005942910758722664,0.14433318000070536
+10 alts holdout 2018-2019,M0_VF_logit,14,True,-9.0,,
+10 alts holdout 2018-2019,M0_VF_logit,20,False,64.0,,
+10 alts holdout 2018-2019,M0_VF_logit,24,True,-173.0,,
+10 alts holdout 2018-2019,M0_VF_logit,38,True,-13.0,,
+10 alts holdout 2018-2019,M0_VF_logit,49,False,64.0,,
+10 alts holdout 2018-2019,M0_VF_logit,69,False,51.0,,
+10 alts holdout 2018-2019,M0_VF_logit,78,False,83.0,,
+10 alts holdout 2018-2019,M0_VF_logit,79,False,57.0,,
+10 alts holdout 2018-2019,M0_VF_logit,85,True,-67.0,,
+10 alts holdout 2018-2019,M0_VF_logit,93,False,113.0,,
+10 alts holdout 2018-2019,M0_VF_logit,94,False,8.0,,
+10 alts holdout 2018-2019,M0_VF_logit,95,False,142.0,,
+10 alts holdout 2018-2019,M0_VF_logit,103,False,28.0,,
+10 alts holdout 2018-2019,M0_VF_logit,104,True,-87.0,,
+10 alts holdout 2018-2019,M0_VF_logit,127,False,11.0,,
+10 alts holdout 2018-2019,M0_VF_logit,130,False,3.0,,
+10 alts holdout 2018-2019,M0_VF_logit,131,True,-145.0,,
+10 alts holdout 2018-2019,M0_VF_logit,132,False,37.0,,
+10 alts holdout 2018-2019,M0_VF_logit,136,False,1.0,,
+10 alts holdout 2018-2019,M0_VF_logit,144,False,121.0,,
+10 alts holdout 2018-2019,M0_VF_logit,148,False,10.0,,
+10 alts holdout 2018-2019,M0_VF_logit,154,False,131.0,,
+10 alts holdout 2018-2019,M0_VF_logit,158,True,-16.0,,
+10 alts holdout 2018-2019,M0_VF_logit,163,False,84.0,,
+10 alts holdout 2018-2019,M0_VF_logit,3,True,-19.0,,
+10 alts holdout 2018-2019,M0_VF_logit,5,False,22.0,,
+10 alts holdout 2018-2019,M0_VF_logit,11,False,7.0,,
+10 alts holdout 2018-2019,M0_VF_logit,12,False,50.0,,
+10 alts holdout 2018-2019,M0_VF_logit,21,False,21.0,,
+10 alts holdout 2018-2019,M0_VF_logit,23,True,-64.0,,
+10 alts holdout 2018-2019,M0_VF_logit,24,False,181.0,,
+10 alts holdout 2018-2019,M0_VF_logit,25,True,-55.0,,
+10 alts holdout 2018-2019,M0_VF_logit,26,False,70.0,,
+10 alts holdout 2018-2019,M0_VF_logit,33,True,-32.0,,
+10 alts holdout 2018-2019,M0_VF_logit,34,True,-3.0,,
+10 alts holdout 2018-2019,M0_VF_logit,35,True,-26.0,,
+10 alts holdout 2018-2019,M0_VF_logit,41,True,-146.0,,
+10 alts holdout 2018-2019,M0_VF_logit,44,True,-63.0,,
+10 alts holdout 2018-2019,M0_VF_logit,52,False,82.0,,
+10 alts holdout 2018-2019,M0_VF_logit,54,True,-102.0,,
+10 alts holdout 2018-2019,M0_VF_logit,55,False,8.0,,
+10 alts holdout 2018-2019,M0_VF_logit,57,False,9.0,,
+10 alts holdout 2018-2019,M0_VF_logit,60,False,2.0,,
+10 alts holdout 2018-2019,M0_VF_logit,8,False,16.0,,
+10 alts holdout 2018-2019,M0_VF_logit,9,True,-150.0,,
+10 alts holdout 2018-2019,M0_VF_logit,14,False,29.0,,
+10 alts holdout 2018-2019,M0_VF_logit,16,False,84.0,,
+10 alts holdout 2018-2019,M0_VF_logit,17,True,-143.0,,
+10 alts holdout 2018-2019,M0_VF_logit,20,False,7.0,,
+10 alts holdout 2018-2019,M0_VF_logit,27,False,88.0,,
+10 alts holdout 2018-2019,M0_VF_logit,28,False,31.0,,
+10 alts holdout 2018-2019,M0_VF_logit,34,False,44.0,,
+10 alts holdout 2018-2019,M0_VF_logit,35,False,135.0,,
+10 alts holdout 2018-2019,M0_VF_logit,38,False,97.0,,
+10 alts holdout 2018-2019,M0_VF_logit,39,False,32.0,,
+10 alts holdout 2018-2019,M0_VF_logit,40,False,61.0,,
+10 alts holdout 2018-2019,M0_VF_logit,45,False,53.0,,
+10 alts holdout 2018-2019,M0_VF_logit,54,True,-76.0,,
+10 alts holdout 2018-2019,M0_VF_logit,65,False,25.0,,
+10 alts holdout 2018-2019,M0_VF_logit,66,False,6.0,,
+10 alts holdout 2018-2019,M0_VF_logit,67,False,138.0,,
+10 alts holdout 2018-2019,M0_VF_logit,68,True,-15.0,,
+10 alts holdout 2018-2019,M0_VF_logit,71,False,51.0,,
+10 alts holdout 2018-2019,M0_VF_logit,75,False,97.0,,
+10 alts holdout 2018-2019,M0_VF_logit,76,True,-14.0,,
+10 alts holdout 2018-2019,M0_VF_logit,82,False,125.0,,
+10 alts holdout 2018-2019,M0_VF_logit,86,False,14.0,,
+10 alts holdout 2018-2019,M0_VF_logit,87,False,108.0,,
+10 alts holdout 2018-2019,M0_VF_logit,93,False,103.0,,
+10 alts holdout 2018-2019,M0_VF_logit,100,False,33.0,,
+10 alts holdout 2018-2019,M0_VF_logit,105,False,54.0,,
+10 alts holdout 2018-2019,M0_VF_logit,9,False,0.0,,
+10 alts holdout 2018-2019,M0_VF_logit,10,True,-57.0,,
+10 alts holdout 2018-2019,M0_VF_logit,14,False,72.0,,
+10 alts holdout 2018-2019,M0_VF_logit,15,True,-14.0,,
+10 alts holdout 2018-2019,M0_VF_logit,19,False,137.0,,
+10 alts holdout 2018-2019,M0_VF_logit,33,True,-42.0,,
+10 alts holdout 2018-2019,M0_VF_logit,34,True,-102.0,,
+10 alts holdout 2018-2019,M0_VF_logit,42,False,32.0,,
+10 alts holdout 2018-2019,M0_VF_logit,49,True,-191.0,,
+10 alts holdout 2018-2019,M0_VF_logit,66,True,-153.0,,
+10 alts holdout 2018-2019,M0_VF_logit,67,False,9.0,,
+10 alts holdout 2018-2019,M0_VF_logit,71,False,54.0,,
+10 alts holdout 2018-2019,M0_VF_logit,72,False,4.0,,
+10 alts holdout 2018-2019,M0_VF_logit,79,False,28.0,,
+10 alts holdout 2018-2019,M0_VF_logit,87,False,47.0,,
+10 alts holdout 2018-2019,M0_VF_logit,91,False,9.0,,
+10 alts holdout 2018-2019,M0_VF_logit,92,False,28.0,,
+10 alts holdout 2018-2019,M0_VF_logit,93,True,-83.0,,
+10 alts holdout 2018-2019,M0_VF_logit,94,False,0.0,,
+10 alts holdout 2018-2019,M0_VF_logit,99,True,-34.0,,
+10 alts holdout 2018-2019,M0_VF_logit,101,True,-36.0,,
+10 alts holdout 2018-2019,M0_VF_logit,107,False,6.0,,
+10 alts holdout 2018-2019,M0_VF_logit,108,False,6.0,,
+10 alts holdout 2018-2019,M0_VF_logit,110,False,63.0,,
+10 alts holdout 2018-2019,M0_VF_logit,115,False,2.0,,
+10 alts holdout 2018-2019,M0_VF_logit,116,False,114.0,,
+10 alts holdout 2018-2019,M0_VF_logit,117,True,-75.0,,
+10 alts holdout 2018-2019,M0_VF_logit,118,False,124.0,,
+10 alts holdout 2018-2019,M0_VF_logit,120,False,12.0,,
+10 alts holdout 2018-2019,M0_VF_logit,121,False,107.0,,
+10 alts holdout 2018-2019,M0_VF_logit,126,False,140.0,,
+10 alts holdout 2018-2019,M0_VF_logit,132,False,129.0,,
+10 alts holdout 2018-2019,M0_VF_logit,134,True,-7.0,,
+10 alts holdout 2018-2019,M0_VF_logit,136,True,-154.0,,
+10 alts holdout 2018-2019,M0_VF_logit,151,True,-1.0,,
+10 alts holdout 2018-2019,M0_VF_logit,158,False,0.0,,
+10 alts holdout 2018-2019,M0_VF_logit,7,False,123.0,,
+10 alts holdout 2018-2019,M0_VF_logit,9,False,164.0,,
+10 alts holdout 2018-2019,M0_VF_logit,26,False,23.0,,
+10 alts holdout 2018-2019,M0_VF_logit,27,False,60.0,,
+10 alts holdout 2018-2019,M0_VF_logit,37,True,-64.0,,
+10 alts holdout 2018-2019,M0_VF_logit,38,False,22.0,,
+10 alts holdout 2018-2019,M0_VF_logit,48,False,7.0,,
+10 alts holdout 2018-2019,M0_VF_logit,57,False,0.0,,
+10 alts holdout 2018-2019,M0_VF_logit,61,False,21.0,,
+10 alts holdout 2018-2019,M0_VF_logit,62,False,0.0,,
+10 alts holdout 2018-2019,M0_VF_logit,66,True,-129.0,,
+10 alts holdout 2018-2019,M0_VF_logit,73,False,33.0,,
+10 alts holdout 2018-2019,M0_VF_logit,10,False,13.0,,
+10 alts holdout 2018-2019,M0_VF_logit,11,False,5.0,,
+10 alts holdout 2018-2019,M0_VF_logit,12,False,84.0,,
+10 alts holdout 2018-2019,M0_VF_logit,15,True,-4.0,,
+10 alts holdout 2018-2019,M0_VF_logit,26,False,183.0,,
+10 alts holdout 2018-2019,M0_VF_logit,31,True,-82.0,,
+10 alts holdout 2018-2019,M0_VF_logit,32,False,1.0,,
+10 alts holdout 2018-2019,M0_VF_logit,39,False,2.0,,
+10 alts holdout 2018-2019,M0_VF_logit,40,False,106.0,,
+10 alts holdout 2018-2019,M0_VF_logit,41,True,-13.0,,
+10 alts holdout 2018-2019,M0_VF_logit,42,True,-8.0,,
+10 alts holdout 2018-2019,M0_VF_logit,55,False,98.0,,
+10 alts holdout 2018-2019,M0_VF_logit,62,False,22.0,,
+10 alts holdout 2018-2019,M0_VF_logit,76,False,1.0,,
+10 alts holdout 2018-2019,M0_VF_logit,83,False,0.0,,
+10 alts holdout 2018-2019,M0_VF_logit,89,False,4.0,,
+10 alts holdout 2018-2019,M0_VF_logit,90,False,112.0,,
+10 alts holdout 2018-2019,M0_VF_logit,7,False,109.0,,
+10 alts holdout 2018-2019,M0_VF_logit,12,True,-5.0,,
+10 alts holdout 2018-2019,M0_VF_logit,37,False,22.0,,
+10 alts holdout 2018-2019,M0_VF_logit,39,False,134.0,,
+10 alts holdout 2018-2019,M0_VF_logit,45,True,-3.0,,
+10 alts holdout 2018-2019,M0_VF_logit,46,True,-100.0,,
+10 alts holdout 2018-2019,M0_VF_logit,48,False,9.0,,
+10 alts holdout 2018-2019,M0_VF_logit,50,False,60.0,,
+10 alts holdout 2018-2019,M0_VF_logit,64,True,-37.0,,
+10 alts holdout 2018-2019,M0_VF_logit,71,False,6.0,,
+10 alts holdout 2018-2019,M0_VF_logit,72,True,-105.0,,
+10 alts holdout 2018-2019,M0_VF_logit,75,True,-80.0,,
+10 alts holdout 2018-2019,M0_VF_logit,81,True,-26.0,,
+10 alts holdout 2018-2019,M0_VF_logit,82,False,46.0,,
+10 alts holdout 2018-2019,M0_VF_logit,84,True,-137.0,,
+10 alts holdout 2018-2019,M0_VF_logit,103,False,18.0,,
+10 alts holdout 2018-2019,M0_VF_logit,105,False,35.0,,
+10 alts holdout 2018-2019,M0_VF_logit,109,False,164.0,,
+10 alts holdout 2018-2019,M0_VF_logit,123,False,11.0,,
+10 alts holdout 2018-2019,M0_VF_logit,130,True,-76.0,,
+10 alts holdout 2018-2019,M0_VF_logit,131,False,23.0,,
+10 alts holdout 2018-2019,M0_VF_logit,1,True,-90.0,,
+10 alts holdout 2018-2019,M0_VF_logit,2,False,44.0,,
+10 alts holdout 2018-2019,M0_VF_logit,6,False,20.0,,
+10 alts holdout 2018-2019,M0_VF_logit,7,True,-87.0,,
+10 alts holdout 2018-2019,M0_VF_logit,8,False,7.0,,
+10 alts holdout 2018-2019,M0_VF_logit,10,False,75.0,,
+10 alts holdout 2018-2019,M0_VF_logit,11,False,112.0,,
+10 alts holdout 2018-2019,M0_VF_logit,13,False,14.0,,
+10 alts holdout 2018-2019,M0_VF_logit,15,False,24.0,,
+10 alts holdout 2018-2019,M0_VF_logit,20,True,-81.0,,
+10 alts holdout 2018-2019,M0_VF_logit,22,False,3.0,,
+10 alts holdout 2018-2019,M0_VF_logit,2,False,14.0,,
+10 alts holdout 2018-2019,M0_VF_logit,6,True,-71.0,,
+10 alts holdout 2018-2019,M0_VF_logit,14,True,-63.0,,
+10 alts holdout 2018-2019,M0_VF_logit,25,False,8.0,,
+10 alts holdout 2018-2019,M0_VF_logit,26,True,-37.0,,
+10 alts holdout 2018-2019,M0_VF_logit,30,False,86.0,,
+10 alts holdout 2018-2019,M0_VF_logit,35,True,-91.0,,
+10 alts holdout 2018-2019,M0_VF_logit,37,True,-11.0,,
+10 alts holdout 2018-2019,M0_VF_logit,39,True,-95.0,,
+10 alts holdout 2018-2019,M0_VF_logit,54,False,1.0,,
+10 alts holdout 2018-2019,M0_VF_logit,56,False,97.0,,
+10 alts holdout 2018-2019,M0_VF_logit,3,False,34.0,,
+10 alts holdout 2018-2019,M0_VF_logit,6,False,56.0,,
+10 alts holdout 2018-2019,M0_VF_logit,9,False,7.0,,
+10 alts holdout 2018-2019,M0_VF_logit,10,True,-162.0,,
+10 alts holdout 2018-2019,M0_VF_logit,11,True,-85.0,,
+10 alts holdout 2018-2019,M0_VF_logit,19,True,-81.0,,
+10 alts holdout 2018-2019,M0_VF_logit,22,True,-7.0,,
+10 alts holdout 2018-2019,M0_VF_logit,37,True,-97.0,,
+10 alts holdout 2018-2019,M0_VF_logit,48,False,64.0,,
+10 alts holdout 2018-2019,M0_VF_logit,50,False,46.0,,
+10 alts holdout 2018-2019,M0_VF_logit,53,False,30.0,,
+10 alts holdout 2018-2019,M0_VF_logit,54,False,78.0,,
+10 alts holdout 2018-2019,M0_VF_logit,58,False,52.0,,
+10 alts holdout 2018-2019,M0_VF_logit,59,False,19.0,,
+10 alts holdout 2018-2019,M0_VF_logit,68,False,52.0,,
+10 alts holdout 2018-2019,M0_VF_logit,71,False,63.0,,
+10 alts holdout 2018-2019,M0_VF_logit,72,True,-66.0,,
+10 alts holdout 2018-2019,M0_VF_logit,73,False,26.0,,
+10 alts holdout 2018-2019,M0_VF_logit,87,False,32.0,,
+10 alts holdout 2018-2019,M0_VF_logit,88,False,61.0,,
+10 alts holdout 2018-2019,M0_VF_logit,89,False,116.0,,
+10 alts holdout 2018-2019,M0_VF_logit,91,True,-162.0,,
+10 alts holdout 2018-2019,M0_VF_logit,95,True,-93.0,,
+10 alts holdout 2018-2019,M0_VF_logit,99,False,135.0,,
+10 alts holdout 2018-2019,M0_VF_logit,100,True,-36.0,,
+10 alts holdout 2018-2019,M0_VF_logit,105,False,14.0,,
+10 alts holdout 2018-2019,M0_VF_logit,108,False,49.0,,
+BTC dev 2023-2026,M1_vol_threshold,188,False,11.0,0.01343359727948279,0.3333499342603286
+BTC dev 2023-2026,M1_vol_threshold,190,False,88.0,0.02364524564172865,0.5792245959082187
+BTC dev 2023-2026,M1_vol_threshold,196,True,-18.0,0.006943594900148176,0.17185134586271533
+BTC dev 2023-2026,M1_vol_threshold,198,False,7.0,0.01291710522119105,0.30185515067043567
+BTC dev 2023-2026,M1_vol_threshold,199,False,8.0,0.015394311274351424,0.21929570376244778
+BTC dev 2023-2026,M1_vol_threshold,202,True,-72.0,0.009058739746650613,0.20672440755443605
+BTC dev 2023-2026,M1_vol_threshold,204,False,17.0,0.021026329678552336,0.49381779133819537
+BTC dev 2023-2026,M1_vol_threshold,210,True,-22.0,0.009663391195902649,0.23635007988638193
+BTC dev 2023-2026,M1_vol_threshold,211,True,-4.0,0.0047684715968564495,0.11037400249975945
+BTC dev 2023-2026,M1_vol_threshold,217,False,78.0,0.02925576990821621,0.6513324438698684
+BTC dev 2023-2026,M1_vol_threshold,219,False,43.0,0.02551487103727934,0.6032518818430646
+BTC dev 2023-2026,M1_vol_threshold,220,False,98.0,0.014626936912721877,0.34967625026536814
+BTC dev 2023-2026,M1_vol_threshold,224,True,-7.0,0.008597704054098432,0.21483845713769428
+BTC dev 2023-2026,M1_vol_threshold,225,False,167.0,0.025691678893313807,0.6305217268296455
+BTC dev 2023-2026,M1_vol_threshold,227,True,-93.0,0.015997404976339502,0.3910410447761197
+BTC dev 2023-2026,M1_vol_threshold,228,False,10.0,0.016399521489885327,0.367263026775577
+BTC dev 2023-2026,M1_vol_threshold,229,False,70.0,0.013672844136212059,0.3346868159028321
+BTC dev 2023-2026,M1_vol_threshold,233,True,-69.0,0.007982980963242348,0.19756404689535265
+BTC dev 2023-2026,M1_vol_threshold,234,True,-25.0,0.012011090787626966,0.28174845936632936
+BTC dev 2023-2026,M1_vol_threshold,237,False,51.0,0.01533475766093173,0.3814195590573629
+BTC dev 2023-2026,M1_vol_threshold,238,False,6.0,0.01124509392980988,0.28081235325043674
+BTC dev 2023-2026,M1_vol_threshold,239,False,90.0,0.023864841095734945,0.5957780965571845
+BTC dev 2023-2026,M1_vol_threshold,241,True,-38.0,0.005218764407702303,0.11908598519953756
+BTC dev 2023-2026,M1_vol_threshold,242,True,-1.0,0.009249232887410197,0.22464505488146277
+BTC dev 2023-2026,M1_vol_threshold,243,False,0.0,0.015026512440201367,0.36808001878776314
+BTC dev 2023-2026,M1_vol_threshold,247,True,-129.0,0.009952707273993222,0.2293569165172478
+BTC dev 2023-2026,M1_vol_threshold,249,True,-9.0,0.014407604030827414,0.34331225464705506
+BTC dev 2023-2026,M1_vol_threshold,250,False,53.0,0.022977987796601096,0.5619399502637469
+BTC dev 2023-2026,M1_vol_threshold,251,True,-54.0,0.004513532377122154,0.11244670882384167
+BTC dev 2023-2026,M1_vol_threshold,252,False,0.0,0.01099210973537268,0.2635442102230233
+BTC dev 2023-2026,M1_vol_threshold,253,True,-82.0,0.003750193705730931,0.08519211701497775
+BTC dev 2023-2026,M1_vol_threshold,254,True,-69.0,0.010717317983562347,0.2632028035959151
+BTC dev 2023-2026,M1_vol_threshold,255,True,-49.0,0.008346348353865607,0.20157724349896075
+BTC dev 2023-2026,M1_vol_threshold,257,False,19.0,0.026080024399698698,0.6446810813736351
+BTC dev 2023-2026,M1_vol_threshold,258,True,-8.0,0.0038858917484576594,0.09512875407889168
+BTC dev 2023-2026,M1_vol_threshold,263,True,-41.0,0.0019498895041276665,0.04705933245580016
+BTC dev 2023-2026,M1_vol_threshold,264,True,-14.0,0.0048009692724960695,0.11906184879157862
+BTC dev 2023-2026,M1_vol_threshold,265,True,-51.0,0.003669004678672927,0.08910770062179936
+10 alts holdout 2018-2019,M1_vol_threshold,14,True,-9.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,20,False,65.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,24,True,-172.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,38,True,-13.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,49,False,84.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,63,False,28.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,69,False,53.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,72,False,87.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,78,False,84.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,79,False,60.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,85,True,-67.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,94,False,7.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,95,False,150.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,96,False,20.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,103,False,31.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,104,True,-87.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,105,False,75.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,114,False,1.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,118,True,-39.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,131,True,-19.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,132,False,69.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,136,False,3.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,144,False,121.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,145,False,0.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,148,False,10.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,154,False,131.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,158,True,-1.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,163,False,100.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,3,True,-20.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,5,False,22.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,11,False,7.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,12,False,50.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,21,False,20.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,23,True,-64.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,24,False,181.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,25,True,-55.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,26,False,70.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,33,True,-33.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,34,True,-3.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,35,True,-26.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,41,True,-144.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,44,True,-63.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,52,False,82.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,54,True,-102.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,55,False,8.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,57,False,9.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,60,False,2.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,4,False,51.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,6,True,-68.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,8,False,16.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,9,True,-176.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,14,False,28.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,15,False,24.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,16,True,-100.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,17,True,-39.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,27,False,88.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,28,False,28.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,30,False,34.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,34,False,34.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,35,False,134.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,38,False,96.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,39,False,16.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,40,False,56.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,45,False,50.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,50,False,17.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,54,True,-87.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,65,False,25.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,66,False,6.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,67,False,131.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,68,True,-43.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,71,False,50.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,75,False,96.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,82,False,125.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,86,False,14.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,93,False,101.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,105,False,28.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,14,False,82.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,15,True,-4.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,19,False,140.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,20,True,-30.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,33,True,-44.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,49,True,-200.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,51,False,54.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,66,True,-24.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,67,False,9.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,71,False,74.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,73,False,38.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,79,False,28.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,91,False,9.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,92,False,51.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,93,True,-74.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,94,False,0.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,99,True,-22.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,104,False,9.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,107,False,8.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,109,False,7.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,110,False,65.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,115,False,8.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,117,True,-75.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,118,False,126.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,119,False,47.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,121,False,107.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,126,False,143.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,134,False,15.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,136,True,-16.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,138,True,-56.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,148,True,-119.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,151,True,-1.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,152,True,-83.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,156,True,-139.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,158,False,0.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,7,False,123.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,9,False,166.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,26,False,22.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,27,False,59.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,29,False,76.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,37,True,-65.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,38,False,23.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,48,False,22.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,57,False,0.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,61,False,21.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,62,False,0.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,66,True,-129.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,72,False,17.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,73,False,34.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,75,True,-67.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,10,False,13.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,11,False,5.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,12,False,84.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,14,False,84.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,15,True,-4.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,26,False,183.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,31,True,-86.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,32,False,5.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,39,False,2.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,40,False,111.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,41,True,-13.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,42,True,-8.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,55,False,98.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,62,False,22.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,76,False,2.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,83,False,0.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,89,False,4.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,90,False,112.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,7,False,111.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,12,True,-5.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,37,False,22.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,39,False,134.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,45,True,-2.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,46,True,-100.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,48,False,16.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,50,False,60.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,64,True,-37.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,71,False,6.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,72,True,-103.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,75,True,-79.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,81,True,-26.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,82,False,46.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,84,True,-137.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,103,False,17.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,105,False,35.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,109,False,164.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,123,False,11.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,126,True,-53.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,130,True,-71.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,131,False,23.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,1,True,-90.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,2,False,44.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,6,False,19.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,7,True,-88.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,8,False,5.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,10,False,75.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,11,False,112.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,13,False,14.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,15,False,24.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,20,True,-78.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,22,False,3.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,2,False,14.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,6,True,-71.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,14,True,-63.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,25,False,8.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,26,True,-37.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,30,False,86.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,35,True,-91.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,39,True,-95.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,54,False,1.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,56,False,98.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,3,False,34.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,6,False,56.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,9,False,7.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,10,True,-162.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,11,True,-85.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,19,True,-81.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,22,True,-7.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,37,True,-97.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,48,False,64.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,50,False,46.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,53,False,30.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,54,False,78.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,58,False,52.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,59,False,19.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,68,False,52.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,71,False,63.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,72,True,-66.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,73,False,26.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,87,False,32.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,88,False,61.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,89,False,116.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,91,True,-162.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,95,True,-93.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,99,False,135.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,100,True,-36.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,105,False,14.0,,
+10 alts holdout 2018-2019,M1_vol_threshold,108,False,49.0,,
+BTC dev 2023-2026,M3_GBM_rich,187,False,1.0,0.011975923052366166,0.27457666730405716
+BTC dev 2023-2026,M3_GBM_rich,190,False,31.0,0.008790601333240389,0.21533853283598908
+BTC dev 2023-2026,M3_GBM_rich,196,False,6.0,0.015988879506604547,0.39571871653804913
+BTC dev 2023-2026,M3_GBM_rich,197,False,0.0,0.010467070096653042,0.2596220967127802
+BTC dev 2023-2026,M3_GBM_rich,198,False,2.0,0.012864159729531477,0.30061788666363626
+BTC dev 2023-2026,M3_GBM_rich,199,True,-100.0,0.005107883656021328,0.07276304351141517
+BTC dev 2023-2026,M3_GBM_rich,202,True,-21.0,0.0025963818808337757,0.0592505713942039
+BTC dev 2023-2026,M3_GBM_rich,204,False,15.0,0.016072272911221153,0.37746836619325685
+BTC dev 2023-2026,M3_GBM_rich,210,False,0.0,0.018722167196352002,0.4579123025031029
+BTC dev 2023-2026,M3_GBM_rich,216,False,1.0,0.010481034050046079,0.21988676468379756
+BTC dev 2023-2026,M3_GBM_rich,225,False,6.0,0.014624467267518981,0.3589117080970309
+BTC dev 2023-2026,M3_GBM_rich,227,False,3.0,0.01352450007632422,0.3305932835820894
+BTC dev 2023-2026,M3_GBM_rich,228,False,8.0,0.02066548740055174,0.4627982259848396
+BTC dev 2023-2026,M3_GBM_rich,229,True,-44.0,0.021240580897540995,0.5199315020125714
+BTC dev 2023-2026,M3_GBM_rich,233,False,0.0,0.012683217826125026,0.3138862353451998
+BTC dev 2023-2026,M3_GBM_rich,237,False,45.0,0.014544306235110493,0.36175875704409644
+BTC dev 2023-2026,M3_GBM_rich,241,False,82.0,0.01620775296889232,0.36984160988808756
+BTC dev 2023-2026,M3_GBM_rich,242,True,-110.0,0.015121552113469994,0.36727174521113476
+BTC dev 2023-2026,M3_GBM_rich,247,True,-207.0,0.024559295333444253,0.5659610088436972
+BTC dev 2023-2026,M3_GBM_rich,249,False,4.0,0.021687616414447053,0.5167843642310804
+BTC dev 2023-2026,M3_GBM_rich,250,False,32.0,0.015568971039269575,0.3807481703319116
+BTC dev 2023-2026,M3_GBM_rich,251,False,18.0,0.01353960076660321,0.3373153037984933
+BTC dev 2023-2026,M3_GBM_rich,253,True,-13.0,0.00792442532838622,0.18001698654143317
+BTC dev 2023-2026,M3_GBM_rich,254,False,104.0,0.030195306776677033,0.7415558082021608
+BTC dev 2023-2026,M3_GBM_rich,257,False,17.0,0.025022609241692417,0.6185424728709438
+BTC dev 2023-2026,M3_GBM_rich,264,True,-1.0,0.009160247331778448,0.22716995689968977
+10 alts holdout 2018-2019,M3_GBM_rich,22,True,-12.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,23,False,39.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,27,False,77.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,36,False,6.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,63,False,60.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,70,False,13.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,71,False,20.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,81,False,20.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,96,False,23.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,101,False,9.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,116,False,68.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,133,True,-48.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,144,False,121.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,9,False,8.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,12,False,88.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,13,False,42.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,14,True,-174.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,15,True,-140.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,23,True,-76.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,25,False,14.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,28,False,145.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,29,False,33.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,30,False,5.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,33,False,23.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,34,False,0.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,41,False,58.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,45,False,40.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,46,True,-23.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,48,False,53.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,51,True,-84.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,64,False,90.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,4,False,94.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,5,False,30.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,15,True,-55.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,16,False,56.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,18,False,76.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,34,False,14.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,45,False,41.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,55,False,18.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,71,False,64.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,75,False,97.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,82,False,77.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,93,True,-84.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,119,False,24.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,121,False,112.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,134,False,7.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,136,True,-128.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,152,True,-72.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,7,False,19.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,36,True,-10.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,7,False,5.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,31,True,-36.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,32,False,41.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,33,False,102.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,39,False,2.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,40,False,97.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,41,True,-17.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,62,False,12.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,63,True,-58.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,73,True,-77.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,74,False,10.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,7,False,34.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,8,False,14.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,17,False,32.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,18,False,100.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,19,False,115.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,20,False,150.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,33,True,-61.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,45,False,64.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,46,False,30.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,50,True,-3.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,59,False,3.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,60,True,-6.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,81,True,-70.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,84,True,-124.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,97,True,-34.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,98,False,31.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,105,False,28.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,106,False,61.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,131,False,19.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,1,True,-34.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,4,True,-39.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,7,True,-7.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,15,False,13.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,16,True,-15.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,20,True,-53.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,25,False,62.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,26,False,100.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,27,True,-75.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,28,False,122.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,8,True,-59.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,14,True,-63.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,39,True,-20.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,47,False,124.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,51,False,99.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,3,False,11.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,19,True,-131.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,29,True,-39.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,30,False,36.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,31,False,147.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,44,False,165.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,71,False,43.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,91,True,-111.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,92,False,0.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,99,False,42.0,,
+10 alts holdout 2018-2019,M3_GBM_rich,104,True,-24.0,,
+BTC holdout 2018-2020,M0_VF_logit,30,True,-184.0,0.08557601736923026,1.8074688338910792
+BTC holdout 2018-2020,M0_VF_logit,31,False,6.0,0.0625794560221351,1.3764216313926354
+BTC holdout 2018-2020,M0_VF_logit,45,True,-125.0,0.06798584061202761,1.6089869222820077
+BTC holdout 2018-2020,M0_VF_logit,59,False,80.0,0.03504134434975126,0.8543453935098843
+BTC holdout 2018-2020,M0_VF_logit,76,True,-30.0,0.09432569629596155,2.2308514428215234
+BTC holdout 2018-2020,M0_VF_logit,78,False,3.0,0.03091060786650779,0.7474421419719293
+BTC holdout 2018-2020,M0_VF_logit,82,False,33.0,0.019986374334200474,0.49087313659872345
+BTC holdout 2018-2020,M0_VF_logit,83,False,131.0,0.03720744542356391,0.9224788409123487
+BTC holdout 2018-2020,M0_VF_logit,88,False,14.0,0.026887104046303456,0.6602935496330642
+BTC holdout 2018-2020,M0_VF_logit,89,False,87.0,0.008409763313609542,0.20887680493809174
+BTC holdout 2018-2020,M0_VF_logit,97,False,15.0,0.023445690461367574,0.557678130709316
+BTC holdout 2018-2020,M0_VF_logit,98,False,27.0,0.03239241676120708,0.8045908948413377
+BTC holdout 2018-2020,M0_VF_logit,102,False,0.0,0.016399209331083853,0.35565270972095925
+BTC holdout 2018-2020,M0_VF_logit,103,False,49.0,0.0323115110049379,0.7596375196404433
+BTC holdout 2018-2020,M0_VF_logit,105,True,-85.0,0.14431861094554066,3.0467222222222183
+BTC holdout 2018-2020,M0_VF_logit,106,False,4.0,0.011697168778351252,0.2895980171946383
+BTC holdout 2018-2020,M0_VF_logit,120,True,-9.0,0.004707048185308871,0.11168097735261491
+BTC holdout 2018-2020,M0_VF_logit,121,False,169.0,0.030468328177905235,0.7560257935265782
+BTC holdout 2018-2020,M0_VF_logit,126,False,2.0,0.02648556416228809,0.5088193974712534
+BTC holdout 2018-2020,M0_VF_logit,128,True,-30.0,0.056901092348590865,1.3744248849769936
+BTC holdout 2018-2020,M0_VF_logit,129,True,-81.0,0.0074224072815884945,0.09097041310011275
+BTC holdout 2018-2020,M0_VF_logit,145,False,7.0,0.03600188410916971,0.8945532297996853
+BTC holdout 2018-2020,M0_VF_logit,147,False,17.0,0.022234702365523606,0.45370322357618204
+BTC holdout 2018-2020,M0_VF_logit,159,True,-219.0,0.014163220063381554,0.2689466526550013
+BTC holdout 2018-2020,M0_VF_logit,160,True,-99.0,0.005178425784977625,0.12797861922637344
+BTC holdout 2018-2020,M0_VF_logit,162,False,140.0,0.020811810608773573,0.489202291758483
+BTC holdout 2018-2020,M0_VF_logit,170,True,-21.0,0.010085407440642347,0.24704961127579828
+BTC holdout 2018-2020,M0_VF_logit,175,False,1.0,0.017982032657454572,0.4333762471837774
+BTC holdout 2018-2020,M0_VF_logit,176,True,-53.0,0.021755053507728772,0.5257320191948471
+BTC holdout 2018-2020,M0_VF_logit,182,True,-151.0,0.004612474378626774,0.11276373895976327
+BTC holdout 2018-2020,M0_VF_logit,195,False,3.0,0.015215457325549075,0.3771751490300127
+BTC holdout 2018-2020,M0_VF_logit,198,False,37.0,0.0302724876799656,0.7428126082438509
+BTC holdout 2018-2020,M0_VF_logit,206,False,164.0,0.019270152403918273,0.46272634791454714
+BTC holdout 2018-2020,M0_VF_logit,209,False,59.0,0.0257240259740259,0.6426624703935616
+BTC holdout 2018-2020,M0_VF_logit,214,False,0.0,0.01777168341554347,0.44030957514425556
+BTC holdout 2018-2020,M0_VF_logit,215,True,-65.0,0.047636058445758245,0.8756856564532821

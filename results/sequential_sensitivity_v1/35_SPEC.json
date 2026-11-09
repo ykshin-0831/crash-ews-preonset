@@ -1,0 +1,47 @@
+{
+  "computation": "exact backward induction over (position, remaining counts of the month, catches still needed); lambda = 1 must reproduce the whole notebook-34 tail P(T >= r), r = 0..T_obs; worst-case p must be non-decreasing in lambda",
+  "holdouts": "not used",
+  "interpretation": "conditional on the observed event path; the reference conditional odds come from the retrospective conditional placement law Q_nu (fixed monthly counts), so this is a sensitivity model for that law, not a model of real-time alert generation; lambda* is not an effect size",
+  "kernel_revision": "nb35_preflight_audit_20261102_r2",
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "null_model": "Q_nu of notebook 34: alert set uniform over sets on the notebook-32 placement grid with the observed counts per (calendar month, RV decile) cell and spacing >= 240 minutes",
+  "outputs": {
+    "bisection_tolerance": 0.02,
+    "grid": [
+      1.25,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "lambda_star_alphas": [
+      0.05,
+      0.01
+    ]
+  },
+  "prospective_folder": "not read",
+  "readings": "lambda* and gamma* belong to different models and are not read as the same number; development sample was inspected repeatedly, so all outputs are exploratory",
+  "reference": {
+    "gamma_grid": [
+      1.25,
+      1.5,
+      2.0,
+      3.0,
+      4.0
+    ],
+    "law_upper_bin": 45,
+    "rosenbaum_tilt": "weights gamma on pre-onset minutes; a lower bound on the Rosenbaum worst case under a cooldown (Proposition B.1), so gamma* is an upper bound on the Rosenbaum sensitivity value; recorded for reference only and not comparable with lambda* (different models)"
+  },
+  "seed": 20261103,
+  "sensitivity_model": "sequential: at every grid minute, given the full history, the odds of placing an alert may take any value in [odds0 / lambda, odds0 * lambda], odds0 = null conditional odds under Q_nu; forced minutes stay forced; worst case over history-dependent choices",
+  "statistic": "pre-onset catches T of the frozen M0 alerts (T_obs from notebook 34)",
+  "status": "exploratory; appendix; no confirmatory plan changed",
+  "title": "Sequential sensitivity analysis of the development H1 result under the exact conditional alert null (exploratory; appendix)",
+  "upstream_sha256": {
+    "nb16_alerts": "1bcc8eb351d6f36595e5921af0db801dfe4b797bb33ea93e3ebe495eb8a40b52",
+    "nb34_exact_law": "8cd32091da73e171a83ae555eeaf0837e6f7c0ddb4b63df2f203edf94eebaf4f",
+    "nb34_summary": "ec5445d2f2fc286a661fd2ecbdb0eea383cbf2441390da029b8c032d5c17c2e8",
+    "spot_reference": "df54cddf8263cfa8bdd1b5483d891c32ff7d25f3f622cef05a45a7f67ca5aa90",
+    "spot_source_manifest": "468292c6801de6cc8fc503009c58972958b143aa10499a17dc299aca29da1018",
+    "spot_thresholds": "faef731db6f7612faf2adc8a01e6c5cffbcfc3515b6c43eaa080c47356de0412"
+  }
+}

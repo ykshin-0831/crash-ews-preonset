@@ -1,0 +1,39 @@
+{
+  "holdouts": "not used",
+  "inputs": "spot cache, notebook-16 frozen models/alerts, notebook-22 window catalogs, notebook-29 results; holdouts and the prospective folder not read",
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "section1": {
+    "check": "pi implied by L equals the notebook-22 share_in on the same minutes",
+    "possible_minutes": "L_e = min(211, max(0, 240 - (breach - onset) minutes)); L_e = 0 means no pre-onset warning is possible under the 30-240 rule"
+  },
+  "section2": {
+    "claim": "with conditional performance fixed, a change in pi alone can reverse the ranking (not: equal pi implies equal ranking)",
+    "line": "standard-AUC difference (GBM - M0) = (1 - pi) * dpre + pi * din with dpre, din fixed at the 24-hour definition; crossover interval from notebook 29"
+  },
+  "section3": {
+    "analysis": "positives restricted to common events under each definition, negatives unchanged; GBM - M0 differences with the shared block bootstrap",
+    "common": "an H=240 event and an H=1440 event are the same event if their breaches are within 60 minutes"
+  },
+  "section4": {
+    "draws_per_test": 400,
+    "reading": "calibrated if the 95% interval of the rejection rate at alpha = 0.05 covers 0.05; conservative if below; anti-conservative if above",
+    "replications": 100,
+    "surrogate": "M0 score circularly shifted within the evaluation period by at least 30 days (both directions), frozen threshold and calendar scheduler re-run",
+    "tests": "budget-preserving regime-matched null (notebook 26/31 code), circular >=7d and circular 4h-1d nulls (notebook 16 code)"
+  },
+  "section5": {
+    "blocks_days": [
+      3,
+      7,
+      14,
+      30
+    ],
+    "draws": 2000,
+    "leave_one_month_out": "point estimates with each calendar month removed (month blocks, weight 0)",
+    "targets": "H=1440 GBM - M0 standard and pre-onset AUC; H=240 M0 in-progress share of excess AUC"
+  },
+  "section6": "independent plain-loop implementation of the price-only event rule compared with the frozen function on synthetic series and boundary cases",
+  "seed": 20261031,
+  "status": "exploratory; appendix; no confirmatory plan changed",
+  "title": "Reviewer-requested robustness checks on the development sample (exploratory; appendix)"
+}

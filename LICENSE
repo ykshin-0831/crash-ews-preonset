@@ -1,0 +1,17 @@
+Copyright (c) 2026 Yeong Kyeong Shin. All rights reserved.
+
+I make the files in this repository available so that readers can view them,
+download them and run them, with the changes needed to run them locally (such
+as the data path), to reproduce the results reported in "How Much of Crash Early
+Warning Is Early? Separating Pre-Onset Warning from In-Progress Detection". I
+grant no other permission: redistributing these files, publishing modified
+versions of them, or reusing any part of them (code, notebooks, result tables,
+model files, figures or documentation) elsewhere requires my written permission.
+
+Values derived from Binance Vision datasets (event closes, the cache fingerprint
+and the spread columns of the case_oct2026_v1 spread file; see README.md, "Data
+sources and license") remain under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0),
+with attribution to Binance Vision.
+
+THE FILES ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.

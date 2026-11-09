@@ -1,0 +1,14 @@
+# Packages the notebooks import. I ran the notebooks on the Google Colab runtime of
+# October-November 2026, with google.colab mounting Drive, and recorded only the
+# scikit-learn version (in the frozen model files).
+numpy
+pandas
+scipy
+scikit-learn==1.6.1
+numba
+pyarrow
+joblib
+matplotlib
+ipython
+psutil
+yfinance

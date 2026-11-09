@@ -1,0 +1,34 @@
+{
+  "calendar": {
+    "annual_cap": 240,
+    "cooldown_minutes": 240,
+    "monthly_cap": 20,
+    "threshold": 0.6698990591069133
+  },
+  "constant_bucket": {
+    "annual_cap": 240,
+    "annual_reset": "UTC year",
+    "burst": 20,
+    "cooldown_minutes": 240,
+    "threshold": 0.7166067355142407,
+    "tokens_per_year_at_constant_rate": 240
+  },
+  "design": "later-period fixed-policy replay; exploratory overlap with earlier project possible",
+  "high_score": {
+    "annual_cap": 240,
+    "cooldown_minutes": 240,
+    "monthly_cap": 20,
+    "threshold": 0.6864782740093911
+  },
+  "historical_cache": "Binance SPOT BTCUSDT 1m (notebook-1 fingerprint verified); thresholds from spot notebooks 5-6",
+  "no_modifications_after_outcome_read": true,
+  "not_a_never_seen_sample": true,
+  "price_event": "4% below prior 240-minute close peak; five consecutive closes; 24h refractory",
+  "primary_metric": "30-240 min before first 4% breach AND before first 1% onset",
+  "replay_start": "2026-01-01T00:00:00+00:00",
+  "source_selection": "choose Binance spot or futures/um ONLY by strict April 2026 historical-price, volume, and taker-buy-volume overlap; refuse otherwise",
+  "symbol": "BTCUSDT",
+  "test_end_exclusive": "2026-10-01T00:00:00+00:00",
+  "test_start": "2026-05-01T00:00:00+00:00",
+  "training": "2021 V+F logistic; original historical labels"
+}

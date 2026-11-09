@@ -1,0 +1,6 @@
+series,source,sha256,rows,first,last
+spy_daily,"Yahoo Finance SPY close, downloaded 2026-10-31 00:37:38+00:00",c63a61ae5b2654853f168784faf05e54b7ac3d0b3f254b902afaa1fd0d6eb43d,8475,1993-01-29,2026-09-30
+gspc_daily,"Yahoo Finance ^GSPC close, downloaded 2026-10-31 00:37:40+00:00",4706b4b4f0e193a42aaedaf8c4bb54b16f1212ab998fae9073707e25a502c854,24804,1927-12-30,2026-09-30
+btc_usd_daily,"Yahoo Finance BTC-USD close, downloaded 2026-10-31 00:37:42+00:00",4a68cc7e261cd1052eb5ddb15254dde02916beb20fafb9d06c753ef9392db8c8,4397,2014-09-17,2026-09-30
+ff48_vw_monthly,"Kenneth French data library, 48 industries, value-weighted monthly, downloaded 2026-10-31 00:37:44+00:00",e1b2eea7bbde4f9acb3422d7c569e952d3771a849bb8bb52254c65f659514956,1203,1926-07-31,2026-09-30
+VIX (notebook 29 file),FRED_daily/VIXCLS.csv,0faffcbf6267ea315e30914de687d6cdef023cc4b8bb878ef3a60a2c525a5480,9232,1990-01-02,2026-07-20

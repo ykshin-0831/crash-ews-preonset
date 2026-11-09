@@ -1,0 +1,187 @@
+{
+  "symbol": "XLMUSDT",
+  "spec_sha256": "e1e10288ceb9a2d440b3707f48f49ad009e94d642cbe8488f2a02e0862bc588c",
+  "frozen_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee",
+  "manifest_sha256": "af41c2e81dd028aec6060354acf42aad00b89c16986612f3a31ca2ca8f4d2b13",
+  "phase1_reproduced": {
+    "train_events_2021": 91,
+    "calibration": {
+      "M0_VF_logit": {
+        "threshold": 0.7043042646067494,
+        "threshold_17": 0.7043042646067494,
+        "alerts": 240,
+        "alerts_17": 240
+      },
+      "M1_vol_threshold": {
+        "threshold": 1.764903499931097,
+        "threshold_17": 1.764903499931097,
+        "alerts": 240,
+        "alerts_17": 240
+      },
+      "M3_GBM_rich": {
+        "threshold": 0.005188127716607017,
+        "threshold_17": 0.005188127716607017,
+        "alerts": 240,
+        "alerts_17": 240
+      }
+    }
+  },
+  "eval_start": "2023-01-01 00:00:00+00:00",
+  "eval_end": "2026-05-01 00:00:00+00:00",
+  "eval_days": 1216.0,
+  "coverage": {
+    "eval_minutes": 1750795,
+    "valid_minutes": 1712147,
+    "excluded_gap_ahead": 173,
+    "missing_months": [],
+    "common_minutes": 1711974,
+    "common_share": 0.9778266444672278,
+    "caution": false
+  },
+  "events": {
+    "240": 83,
+    "1440": 149
+  },
+  "F": {
+    "240": {
+      "feasible": 83,
+      "events": 83,
+      "F": 1.0
+    },
+    "1440": {
+      "feasible": 21,
+      "events": 149,
+      "F": 0.14093959731543623
+    }
+  },
+  "positives": {
+    "240": {
+      "pre": 8875,
+      "in_progress": 8638,
+      "negatives": 1694461,
+      "events_with_positives": 83,
+      "boundary_events": 0,
+      "boundary_positive_minutes": 0
+    },
+    "1440": {
+      "pre": 3037,
+      "in_progress": 28402,
+      "negatives": 1680535,
+      "events_with_positives": 149,
+      "boundary_events": 0,
+      "boundary_positive_minutes": 0
+    }
+  },
+  "common_minutes": 1711974,
+  "blocks_with_minutes": 174,
+  "guards": [
+    {
+      "guard": "phase1_manifest_exists|XLMUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT: notebook-17 phase-1 manifest not found (/content/drive/MyDrive/btc_lead_cost_results_77months_spot/HOLDOUT17_multicoin_2018_2019_v1/phase1/XLMUSDT_train_manifest.csv)"
+    },
+    {
+      "guard": "phase1_manifest|XLMUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT: 2020-11..2022-12 archives differ from the notebook-17 phase-1 manifest in []"
+    },
+    {
+      "guard": "train_events_2021|XLMUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT: 2021 events 91 / training positives 19201 differ from notebook 17 (91 / 19201)"
+    },
+    {
+      "guard": "model_sha|XLMUSDT|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT M0_VF_logit d4: model file missing or SHA-256 differs from the freeze"
+    },
+    {
+      "guard": "model_sha|XLMUSDT|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT M3_GBM_rich d4: model file missing or SHA-256 differs from the freeze"
+    },
+    {
+      "guard": "m0_refit|XLMUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT: M0 refit on 2021 differs from the frozen notebook-17 model"
+    },
+    {
+      "guard": "calibration_2022|XLMUSDT|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT M0_VF_logit: 2022 threshold 0.7043042646067494 / alerts 240 differ from notebook 17 (0.7043042646067494 / 240)"
+    },
+    {
+      "guard": "calibration_2022|XLMUSDT|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT M1_vol_threshold: 2022 threshold 1.764903499931097 / alerts 240 differ from notebook 17 (1.764903499931097 / 240)"
+    },
+    {
+      "guard": "calibration_2022|XLMUSDT|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT M3_GBM_rich: 2022 threshold 0.005188127716607017 / alerts 240 differ from notebook 17 (0.005188127716607017 / 240)"
+    },
+    {
+      "guard": "F_corollary1|XLMUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT: F at H=240 is 1.0 although Corollary 1 requires 1"
+    },
+    {
+      "guard": "decomposition_identity|XLMUSDT|240|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT H=240 M0_VF_logit: AUC decomposition identity off by 5.55e-17"
+    },
+    {
+      "guard": "decomposition_identity|XLMUSDT|240|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT H=240 M1_vol_threshold: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|XLMUSDT|240|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT H=240 M3_GBM_rich: AUC decomposition identity off by 5.55e-17"
+    },
+    {
+      "guard": "decomposition_identity|XLMUSDT|240|B0_RV24h_baseline",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT H=240 B0_RV24h_baseline: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|XLMUSDT|1440|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT H=1440 M0_VF_logit: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|XLMUSDT|1440|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT H=1440 M1_vol_threshold: AUC decomposition identity off by 2.78e-17"
+    },
+    {
+      "guard": "decomposition_identity|XLMUSDT|1440|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT H=1440 M3_GBM_rich: AUC decomposition identity off by 5.55e-17"
+    },
+    {
+      "guard": "decomposition_identity|XLMUSDT|1440|B0_RV24h_baseline",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "XLMUSDT H=1440 B0_RV24h_baseline: AUC decomposition identity off by 0.00e+00"
+    }
+  ]
+}

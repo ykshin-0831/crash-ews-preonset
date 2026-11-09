@@ -1,0 +1,211 @@
+{
+  "frozen_utc": "2026-11-03T09:25:01.244309+00:00",
+  "spec_sha256": "994ec994626d023acf90241d3c90c3d4baaa78c930e2cea0a22c00571f3e5481",
+  "raw_manifest_sha256": "b34ae9562165059eff32f9d1ef1606d97692ce48a51c19fa86b491667c156c5a",
+  "models": {
+    "M0": {
+      "file": "model_M0.joblib",
+      "sha256": "e74d81b60cf628b296cc0db647756f0d7fccfddb5a0850e2328c8c4f93678048"
+    },
+    "GBM": {
+      "file": "model_GBM.joblib",
+      "sha256": "2ceaa263e5266524d895c1bdd57c07efbc2735bfbf02320716aa5ea0eb23c8f2"
+    }
+  },
+  "thresholds": {
+    "^GSPC": {
+      "M0": {
+        "threshold": 0.39857217438843634,
+        "cal_alerts": 20
+      },
+      "M1": {
+        "threshold": -1.175367620869276,
+        "cal_alerts": 20
+      },
+      "GBM": {
+        "threshold": 0.3054471057263545,
+        "cal_alerts": 20
+      }
+    },
+    "^IXIC": {
+      "M0": {
+        "threshold": 0.44750822909140237,
+        "cal_alerts": 20
+      },
+      "M1": {
+        "threshold": -0.4092407633958003,
+        "cal_alerts": 20
+      },
+      "GBM": {
+        "threshold": 0.5597674565530889,
+        "cal_alerts": 20
+      }
+    },
+    "^GSPTSE": {
+      "M0": {
+        "threshold": 0.46602565448158484,
+        "cal_alerts": 20
+      },
+      "M1": {
+        "threshold": -0.6866672488071385,
+        "cal_alerts": 20
+      },
+      "GBM": {
+        "threshold": 0.08608441773414251,
+        "cal_alerts": 20
+      }
+    },
+    "^FTSE": {
+      "M0": {
+        "threshold": 0.4336326669661454,
+        "cal_alerts": 20
+      },
+      "M1": {
+        "threshold": -1.5278185989194526,
+        "cal_alerts": 20
+      },
+      "GBM": {
+        "threshold": 0.19333759420751429,
+        "cal_alerts": 20
+      }
+    },
+    "^GDAXI": {
+      "M0": {
+        "threshold": 0.4855065507293659,
+        "cal_alerts": 20
+      },
+      "M1": {
+        "threshold": -0.969459419327877,
+        "cal_alerts": 20
+      },
+      "GBM": {
+        "threshold": 0.70109174663483,
+        "cal_alerts": 20
+      }
+    },
+    "^FCHI": {
+      "M0": {
+        "threshold": 0.4947522346306328,
+        "cal_alerts": 20
+      },
+      "M1": {
+        "threshold": -0.9958681771138655,
+        "cal_alerts": 20
+      },
+      "GBM": {
+        "threshold": 0.540556346911562,
+        "cal_alerts": 20
+      }
+    },
+    "^SSMI": {
+      "M0": {
+        "threshold": 0.4934917631120899,
+        "cal_alerts": 20
+      },
+      "M1": {
+        "threshold": -1.089570065406611,
+        "cal_alerts": 20
+      },
+      "GBM": {
+        "threshold": 0.4824681087293438,
+        "cal_alerts": 20
+      }
+    },
+    "^N225": {
+      "M0": {
+        "threshold": 0.5189788442652906,
+        "cal_alerts": 20
+      },
+      "M1": {
+        "threshold": -0.38671774890484617,
+        "cal_alerts": 20
+      },
+      "GBM": {
+        "threshold": 0.6075103110447133,
+        "cal_alerts": 20
+      }
+    },
+    "^HSI": {
+      "M0": {
+        "threshold": 0.45327791862855377,
+        "cal_alerts": 20
+      },
+      "M1": {
+        "threshold": -0.7548890598840475,
+        "cal_alerts": 20
+      },
+      "GBM": {
+        "threshold": 0.5544062737656861,
+        "cal_alerts": 20
+      }
+    },
+    "^AXJO": {
+      "M0": {
+        "threshold": 0.45356286072309704,
+        "cal_alerts": 20
+      },
+      "M1": {
+        "threshold": -0.6613829426292283,
+        "cal_alerts": 20
+      },
+      "GBM": {
+        "threshold": 0.015036483844546662,
+        "cal_alerts": 20
+      }
+    }
+  },
+  "training": {
+    "^GSPC": {
+      "rows": 12308,
+      "positives": 440,
+      "events": 23
+    },
+    "^IXIC": {
+      "rows": 7030,
+      "positives": 500,
+      "events": 25
+    },
+    "^GSPTSE": {
+      "rows": 4873,
+      "positives": 180,
+      "events": 11
+    },
+    "^FTSE": {
+      "rows": 3768,
+      "positives": 120,
+      "events": 7
+    },
+    "^GDAXI": {
+      "rows": 2734,
+      "positives": 340,
+      "events": 17
+    },
+    "^FCHI": {
+      "rows": 2182,
+      "positives": 140,
+      "events": 10
+    },
+    "^SSMI": {
+      "rows": 2024,
+      "positives": 100,
+      "events": 5
+    },
+    "^N225": {
+      "rows": 8352,
+      "positives": 740,
+      "events": 37
+    },
+    "^HSI": {
+      "rows": 2946,
+      "positives": 500,
+      "events": 28
+    },
+    "^AXJO": {
+      "rows": 1526,
+      "positives": 20,
+      "events": 1
+    }
+  },
+  "training_rows": 47743,
+  "training_positive_share": 0.06451207506859645
+}

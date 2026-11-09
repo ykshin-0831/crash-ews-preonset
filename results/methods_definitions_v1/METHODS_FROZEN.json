@@ -1,0 +1,134 @@
+{
+  "spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "configs": {
+    "M0_VF_logit|3pct": {
+      "method": "M0_VF_logit",
+      "definition": "3pct",
+      "threshold_2022": 0.5859103355354093,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 800,
+      "coef": [
+        0.22797438374605886,
+        0.01574869844342636
+      ],
+      "intercept": -0.02214897240394029,
+      "scaler_mean": [
+        -0.04973698228064122,
+        0.507913312381219
+      ],
+      "scaler_scale": [
+        1.0671059140338364,
+        0.1307243613730821
+      ]
+    },
+    "M1_vol_threshold|3pct": {
+      "method": "M1_vol_threshold",
+      "definition": "3pct",
+      "threshold_2022": 1.6760284010320905,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 800
+    },
+    "M2_VPIN|3pct": {
+      "method": "M2_VPIN",
+      "definition": "3pct",
+      "threshold_2022": 0.03600086644291878,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 800
+    },
+    "M3_GBM_rich|3pct": {
+      "method": "M3_GBM_rich",
+      "definition": "3pct",
+      "threshold_2022": 0.6105591441177939,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 608,
+      "model_file": "methods_definitions_v1/models/M3_GBM_rich_3pct.joblib",
+      "model_sha256": "8a594c7d47ddffec887afab2da6f9a8e87d36ca85e4c2dd4ceb6b9f900b0ee6f"
+    },
+    "M0_VF_logit|4pct": {
+      "method": "M0_VF_logit",
+      "definition": "4pct",
+      "threshold_2022": 0.6698990591069133,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 800,
+      "coef": [
+        0.5116319551712133,
+        0.022181010843296458
+      ],
+      "intercept": -0.11971379928397659,
+      "scaler_mean": [
+        -0.04973698228064122,
+        0.507913312381219
+      ],
+      "scaler_scale": [
+        1.0671059140338364,
+        0.1307243613730821
+      ]
+    },
+    "M1_vol_threshold|4pct": {
+      "method": "M1_vol_threshold",
+      "definition": "4pct",
+      "threshold_2022": 1.6760284010320905,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 800
+    },
+    "M2_VPIN|4pct": {
+      "method": "M2_VPIN",
+      "definition": "4pct",
+      "threshold_2022": 0.03600086644291878,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 800
+    },
+    "M3_GBM_rich|4pct": {
+      "method": "M3_GBM_rich",
+      "definition": "4pct",
+      "threshold_2022": 0.11353132038571002,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 768,
+      "model_file": "methods_definitions_v1/models/M3_GBM_rich_4pct.joblib",
+      "model_sha256": "176fdac46ff63729ed8f271540b356543a6e6bf1e977edb707eb460ef1ecc4b4"
+    },
+    "M0_VF_logit|5pct": {
+      "method": "M0_VF_logit",
+      "definition": "5pct",
+      "threshold_2022": 0.743604351004386,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 800,
+      "coef": [
+        0.8524216026044158,
+        0.05322757881166738
+      ],
+      "intercept": -0.3155016371551622,
+      "scaler_mean": [
+        -0.04973698228064122,
+        0.507913312381219
+      ],
+      "scaler_scale": [
+        1.0671059140338364,
+        0.1307243613730821
+      ]
+    },
+    "M1_vol_threshold|5pct": {
+      "method": "M1_vol_threshold",
+      "definition": "5pct",
+      "threshold_2022": 1.6760284010320905,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 800
+    },
+    "M2_VPIN|5pct": {
+      "method": "M2_VPIN",
+      "definition": "5pct",
+      "threshold_2022": 0.03600086644291878,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 800
+    },
+    "M3_GBM_rich|5pct": {
+      "method": "M3_GBM_rich",
+      "definition": "5pct",
+      "threshold_2022": 0.004722840583453814,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 789,
+      "model_file": "methods_definitions_v1/models/M3_GBM_rich_5pct.joblib",
+      "model_sha256": "28eb395de621eb8cb647b5662072ffe234399b64409a7ea07b03ec0cc9b1f02c"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "symbol": "XLMUSDT",
+  "eval_start": "2018-06-17",
+  "eval_days": 563.0,
+  "frozen_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee",
+  "manifest_sha256": "d348f7e1ab957cf7a5e20c5f0ebb72726fdb24c411ade8ddfe1baafd8581fcf4",
+  "events": {
+    "d3": 93,
+    "d4": 59,
+    "d5": 34
+  },
+  "alerts": {
+    "M0_VF_logit|d3": 365,
+    "M1_vol_threshold|d3": 363,
+    "M2_VPIN|d3": 362,
+    "M3_GBM_rich|d3": 362,
+    "M0_VF_logit|d4": 364,
+    "M1_vol_threshold|d4": 363,
+    "M2_VPIN|d4": 362,
+    "M3_GBM_rich|d4": 372,
+    "M0_VF_logit|d5": 363,
+    "M1_vol_threshold|d5": 363,
+    "M2_VPIN|d5": 362,
+    "M3_GBM_rich|d5": 380
+  }
+}

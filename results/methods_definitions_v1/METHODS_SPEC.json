@@ -1,0 +1,99 @@
+{
+  "calibration": "2022, notebook-5 calendar rule (most alerts reachable, then strictest), 20/month, 240/yr, 240-min cooldown",
+  "definitions": {
+    "3pct": 0.03,
+    "4pct": 0.04,
+    "5pct": 0.05
+  },
+  "draws_per_null": 2000,
+  "endpoints": [
+    "pre",
+    "post",
+    "caught",
+    "onset_anchored"
+  ],
+  "frozen_for_holdout": "thresholds, logit coefficients and GBM model files (sha256) saved to METHODS_FROZEN.json",
+  "gbm_features": [
+    "z_vol",
+    "tsr",
+    "z_hs",
+    "ret_5",
+    "ret_15",
+    "ret_60",
+    "ret_240",
+    "rv_15",
+    "rv_60",
+    "rv_240",
+    "rv_ratio_15_240",
+    "dd_240",
+    "dd_1440",
+    "vol_intensity_15",
+    "sell_ratio_15",
+    "sell_ratio_60",
+    "vpin"
+  ],
+  "gbm_params": {
+    "class_weight": "balanced",
+    "early_stopping": false,
+    "l2_regularization": 1.0,
+    "learning_rate": 0.05,
+    "max_iter": 300,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 200,
+    "random_state": 17
+  },
+  "illusion_rule": "composite p<0.05 under the primary null AND pre-onset p>=0.05 under the regime-matched null AND post-onset p<0.05 under the regime-matched null",
+  "methods": {
+    "M0_VF_logit": {
+      "cols": [
+        "z_vol",
+        "tsr"
+      ],
+      "kind": "logit"
+    },
+    "M1_vol_threshold": {
+      "col": "z_vol",
+      "kind": "raw"
+    },
+    "M2_VPIN": {
+      "col": "vpin",
+      "kind": "raw"
+    },
+    "M3_GBM_rich": {
+      "cols": [
+        "z_vol",
+        "tsr",
+        "z_hs",
+        "ret_5",
+        "ret_15",
+        "ret_60",
+        "ret_240",
+        "rv_15",
+        "rv_60",
+        "rv_240",
+        "rv_ratio_15_240",
+        "dd_240",
+        "dd_1440",
+        "vol_intensity_15",
+        "sell_ratio_15",
+        "sell_ratio_60",
+        "vpin"
+      ],
+      "kind": "gbm"
+    }
+  },
+  "nulls": [
+    "circular >=7d (primary)",
+    "circular 4h-1d",
+    "regime-matched (same 24h-RV decile, +-30d)"
+  ],
+  "title": "Detection vs prediction across methods and event definitions (dev 2023-01..2026-04, exploratory)",
+  "training": "2021 minus last 245 min; label = breach of the same definition 30-240 min ahead",
+  "vpin": {
+    "bucket_size": "trailing 30-day mean daily volume / 50",
+    "buy_volume": "taker buy volume",
+    "minute_granularity": "whole minutes fill buckets; value at a minute = VPIN of the last completed bucket",
+    "reference": "Easley, Lopez de Prado, O'Hara (2012), Review of Financial Studies",
+    "window_buckets": 50
+  }
+}

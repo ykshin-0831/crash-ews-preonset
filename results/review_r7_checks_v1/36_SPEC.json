@@ -1,0 +1,128 @@
+{
+  "holdouts": "not used",
+  "inputs": "spot cache, notebook-2 catalog, notebook-16 frozen models/alerts; stored results of notebooks 18, 22, 23, 26, 29, 32, 33, 34 for guards; holdouts and the prospective folder not read",
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "prospective_folder": "not read",
+  "section1": {
+    "buffer": "for each definition H in use, negatives on [b_e - 29, b_e + X] minutes are removed for every catalog event e of that definition; X in [0, 240, 1440]; positives unchanged; RV deciles keep the original assignment",
+    "reading": "reading unchanged if for every buffer (i) the seven claim-bearing Table-6 intervals (standard, pre-onset and in-progress at H=240 and H=1440, within-regime pre-onset at H=1440; the H=240 within-regime interval, whose published upper bound is +0.001, is reported but not part of the rule) keep their relation to zero and the sign of the point estimate (reference: X = none, same draws), (ii) M0 within-regime pre-onset AUC moves by less than 0.02, (iii) B0 pre-onset AUC exceeds the pre-onset AUC of every model ['M0', 'M1', 'VPIN', 'GBM']; otherwise reading changes, with the failed items",
+    "table3": "H=240, per-score valid minutes (notebooks 18/23), scores ['M0_VF_logit', 'M1_vol_threshold', 'M2_VPIN', 'M3_GBM_rich', 'B0_RV24h_baseline', 'B1_DD240']; standard/pre/in AUC, terms (1-pi)(AUC_pre-1/2) and pi(AUC_in-1/2), S_in and within-regime pre-onset AUC with 500 shared 7-day-block draws",
+    "table6": "GBM - M0 standard, pre-onset, in-progress, within-regime pre-onset AUC differences at H=240 and H=1440 on the notebook-33 common minutes; 2000 joint 7-day-block draws (the notebook-33 draws, seed 20261101+2)"
+  },
+  "section2": {
+    "endpoints": [
+      "pre",
+      "post"
+    ],
+    "exact": "notebook-34 exact conditional null Q_nu (grid of notebook-32 make_space on valid minutes, cells month x RV decile, 240-minute spacing); exact mean, exact p, randomized p; in-progress endpoint uses h = window minutes at or after onset (additive for the same reason as pre)",
+    "exact_extra": "optional reference rows (EXACT_EXTRA) are labelled role = reference and do not change this SPEC",
+    "exact_runs": [
+      [
+        "M0_VF_logit",
+        "pre"
+      ],
+      [
+        "M1_vol_threshold",
+        "pre"
+      ],
+      [
+        "M1_vol_threshold",
+        "post"
+      ],
+      [
+        "M2_VPIN",
+        "pre"
+      ],
+      [
+        "M2_VPIN",
+        "post"
+      ]
+    ],
+    "guards": "M0 and GBM resampler means within 4 Monte Carlo standard errors of notebook 26 (seeds of notebook 26); M0 exact mean and p within relative 1e-6 of notebook 34",
+    "resampler": "notebook-26 draw_budget and make_space (all minutes with finite RV), 1000 draws, p = (1 + #(null >= obs)) / (N + 1)",
+    "systems": [
+      "M0_VF_logit",
+      "M1_vol_threshold",
+      "M2_VPIN",
+      "M3_GBM_rich"
+    ]
+  },
+  "section3": {
+    "draws": 2000,
+    "interval": "95% percentile",
+    "reading": "no decision rule; whether each interval excludes zero",
+    "targets": "GBM - M0 standard, pre-onset and within-regime pre-onset AUC differences, H=1440 (H=240 for reference), notebook-33 common minutes",
+    "variant_a": "events resampled with replacement, each drawn event contributes all its positive minutes with multiplicity; negatives fixed",
+    "variant_b": "events as in (a), negatives resampled independently by 7-day blocks"
+  },
+  "section4": {
+    "construction": "percentile rank of 24h RV over valid evaluation minutes (notebook 18), min(floor(rank * q), q - 1)",
+    "guard": "10 strata equal notebook-18/23 deciles and values",
+    "interval": "500 shared 7-day-block draws",
+    "scores": [
+      "M0_VF_logit",
+      "M1_vol_threshold",
+      "M2_VPIN",
+      "M3_GBM_rich",
+      "B0_RV24h_baseline",
+      "B1_DD240"
+    ],
+    "strata": [
+      5,
+      10,
+      20
+    ]
+  },
+  "section5": {
+    "F": "share of events with L_e = min(W_max - W_min + 1, max(0, W_max - gap)) > 0",
+    "H": [
+      60,
+      120,
+      240,
+      480,
+      720,
+      1440
+    ],
+    "W_max": [
+      120,
+      240,
+      480,
+      720,
+      1440
+    ],
+    "W_min": 30,
+    "catalog": "frozen price-only rule (notebook-32 catalog_H), development events (events_between)",
+    "guard": "W_max = 240 cells equal notebook 32; F = 1 whenever H <= W_max (Corollary)",
+    "pi": "valid window minutes at/after onset over valid window minutes (Lemma 3 with valid minutes); also the all-minute closed form"
+  },
+  "section6": "figure 2 redrawn from the stored notebook-18 event study (no recomputation)",
+  "section8": {
+    "alerts": "development alerts from the frozen notebook-4 emit_calendar with (cap m, budget 12 m, cooldown c); cross-checked against emit_calendar_fast",
+    "calibration": "per cell and system: notebook-16/notebook-5 rule on calendar 2022 without outcome labels (shared calibrate_calendar, score_grid), the threshold that reaches the most 2022 alerts under that cell's scheduler, strictest (fewest raw candidates) on ties; calibrate_calendar copied verbatim with the cooldown passed to the scheduler (the frozen function fixes it at 240)",
+    "endpoints": "H=240 events: alerts, pre-onset catches, in-progress detections (match_events), pre-onset catches per 100 alerts; paired event flags and exact McNemar as notebook 29 for M0 vs GBM and M0 vs M1",
+    "grid": {
+      "annual_cap": "12 x monthly cap",
+      "cooldown_min": [
+        60,
+        120,
+        240
+      ],
+      "monthly_cap": [
+        10,
+        20,
+        40
+      ]
+    },
+    "guard": "cell (20, 240) reproduces the frozen notebook-16 thresholds, 2022 alert counts and development alerts, the notebook-16 pre-onset counts and the notebook-29 M0-vs-GBM pairs",
+    "reading": "direction holds if M0 pre-onset catches exceed GBM pre-onset catches in every cell, otherwise the failing cells are listed; also reported: whether M0 pre-onset catches per 100 alerts exceed GBM in every cell; McNemar p-values are descriptive, no multiplicity claim",
+    "systems": [
+      "M0_VF_logit",
+      "M1_vol_threshold",
+      "M2_VPIN",
+      "M3_GBM_rich"
+    ]
+  },
+  "seed": 20261104,
+  "status": "exploratory; development sample only; appendix and response letter; no confirmatory plan changed",
+  "title": "Seventh-round review checks on the development sample (exploratory; appendix and response letter)"
+}

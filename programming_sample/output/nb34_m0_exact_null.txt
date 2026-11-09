@@ -1,0 +1,4 @@
+M0: 800 alerts, 83 events, 22 caught before onset
+exact null: mean 6.70, sd 2.36, P(T >= 22) = 7.4e-08
+old resampler, 1000 draws: mean 6.17, p = 0.0010 (floor 0.0010)
+Wrote programming_sample/output/exact_null_m0.png

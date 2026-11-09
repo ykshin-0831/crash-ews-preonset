@@ -1,0 +1,72 @@
+{
+  "created_utc": "2026-10-29T14:19:40.052699+00:00",
+  "research_question": "Early-warning reliability under capacity constraints: can a capacity-limited alert system warn about BTC 4% intraday crashes before the decline starts, as opposed to detecting a decline already in progress?",
+  "data": {
+    "source": "Binance public monthly 1-minute kline archives (data.binance.vision), spot BTCUSDT (primary), USD-M futures BTCUSDT (original study, notebook 13), spot ETH/SOL/DOGE/AVAX (notebook 10)",
+    "integrity": "each archive checked against its published .CHECKSUM (SHA-256); see DATA_PROVENANCE.csv",
+    "grid": "complete UTC minute grid; gaps of <=5 minutes forward-filled (OHLC) with zero volume; longer gaps left missing",
+    "timestamps": "spot archives use microseconds from 2025; parsed by magnitude",
+    "venue_guard": "spot cache must match spot archive values (fingerprint) and carry DATA_SOURCE.json venue=spot"
+  },
+  "event_definition": {
+    "rule": "close <= 96% of the maximum close of the previous 240 minutes (breach), held for 5 consecutive closes; the 240 minutes before the breach fully observed; a new peak after the previous event; 24 h refractory after the previous confirmation",
+    "timestamps": {
+      "peak": "argmax close in the previous 240 minutes",
+      "onset": "first close <= 99% of the peak (1% onset)",
+      "breach": "first close of the 4% breach",
+      "confirmed": "fifth confirming close (real-time observable)"
+    },
+    "alt_coins": "4% scaled by the coin's 2021 median daily realized volatility relative to BTC (notebook 10)",
+    "evaluation_events": "breach in [period start + 4 h, period end) so every warning window lies inside the period"
+  },
+  "endpoints": {
+    "early_warning_pre_onset": "matched alert 30-240 min before the breach AND before the 1% onset",
+    "in_progress_detection_post_onset": "matched alert 30-240 min before the breach, at or after the 1% onset",
+    "composite_caught": "pre + post; called \"caught\" in notebooks 1-11. Reference only: an increase in the composite must not be read as better early warning",
+    "onset_anchored_secondary": "alert within 240 min before the 1% onset (notebook 12)",
+    "eligibility": "pre-onset possible only if onset-to-breach gap < 240 min; post-onset only if gap >= 30 min",
+    "matching": "each event takes the earliest unused alert in [breach-240, breach-30] min; each alert serves at most one event",
+    "reporting_rule": "every result table reports pre-onset and post-onset separately; the composite is never the sole basis of a claim"
+  },
+  "model": {
+    "features": {
+      "z_vol": "log realized volatility over 31 one-minute returns, z-scored against the previous 30 days",
+      "tsr": "taker sell ratio = (volume - taker buy volume) / volume in the minute"
+    },
+    "classifier": "StandardScaler + LogisticRegression(C=0.2, class_weight=balanced, lbfgs, max_iter=400, random_state=17)",
+    "label": "1 if a 4% breach occurs 30-240 min after the minute",
+    "training": "2021 calendar year minus the last 245 minutes (no label leakage into 2022)",
+    "calibration": "2022 only, no outcome labels: the score threshold that lets the calendar scheduler use the most alerts (cap 240), then the strictest (fewest raw candidates); bucket policies: closest to 240 alerts, strictest on ties",
+    "frozen_spot_thresholds": {
+      "TH_CAL": 0.6698990591069133,
+      "TH_HIGH": 0.6864782740093911,
+      "TH_BUCKET": 0.7166067355142407
+    }
+  },
+  "capacity": {
+    "primary": "calendar scheduler: at most 20 alerts per UTC month, 240 per UTC year, 240-minute cooldown",
+    "variants": {
+      "notebook 4": "budgets 60/120/240/480 per year; schedulers calendar, rolling30, paced, token_bucket",
+      "notebook 6": "constant and risk-adaptive token buckets",
+      "notebook 9": "budget-neutral risk bucket, surge reserve (16/month base + 48/yr reserve accruing 4/month)",
+      "notebook 10": "five coins pooled 1,200/yr and 100/month vs 240/yr each"
+    }
+  },
+  "costs": {
+    "notebook_1_decision_cost": "cost points = 50 x missed event + 1 x false alarm + 10 x lateness; scenarios in weight_sensitivity.csv; hypothetical weights, not money",
+    "notebook_4_stylized_hedge": "on each alert reduce exposure by 50% for 240 min; enter at the next positive-volume minute (<=5 min wait); overlapping hedges merged; one-way fee 10 bp primary, grid 0/5/10/25 bp on each exposure change; compared with an exposure-matched buy-and-hold; illustrative, not live trading",
+    "break_even": "notebook 4 calibration_break_even_precision.csv"
+  },
+  "multiple_testing": {
+    "confirmatory": "only notebook 11 (2018-2020 one-shot holdout): H1 one-sided circular-shift permutation (alpha 0.05); H2 three one-sided exact McNemar tests with Holm; H3 descriptive; H4 none selected",
+    "exploratory": "all other p-values are unadjusted and descriptive (2023-2026 was inspected repeatedly); RESULTS_TESTS.csv adds a within-notebook Holm column for reference only",
+    "clustered_events": "notebook 12 re-tests pooled vs separate budgets with shock- and month-level sign-flip permutation"
+  },
+  "status_vocabulary": {
+    "confirmatory": "hypothesis, thresholds and test fixed (hashed) before the data were read; evaluated once (lock file)",
+    "frozen replay": "fixed policy replayed on later data (notebook 7); not a never-seen sample",
+    "exploratory": "evaluated on data already inspected",
+    "descriptive": "no hypothesis test",
+    "post-hoc audit": "checks assumptions of a locked test without changing it"
+  }
+}

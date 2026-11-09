@@ -1,0 +1,25 @@
+system,endpoint,episode_size,events,observed,expected
+M0,pre,1 index,20,1,2.8962000000000003
+M0,inp,1 index,20,9,7.381399999999999
+M0,pre,2-4 indices,38,3,8.3088
+M0,inp,2-4 indices,38,16,8.1602
+M0,pre,5+ indices,183,17,34.571799999999996
+M0,inp,5+ indices,183,53,46.5984
+M0,pre,all,241,21,45.7768
+M0,inp,all,241,78,62.14
+M1,pre,1 index,20,4,2.0372
+M1,inp,1 index,20,5,6.0736
+M1,pre,2-4 indices,38,3,8.445
+M1,inp,2-4 indices,38,10,8.503
+M1,pre,5+ indices,183,25,38.888000000000005
+M1,inp,5+ indices,183,34,47.4618
+M1,pre,all,241,32,49.3702
+M1,inp,all,241,49,62.038399999999996
+GBM,pre,1 index,20,3,0.6112
+GBM,inp,1 index,20,9,3.9804000000000004
+GBM,pre,2-4 indices,38,5,3.8305999999999996
+GBM,inp,2-4 indices,38,17,5.450200000000001
+GBM,pre,5+ indices,183,22,26.781000000000002
+GBM,inp,5+ indices,183,59,43.9072
+GBM,pre,all,241,30,31.2228
+GBM,inp,all,241,85,53.3378

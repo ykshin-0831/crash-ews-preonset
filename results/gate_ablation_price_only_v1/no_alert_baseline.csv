@@ -1,0 +1,2 @@
+annual_target,model,gate,alarms,events,caught,missed,before_1pct_onset,false_alarms,event_recall,pre_onset_recall,precision
+0,NO_ALERT,not_applicable,0,83,0,83,0,0,0.0,0.0,0.0

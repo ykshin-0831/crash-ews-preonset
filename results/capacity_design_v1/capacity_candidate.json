@@ -1,0 +1,28 @@
+{
+  "selected": null,
+  "rule": "among P2 and P3: most pre-onset hits; passed to notebook 11 only if strictly more pre-onset hits than P0 AND realized alerts <= 1.02 x P0 alerts; ties -> P3 (no recalibration needed)",
+  "parameters": null,
+  "table": {
+    "P0_calendar": {
+      "alarms": 800,
+      "caught": 39,
+      "before_1pct": 22
+    },
+    "P1_constant_bucket": {
+      "alarms": 795,
+      "caught": 48,
+      "before_1pct": 18
+    },
+    "P2_risk_bucket_budget_neutral": {
+      "alarms": 808,
+      "caught": 35,
+      "before_1pct": 14
+    },
+    "P3_surge_reserve_calendar": {
+      "alarms": 792,
+      "caught": 36,
+      "before_1pct": 21
+    }
+  },
+  "spec_sha256": "a7f0ea2bcd71d0d65c677fd042d625e73cb4cf093394de5472d4a42faf4889c5"
+}

@@ -1,0 +1,19 @@
+{
+  "selected": null,
+  "rule": "challenger (M1-M4) with the most pre-onset hits; ties -> fewer features; passed to notebook 11 only if strictly more pre-onset hits than M0_VF on the same comparison mask, otherwise no candidate",
+  "features": null,
+  "threshold_2022": null,
+  "baseline_common_mask": {
+    "threshold_2022": 0.6697523129776579,
+    "alarms": 800,
+    "caught": 39,
+    "before_1pct": 22
+  },
+  "best_challenger": {
+    "model": "M1_VF_basis",
+    "alarms": 800,
+    "caught": 34,
+    "before_1pct": 18
+  },
+  "spec_sha256": "a3561a711d906ef2b09d5a86cea218b5f9fb17e7709e96f911b613f2c45b4b0c"
+}

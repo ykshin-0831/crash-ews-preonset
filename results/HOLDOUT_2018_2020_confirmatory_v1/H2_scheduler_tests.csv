@@ -1,0 +1,4 @@
+comparison,calendar_alarms,other_alarms,calendar_pre1pct,other_pre1pct,calendar_only,other_only,p_one_sided,p_holm,supported
+calendar_vs_rolling30,713,709,13,14,8,9,0.6854705810546875,1.0,False
+calendar_vs_paced,713,704,13,13,6,6,0.61279296875,1.0,False
+calendar_vs_token_bucket,713,704,13,9,7,3,0.171875,0.515625,False

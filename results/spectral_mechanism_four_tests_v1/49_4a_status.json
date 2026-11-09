@@ -1,0 +1,8 @@
+{
+  "status": "NOT_AVAILABLE",
+  "label": "previously_inspected_retrospective_stress",
+  "never_treat_as_unused_holdout": true,
+  "observed_cache_stop_utc": "2026-05-01 00:00:00+00:00",
+  "period_start_utc": "2026-05-01 00:00:00+00:00",
+  "period_end_exclusive_utc": "2026-05-01 00:00:00+00:00"
+}

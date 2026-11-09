@@ -1,0 +1,23 @@
+{
+  "action": "signal at the alert minute close; exit at the close of the first positive-volume minute within 5 min after it; re-enter after H minutes (H in [60, 240, 1440], primary 240); avoided loss = -log return over the hold",
+  "alert_classes": [
+    "pre-onset hit",
+    "post-onset hit",
+    "late (<30 min before breach)",
+    "after breach (<=24h)",
+    "too early (4-24h before breach)",
+    "no event within 24h"
+  ],
+  "event_metrics": "drawdown from the event peak at entry; decline avoided to the 4% breach close, to the 4h and 24h post-breach minimum close; share of the peak-to-24h-trough drawdown avoided (hindsight upper bound)",
+  "fees": "one-way [0, 5, 10, 25] bp, charged on exit and re-entry (full position)",
+  "no_new_policy": true,
+  "nulls": {
+    "circular": "all alerts shifted by U[7d, L-7d], 5000 draws",
+    "regime_matched": "same 24h-RV decile within +-30d, 5000 draws"
+  },
+  "policies": {
+    "calendar": "notebook 5 / 11 saved alarms (primary)",
+    "constant_bucket": "notebook 6 recalibrated / notebook 11 (secondary, if files exist)"
+  },
+  "title": "Value of in-progress detection (exploratory, descriptive)"
+}

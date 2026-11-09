@@ -1,0 +1,30 @@
+{
+  "definitions": [
+    240,
+    1440
+  ],
+  "draws": {
+    "per_family_and_definition": 1000
+  },
+  "family_a": "label codes on the ordered common minutes rolled by k ~ U[7 days, L - 7 days] minutes (L = number of common minutes); spacing, windows and clustering kept",
+  "family_b": "each event with positives on the common minutes gets a new breach minute within +-30 days and at least 1 day away, with the same 24-hour RV decile at the first window minute (first window minute with a decile if that one has none; no decile condition if none has), window inside the evaluation period, at least 190 of 211 window minutes common, placebo breach more than 1440 minutes from every catalog breach of either definition, placebo windows not overlapping each other (breaches more than 210 minutes apart; catalog breaches are at least 1,440 minutes apart, so placebo spacing is looser than real spacing); events placed in order of their number of admissible minutes (fewest first, ties random); admissible minutes in three tiers: same decile within +-30 days, else same decile within +-60 days, else decile within +-1 within +-60 days; an event with no free minute in any tier is left out of that draw; tier use and omissions counted; onset-to-breach gap of each event kept; spacing and clustering between events are not preserved (family a preserves them)",
+  "guards": "notebook-22 per-minute AUCs; notebook-33 GBM - M0 points; the rank engine equals make_parts/stats_from on the real labels",
+  "holdouts": "not used",
+  "inputs": "spot cache, notebook-2 catalog, notebook-16 frozen models; stored results of notebooks 22 and 33 for guards; holdouts and the prospective folder not read",
+  "labels": "placebo window minutes before the moved onset are pre-onset positives, the rest in-progress positives; real positive minutes that are not placebo positives are excluded; all other common minutes negative",
+  "minutes": "notebook-33 common minutes; scores unchanged; only event positions move",
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "prospective_folder": "not read",
+  "readings": {
+    "R1": "H=240: real M0 AUC_in - AUC_pre above the 97.5th placebo percentile in both families -> beyond both placebo references; otherwise not distinguishable from the placebo reference",
+    "R2": "H=240: real M0 within-regime pre-onset AUC above the 97.5th percentile of family b -> beyond the regime-matched placebo reference; otherwise not distinguishable from it (family a reported); descriptive ratio (median_b M0 pre-onset AUC - 0.5) / (real - 0.5) of excess AUCs, not a decomposition of explanation",
+    "R3": "H=1440: real GBM - M0 standard-AUC difference above the 97.5th percentile of family b AND real pre-onset difference below its 2.5th percentile -> both legs beyond the regime-matched placebo reference; one of the two -> that leg beyond the reference, the other not distinguishable from it; neither -> neither leg distinguishable from the reference; not applicable if the real point estimates are not (+, -) (family a reported); descriptive: share of draws with standard difference > 0 and pre-onset difference < 0, and share with both differences at least as extreme as the real ones",
+    "language": "within the placebo range means not distinguishable from the placebo reference, never reproduced by it; beyond the range does not establish predictive skill",
+    "p_values": "empirical (1 + #(placebo >= real)) / (N + 1) and the lower-tail analogue, descriptive (draws from one series are not independent)",
+    "placement_quality_b": "caution for a definition if the mean placed share is below 95%, or the mean share placed at tier 3 exceeds 10%, or the median relative difference of placebo positives from the real count exceeds 5%, or the median absolute difference of pi from the real pi exceeds 0.02",
+    "undetermined": "a reading is undetermined if the real value is not finite or fewer than 95% of placebo draws are finite"
+  },
+  "seed": 20261142,
+  "status": "exploratory; development sample only; no confirmatory plan changed",
+  "title": "Placebo-event reference for the decomposition and the 24-hour ranking reversal (exploratory; development sample)"
+}

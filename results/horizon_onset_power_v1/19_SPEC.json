@@ -1,0 +1,48 @@
+{
+  "A_horizon": {
+    "aftermath_variant": "drop minutes within 1440 min after any breach",
+    "bands_min": {
+      "12h-24h": [
+        720,
+        1440
+      ],
+      "1d-3d": [
+        1440,
+        4320
+      ],
+      "30m-4h": [
+        30,
+        240
+      ],
+      "4h-12h": [
+        240,
+        720
+      ]
+    },
+    "evaluation_minutes": "2023-01-01 to 2026-05-01 minus 4325 min (common to all bands)",
+    "label": "a 4% catalog breach in [t+a, t+b]",
+    "pre_onset_only": "positives with t >= 1% onset of the labeling event excluded (Kamran-style)",
+    "within_regime": "pairs within the same 24h realized-volatility decile"
+  },
+  "B_onset": {
+    "alerts": "notebook-16 dev alarms, 4%",
+    "nulls": "circular >= 7d and regime-matched (24h-RV decile, +-30d), 1000 draws each",
+    "onset_rule": "first minute after the peak with close <= (1-x) * peak close (catalog rule at x = 1%)",
+    "per_sample": "notebook-18 L1 decomposition with the in-decline split at each threshold",
+    "thresholds": [
+      0.005,
+      0.01,
+      0.015,
+      0.02
+    ]
+  },
+  "C_power": {
+    "holdouts": "stored summaries only (notebook 11 H1 null draws; notebook 17 H17_all_tests.csv); no holdout data are re-read or re-evaluated",
+    "rule": "minimum excess detectable with 80% power at one-sided alpha 0.05 under a shift alternative; exact (null q95 - q20) when draws exist, normal approximation 2.486*sd otherwise (sd from stored q05/q95 or p95)"
+  },
+  "bootstrap": "500 resamples of 7-day blocks",
+  "models": "notebook-16 frozen 4% models (M0 coefficient guard, M3 SHA-256 guard), M1 z_vol, M2 VPIN; baseline B0 = trailing 24h realized volatility",
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "seed": 20261102,
+  "title": "Horizon profile, onset-threshold sensitivity and power (dev 2023-01..2026-04, exploratory)"
+}

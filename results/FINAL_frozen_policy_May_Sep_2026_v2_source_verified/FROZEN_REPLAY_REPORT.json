@@ -1,0 +1,64 @@
+{
+  "fixed_spec_sha256": "3b3c50393b028d5b98d4103bea51170e56f73c042bd5a69236914ad2b6d875cc",
+  "study_status": "frozen policy later-period replay; NOT necessarily never-seen",
+  "period_utc": "2026-05-01 through 2026-09-30",
+  "verified_market": "spot",
+  "event_warmup_exclusion_minutes": 240,
+  "historic_reproduction": {
+    "calendar": [
+      800,
+      39,
+      22
+    ],
+    "high_score": [
+      800,
+      41,
+      19
+    ]
+  },
+  "n_new_price_events": 2,
+  "actual_policy_results": [
+    {
+      "policy": "calendar",
+      "alerts_may_sep": 100,
+      "new_crashes": 2,
+      "caught_any": 1,
+      "caught_pre1pct": 0,
+      "early_recall": 0.0,
+      "all_recall": 0.5,
+      "alert_precision": 0.01,
+      "alerts_jan_apr": 80,
+      "alerts_2026_to_sep": 180
+    },
+    {
+      "policy": "high_score",
+      "alerts_may_sep": 99,
+      "new_crashes": 2,
+      "caught_any": 1,
+      "caught_pre1pct": 0,
+      "early_recall": 0.0,
+      "all_recall": 0.5,
+      "alert_precision": 0.010101010101010102,
+      "alerts_jan_apr": 80,
+      "alerts_2026_to_sep": 179
+    },
+    {
+      "policy": "constant_bucket",
+      "alerts_may_sep": 97,
+      "new_crashes": 2,
+      "caught_any": 1,
+      "caught_pre1pct": 0,
+      "early_recall": 0.0,
+      "all_recall": 0.5,
+      "alert_precision": 0.010309278350515464,
+      "alerts_jan_apr": 75,
+      "alerts_2026_to_sep": 172
+    }
+  ],
+  "warnings": [
+    "Earlier project may have inspected through Sep 2026.",
+    "No policy was fit or calibrated on the later-period outcomes.",
+    "Calendar has 20/month; constant bucket has 20 burst and 240/year hard cap, with Jan-Apr state carried forward.",
+    "Alert burden can differ across policies."
+  ]
+}

@@ -1,0 +1,5 @@
+target,events,events_with_pre_onset_minutes,point,k_joint,k_block,k_event,k_sign,steps_run,stop_reason,loo_min,loo_max,label
+H1440|all|auc_standard,218,30,0.05683565350076336,25,24,25,,40,,0.05422822925256365,0.05933236432311606,both intervals include zero after removing 25 events (greedy upper bound)
+H1440|all|auc_pre,218,30,-0.09030963726812091,2,1,2,7.0,7,,-0.10329362953799304,-0.07401086945708724,rests on one or two events
+H1440|all|auc_pre_within_regime,218,30,-0.1393590581311711,5,5,4,11.0,11,,-0.15833242648714307,-0.1233244660275914,both intervals include zero after removing 5 events (greedy upper bound)
+H1440|other|auc_standard,166,3,0.08349073642926319,36,34,36,,40,,0.08022312443574287,0.08693583540731797,both intervals include zero after removing 36 events (greedy upper bound)

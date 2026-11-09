@@ -1,0 +1,5 @@
+,fixed_H+F,optimized_H+F,optimized_V+F
+blocked_by_lowvol_gate,76,76,76
+caught,4,3,1
+trigger_exists_but_no_emitted_alert_in_window,2,0,0
+failed_score_or_flow_threshold,1,4,6

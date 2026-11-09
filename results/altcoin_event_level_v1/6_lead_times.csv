@@ -1,0 +1,7 @@
+method,endpoint,n,lead_to_breach_min_p10,lead_to_breach_min_p25,lead_to_breach_min_p50,lead_to_breach_min_p75,lead_to_breach_min_p90,alert_minus_onset_min_p10,alert_minus_onset_min_p25,alert_minus_onset_min_p50,alert_minus_onset_min_p75,alert_minus_onset_min_p90
+M0,pre,67,68.2,109.5,166.0,202.5,220.4,-147.6,-96.0,-67.0,-22.5,-7.600000000000001
+M0,post,139,41.8,58.0,114.0,160.5,194.4,3.0,10.5,34.0,84.0,124.2
+M1,pre,71,58.0,106.0,158.0,202.0,217.0,-137.0,-90.5,-66.0,-26.0,-7.0
+M1,post,143,41.400000000000006,63.0,117.0,162.0,195.8,5.0,14.0,34.0,82.0,122.6
+GBM,pre,35,91.6,123.5,163.0,205.0,214.2,-126.4,-76.5,-55.0,-23.5,-10.799999999999997
+GBM,post,71,38.0,70.5,113.0,153.0,184.0,7.0,16.0,40.0,82.5,115.0

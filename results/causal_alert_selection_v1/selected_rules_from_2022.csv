@@ -1,0 +1,5 @@
+policy,param,cal_alerts,raw_candidates
+first_eligible,0.6698990591069133,240,32029
+absolute_high_score,0.6864782740093911,237,26280
+relative_surprise_7d,0.975,236,14389
+past_peak_breakout_1h,0.005,240,2085

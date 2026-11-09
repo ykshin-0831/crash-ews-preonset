@@ -1,0 +1,122 @@
+{
+  "spec_sha256": "b061b78cb73807b0441c0a87722bc7b79bf39d7ac78ab7dd4566c0384c5a22bc",
+  "configs": {
+    "M0_VF_logit|A_standard": {
+      "method": "M0_VF_logit",
+      "label": "A_standard",
+      "threshold_2022": 0.6698990591069133,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 800,
+      "coef": [
+        0.5116319551712133,
+        0.022181010843296458
+      ],
+      "intercept": -0.11971379928397659,
+      "scaler_mean": [
+        -0.04973698228064122,
+        0.507913312381219
+      ],
+      "scaler_scale": [
+        1.0671059140338364,
+        0.1307243613730821
+      ]
+    },
+    "M0_VF_logit|B_pre_onset": {
+      "method": "M0_VF_logit",
+      "label": "B_pre_onset",
+      "threshold_2022": 0.5963902961850376,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 800,
+      "coef": [
+        0.25744896994406163,
+        0.001637899142868174
+      ],
+      "intercept": -0.03222498120268126,
+      "scaler_mean": [
+        -0.06559268823280424,
+        0.507809165995926
+      ],
+      "scaler_scale": [
+        1.0604960723738917,
+        0.131024465902649
+      ]
+    },
+    "M0_VF_logit|B2_pre_onset_in_decline_negative": {
+      "method": "M0_VF_logit",
+      "label": "B2_pre_onset_in_decline_negative",
+      "threshold_2022": 0.5899260648476838,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 800,
+      "coef": [
+        0.2425041292421683,
+        0.0007883314724546045
+      ],
+      "intercept": -0.028494154460548145,
+      "scaler_mean": [
+        -0.04973698228064122,
+        0.507913312381219
+      ],
+      "scaler_scale": [
+        1.0671059140338364,
+        0.1307243613730821
+      ]
+    },
+    "M0_VF_logit|C_pre_peak": {
+      "method": "M0_VF_logit",
+      "label": "C_pre_peak",
+      "threshold_2022": 0.6256731718333475,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 800,
+      "coef": [
+        0.3458354463987141,
+        -0.05842033614599439
+      ],
+      "intercept": -0.0623774753239768,
+      "scaler_mean": [
+        -0.06590150852335018,
+        0.5077305789852591
+      ],
+      "scaler_scale": [
+        1.0609961250109579,
+        0.1310599104435396
+      ]
+    },
+    "M3_GBM_rich|A_standard": {
+      "method": "M3_GBM_rich",
+      "label": "A_standard",
+      "threshold_2022": 0.11353132038571002,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 768,
+      "model_file": "methods_definitions_v1/models/M3_GBM_rich_4pct.joblib",
+      "model_sha256": "176fdac46ff63729ed8f271540b356543a6e6bf1e977edb707eb460ef1ecc4b4",
+      "refit_max_abs_diff": 0.0
+    },
+    "M3_GBM_rich|B_pre_onset": {
+      "method": "M3_GBM_rich",
+      "label": "B_pre_onset",
+      "threshold_2022": 0.0910182489034282,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 627,
+      "model_file": "onset_aware_training_v1/models/M3_GBM_rich_B_pre_onset.joblib",
+      "model_sha256": "a36d4d2894dbc4558da07d0bbbae5dad40bc1834786128912be37c4dfb90c736"
+    },
+    "M3_GBM_rich|B2_pre_onset_in_decline_negative": {
+      "method": "M3_GBM_rich",
+      "label": "B2_pre_onset_in_decline_negative",
+      "threshold_2022": 0.09558683198395032,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 643,
+      "model_file": "onset_aware_training_v1/models/M3_GBM_rich_B2_pre_onset_in_decline_negative.joblib",
+      "model_sha256": "ca4ae55deeac65c0deebcb13d3536f68118c74ce0d78b7495195048c33e108f9"
+    },
+    "M3_GBM_rich|C_pre_peak": {
+      "method": "M3_GBM_rich",
+      "label": "C_pre_peak",
+      "threshold_2022": 0.1143673816546049,
+      "cal_alerts_2022": 240,
+      "dev_alerts": 580,
+      "model_file": "onset_aware_training_v1/models/M3_GBM_rich_C_pre_peak.joblib",
+      "model_sha256": "f2fc7cb10a326f127abae778bfddd0f60a922b3a5c8456b4faa054912c9dde2e"
+    }
+  }
+}

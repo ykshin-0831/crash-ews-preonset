@@ -1,0 +1,2 @@
+alerts,events,pre_observed,exact_mean,exact_sd,exact_p,exact_p_randomized,exact_law_upper_bin,old_null_mean,old_null_sd,old_p_mc,old_draws,old_share_same_decile,old_share_nearest_decile,old_share_any_minute,old_share_unplaced
+800,83,22,6.700735224560067,2.3609649767057594,7.38959148888151e-08,6.560800328896362e-08,25,6.174,2.2444874693345915,0.000999000999000999,1000,0.99909,0.00091,0.0,0.0

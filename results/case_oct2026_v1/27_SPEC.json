@@ -1,0 +1,51 @@
+{
+  "case_window": [
+    "2026-10-28 00:00:00+00:00",
+    "run time"
+  ],
+  "data": {
+    "daily": "October 2026 daily archives; unpublished days from the public market-data API (marked unverified)",
+    "monthly": [
+      "2025-12",
+      "2026-09"
+    ],
+    "reference": "Coinbase BTC-USD and USDT-USD 1m candles, if reachable"
+  },
+  "events": {
+    "H": [
+      240,
+      1440
+    ],
+    "rule": "notebook-2 price_only_catalog, 4% below the H-minute high, 5-close confirmation"
+  },
+  "matching": "paper rules: caught if an alert falls 30-240 min before the breach; pre-onset if before the 1% onset",
+  "models": {
+    "M0_VF_logit": "notebook-16 frozen (2021 training, 2022 calibration)",
+    "M1_vol_threshold": "notebook-16 frozen (2021 training, 2022 calibration)",
+    "M3_GBM_rich": "notebook-16 frozen (2021 training, 2022 calibration)"
+  },
+  "scheduler": "notebook-5 calendar: 20/month, 240/yr, 240-min cooldown, run from 2026-01-01",
+  "stage_decomposition": {
+    "note": "replays (b) and (c) are descriptive comparisons, not rules; all start on 2026-01-01",
+    "replays": {
+      "actual": "20/month, 240/yr, 240-min cooldown",
+      "cooldown_only": "240-min cooldown",
+      "no_monthly_cap": "240/yr, 240-min cooldown"
+    },
+    "stages": [
+      "signal: a score at or above the frozen threshold from 240 min before the peak to the breach",
+      "window: a candidate minute 30-240 min before the breach (pre-onset part / in-progress part)",
+      "cooldown: the cooldown-only replay emits an alert in the window",
+      "budget: the actual budgeted replay emits an alert in the window"
+    ]
+  },
+  "status": "descriptive; observed before the pre-registration; not part of any confirmatory test; no model, threshold or rule is changed",
+  "title": "Case study: Binance security incident and Bitcoin decline, 2026-10-29/30 (descriptive)",
+  "venue_windows": {
+    "baseline": "7 days before the first event peak (any H)",
+    "flags": "minutes above 25 bp (level); minutes more than 10 and 25 bp from the baseline median",
+    "milestones": "first peak, H=240 peak, H=240 1% onset, H=240 breach, breach + 240 min, data end",
+    "spread_bp": "1e4 * (Binance BTCUSDT / Coinbase BTC-USD - 1)",
+    "spread_usdt_adj_bp": "1e4 * (Binance BTCUSDT * Coinbase USDT-USD / Coinbase BTC-USD - 1); USDT-USD carried forward up to 30 min"
+  }
+}

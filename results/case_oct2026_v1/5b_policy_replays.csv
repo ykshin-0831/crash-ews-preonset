@@ -1,0 +1,19 @@
+H,event_id,method,policy,caught,endpoint,matched_alert_utc,matched_min_from_onset,matched_min_before_breach,alerts_near_event,alerts_2026,october_alerts_before_case
+240,16,M0_VF_logit,actual,False,not caught,,,,,200,20
+240,16,M0_VF_logit,no_monthly_cap,False,not caught,,,,,240,0
+240,16,M0_VF_logit,cooldown_only,False,not caught,,,,"10-29 20:09, 10-30 00:09",382,31
+240,16,M1_vol_threshold,actual,False,not caught,,,,,200,20
+240,16,M1_vol_threshold,no_monthly_cap,False,not caught,,,,,240,0
+240,16,M1_vol_threshold,cooldown_only,False,not caught,,,,"10-29 20:08, 10-30 00:08",357,28
+240,16,M3_GBM_rich,actual,False,not caught,,,,,192,20
+240,16,M3_GBM_rich,no_monthly_cap,False,not caught,,,,,240,0
+240,16,M3_GBM_rich,cooldown_only,False,not caught,,,,"10-29 20:06, 10-30 00:06",379,20
+1440,54,M0_VF_logit,actual,False,not caught,,,,,200,20
+1440,54,M0_VF_logit,no_monthly_cap,False,not caught,,,,,240,0
+1440,54,M0_VF_logit,cooldown_only,True,in-progress,2026-10-29 20:09:00+00:00,182.0,209.0,"10-29 13:42, 10-29 20:09, 10-30 00:09",382,31
+1440,54,M1_vol_threshold,actual,False,not caught,,,,,200,20
+1440,54,M1_vol_threshold,no_monthly_cap,False,not caught,,,,,240,0
+1440,54,M1_vol_threshold,cooldown_only,True,in-progress,2026-10-29 20:08:00+00:00,181.0,210.0,"10-29 13:46, 10-29 20:08, 10-30 00:08",357,28
+1440,54,M3_GBM_rich,actual,False,not caught,,,,,192,20
+1440,54,M3_GBM_rich,no_monthly_cap,False,not caught,,,,,240,0
+1440,54,M3_GBM_rich,cooldown_only,True,in-progress,2026-10-29 20:06:00+00:00,179.0,212.0,"10-29 20:06, 10-30 00:06",379,20

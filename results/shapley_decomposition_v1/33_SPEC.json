@@ -1,0 +1,54 @@
+{
+  "bootstrap": {
+    "block_days": 7,
+    "draws": 2000,
+    "interval": "95% percentile",
+    "same_draws_for_both_definitions": true
+  },
+  "decomposition": {
+    "base_h1": "D2 - D1 = (pi2 - pi1)(din1 - dpre1) + (1 - pi2)(dpre2 - dpre1) + pi2 (din2 - din1)",
+    "base_h2": "D2 - D1 = (pi2 - pi1)(din2 - dpre2) + (1 - pi1)(dpre2 - dpre1) + pi1 (din2 - din1)",
+    "check": "closed forms compared with explicit enumeration of the 6 orderings (tolerance 1e-12); the three terms must sum to D2 - D1 in every draw (tolerance 1e-12)",
+    "shapley": "Shapley-Shorrocks attribution of the three factors (pi, dpre, din): average marginal contribution over the 6 orderings; equals the midpoint of the two base forms for this bilinear D"
+  },
+  "holdouts": "not used",
+  "inputs": "spot cache, notebook-16 frozen models, notebook-22 per-minute point estimates (guard), notebook-29 common-minute scores (comparison); holdouts and the prospective folder not read",
+  "main_pair": [
+    240,
+    1440
+  ],
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "pairs": [
+    [
+      240,
+      1440
+    ],
+    [
+      120,
+      240
+    ],
+    [
+      240,
+      480
+    ],
+    [
+      480,
+      1440
+    ]
+  ],
+  "quantity": "D_h = AUC_std(A) - AUC_std(B) = (1 - pi_h) dpre_h + pi_h din_h on the common valid minutes; A = M3_GBM_rich, B = M0_VF_logit",
+  "reading": "a term is distinguishable from zero if its 95% interval excludes 0; the Shapley reweighting share (term / total change) is not read when the interval of the total change covers 0; intervals quantify sampling uncertainty of an exact algebraic attribution on the development sample and are not causal effects; all three attributions are reported, Shapley as the convention",
+  "seed": 20261101,
+  "sensitivity": {
+    "block_days": [
+      3,
+      7,
+      14,
+      30
+    ],
+    "draws": 2000,
+    "leave_one_month_out": "month blocks, dropped month weight 0"
+  },
+  "status": "exploratory; appendix B; no confirmatory plan changed",
+  "title": "Block-bootstrap intervals for the exact decomposition of a ranking change (Proposition 3); development sample; exploratory (Appendix B)"
+}

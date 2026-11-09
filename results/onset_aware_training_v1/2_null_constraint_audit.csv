@@ -1,0 +1,28 @@
+period,set,label,null,share_same_decile,share_nearest_decile,share_unplaced,months_count_changed_mean_first50,months_over_cap_mean_first50,years_over_budget_mean_first50,gaps_under_cooldown_mean_first50
+dev,M0_VF_logit,A_standard,circular >=7d,,,,24.4,12.14,0.9,0.0
+dev,M0_VF_logit,A_standard,regime-matched,,,,36.18,17.76,2.02,101.72
+dev,M0_VF_logit,A_standard,budget-preserving regime,0.99911,0.00089,0.0,0.0,0.0,0.0,0.0
+dev,M0_VF_logit,B_pre_onset,circular >=7d,,,,22.04,10.76,0.84,0.0
+dev,M0_VF_logit,B_pre_onset,regime-matched,,,,36.0,16.88,2.14,102.74
+dev,M0_VF_logit,B_pre_onset,budget-preserving regime,0.99959,0.00041,0.0,0.0,0.0,0.0,0.0
+dev,M0_VF_logit,B2_pre_onset_in_decline_negative,circular >=7d,,,,21.42,10.7,0.96,0.0
+dev,M0_VF_logit,B2_pre_onset_in_decline_negative,regime-matched,,,,36.2,17.42,2.1,105.02
+dev,M0_VF_logit,B2_pre_onset_in_decline_negative,budget-preserving regime,0.99958,0.00042,0.0,0.0,0.0,0.0,0.0
+dev,M0_VF_logit,C_pre_peak,circular >=7d,,,,16.78,8.26,0.74,0.0
+dev,M0_VF_logit,C_pre_peak,regime-matched,,,,36.06,17.38,2.02,101.6
+dev,M0_VF_logit,C_pre_peak,budget-preserving regime,0.9999575,4.25e-05,0.0,0.0,0.0,0.0,0.0
+dev,M3_GBM_rich,A_standard,circular >=7d,,,,24.4,8.72,0.54,0.0
+dev,M3_GBM_rich,A_standard,regime-matched,,,,36.9,16.18,0.96,111.7
+dev,M3_GBM_rich,A_standard,budget-preserving regime,0.9995091145833334,0.0004908854166666667,0.0,0.0,0.0,0.0,0.0
+dev,M3_GBM_rich,B_pre_onset,circular >=7d,,,,33.34,7.28,0.0,0.0
+dev,M3_GBM_rich,B_pre_onset,regime-matched,,,,35.36,11.54,0.0,88.12
+dev,M3_GBM_rich,B_pre_onset,budget-preserving regime,0.9987942583732058,0.0012057416267942584,0.0,0.0,0.0,0.0,0.0
+dev,M3_GBM_rich,B2_pre_onset_in_decline_negative,circular >=7d,,,,34.08,9.86,0.02,0.0
+dev,M3_GBM_rich,B2_pre_onset_in_decline_negative,regime-matched,,,,36.12,11.98,0.0,93.2
+dev,M3_GBM_rich,B2_pre_onset_in_decline_negative,budget-preserving regime,0.9991757387247279,0.0008242612752721617,0.0,0.0,0.0,0.0,0.0
+dev,M3_GBM_rich,C_pre_peak,circular >=7d,,,,35.8,7.54,0.0,0.0
+dev,M3_GBM_rich,C_pre_peak,regime-matched,,,,35.22,9.64,0.0,82.0
+dev,M3_GBM_rich,C_pre_peak,budget-preserving regime,0.9995879310344827,0.0004120689655172414,0.0,0.0,0.0,0.0,0.0
+holdout,M0_VF_logit,A_standard (notebook 11 stored),circular >=7d,,,,23.24,11.48,0.76,0.0
+holdout,M0_VF_logit,A_standard (notebook 11 stored),regime-matched,,,,32.6,15.9,0.98,88.66
+holdout,M0_VF_logit,A_standard (notebook 11 stored),budget-preserving regime,0.9940462833099579,0.005953716690042076,0.0,0.0,0.0,0.0,0.0

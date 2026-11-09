@@ -1,0 +1,13 @@
+H,pair,pi_observed,crossover_pi,crossover_lo,crossover_hi,share_draws_defined,standard_auc_leader,pre_onset_auc_leader,pi_vs_crossover_interval
+120,M3_GBM_rich - M0_VF_logit,0.140228603289657,,0.0958305522019703,0.9920237103094705,0.37,M0_VF_logit,M0_VF_logit,crossover undefined in most draws
+120,B0_RV24h_baseline - M0_VF_logit,0.140228603289657,0.2260899923757252,0.0243261804299415,0.510158379558382,0.886,B0_RV24h_baseline,B0_RV24h_baseline,observed pi inside the interval
+120,M3_GBM_rich - B0_RV24h_baseline,0.140228603289657,0.3034084012965988,0.0384375023459538,0.5261623823611841,0.95,B0_RV24h_baseline,B0_RV24h_baseline,observed pi inside the interval
+240,M3_GBM_rich - M0_VF_logit,0.4136926854336778,0.7265791957850812,0.1020589286748156,0.9730424085288152,0.566,M0_VF_logit,M0_VF_logit,observed pi inside the interval
+240,B0_RV24h_baseline - M0_VF_logit,0.4136926854336778,0.2885400306439157,0.0217958378867638,0.5987794072670622,0.912,M0_VF_logit,B0_RV24h_baseline,observed pi inside the interval
+240,M3_GBM_rich - B0_RV24h_baseline,0.4136926854336778,0.3637117811817824,0.0509578744017426,0.6154730410186883,0.97,M3_GBM_rich,B0_RV24h_baseline,observed pi inside the interval
+480,M3_GBM_rich - M0_VF_logit,0.7058672251001139,0.4314571258968327,0.0533374866822943,0.7387232655303958,0.878,M3_GBM_rich,M0_VF_logit,observed pi inside the interval
+480,B0_RV24h_baseline - M0_VF_logit,0.7058672251001139,0.225518028372061,0.0297006457160544,0.6314869101755819,0.77,M0_VF_logit,B0_RV24h_baseline,observed pi above the interval
+480,M3_GBM_rich - B0_RV24h_baseline,0.7058672251001139,0.3196119916931713,0.0707767982167314,0.5150995226795135,0.98,M3_GBM_rich,B0_RV24h_baseline,observed pi above the interval
+1440,M3_GBM_rich - M0_VF_logit,0.9136701595721554,0.5607601864966784,0.1768250746700831,0.7417564116944872,0.988,M3_GBM_rich,M0_VF_logit,observed pi above the interval
+1440,B0_RV24h_baseline - M0_VF_logit,0.9136701595721554,,0.078895359852653,0.9781528770258712,0.388,M0_VF_logit,M0_VF_logit,crossover undefined in most draws
+1440,M3_GBM_rich - B0_RV24h_baseline,0.9136701595721554,0.4597527306461398,0.1088191928192691,0.6798815998210564,0.96,M3_GBM_rich,B0_RV24h_baseline,observed pi above the interval

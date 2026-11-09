@@ -1,0 +1,18 @@
+{
+  "model": "V+F, 2021 only",
+  "threshold_calibration": "2022 only, no event labels",
+  "test": "2023-01-01 through 2026-04-30 exploratory, previously inspected",
+  "event": "price-only 4% / 24h refractory, 5min confirmation",
+  "alert_budget_annual": 240,
+  "calendar_month_cap": 20,
+  "cooldown_minutes": 240,
+  "primary_endpoint": "alert precedes 1% onset and is 30-240 min before 4% breach",
+  "policies": [
+    "first_eligible",
+    "absolute_high_score",
+    "relative_surprise_7d",
+    "past_peak_breakout_1h"
+  ],
+  "selection_tuning": "no labels in 2022; minimize abs(alerts-240), then strictest cutoff",
+  "cannot_claim": "no prospective validation; equal quota != equal realized count"
+}

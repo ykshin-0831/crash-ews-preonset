@@ -1,0 +1,13 @@
+H,variant,quantity,point,lo,hi,excludes_zero,share_draws_finite,draws,events_with_positives,events_dev_catalog,feasible_events,feasible_distinct_min,feasible_distinct_p05,feasible_distinct_median,feasible_distinct_max,share_draws_no_feasible
+1440,"a: events resampled, negatives fixed",standard AUC,0.05683565350076336,0.03406246891123613,0.07999732980013528,True,1.0,2000,218,218,30,11,15.0,19.0,28,0.0
+1440,"a: events resampled, negatives fixed",pre-onset AUC,-0.09030963726812091,-0.1689737435434385,-0.011505608037844556,True,1.0,2000,218,218,30,11,15.0,19.0,28,0.0
+1440,"a: events resampled, negatives fixed",pre-onset AUC within regime,-0.1393590581311711,-0.2279646189279603,-0.047799843849329164,True,1.0,2000,218,218,30,11,15.0,19.0,28,0.0
+1440,"b: events resampled, negatives by 7-day blocks",standard AUC,0.05683565350076336,0.02728839073398027,0.0874814824766822,True,1.0,2000,218,218,30,11,15.0,19.0,28,0.0
+1440,"b: events resampled, negatives by 7-day blocks",pre-onset AUC,-0.09030963726812091,-0.16929551601782636,-0.00758403833389964,True,1.0,2000,218,218,30,11,15.0,19.0,28,0.0
+1440,"b: events resampled, negatives by 7-day blocks",pre-onset AUC within regime,-0.1393590581311711,-0.22797161458558968,-0.041353937213774776,True,1.0,2000,218,218,30,11,15.0,19.0,28,0.0
+240,"a: events resampled, negatives fixed",standard AUC,-0.008120513616611702,-0.03731275260633515,0.020845714287342675,False,1.0,2000,83,83,83,43,48.0,53.0,63,0.0
+240,"a: events resampled, negatives fixed",pre-onset AUC,-0.018857304670287456,-0.06200357826481784,0.023441922577965256,False,1.0,2000,83,83,83,43,48.0,53.0,63,0.0
+240,"a: events resampled, negatives fixed",pre-onset AUC within regime,-0.04555458028752224,-0.09811818755254102,0.00677514025503084,False,1.0,2000,83,83,83,43,48.0,53.0,63,0.0
+240,"b: events resampled, negatives by 7-day blocks",standard AUC,-0.008120513616611702,-0.040529889246960646,0.02489118240754121,False,1.0,2000,83,83,83,43,48.0,53.0,63,0.0
+240,"b: events resampled, negatives by 7-day blocks",pre-onset AUC,-0.018857304670287456,-0.0650378525223709,0.02728231503360978,False,1.0,2000,83,83,83,43,48.0,53.0,63,0.0
+240,"b: events resampled, negatives by 7-day blocks",pre-onset AUC within regime,-0.04555458028752224,-0.10409699697954224,0.0112427364564241,False,1.0,2000,83,83,83,43,48.0,53.0,63,0.0

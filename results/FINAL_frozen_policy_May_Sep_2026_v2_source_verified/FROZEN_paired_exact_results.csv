@@ -1,0 +1,5 @@
+policy,endpoint,only_calendar,only_challenger,paired_exact_p
+high_score,early_hit,0,0,1.0
+high_score,hit,0,0,1.0
+constant_bucket,early_hit,0,0,1.0
+constant_bucket,hit,1,1,1.0

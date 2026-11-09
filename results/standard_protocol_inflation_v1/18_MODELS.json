@@ -1,0 +1,79 @@
+{
+  "spec_sha256": "b28949177840d6f7ffc2b9ad6c20e0312634b3b617defc75b45a9cc5be81a856",
+  "L1": {
+    "3pct": {
+      "M0": "notebook-16 coefficients reproduced",
+      "M3_file": "methods_definitions_v1/models/M3_GBM_rich_3pct.joblib",
+      "M3_sha256": "8a594c7d47ddffec887afab2da6f9a8e87d36ca85e4c2dd4ceb6b9f900b0ee6f"
+    },
+    "4pct": {
+      "M0": "notebook-16 coefficients reproduced",
+      "M3_file": "methods_definitions_v1/models/M3_GBM_rich_4pct.joblib",
+      "M3_sha256": "176fdac46ff63729ed8f271540b356543a6e6bf1e977edb707eb460ef1ecc4b4"
+    },
+    "5pct": {
+      "M0": "notebook-16 coefficients reproduced",
+      "M3_file": "methods_definitions_v1/models/M3_GBM_rich_5pct.joblib",
+      "M3_sha256": "28eb395de621eb8cb647b5662072ffe234399b64409a7ea07b03ec0cc9b1f02c"
+    }
+  },
+  "L2": {
+    "3pct": {
+      "train_positives_2021": 48941,
+      "train_minutes_2021": 524085,
+      "M0_coef": [
+        0.6357046754446114,
+        0.013215812570098092
+      ],
+      "M0_intercept": -0.158988082023023,
+      "M0_scaler_mean": [
+        -0.049738116974951285,
+        0.5079143153257629
+      ],
+      "M0_scaler_scale": [
+        1.0671072503066537,
+        0.13072358317143123
+      ],
+      "M3_file": "standard_protocol_inflation_v1/models/L2_M3_GBM_rich_3pct.joblib",
+      "M3_sha256": "7f7e8372efc4a5ed4ac2bac16e46917e501344e059ce0182fd41a0660e73e01b"
+    },
+    "4pct": {
+      "train_positives_2021": 26026,
+      "train_minutes_2021": 524085,
+      "M0_coef": [
+        0.8342729577871085,
+        0.0020607162004949706
+      ],
+      "M0_intercept": -0.3058310243379323,
+      "M0_scaler_mean": [
+        -0.049738116974951285,
+        0.5079143153257629
+      ],
+      "M0_scaler_scale": [
+        1.0671072503066537,
+        0.13072358317143123
+      ],
+      "M3_file": "standard_protocol_inflation_v1/models/L2_M3_GBM_rich_4pct.joblib",
+      "M3_sha256": "9222db568bf3741cfff98d04adaf1185ea976edfc92259cc0c6436129c146110"
+    },
+    "5pct": {
+      "train_positives_2021": 15262,
+      "train_minutes_2021": 524085,
+      "M0_coef": [
+        1.0155360093916324,
+        -0.007731754629008205
+      ],
+      "M0_intercept": -0.48340166389279005,
+      "M0_scaler_mean": [
+        -0.049738116974951285,
+        0.5079143153257629
+      ],
+      "M0_scaler_scale": [
+        1.0671072503066537,
+        0.13072358317143123
+      ],
+      "M3_file": "standard_protocol_inflation_v1/models/L2_M3_GBM_rich_5pct.joblib",
+      "M3_sha256": "a395f95bbb132a8cf5f3451c8b53ec7829daace83c616a38e69a5f478173d43d"
+    }
+  }
+}

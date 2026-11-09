@@ -1,0 +1,14 @@
+{
+ "alerts": 800,
+ "alerts_days_1_15": 693,
+ "months": 40,
+ "months_all_alerts_by_day_15": 20,
+ "latest_alert_day": 26,
+ "pre_onset_minutes": 8566,
+ "pre_onset_minutes_days_1_15": 5848,
+ "eligible_minutes": 1414298,
+ "eligible_share_days_1_15": 0.5295489352314717,
+ "events": 83,
+ "onsets_days_1_15": 54,
+ "expected_null_share_days_1_15_month_decile_no_cooldown": 0.6021695715683437
+}

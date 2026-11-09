@@ -1,0 +1,17 @@
+policy,year,alarms,event_count,caught,before_1pct
+first_eligible,2023,240,17,7,3
+first_eligible,2024,240,36,17,7
+first_eligible,2025,240,21,12,9
+first_eligible,2026,80,9,3,3
+absolute_high_score,2023,240,17,6,2
+absolute_high_score,2024,240,36,16,5
+absolute_high_score,2025,240,21,16,9
+absolute_high_score,2026,80,9,3,3
+relative_surprise_7d,2023,240,17,6,2
+relative_surprise_7d,2024,234,36,19,5
+relative_surprise_7d,2025,228,21,14,6
+relative_surprise_7d,2026,79,9,2,0
+past_peak_breakout_1h,2023,240,17,6,3
+past_peak_breakout_1h,2024,240,36,16,6
+past_peak_breakout_1h,2025,240,21,14,8
+past_peak_breakout_1h,2026,80,9,3,2

@@ -1,0 +1,11 @@
+scenario,model,score_threshold,tsr_threshold,train_cost_points,training_caught,training_false_alarms
+default,z_hs,2.0,0.55,1435.8333333333333,10,345
+default,z_vol,1.75,0.5,1447.4583333333333,6,183
+lower_miss_cost,z_hs,2.0,0.7,862.0,2,133
+lower_miss_cost,z_vol,2.0,0.7,781.9583333333334,2,50
+higher_miss_cost,z_hs,2.0,0.55,2485.8333333333335,10,345
+higher_miss_cost,z_vol,0.75,0.55,2470.3333333333335,13,616
+higher_false_alarm_cost,z_hs,2.0,0.7,1853.0,2,133
+higher_false_alarm_cost,z_vol,2.0,0.7,1606.9583333333333,2,50
+higher_lateness_cost,z_hs,2.0,0.55,1517.5,10,345
+higher_lateness_cost,z_vol,1.75,0.5,1476.375,6,183

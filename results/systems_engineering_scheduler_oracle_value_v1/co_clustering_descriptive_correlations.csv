@@ -1,0 +1,4 @@
+metric,months,spearman_rho,exploratory_p,model,important
+raw_crossings,40,0.4685703180494847,0.0022922300728368756,"V+F ungated, calendar, primary budget",same-month association is not causal; repeated exploratory evaluation
+raw_false_crossings,40,0.3921559362968698,0.012324407650265663,"V+F ungated, calendar, primary budget",same-month association is not causal; repeated exploratory evaluation
+emitted_false_alerts,40,-0.7361404007605784,6.189687502623814e-08,"V+F ungated, calendar, primary budget",same-month association is not causal; repeated exploratory evaluation

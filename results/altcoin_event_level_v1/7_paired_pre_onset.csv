@@ -1,0 +1,3 @@
+a,b,both,only_a,only_b,neither,a_total,b_total,mcnemar_exact_p_two_sided,discordant_episodes_240,same_alert_minute_when_both
+M0,M1,61,6,10,866,67,71,0.454498291015625,15,36
+M0,GBM,14,53,21,855,67,35,0.0002564885942369215,59,1

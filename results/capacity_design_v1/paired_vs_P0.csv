@@ -1,0 +1,4 @@
+policy,base_caught,new_caught,base_only_caught,new_only_caught,p_caught_two_sided,base_pre1pct,new_pre1pct,base_only_pre1pct,new_only_pre1pct,p_pre1pct_two_sided,p_pre1pct_one_sided_new_better
+P1_constant_bucket,39,48,10,19,0.13604594767093658,22,18,11,7,0.480682373046875,0.8810577392578125
+P2_risk_bucket_budget_neutral,39,35,17,13,0.5846647117286922,22,14,12,4,0.076812744140625,0.9893646240234375
+P3_surge_reserve_calendar,39,36,4,1,0.375,22,21,2,1,1.0,0.875

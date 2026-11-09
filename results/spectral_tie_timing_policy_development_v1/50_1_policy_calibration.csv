@@ -1,0 +1,9 @@
+arm,threshold,2022_alerts,dev_alerts,equal_2022_budget,equal_dev_budget,halfmonth,jitter,score_variant,tie_rule
+BASE,0.6213147944479045,240,800,True,True,False,False,HGB_Base,standard
+HS_ORIGINAL,0.6266591400580771,240,800,True,True,False,False,HGB_HS,standard
+HS_STRICT,0.6266591400580771,240,800,True,True,False,False,HGB_HS,strict
+HS_TIE_LEVEL,0.6266591400580771,240,800,True,True,False,False,HGB_HS,tie_level
+HS_TIE_RISE15,0.6266591400580771,240,800,True,True,False,False,HGB_HS,tie_rise15
+HS_JITTER_LEVEL,0.626957515033625,240,800,True,True,False,True,HGB_HS,standard
+HS_HALFMONTH,0.6266591400580771,240,800,True,True,True,False,HGB_HS,standard
+HS_JITTER_HALFMONTH,0.626957515033625,240,800,True,True,True,True,HGB_HS,standard

@@ -1,0 +1,165 @@
+{
+  "holdouts": "not used",
+  "le_hoang_reported": {
+    "episodes_test": 48,
+    "frontier_edr_pct": {
+      "1": {
+        "5": 18.8,
+        "10": 45.8,
+        "20": 75.0,
+        "40": 89.6
+      },
+      "3": {
+        "5": 12.5,
+        "10": 41.7,
+        "20": 75.0,
+        "40": 91.7
+      },
+      "5": {
+        "5": 12.5,
+        "10": 54.2,
+        "20": 56.2,
+        "40": 87.5
+      },
+      "10": {
+        "5": 54.2,
+        "10": 77.1,
+        "20": 91.7,
+        "40": 93.8
+      }
+    },
+    "market_lasso_pr": {
+      "1": 0.302,
+      "3": 0.382,
+      "5": 0.403,
+      "10": 0.457
+    },
+    "market_lasso_roc": {
+      "1": 0.916,
+      "3": 0.869,
+      "5": 0.837,
+      "10": 0.792
+    },
+    "market_logit_pr": {
+      "1": 0.265,
+      "3": 0.379,
+      "5": 0.404,
+      "10": 0.458
+    },
+    "market_logit_roc": {
+      "1": 0.917,
+      "3": 0.87,
+      "5": 0.837,
+      "10": 0.793
+    },
+    "selected": {
+      "1": "LASSO, integrated",
+      "3": "XGBoost, integrated",
+      "5": "XGBoost, integrated",
+      "10": "Random forest, market-only"
+    },
+    "selected_pr": {
+      "1": 0.285,
+      "3": 0.316,
+      "5": 0.313,
+      "10": 0.413
+    },
+    "selected_roc": {
+      "1": 0.917,
+      "3": 0.853,
+      "5": 0.801,
+      "10": 0.775
+    },
+    "table1_eligible": {
+      "1": 7555,
+      "3": 7553,
+      "5": 7551,
+      "10": 7546
+    },
+    "table1_positive": {
+      "1": 167,
+      "3": 390,
+      "5": 559,
+      "10": 897
+    },
+    "test_n": {
+      "1": 1772,
+      "3": 1770,
+      "5": 1768,
+      "10": 1763
+    },
+    "test_prevalence_pct": {
+      "1": 2.71,
+      "3": 6.21,
+      "5": 9.16,
+      "10": 16.05
+    }
+  },
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "part_A": {
+    "alerts": "notebook-16 stored alerts matched to each window catalog; exact McNemar per method pair, Holm within window and endpoint; M0 - M3 pre-onset catch-rate difference with calendar-month and 72-hour-cluster bootstraps (30000 draws)",
+    "crossover": "pi* = (pre_A - pre_B) / ((pre_A - pre_B) - (in_A - in_B)), defined when the two differences have opposite signs",
+    "pairs": [
+      [
+        "M3_GBM_rich",
+        "M0_VF_logit"
+      ],
+      [
+        "B0_RV24h_baseline",
+        "M0_VF_logit"
+      ],
+      [
+        "M3_GBM_rich",
+        "B0_RV24h_baseline"
+      ]
+    ],
+    "per_minute": "notebook-22 decomposition on the minutes where all four scores are finite; one shared 500 x 7-day block bootstrap for all scores",
+    "reading_rule": "At each window, the standard-AUC ordering of a pair is read as beyond sampling variation only if the 95% interval of the paired difference excludes 0; otherwise it is reported as not distinguishable.",
+    "scores": [
+      "M0_VF_logit",
+      "M1_vol_threshold",
+      "M3_GBM_rich",
+      "B0_RV24h_baseline"
+    ],
+    "windows_min": [
+      120,
+      240,
+      480,
+      1440
+    ]
+  },
+  "part_A_reading_revised": "Added 2026-10-31, numbers unchanged: the crossover is read by where the observed pi lies relative to the 95% interval of pi*.",
+  "part_B": {
+    "baselines": {
+      "nasdaq_rv20": "NASDAQ 20-day return standard deviation",
+      "vix_level": "VIX close (no fitting)",
+      "vix_ma5": "5-day VIX mean"
+    },
+    "bootstrap": "moving blocks of 20 trading days over the test days, 400 draws (as in Le and Hoang)",
+    "data": "FRED VIXCLS and NASDAQCOM, daily, 1990-01-02 to 2026-07-20; if FRED is unreachable, the CBOE VIX history (VIXCLS source) and Yahoo ^IXIC close; source and SHA-256 recorded",
+    "design": "Le and Hoang (2026): stress = VIX >= 25; evaluate days with VIX < 25; positive if VIX >= 25 on any of the next h trading days; h in {1,3,5,10}; train 1990-2014, validation 2015-2017, test 2018-01-01..2026-07-20; days whose target window crosses a split edge dropped",
+    "features": "market-only: VIX, 1-day VIX change, 5-day VIX mean, NASDAQ daily % return, its trailing 20-day standard deviation",
+    "frontier": "false-alarm days per year = alert days with no onset in the next h days / test years; episode detected if any alert in the h days before onset; budgets [5, 10, 20, 40]",
+    "models": {
+      "gradient_boosting": "sklearn HistGradientBoosting (XGBoost stand-in)",
+      "lasso": "L1 logistic, C chosen on validation PR-AUC from [0.01, 0.03, 0.1, 0.3, 1.0]",
+      "logistic": "standardized, balanced class weights",
+      "random_forest": "500 trees, min leaf 20, balanced subsample"
+    },
+    "nasdaq_alignment": "NASDAQ close carried forward at most 3 days onto VIX dates; 20-day standard deviation needs at least 15 returns (added after the first run, in which single missing NASDAQ days removed 20-day stretches of the test sample)",
+    "post_hoc_diagnostic": "paired difference of within-1-point-bin AUC, selected model minus VIX level (added after the first run; does not replace the reading rule)",
+    "reading_rule": "For each h: the selected model's onset skill is called not shown to exceed the VIX level if (i) the 95% interval of its test ROC-AUC minus the VIX-level ROC-AUC includes 0 or lies below 0 and (ii) its ROC-AUC within 1-point VIX bins has a 95% interval that includes 0.5. If the interval in (ii) lies above 0.5 the model is said to carry information beyond the VIX level. Every h is reported; nothing is selected.",
+    "reading_rule_revised": "Added 2026-10-31 after the run, numbers unchanged: rule (ii) is not used, because the VIX level itself has within-bin AUC above 0.5. For each h and each metric (ROC-AUC, PR-AUC, within-1-point-bin AUC) the selected model is read as ahead of (behind) the VIX level if the 95% interval of the paired difference lies above (below) 0, otherwise not distinguishable. Twelve intervals are reported; none is adjusted for multiplicity.",
+    "runup": {
+      "R1_quarter_way": "VIX has covered at least a quarter of the distance from its trailing 20-day low to 25",
+      "R2_20pct_above_low": "VIX is at least 20% above its trailing 20-day low",
+      "R3_vix_ge_20": "VIX is at or above 20"
+    },
+    "runup_note": "only positives are split, as in the paper decomposition; all three definitions reported, none selected",
+    "selection": "per h by validation PR-AUC, then refit on 1990-2017 and scored once on test",
+    "status": "independent reconstruction of a published design (market-only features, sklearn HistGradientBoosting in place of XGBoost); not a replication",
+    "within_regime": "ROC-AUC over positive-negative pairs in the same 1-point VIX bin (primary) and the same test VIX decile (secondary)"
+  },
+  "seed": 20261111,
+  "title": "Ranking reversal across crash windows (BTC dev) and a volatility-regime baseline for a daily VIX-onset design (exploratory)"
+}

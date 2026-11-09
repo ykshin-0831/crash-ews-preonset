@@ -1,0 +1,333 @@
+event_id,method,breach_utc,onset_to_breach_min,pre_onset_minutes_in_window,window_candidates,pre_window_candidates,caught_actual,pre_actual,blind_zone_actual,caught_cooldown_only,pre_cooldown_only,blind_zone_cooldown_only,caught_actual_cd210,pre_actual_cd210,blind_zone_actual_cd210,caught_cooldown_only_cd210,pre_cooldown_only_cd210,blind_zone_cooldown_only_cd210,stage_any,cooldown_reason_any,blocking_alert_lead_min_any,stage_pre,cooldown_reason_pre,blocking_alert_lead_min_pre
+187,M0_VF_logit,2023-01-18 16:21:00+00:00,104.0,136,133,64,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+187,M1_vol_threshold,2023-01-18 16:21:00+00:00,104.0,136,132,64,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+187,M2_VPIN,2023-01-18 16:21:00+00:00,104.0,136,144,129,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+187,M3_GBM_rich,2023-01-18 16:21:00+00:00,104.0,136,22,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+188,M0_VF_logit,2023-02-16 23:24:00+00:00,182.0,58,55,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,2 outside window,,
+188,M1_vol_threshold,2023-02-16 23:24:00+00:00,182.0,58,54,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,2 outside window,,
+188,M2_VPIN,2023-02-16 23:24:00+00:00,182.0,58,64,58,True,True,False,True,True,False,False,False,False,False,False,False,caught,,,caught,,
+188,M3_GBM_rich,2023-02-16 23:24:00+00:00,182.0,58,147,13,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+189,M0_VF_logit,2023-03-03 01:31:00+00:00,13.0,211,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+189,M1_vol_threshold,2023-03-03 01:31:00+00:00,13.0,211,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+189,M2_VPIN,2023-03-03 01:31:00+00:00,13.0,211,0,0,False,False,False,False,False,False,False,False,False,False,False,False,1 no signal,,,1 no signal,,
+189,M3_GBM_rich,2023-03-03 01:31:00+00:00,13.0,211,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+190,M0_VF_logit,2023-03-09 20:11:00+00:00,189.0,51,70,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+190,M1_vol_threshold,2023-03-09 20:11:00+00:00,189.0,51,70,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+190,M2_VPIN,2023-03-09 20:11:00+00:00,189.0,51,6,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+190,M3_GBM_rich,2023-03-09 20:11:00+00:00,189.0,51,156,16,True,False,False,True,False,False,True,True,False,True,True,False,caught,,,3 cooldown,window hidden by an earlier alert,409.0
+191,M0_VF_logit,2023-03-14 19:12:00+00:00,116.0,124,47,19,False,False,False,False,False,True,False,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,251.0,3 cooldown,window hidden by an earlier alert,251.0
+191,M1_vol_threshold,2023-03-14 19:12:00+00:00,116.0,124,47,19,False,False,False,False,False,True,False,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,251.0,3 cooldown,window hidden by an earlier alert,251.0
+191,M2_VPIN,2023-03-14 19:12:00+00:00,116.0,124,211,124,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+191,M3_GBM_rich,2023-03-14 19:12:00+00:00,116.0,124,111,28,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+192,M0_VF_logit,2023-03-22 19:05:00+00:00,55.0,185,47,21,False,False,False,False,False,True,False,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,257.0,3 cooldown,window hidden by an earlier alert,257.0
+192,M1_vol_threshold,2023-03-22 19:05:00+00:00,55.0,185,47,21,False,False,False,False,False,True,False,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,258.0,3 cooldown,window hidden by an earlier alert,258.0
+192,M2_VPIN,2023-03-22 19:05:00+00:00,55.0,185,0,0,False,False,False,False,False,False,False,False,False,False,False,False,1 no signal,,,1 no signal,,
+192,M3_GBM_rich,2023-03-22 19:05:00+00:00,55.0,185,54,53,False,False,False,False,False,True,False,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,248.0,3 cooldown,window hidden by an earlier alert,248.0
+193,M0_VF_logit,2023-03-27 15:02:00+00:00,132.0,108,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+193,M1_vol_threshold,2023-03-27 15:02:00+00:00,132.0,108,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+193,M2_VPIN,2023-03-27 15:02:00+00:00,132.0,108,211,108,False,False,False,True,False,False,False,False,False,True,True,False,4 budget,,,3 cooldown,window hidden by an earlier alert,271.0
+193,M3_GBM_rich,2023-03-27 15:02:00+00:00,132.0,108,18,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+194,M0_VF_logit,2023-04-26 19:38:00+00:00,29.0,211,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,2 outside window,,
+194,M1_vol_threshold,2023-04-26 19:38:00+00:00,29.0,211,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,2 outside window,,
+194,M2_VPIN,2023-04-26 19:38:00+00:00,29.0,211,211,211,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+194,M3_GBM_rich,2023-04-26 19:38:00+00:00,29.0,211,22,22,False,False,False,False,False,False,False,False,False,False,False,False,3 cooldown,signal ended before the cooldown expired,398.0,3 cooldown,signal ended before the cooldown expired,398.0
+195,M0_VF_logit,2023-05-10 17:20:00+00:00,7.0,211,7,7,False,False,False,False,False,False,False,False,False,False,False,False,3 cooldown,signal ended before the cooldown expired,290.0,3 cooldown,signal ended before the cooldown expired,290.0
+195,M1_vol_threshold,2023-05-10 17:20:00+00:00,7.0,211,8,8,False,False,False,False,False,False,False,False,False,False,False,False,3 cooldown,signal ended before the cooldown expired,290.0,3 cooldown,signal ended before the cooldown expired,290.0
+195,M2_VPIN,2023-05-10 17:20:00+00:00,7.0,211,211,211,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+195,M3_GBM_rich,2023-05-10 17:20:00+00:00,7.0,211,69,69,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+196,M0_VF_logit,2023-06-05 17:09:00+00:00,104.0,136,94,19,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+196,M1_vol_threshold,2023-06-05 17:09:00+00:00,104.0,136,93,18,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+196,M2_VPIN,2023-06-05 17:09:00+00:00,104.0,136,211,136,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+196,M3_GBM_rich,2023-06-05 17:09:00+00:00,104.0,136,65,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+197,M0_VF_logit,2023-07-06 14:35:00+00:00,163.0,77,42,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,2 outside window,,
+197,M1_vol_threshold,2023-07-06 14:35:00+00:00,163.0,77,39,0,False,False,False,False,False,False,True,False,False,True,False,False,3 cooldown,signal ended before the cooldown expired,339.0,2 outside window,,
+197,M2_VPIN,2023-07-06 14:35:00+00:00,163.0,77,211,77,False,False,False,False,False,True,False,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,244.0,3 cooldown,window hidden by an earlier alert,244.0
+197,M3_GBM_rich,2023-07-06 14:35:00+00:00,163.0,77,88,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+198,M0_VF_logit,2023-07-14 19:02:00+00:00,106.0,134,33,2,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+198,M1_vol_threshold,2023-07-14 19:02:00+00:00,106.0,134,28,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+198,M2_VPIN,2023-07-14 19:02:00+00:00,106.0,134,211,134,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,271.0
+198,M3_GBM_rich,2023-07-14 19:02:00+00:00,106.0,134,75,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+199,M0_VF_logit,2023-08-17 21:43:00+00:00,61.0,179,24,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,2 outside window,,
+199,M1_vol_threshold,2023-08-17 21:43:00+00:00,61.0,179,24,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,2 outside window,,
+199,M2_VPIN,2023-08-17 21:43:00+00:00,61.0,179,211,179,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+199,M3_GBM_rich,2023-08-17 21:43:00+00:00,61.0,179,63,47,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+200,M0_VF_logit,2023-10-16 13:40:00+00:00,9.0,211,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,2 outside window,,
+200,M1_vol_threshold,2023-10-16 13:40:00+00:00,9.0,211,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,2 outside window,,
+200,M2_VPIN,2023-10-16 13:40:00+00:00,9.0,211,211,211,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+200,M3_GBM_rich,2023-10-16 13:40:00+00:00,9.0,211,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,2 outside window,,
+201,M0_VF_logit,2023-10-23 23:37:00+00:00,52.0,188,69,46,False,False,False,False,False,True,False,False,False,True,True,False,3 cooldown,window hidden by an earlier alert,261.0,3 cooldown,window hidden by an earlier alert,261.0
+201,M1_vol_threshold,2023-10-23 23:37:00+00:00,52.0,188,66,43,False,False,False,False,False,True,False,False,False,True,True,False,3 cooldown,window hidden by an earlier alert,261.0,3 cooldown,window hidden by an earlier alert,261.0
+201,M2_VPIN,2023-10-23 23:37:00+00:00,52.0,188,211,188,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+201,M3_GBM_rich,2023-10-23 23:37:00+00:00,52.0,188,29,6,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+202,M0_VF_logit,2023-11-09 16:35:00+00:00,72.0,168,113,72,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+202,M1_vol_threshold,2023-11-09 16:35:00+00:00,72.0,168,115,72,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+202,M2_VPIN,2023-11-09 16:35:00+00:00,72.0,168,211,168,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+202,M3_GBM_rich,2023-11-09 16:35:00+00:00,72.0,168,59,18,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+203,M0_VF_logit,2023-12-11 02:12:00+00:00,64.0,176,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+203,M1_vol_threshold,2023-12-11 02:12:00+00:00,64.0,176,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+203,M2_VPIN,2023-12-11 02:12:00+00:00,64.0,176,211,176,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+203,M3_GBM_rich,2023-12-11 02:12:00+00:00,64.0,176,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+204,M0_VF_logit,2024-01-03 12:00:00+00:00,53.0,187,7,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+204,M1_vol_threshold,2024-01-03 12:00:00+00:00,53.0,187,7,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+204,M2_VPIN,2024-01-03 12:00:00+00:00,53.0,187,211,187,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+204,M3_GBM_rich,2024-01-03 12:00:00+00:00,53.0,187,9,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+205,M0_VF_logit,2024-01-09 21:25:00+00:00,10.0,211,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,2 outside window,,
+205,M1_vol_threshold,2024-01-09 21:25:00+00:00,10.0,211,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,2 outside window,,
+205,M2_VPIN,2024-01-09 21:25:00+00:00,10.0,211,211,211,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+205,M3_GBM_rich,2024-01-09 21:25:00+00:00,10.0,211,5,5,False,False,False,False,False,True,False,False,False,False,False,False,3 cooldown,window hidden by an earlier alert,269.0,3 cooldown,window hidden by an earlier alert,269.0
+206,M0_VF_logit,2024-01-11 15:49:00+00:00,45.0,195,83,67,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+206,M1_vol_threshold,2024-01-11 15:49:00+00:00,45.0,195,86,70,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+206,M2_VPIN,2024-01-11 15:49:00+00:00,45.0,195,211,195,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+206,M3_GBM_rich,2024-01-11 15:49:00+00:00,45.0,195,46,30,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+207,M0_VF_logit,2024-01-12 16:16:00+00:00,155.0,85,44,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+207,M1_vol_threshold,2024-01-12 16:16:00+00:00,155.0,85,44,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+207,M2_VPIN,2024-01-12 16:16:00+00:00,155.0,85,211,85,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,345.0
+207,M3_GBM_rich,2024-01-12 16:16:00+00:00,155.0,85,55,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,2 outside window,,
+208,M0_VF_logit,2024-02-28 17:30:00+00:00,11.0,211,208,208,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+208,M1_vol_threshold,2024-02-28 17:30:00+00:00,11.0,211,210,210,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+208,M2_VPIN,2024-02-28 17:30:00+00:00,11.0,211,211,211,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+208,M3_GBM_rich,2024-02-28 17:30:00+00:00,11.0,211,176,176,False,False,False,False,False,True,False,False,False,True,True,False,3 cooldown,window hidden by an earlier alert,255.0,3 cooldown,window hidden by an earlier alert,255.0
+209,M0_VF_logit,2024-02-29 17:47:00+00:00,181.0,59,95,25,False,False,False,False,False,True,False,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,257.0,3 cooldown,window hidden by an earlier alert,257.0
+209,M1_vol_threshold,2024-02-29 17:47:00+00:00,181.0,59,97,30,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,363.0
+209,M2_VPIN,2024-02-29 17:47:00+00:00,181.0,59,211,59,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+209,M3_GBM_rich,2024-02-29 17:47:00+00:00,181.0,59,60,13,False,False,False,False,False,True,False,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,245.0,3 cooldown,window hidden by an earlier alert,245.0
+210,M0_VF_logit,2024-03-05 16:06:00+00:00,61.0,179,42,10,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+210,M1_vol_threshold,2024-03-05 16:06:00+00:00,61.0,179,42,10,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+210,M2_VPIN,2024-03-05 16:06:00+00:00,61.0,179,211,179,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+210,M3_GBM_rich,2024-03-05 16:06:00+00:00,61.0,179,33,1,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,3 cooldown,signal ended before the cooldown expired,410.0
+211,M0_VF_logit,2024-03-08 16:02:00+00:00,30.0,210,5,4,True,True,False,True,True,False,False,False,False,True,True,False,caught,,,caught,,
+211,M1_vol_threshold,2024-03-08 16:02:00+00:00,30.0,210,5,4,True,True,False,True,True,False,False,False,False,True,True,False,caught,,,caught,,
+211,M2_VPIN,2024-03-08 16:02:00+00:00,30.0,210,211,210,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+211,M3_GBM_rich,2024-03-08 16:02:00+00:00,30.0,210,2,1,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+212,M0_VF_logit,2024-03-12 17:14:00+00:00,185.0,55,82,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,2 outside window,,
+212,M1_vol_threshold,2024-03-12 17:14:00+00:00,185.0,55,82,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,2 outside window,,
+212,M2_VPIN,2024-03-12 17:14:00+00:00,185.0,55,211,55,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,403.0
+212,M3_GBM_rich,2024-03-12 17:14:00+00:00,185.0,55,164,12,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+213,M0_VF_logit,2024-03-15 02:45:00+00:00,53.0,187,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+213,M1_vol_threshold,2024-03-15 02:45:00+00:00,53.0,187,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+213,M2_VPIN,2024-03-15 02:45:00+00:00,53.0,187,211,187,False,False,False,False,False,True,False,False,False,True,True,False,3 cooldown,window hidden by an earlier alert,254.0,3 cooldown,window hidden by an earlier alert,254.0
+213,M3_GBM_rich,2024-03-15 02:45:00+00:00,53.0,187,156,140,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+214,M0_VF_logit,2024-03-19 03:34:00+00:00,174.0,66,0,0,False,False,False,False,False,False,False,False,False,False,False,False,1 no signal,,,1 no signal,,
+214,M1_vol_threshold,2024-03-19 03:34:00+00:00,174.0,66,0,0,False,False,False,False,False,False,False,False,False,False,False,False,1 no signal,,,1 no signal,,
+214,M2_VPIN,2024-03-19 03:34:00+00:00,174.0,66,211,66,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,303.0
+214,M3_GBM_rich,2024-03-19 03:34:00+00:00,174.0,66,154,19,False,False,False,True,False,False,False,False,False,True,True,False,4 budget,,,3 cooldown,window hidden by an earlier alert,297.0
+215,M0_VF_logit,2024-03-27 16:12:00+00:00,156.0,84,50,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+215,M1_vol_threshold,2024-03-27 16:12:00+00:00,156.0,84,49,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+215,M2_VPIN,2024-03-27 16:12:00+00:00,156.0,84,211,84,False,False,False,True,False,False,False,False,False,True,True,False,4 budget,,,3 cooldown,window hidden by an earlier alert,341.0
+215,M3_GBM_rich,2024-03-27 16:12:00+00:00,156.0,84,129,2,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+216,M0_VF_logit,2024-04-02 02:39:00+00:00,121.0,119,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+216,M1_vol_threshold,2024-04-02 02:39:00+00:00,121.0,119,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+216,M2_VPIN,2024-04-02 02:39:00+00:00,121.0,119,211,119,True,True,False,False,False,True,True,True,False,True,True,False,caught,,,caught,,
+216,M3_GBM_rich,2024-04-02 02:39:00+00:00,121.0,119,5,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,2 outside window,,
+217,M0_VF_logit,2024-04-12 18:32:00+00:00,141.0,99,35,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+217,M1_vol_threshold,2024-04-12 18:32:00+00:00,141.0,99,34,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+217,M2_VPIN,2024-04-12 18:32:00+00:00,141.0,99,211,99,False,False,False,False,False,True,False,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,241.0,3 cooldown,window hidden by an earlier alert,241.0
+217,M3_GBM_rich,2024-04-12 18:32:00+00:00,141.0,99,113,6,False,False,False,False,False,True,False,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,262.0,3 cooldown,window hidden by an earlier alert,262.0
+218,M0_VF_logit,2024-04-13 19:54:00+00:00,160.0,80,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+218,M1_vol_threshold,2024-04-13 19:54:00+00:00,160.0,80,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+218,M2_VPIN,2024-04-13 19:54:00+00:00,160.0,80,211,80,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,323.0
+218,M3_GBM_rich,2024-04-13 19:54:00+00:00,160.0,80,1,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,2 outside window,,
+219,M0_VF_logit,2024-04-15 17:47:00+00:00,218.0,22,38,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+219,M1_vol_threshold,2024-04-15 17:47:00+00:00,218.0,22,37,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+219,M2_VPIN,2024-04-15 17:47:00+00:00,218.0,22,211,22,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,436.0
+219,M3_GBM_rich,2024-04-15 17:47:00+00:00,218.0,22,199,10,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+220,M0_VF_logit,2024-04-17 15:29:00+00:00,182.0,58,39,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+220,M1_vol_threshold,2024-04-17 15:29:00+00:00,182.0,58,38,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+220,M2_VPIN,2024-04-17 15:29:00+00:00,182.0,58,211,58,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,298.0
+220,M3_GBM_rich,2024-04-17 15:29:00+00:00,182.0,58,170,17,False,False,False,False,False,True,False,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,253.0,3 cooldown,window hidden by an earlier alert,253.0
+221,M0_VF_logit,2024-04-19 02:06:00+00:00,114.0,126,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+221,M1_vol_threshold,2024-04-19 02:06:00+00:00,114.0,126,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+221,M2_VPIN,2024-04-19 02:06:00+00:00,114.0,126,211,126,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+221,M3_GBM_rich,2024-04-19 02:06:00+00:00,114.0,126,34,1,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,321.0
+222,M0_VF_logit,2024-05-01 07:31:00+00:00,60.0,180,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+222,M1_vol_threshold,2024-05-01 07:31:00+00:00,60.0,180,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+222,M2_VPIN,2024-05-01 07:31:00+00:00,60.0,180,211,180,True,True,False,True,False,False,True,False,False,True,False,False,caught,,,caught,,
+222,M3_GBM_rich,2024-05-01 07:31:00+00:00,60.0,180,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,2 outside window,,
+223,M0_VF_logit,2024-05-10 15:08:00+00:00,99.0,141,1,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+223,M1_vol_threshold,2024-05-10 15:08:00+00:00,99.0,141,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+223,M2_VPIN,2024-05-10 15:08:00+00:00,99.0,141,211,141,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,277.0
+223,M3_GBM_rich,2024-05-10 15:08:00+00:00,99.0,141,21,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+224,M0_VF_logit,2024-07-05 02:59:00+00:00,198.0,42,145,7,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+224,M1_vol_threshold,2024-07-05 02:59:00+00:00,198.0,42,142,7,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+224,M2_VPIN,2024-07-05 02:59:00+00:00,198.0,42,211,42,False,False,False,False,False,True,False,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,268.0,3 cooldown,window hidden by an earlier alert,268.0
+224,M3_GBM_rich,2024-07-05 02:59:00+00:00,198.0,42,158,7,False,False,True,False,False,True,True,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,264.0,3 cooldown,window hidden by an earlier alert,264.0
+225,M0_VF_logit,2024-07-08 01:01:00+00:00,222.0,18,29,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+225,M1_vol_threshold,2024-07-08 01:01:00+00:00,222.0,18,26,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+225,M2_VPIN,2024-07-08 01:01:00+00:00,222.0,18,211,18,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,390.0
+225,M3_GBM_rich,2024-07-08 01:01:00+00:00,222.0,18,100,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,2 outside window,,
+226,M0_VF_logit,2024-07-29 16:40:00+00:00,175.0,65,46,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+226,M1_vol_threshold,2024-07-29 16:40:00+00:00,175.0,65,51,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+226,M2_VPIN,2024-07-29 16:40:00+00:00,175.0,65,211,65,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,369.0
+226,M3_GBM_rich,2024-07-29 16:40:00+00:00,175.0,65,74,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+227,M0_VF_logit,2024-08-02 15:18:00+00:00,68.0,172,65,38,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+227,M1_vol_threshold,2024-08-02 15:18:00+00:00,68.0,172,66,38,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+227,M2_VPIN,2024-08-02 15:18:00+00:00,68.0,172,211,172,True,True,False,True,False,False,True,False,False,True,False,False,caught,,,caught,,
+227,M3_GBM_rich,2024-08-02 15:18:00+00:00,68.0,172,26,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+228,M0_VF_logit,2024-08-04 17:10:00+00:00,159.0,81,42,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+228,M1_vol_threshold,2024-08-04 17:10:00+00:00,159.0,81,44,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+228,M2_VPIN,2024-08-04 17:10:00+00:00,159.0,81,211,81,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,399.0
+228,M3_GBM_rich,2024-08-04 17:10:00+00:00,159.0,81,108,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+229,M0_VF_logit,2024-08-05 19:07:00+00:00,153.0,87,188,87,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+229,M1_vol_threshold,2024-08-05 19:07:00+00:00,153.0,87,188,87,True,False,False,True,False,False,True,True,False,True,True,False,caught,,,3 cooldown,window hidden by an earlier alert,323.0
+229,M2_VPIN,2024-08-05 19:07:00+00:00,153.0,87,211,87,False,False,False,True,False,False,False,False,False,True,True,False,4 budget,,,3 cooldown,window hidden by an earlier alert,276.0
+229,M3_GBM_rich,2024-08-05 19:07:00+00:00,153.0,87,10,10,True,True,False,True,True,False,False,False,False,True,True,False,caught,,,caught,,
+230,M0_VF_logit,2024-08-14 14:10:00+00:00,98.0,142,32,2,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+230,M1_vol_threshold,2024-08-14 14:10:00+00:00,98.0,142,33,2,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+230,M2_VPIN,2024-08-14 14:10:00+00:00,98.0,142,211,142,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+230,M3_GBM_rich,2024-08-14 14:10:00+00:00,98.0,142,61,2,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+231,M0_VF_logit,2024-08-15 19:10:00+00:00,111.0,129,27,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,2 outside window,,
+231,M1_vol_threshold,2024-08-15 19:10:00+00:00,111.0,129,27,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,2 outside window,,
+231,M2_VPIN,2024-08-15 19:10:00+00:00,111.0,129,211,129,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,279.0
+231,M3_GBM_rich,2024-08-15 19:10:00+00:00,111.0,129,42,1,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,signal ended before the cooldown expired,379.0
+232,M0_VF_logit,2024-08-27 22:09:00+00:00,52.0,188,14,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+232,M1_vol_threshold,2024-08-27 22:09:00+00:00,52.0,188,11,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+232,M2_VPIN,2024-08-27 22:09:00+00:00,52.0,188,211,188,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+232,M3_GBM_rich,2024-08-27 22:09:00+00:00,52.0,188,15,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,2 outside window,,
+233,M0_VF_logit,2024-09-06 14:51:00+00:00,72.0,168,86,43,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+233,M1_vol_threshold,2024-09-06 14:51:00+00:00,72.0,168,85,42,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+233,M2_VPIN,2024-09-06 14:51:00+00:00,72.0,168,211,168,False,False,False,False,False,True,False,False,False,True,True,False,3 cooldown,window hidden by an earlier alert,260.0,3 cooldown,window hidden by an earlier alert,260.0
+233,M3_GBM_rich,2024-09-06 14:51:00+00:00,72.0,168,41,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+234,M0_VF_logit,2024-10-15 15:06:00+00:00,50.0,190,43,22,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+234,M1_vol_threshold,2024-10-15 15:06:00+00:00,50.0,190,46,25,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+234,M2_VPIN,2024-10-15 15:06:00+00:00,50.0,190,211,190,False,False,False,True,False,False,False,False,False,True,True,False,4 budget,,,3 cooldown,window hidden by an earlier alert,275.0
+234,M3_GBM_rich,2024-10-15 15:06:00+00:00,50.0,190,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+235,M0_VF_logit,2024-11-12 10:46:00+00:00,167.0,73,21,12,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+235,M1_vol_threshold,2024-11-12 10:46:00+00:00,167.0,73,21,12,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+235,M2_VPIN,2024-11-12 10:46:00+00:00,167.0,73,211,73,False,False,False,False,False,True,False,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,255.0,3 cooldown,window hidden by an earlier alert,255.0
+235,M3_GBM_rich,2024-11-12 10:46:00+00:00,167.0,73,25,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,2 outside window,,
+236,M0_VF_logit,2024-11-13 21:04:00+00:00,119.0,121,97,7,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+236,M1_vol_threshold,2024-11-13 21:04:00+00:00,119.0,121,96,6,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,signal ended before the cooldown expired,436.0
+236,M2_VPIN,2024-11-13 21:04:00+00:00,119.0,121,211,121,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+236,M3_GBM_rich,2024-11-13 21:04:00+00:00,119.0,121,181,91,False,False,False,True,False,False,False,False,False,True,True,False,4 budget,,,3 cooldown,signal ended before the cooldown expired,376.0
+237,M0_VF_logit,2024-12-05 22:26:00+00:00,207.0,33,63,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,2 outside window,,
+237,M1_vol_threshold,2024-12-05 22:26:00+00:00,207.0,33,62,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,2 outside window,,
+237,M2_VPIN,2024-12-05 22:26:00+00:00,207.0,33,211,33,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+237,M3_GBM_rich,2024-12-05 22:26:00+00:00,207.0,33,96,7,True,False,False,True,False,False,True,True,False,True,True,False,caught,,,3 cooldown,window hidden by an earlier alert,418.0
+238,M0_VF_logit,2024-12-18 20:42:00+00:00,97.0,143,62,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,2 outside window,,
+238,M1_vol_threshold,2024-12-18 20:42:00+00:00,97.0,143,62,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,2 outside window,,
+238,M2_VPIN,2024-12-18 20:42:00+00:00,97.0,143,211,143,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+238,M3_GBM_rich,2024-12-18 20:42:00+00:00,97.0,143,46,3,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,signal ended before the cooldown expired,364.0
+239,M0_VF_logit,2024-12-19 20:48:00+00:00,210.0,30,116,0,True,False,False,True,False,False,False,False,False,True,False,False,caught,,,2 outside window,,
+239,M1_vol_threshold,2024-12-19 20:48:00+00:00,210.0,30,116,0,True,False,False,True,False,False,False,False,False,True,False,False,caught,,,2 outside window,,
+239,M2_VPIN,2024-12-19 20:48:00+00:00,210.0,30,211,30,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,377.0
+239,M3_GBM_rich,2024-12-19 20:48:00+00:00,210.0,30,173,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,2 outside window,,
+240,M0_VF_logit,2025-01-19 23:02:00+00:00,97.0,143,63,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+240,M1_vol_threshold,2025-01-19 23:02:00+00:00,97.0,143,63,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+240,M2_VPIN,2025-01-19 23:02:00+00:00,97.0,143,211,143,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,271.0
+240,M3_GBM_rich,2025-01-19 23:02:00+00:00,97.0,143,39,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+241,M0_VF_logit,2025-02-03 01:45:00+00:00,141.0,99,138,53,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+241,M1_vol_threshold,2025-02-03 01:45:00+00:00,141.0,99,137,53,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+241,M2_VPIN,2025-02-03 01:45:00+00:00,141.0,99,211,99,True,False,False,True,True,False,True,False,False,True,True,False,caught,,,4 budget,,
+241,M3_GBM_rich,2025-02-03 01:45:00+00:00,141.0,99,179,67,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,3 cooldown,window hidden by an earlier alert,299.0
+242,M0_VF_logit,2025-02-04 21:55:00+00:00,128.0,112,54,1,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+242,M1_vol_threshold,2025-02-04 21:55:00+00:00,128.0,112,54,1,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+242,M2_VPIN,2025-02-04 21:55:00+00:00,128.0,112,211,112,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+242,M3_GBM_rich,2025-02-04 21:55:00+00:00,128.0,112,110,20,True,True,False,True,True,False,True,False,False,True,False,False,caught,,,caught,,
+243,M0_VF_logit,2025-02-25 10:11:00+00:00,181.0,59,82,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+243,M1_vol_threshold,2025-02-25 10:11:00+00:00,181.0,59,82,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+243,M2_VPIN,2025-02-25 10:11:00+00:00,181.0,59,211,59,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+243,M3_GBM_rich,2025-02-25 10:11:00+00:00,181.0,59,154,4,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+244,M0_VF_logit,2025-02-26 18:36:00+00:00,160.0,80,124,62,False,False,True,False,False,True,True,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,255.0,3 cooldown,window hidden by an earlier alert,255.0
+244,M1_vol_threshold,2025-02-26 18:36:00+00:00,160.0,80,113,62,False,False,True,False,False,True,True,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,255.0,3 cooldown,window hidden by an earlier alert,255.0
+244,M2_VPIN,2025-02-26 18:36:00+00:00,160.0,80,211,80,False,False,False,False,False,True,False,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,245.0,3 cooldown,window hidden by an earlier alert,245.0
+244,M3_GBM_rich,2025-02-26 18:36:00+00:00,160.0,80,151,40,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,276.0
+245,M0_VF_logit,2025-02-28 02:31:00+00:00,68.0,172,32,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,2 outside window,,
+245,M1_vol_threshold,2025-02-28 02:31:00+00:00,68.0,172,32,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,2 outside window,,
+245,M2_VPIN,2025-02-28 02:31:00+00:00,68.0,172,211,172,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+245,M3_GBM_rich,2025-02-28 02:31:00+00:00,68.0,172,40,2,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,signal ended before the cooldown expired,425.0
+246,M0_VF_logit,2025-03-03 14:56:00+00:00,21.0,211,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+246,M1_vol_threshold,2025-03-03 14:56:00+00:00,21.0,211,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+246,M2_VPIN,2025-03-03 14:56:00+00:00,21.0,211,211,211,True,True,False,False,False,True,True,True,False,True,True,False,caught,,,caught,,
+246,M3_GBM_rich,2025-03-03 14:56:00+00:00,21.0,211,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+247,M0_VF_logit,2025-03-07 00:21:00+00:00,6.0,211,28,28,False,False,True,False,False,True,False,False,True,False,False,True,3 cooldown,window hidden by an earlier alert,264.0,3 cooldown,window hidden by an earlier alert,264.0
+247,M1_vol_threshold,2025-03-07 00:21:00+00:00,6.0,211,27,27,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+247,M2_VPIN,2025-03-07 00:21:00+00:00,6.0,211,211,211,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+247,M3_GBM_rich,2025-03-07 00:21:00+00:00,6.0,211,95,95,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+248,M0_VF_logit,2025-03-10 14:12:00+00:00,107.0,133,15,3,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,285.0
+248,M1_vol_threshold,2025-03-10 14:12:00+00:00,107.0,133,11,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,2 outside window,,
+248,M2_VPIN,2025-03-10 14:12:00+00:00,107.0,133,211,133,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+248,M3_GBM_rich,2025-03-10 14:12:00+00:00,107.0,133,50,25,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,335.0
+249,M0_VF_logit,2025-04-02 21:09:00+00:00,47.0,193,27,9,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+249,M1_vol_threshold,2025-04-02 21:09:00+00:00,47.0,193,27,9,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+249,M2_VPIN,2025-04-02 21:09:00+00:00,47.0,193,211,193,True,True,False,True,True,False,True,True,False,True,False,False,caught,,,caught,,
+249,M3_GBM_rich,2025-04-02 21:09:00+00:00,47.0,193,14,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+250,M0_VF_logit,2025-04-06 18:43:00+00:00,104.0,136,19,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+250,M1_vol_threshold,2025-04-06 18:43:00+00:00,104.0,136,22,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+250,M2_VPIN,2025-04-06 18:43:00+00:00,104.0,136,211,136,False,False,False,False,False,True,False,False,False,True,True,False,3 cooldown,window hidden by an earlier alert,252.0,3 cooldown,window hidden by an earlier alert,252.0
+250,M3_GBM_rich,2025-04-06 18:43:00+00:00,104.0,136,27,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+251,M0_VF_logit,2025-04-08 17:19:00+00:00,174.0,66,45,42,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+251,M1_vol_threshold,2025-04-08 17:19:00+00:00,174.0,66,43,41,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+251,M2_VPIN,2025-04-08 17:19:00+00:00,174.0,66,211,66,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,408.0
+251,M3_GBM_rich,2025-04-08 17:19:00+00:00,174.0,66,108,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+252,M0_VF_logit,2025-04-10 15:48:00+00:00,178.0,62,52,3,True,True,False,True,True,False,False,False,False,True,True,False,caught,,,caught,,
+252,M1_vol_threshold,2025-04-10 15:48:00+00:00,178.0,62,54,0,True,False,False,True,False,False,False,False,False,True,False,False,caught,,,1 no signal,,
+252,M2_VPIN,2025-04-10 15:48:00+00:00,178.0,62,211,62,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,317.0
+252,M3_GBM_rich,2025-04-10 15:48:00+00:00,178.0,62,42,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+253,M0_VF_logit,2025-10-10 21:12:00+00:00,121.0,119,108,41,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+253,M1_vol_threshold,2025-10-10 21:12:00+00:00,121.0,119,107,39,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+253,M2_VPIN,2025-10-10 21:12:00+00:00,121.0,119,211,119,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+253,M3_GBM_rich,2025-10-10 21:12:00+00:00,121.0,119,178,118,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+254,M0_VF_logit,2025-11-04 18:31:00+00:00,161.0,79,172,58,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+254,M1_vol_threshold,2025-11-04 18:31:00+00:00,161.0,79,172,57,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+254,M2_VPIN,2025-11-04 18:31:00+00:00,161.0,79,211,79,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+254,M3_GBM_rich,2025-11-04 18:31:00+00:00,161.0,79,137,5,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,3 cooldown,window hidden by an earlier alert,297.0
+255,M0_VF_logit,2025-11-13 18:31:00+00:00,183.0,57,61,44,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+255,M1_vol_threshold,2025-11-13 18:31:00+00:00,183.0,57,57,46,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+255,M2_VPIN,2025-11-13 18:31:00+00:00,183.0,57,211,57,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+255,M3_GBM_rich,2025-11-13 18:31:00+00:00,183.0,57,94,2,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+256,M0_VF_logit,2025-11-20 16:35:00+00:00,153.0,87,76,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+256,M1_vol_threshold,2025-11-20 16:35:00+00:00,153.0,87,71,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+256,M2_VPIN,2025-11-20 16:35:00+00:00,153.0,87,211,87,False,False,False,True,False,False,False,False,False,True,True,False,4 budget,,,3 cooldown,window hidden by an earlier alert,364.0
+256,M3_GBM_rich,2025-11-20 16:35:00+00:00,153.0,87,79,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+257,M0_VF_logit,2025-12-01 00:45:00+00:00,52.0,188,1,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+257,M1_vol_threshold,2025-12-01 00:45:00+00:00,52.0,188,1,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+257,M2_VPIN,2025-12-01 00:45:00+00:00,52.0,188,211,188,True,False,False,True,True,False,True,False,False,True,True,False,caught,,,4 budget,,
+257,M3_GBM_rich,2025-12-01 00:45:00+00:00,52.0,188,6,0,True,False,False,True,False,False,True,False,False,True,False,False,caught,,,1 no signal,,
+258,M0_VF_logit,2025-12-15 16:46:00+00:00,120.0,120,88,8,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+258,M1_vol_threshold,2025-12-15 16:46:00+00:00,120.0,120,90,8,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+258,M2_VPIN,2025-12-15 16:46:00+00:00,120.0,120,211,120,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+258,M3_GBM_rich,2025-12-15 16:46:00+00:00,120.0,120,79,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+259,M0_VF_logit,2025-12-17 16:21:00+00:00,40.0,200,60,49,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+259,M1_vol_threshold,2025-12-17 16:21:00+00:00,40.0,200,60,49,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+259,M2_VPIN,2025-12-17 16:21:00+00:00,40.0,200,211,200,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+259,M3_GBM_rich,2025-12-17 16:21:00+00:00,40.0,200,6,3,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+260,M0_VF_logit,2025-12-18 19:01:00+00:00,180.0,60,84,43,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,323.0
+260,M1_vol_threshold,2025-12-18 19:01:00+00:00,180.0,60,93,48,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,320.0
+260,M2_VPIN,2025-12-18 19:01:00+00:00,180.0,60,211,60,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,270.0
+260,M3_GBM_rich,2025-12-18 19:01:00+00:00,180.0,60,119,35,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,287.0
+261,M0_VF_logit,2026-01-29 16:07:00+00:00,70.0,170,32,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+261,M1_vol_threshold,2026-01-29 16:07:00+00:00,70.0,170,30,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+261,M2_VPIN,2026-01-29 16:07:00+00:00,70.0,170,211,170,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+261,M3_GBM_rich,2026-01-29 16:07:00+00:00,70.0,170,27,1,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+262,M0_VF_logit,2026-01-31 17:08:00+00:00,165.0,75,99,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+262,M1_vol_threshold,2026-01-31 17:08:00+00:00,165.0,75,99,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+262,M2_VPIN,2026-01-31 17:08:00+00:00,165.0,75,211,75,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,397.0
+262,M3_GBM_rich,2026-01-31 17:08:00+00:00,165.0,75,104,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+263,M0_VF_logit,2026-02-02 03:34:00+00:00,145.0,95,172,92,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+263,M1_vol_threshold,2026-02-02 03:34:00+00:00,145.0,95,176,93,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+263,M2_VPIN,2026-02-02 03:34:00+00:00,145.0,95,211,95,True,True,False,True,False,False,True,True,False,True,False,False,caught,,,caught,,
+263,M3_GBM_rich,2026-02-02 03:34:00+00:00,145.0,95,136,63,False,False,True,False,False,True,True,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,259.0,3 cooldown,window hidden by an earlier alert,259.0
+264,M0_VF_logit,2026-02-03 17:42:00+00:00,168.0,72,106,14,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+264,M1_vol_threshold,2026-02-03 17:42:00+00:00,168.0,72,108,14,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+264,M2_VPIN,2026-02-03 17:42:00+00:00,168.0,72,211,72,True,False,False,True,True,False,True,False,False,True,False,False,caught,,,4 budget,,
+264,M3_GBM_rich,2026-02-03 17:42:00+00:00,168.0,72,115,1,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+265,M0_VF_logit,2026-02-04 17:50:00+00:00,174.0,66,169,25,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+265,M1_vol_threshold,2026-02-04 17:50:00+00:00,174.0,66,170,28,True,True,False,True,True,False,True,True,False,True,True,False,caught,,,caught,,
+265,M2_VPIN,2026-02-04 17:50:00+00:00,174.0,66,211,66,False,False,False,True,True,False,False,False,False,True,False,False,4 budget,,,4 budget,,
+265,M3_GBM_rich,2026-02-04 17:50:00+00:00,174.0,66,198,53,False,False,True,False,False,True,True,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,242.0,3 cooldown,window hidden by an earlier alert,242.0
+266,M0_VF_logit,2026-02-05 19:46:00+00:00,162.0,78,211,78,False,False,True,False,False,True,True,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,264.0,3 cooldown,window hidden by an earlier alert,264.0
+266,M1_vol_threshold,2026-02-05 19:46:00+00:00,162.0,78,211,78,False,False,True,False,False,True,True,False,False,True,False,False,3 cooldown,window hidden by an earlier alert,261.0,3 cooldown,window hidden by an earlier alert,261.0
+266,M2_VPIN,2026-02-05 19:46:00+00:00,162.0,78,211,78,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,3 cooldown,window hidden by an earlier alert,315.0
+266,M3_GBM_rich,2026-02-05 19:46:00+00:00,162.0,78,5,5,False,False,False,False,False,False,False,False,False,False,False,False,3 cooldown,signal ended before the cooldown expired,289.0,3 cooldown,window hidden by an earlier alert,289.0
+267,M0_VF_logit,2026-02-07 07:04:00+00:00,147.0,93,0,0,False,False,False,False,False,False,False,False,False,False,False,False,1 no signal,,,1 no signal,,
+267,M1_vol_threshold,2026-02-07 07:04:00+00:00,147.0,93,0,0,False,False,False,False,False,False,False,False,False,False,False,False,1 no signal,,,1 no signal,,
+267,M2_VPIN,2026-02-07 07:04:00+00:00,147.0,93,211,93,False,False,False,True,False,False,False,False,False,True,True,False,4 budget,,,3 cooldown,window hidden by an earlier alert,273.0
+267,M3_GBM_rich,2026-02-07 07:04:00+00:00,147.0,93,24,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,2 outside window,,
+268,M0_VF_logit,2026-02-12 17:53:00+00:00,189.0,51,6,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+268,M1_vol_threshold,2026-02-12 17:53:00+00:00,189.0,51,4,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+268,M2_VPIN,2026-02-12 17:53:00+00:00,189.0,51,211,51,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+268,M3_GBM_rich,2026-02-12 17:53:00+00:00,189.0,51,91,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,
+269,M0_VF_logit,2026-02-23 01:45:00+00:00,59.0,181,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+269,M1_vol_threshold,2026-02-23 01:45:00+00:00,59.0,181,0,0,False,False,False,False,False,False,False,False,False,False,False,False,2 outside window,,,1 no signal,,
+269,M2_VPIN,2026-02-23 01:45:00+00:00,59.0,181,211,181,False,False,False,True,True,False,False,False,False,True,True,False,4 budget,,,4 budget,,
+269,M3_GBM_rich,2026-02-23 01:45:00+00:00,59.0,181,11,0,False,False,False,True,False,False,False,False,False,True,False,False,4 budget,,,1 no signal,,

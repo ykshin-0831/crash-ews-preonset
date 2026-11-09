@@ -1,0 +1,38 @@
+{
+  "notebook": "50",
+  "status": "exploratory_posthoc_model_policy_development",
+  "source": "frozen BTC Spot inputs, original 47 fitted HGB models",
+  "train": "2021",
+  "unlabeled_threshold_calibration": "2022",
+  "dev_evaluation": "2023-01 through 2026-04",
+  "primary": "4h Breach-anchor pre-onset catches per 100 alerts",
+  "selected_secondary": "4h Onset-anchor pre-onset catches per 100 alerts",
+  "monthly_cap": 20,
+  "annual_cap": 240,
+  "cooldown_minutes": 240,
+  "jitter_coefficient": 0.002,
+  "jitter_clip_zhs": [
+    -3,
+    3
+  ],
+  "halfmonth_budget": [
+    10,
+    10
+  ],
+  "spectral_trend_lag_minutes": 15,
+  "spectral_level_reference": "2021 training median",
+  "arms": [
+    "BASE",
+    "HS_ORIGINAL",
+    "HS_STRICT",
+    "HS_TIE_LEVEL",
+    "HS_TIE_RISE15",
+    "HS_JITTER_LEVEL",
+    "HS_HALFMONTH",
+    "HS_JITTER_HALFMONTH"
+  ],
+  "no_tuning_or_selection_on_development_outcomes": true,
+  "not_independent_validation": true,
+  "registered_prospective_period_not_accessed": "2026-12 through 2027-11",
+  "negative_47_primary_result_must_be_reported": true
+}

@@ -1,0 +1,7 @@
+H,event_id,method,window_utc,pre_onset_minutes_possible,signal_minutes,first_signal_min_from_onset,last_signal_min_from_onset,window_candidates_pre_onset,window_candidates_in_progress,first_pre_onset_candidate_min_from_onset,first_in_progress_candidate_min_from_onset,actual_block_reasons,cooldown_only_blocked_by_alert_at,failed_at,caught_actual,caught_no_monthly_cap,caught_cooldown_only
+240,16,M0_VF_logit,10-29 20:21 -> 10-29 23:51,20,196,-32.0,220.0,20,134,-20.0,0.0,monthly cap 154,10-29 20:09,3 cooldown,False,False,False
+240,16,M1_vol_threshold,10-29 20:21 -> 10-29 23:51,20,197,-33.0,220.0,20,134,-20.0,0.0,monthly cap 154,10-29 20:08,3 cooldown,False,False,False
+240,16,M3_GBM_rich,10-29 20:21 -> 10-29 23:51,20,220,-35.0,220.0,2,184,-8.0,0.0,monthly cap 186,10-29 20:06,3 cooldown,False,False,False
+1440,54,M0_VF_logit,10-29 19:38 -> 10-29 23:08,0,200,-205.0,341.0,0,160,,182.0,monthly cap 160,10-29 20:09,4 budget,False,False,True
+1440,54,M1_vol_threshold,10-29 19:38 -> 10-29 23:08,0,200,-201.0,341.0,0,161,,181.0,monthly cap 161,10-29 20:08,4 budget,False,False,True
+1440,54,M3_GBM_rich,10-29 19:38 -> 10-29 23:08,0,177,179.0,391.0,0,147,,179.0,monthly cap 147,10-29 20:06,4 budget,False,False,True

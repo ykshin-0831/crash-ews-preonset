@@ -1,0 +1,60 @@
+{
+  "notebook": "37_Altcoin_Event_Level_SPOT",
+  "status": "exploratory",
+  "reads": "/content/drive/MyDrive/btc_lead_cost_results_77months_spot/HOLDOUT17_multicoin_2018_2019_v1",
+  "writes": "/content/drive/MyDrive/btc_lead_cost_results_77months_spot/altcoin_event_level_v1",
+  "notebook17_lock": {
+    "evaluated_utc": "2026-10-29T18:03:23.023774+00:00",
+    "spec_sha256": "b1bdcfd9322ab5b18cf56d011f63667436569589b8d40c2cea614d389337875d",
+    "frozen_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee"
+  },
+  "frozen_models_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee",
+  "definition": "d4",
+  "methods": [
+    "M0_VF_logit",
+    "M1_vol_threshold",
+    "M3_GBM_rich"
+  ],
+  "nulls": [
+    "regime-matched",
+    "joint circular",
+    "joint 4h-1d"
+  ],
+  "null_seeds": {
+    "M0|regime-matched": 20261042,
+    "M0|joint circular": 20261043,
+    "M0|joint 4h-1d": 20261044,
+    "M1|regime-matched": 20261142,
+    "M1|joint circular": 20261143,
+    "M1|joint 4h-1d": 20261144,
+    "GBM|regime-matched": 20261342,
+    "GBM|joint circular": 20261343,
+    "GBM|joint 4h-1d": 20261344
+  },
+  "episode_gaps_minutes": [
+    240,
+    60
+  ],
+  "episode_gap_main": 240,
+  "size_bins": [
+    "1 coin",
+    "2-4 coins",
+    "5+ coins"
+  ],
+  "bootstrap": {
+    "unit": "market episode (G = 240)",
+    "draws": 10000,
+    "seed": 20261103,
+    "fixed": [
+      "p_e",
+      "alerts"
+    ]
+  },
+  "reading": "descriptive; no decision rule; notebook-17 decisions unchanged; outputs carry no prices",
+  "guards": [
+    "per-coin alert and catch counts = H17_per_coin_counts.csv",
+    "fast matcher = match_events on observed alerts",
+    "pooled observed = H17_all_tests.csv",
+    "three nulls reproduce H17_all_tests.csv (mean, q05, q95, p, draws)"
+  ]
+}

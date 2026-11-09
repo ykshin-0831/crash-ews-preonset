@@ -1,0 +1,31 @@
+{
+  "venue": "spot",
+  "n_primary_events": 83,
+  "TH_CAL": 0.6698990591069133,
+  "TH_HIGH": 0.6864782740093911,
+  "first_eligible": [
+    800,
+    39,
+    22
+  ],
+  "absolute_high_score": [
+    800,
+    41,
+    19
+  ],
+  "futures_values_for_comparison_only": {
+    "n_primary_events": 84,
+    "TH_CAL": 0.6710872482458041,
+    "TH_HIGH": 0.6868160491524424,
+    "first_eligible": [
+      800,
+      35,
+      19
+    ],
+    "absolute_high_score": [
+      800,
+      40,
+      20
+    ]
+  }
+}

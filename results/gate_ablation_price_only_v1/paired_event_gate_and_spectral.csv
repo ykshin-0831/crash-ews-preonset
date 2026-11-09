@@ -1,0 +1,21 @@
+annual_target,comparison,baseline,augmented,baseline_alerts,augmented_alerts,delta_alerts,baseline_events,augmented_events,delta_events,baseline_pre1pct,augmented_pre1pct,delta_pre1pct,only_baseline_events,only_augmented_events,paired_exact_p,weak_pareto
+60,remove_gate_VF,V+F gated,V+F ungated,185,200,15,2,13,11,1,5,4,2,13,0.00738525390625,False
+60,remove_gate_VFH,V+F+H gated,V+F+H ungated,187,200,13,4,14,10,1,5,4,4,14,0.0308837890625,False
+60,remove_gate_HF,H+F gated,H+F ungated,186,199,13,3,12,9,0,4,4,3,12,0.03515625,False
+60,add_spectral_to_VF_open,V+F ungated,V+F+H ungated,200,200,0,13,14,1,5,5,0,0,1,1.0,True
+60,add_spectral_to_V_open,V ungated,V+H ungated,200,200,0,13,13,0,6,5,-1,2,2,1.0,False
+120,remove_gate_VF,V+F gated,V+F ungated,365,400,35,4,24,20,2,12,10,4,24,0.00017999112606048584,False
+120,remove_gate_VFH,V+F+H gated,V+F+H ungated,359,400,41,4,23,19,1,12,11,2,21,6.604194641113281e-05,False
+120,remove_gate_HF,H+F gated,H+F ungated,363,400,37,4,18,14,0,7,7,2,16,0.001312255859375,False
+120,add_spectral_to_VF_open,V+F ungated,V+F+H ungated,400,400,0,24,23,-1,12,12,0,4,3,1.0,False
+120,add_spectral_to_V_open,V ungated,V+H ungated,400,400,0,27,23,-4,13,12,-1,7,3,0.34375,False
+240,remove_gate_VF,V+F gated,V+F ungated,730,800,70,5,37,32,4,20,16,4,36,1.8570244719740003e-07,False
+240,remove_gate_VFH,V+F+H gated,V+F+H ungated,724,800,76,5,40,35,4,21,17,3,38,1.0479197953827679e-08,False
+240,remove_gate_HF,H+F gated,H+F ungated,745,800,55,5,38,33,5,14,9,2,35,1.0244548320770264e-08,False
+240,add_spectral_to_VF_open,V+F ungated,V+F+H ungated,800,800,0,37,40,3,20,21,1,2,5,0.453125,True
+240,add_spectral_to_V_open,V ungated,V+H ungated,800,800,0,40,41,1,20,20,0,3,4,1.0,True
+480,remove_gate_VF,V+F gated,V+F ungated,1415,1600,185,5,40,35,5,25,20,3,38,1.0479197953827679e-08,False
+480,remove_gate_VFH,V+F+H gated,V+F+H ungated,1414,1600,186,5,47,42,5,28,23,3,45,1.312585595769633e-10,False
+480,remove_gate_HF,H+F gated,H+F ungated,1418,1600,182,6,43,37,6,24,18,3,40,3.0213413992896676e-09,False
+480,add_spectral_to_VF_open,V+F ungated,V+F+H ungated,1600,1600,0,40,47,7,25,28,3,2,9,0.0654296875,True
+480,add_spectral_to_V_open,V ungated,V+H ungated,1600,1600,0,45,46,1,28,28,0,2,3,1.0,True

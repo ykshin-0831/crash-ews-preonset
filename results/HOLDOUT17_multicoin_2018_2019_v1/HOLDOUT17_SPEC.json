@@ -1,0 +1,81 @@
+{
+  "coins": [
+    "ETHUSDT",
+    "XRPUSDT",
+    "LTCUSDT",
+    "BNBUSDT",
+    "ADAUSDT",
+    "EOSUSDT",
+    "TRXUSDT",
+    "ETCUSDT",
+    "XLMUSDT",
+    "NEOUSDT"
+  ],
+  "definitions": {
+    "d3": "3% x sigma_coin_2021 / sigma_BTC_2021 (notebook-10 rule)",
+    "d4": "4% x sigma_coin_2021 / sigma_BTC_2021 (notebook-10 rule)",
+    "d5": "5% x sigma_coin_2021 / sigma_BTC_2021 (notebook-10 rule)"
+  },
+  "draws": {
+    "all_other": 1000,
+    "primary_regime_and_joint_circular": 5000
+  },
+  "endpoints": {
+    "caught": "pre + post (standard evaluation)",
+    "onset_anchored": "alert within 240 min before the onset (secondary)",
+    "post": "same window, at or after the onset",
+    "pre": "matched alert 30-240 min before the breach and before the 1% onset"
+  },
+  "holdout_archives": [
+    "2017-11",
+    "2019-12"
+  ],
+  "holdout_window": [
+    "2018-01-01",
+    "2020-01-01"
+  ],
+  "hypotheses": {
+    "H1_in_progress_detection": "pooled post-onset hits exceed the null; supported if Holm(3 methods)-adjusted one-sided p<0.05 under BOTH regime-matched and joint-circular nulls",
+    "H2_early_warning": "pooled pre-onset hits exceed the null; supported if Holm-adjusted p<0.05 under EITHER null",
+    "H3_illusion": "per method: composite significant (joint circular, Holm) AND H1 supported AND H2 not supported; generalizes if it holds for at least 2 of the 3 primary methods",
+    "bounds": "95% upper bound of pre-onset excess = observed - 5th percentile of the regime-matched null; 95% lower bound of post-onset excess = observed - 95th percentile"
+  },
+  "notebook16": {
+    "frozen_sha256": "2db183557433f15544c024b44761dd6665c36d39852c0b83addb5b89856882fa",
+    "spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608"
+  },
+  "nulls": {
+    "joint_4h_1d": "same shift +-U[240,1440] min for all coins (secondary)",
+    "joint_circular": "all coins shifted by the same U[7d, Lmin-7d] (circular within each coin window): keeps cross-coin dependence",
+    "regime_matched": "per coin, each alert moved to a random minute of the same 24h-RV decile within +-30d, >=240 min away"
+  },
+  "per_coin_eval_start": "max(2018-01-01, first UTC day with finite z_vol and z_hs + 1 day); coin excluded if fewer than 180 evaluation days",
+  "pooling": "sum over coins",
+  "primary": {
+    "definition": "d4",
+    "methods": [
+      "M0_VF_logit",
+      "M1_vol_threshold",
+      "M3_GBM_rich"
+    ]
+  },
+  "prior_use": "none of the 2017-11..2019-12 coin-months were downloaded or evaluated before; BTC excluded (used in notebook 11); ETH 2020 was read in notebook 10 and is outside this window",
+  "procedure": {
+    "calibration": "coin's own 2022, notebook-5 calendar rule; budget per coin 20/month, 240/yr, 240-min cooldown",
+    "exclusion": "a coin-definition with no 2021 training events is excluded for all methods",
+    "methods": [
+      "M0_VF_logit",
+      "M1_vol_threshold",
+      "M2_VPIN",
+      "M3_GBM_rich"
+    ],
+    "models_frozen_before_holdout_download": "COIN_MODELS_FROZEN.json (sha256) written in phase 1, verified in phase 2",
+    "source": "identical to notebook 16 (spec sha256 recorded below)",
+    "training": "coin's own 2021 (minus last 245 min); label = breach of the coin-scaled definition 30-240 min ahead"
+  },
+  "rules": "outcomes are computed only in the last cell; reported as observed; a lock file refuses re-evaluation",
+  "secondary": "definitions d3/d5, VPIN, joint 4h-1d null, onset-anchored, per-coin counts: reported without decisions",
+  "seed": 20261031,
+  "sigma_btc_2021": 0.03867557575577277,
+  "title": "One-shot multi-coin confirmatory holdout: detection vs prediction, Binance spot 1m, 2018-01-01 to 2020-01-01 (exclusive)"
+}

@@ -1,0 +1,7 @@
+leverage,alerts_compared,liquidated_spot_only,liquidated_mark_only,liquidated_both
+1,800,0,0,0
+2,800,0,0,0
+5,800,0,0,0
+10,800,1,0,2
+20,800,0,0,27
+50,800,7,0,205

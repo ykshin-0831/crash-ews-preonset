@@ -1,0 +1,58 @@
+{
+  "archives": [
+    "2020-11",
+    "2026-04"
+  ],
+  "checks_before_evaluation": "per coin: the notebook-17 phase-1 manifest exists and the 2020-11..2022-12 archive SHA-256 equal it; 2021 event count and training positives, M0 refit coefficients, and 2022 thresholds and calibration alert counts of M0, M1 and GBM reproduce notebook 17 phase 1; during evaluation: F = 1 at H = 240 and standard AUC - 1/2 = (1 - pi)(pre-onset AUC - 1/2) + pi (in-progress AUC - 1/2) for every coin, definition and score",
+  "coins": [
+    "ETHUSDT",
+    "XRPUSDT",
+    "LTCUSDT",
+    "BNBUSDT",
+    "ADAUSDT",
+    "EOSUSDT",
+    "TRXUSDT",
+    "ETCUSDT",
+    "XLMUSDT",
+    "NEOUSDT"
+  ],
+  "evaluation": {
+    "F": "share of evaluation events whose onset-to-breach gap is at most 239 minutes (some pre-onset minute in the judging window)",
+    "bootstrap": "1000 draws of 7-day calendar blocks common to all coins (174 blocks), 95% percentile intervals over finite draws",
+    "coverage_caution": "reported, not used in the readings: common-minute share of evaluation minutes below 80% or a missing month in the evaluation period",
+    "data_gaps": "minutes with a missing-price run (more than 5 minutes) within the next 245 minutes are excluded (label not determinable); counted",
+    "definitions": "price-only catalog with the coin d4 decline, look-back H in {240, 1440} minutes; judging window 30-240 minutes; in progress = at or after the 1% onset",
+    "labels": "positives from the coin full catalog on evaluation minutes (Bitcoin convention); events breaching within 240 minutes after the start are not in the event list or F but their in-window minutes stay positive; their number is reported",
+    "minutes": "valid minutes with all four scores finite and an RV decile",
+    "per_coin_window": "[max(2023-01-01, first UTC day with finite z_vol and z_hs + 1 day), min(2026-05-01, end of the last published month)); minutes within 245 minutes of the end dropped; coin excluded if fewer than 180 days",
+    "pooling": "equal-weight mean over coins (pre-onset quantities over coins with pre-onset positives); pooled S_in = mean(pi (AUC_in - 1/2)) / mean(AUC - 1/2)",
+    "quantities": "standard, pre-onset, in-progress and within-regime pre-onset AUC; pi; S_in; GBM - M0 differences",
+    "regime": "deciles of the coin's own RV over its evaluation minutes"
+  },
+  "models": {
+    "B0": "24-hour realized volatility of one-minute log returns (1440 minutes, at least 720)",
+    "M1": "z_vol",
+    "scores": [
+      "M0_VF_logit",
+      "M1_vol_threshold",
+      "M3_GBM_rich",
+      "B0_RV24h_baseline"
+    ],
+    "source": "notebook-17 COIN_MODELS_FROZEN.json (sha256 15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee), definition d4, read only"
+  },
+  "prior_use": "XRP, LTC, BNB, ADA, EOS, TRX, ETC, XLM, NEO 2023-2026 data not downloaded before in this study; ETH 2020-01..2026-04 read in notebook 10 (shared alert budget, alert counts only); Bitcoin results for this period known; models fitted on 2021 and calibrated on 2022 (notebook 17), so 2023-2026 is outside their fitting data; not a registered holdout",
+  "readings": {
+    "A1": "H=240: M0 pooled S_in lower bound >= 0.25 -> in-progress share large; upper bound < 0.25 -> not large; otherwise inconclusive",
+    "A2": "F at H=1440 per coin and pooled (sum of events): descriptive; F at H=240 must equal 1 by Corollary 1 (implementation check; stops otherwise)",
+    "A3": "H=1440: pooled GBM - M0 standard-AUC interval above zero AND pooled pre-onset interval below zero -> replicated; standard interval below zero OR pre-onset interval above zero -> contradicted; otherwise inconclusive; per-coin direction counts reported",
+    "A4": "H=240 pooled GBM - M0 differences (standard, pre-onset, in-progress, within-regime pre-onset): descriptive",
+    "finite_draws": "A1 and A3 are inconclusive when an interval end is not finite or fewer than 95% of draws are finite"
+  },
+  "seed": 20261143,
+  "status": "exploratory; frozen coin models; development period; no confirmatory plan changed; notebook-17 folder read only",
+  "title": "Ten altcoins over the development period 2023-01-01 to 2026-05-01: per-minute decomposition and the 24-hour ranking reversal with the notebook-17 frozen coin models (exploratory)",
+  "window": [
+    "2023-01-01",
+    "2026-05-01"
+  ]
+}

@@ -1,0 +1,3 @@
+policy,original_onset_hits,neutral_onset_hits,original_only,neutral_only,among_original_eight_rescues_maintained,among_original_eight_rescues_lost,original_alerts,neutral_alerts
+HS_median_fixed_2022_threshold,16,14,4,2,5,3,800,800
+HS_median_recalibrated_2022_only,16,14,4,2,5,3,800,800

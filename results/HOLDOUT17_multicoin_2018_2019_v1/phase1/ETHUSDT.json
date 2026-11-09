@@ -1,0 +1,131 @@
+{
+  "symbol": "ETHUSDT",
+  "sigma_2021": 0.04747281659169667,
+  "scale_vs_btc": 1.2274624401580063,
+  "train_rows": 524087,
+  "cal_rows": 525600,
+  "manifest_sha256": "73d3a315a034020fde9bd0589389d98f479095b24661a6a60d93795aae1383ea",
+  "configs": {
+    "M0_VF_logit|d3": {
+      "method": "M0_VF_logit",
+      "definition": "d3",
+      "decline": 0.03682387320474019,
+      "threshold_2022": 0.6228296099207999,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 150,
+      "train_positive_minutes": 31650,
+      "model_file": "models/ETHUSDT_M0_VF_logit_d3.joblib",
+      "model_sha256": "e8650f8d16ec12d3db429cf9c2d3076216b18e0628fd28a0f96bd977894f7b22"
+    },
+    "M1_vol_threshold|d3": {
+      "method": "M1_vol_threshold",
+      "definition": "d3",
+      "decline": 0.03682387320474019,
+      "threshold_2022": 1.7095494972541931,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 150,
+      "train_positive_minutes": 31650
+    },
+    "M2_VPIN|d3": {
+      "method": "M2_VPIN",
+      "definition": "d3",
+      "decline": 0.03682387320474019,
+      "threshold_2022": 0.09883800894021988,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 150,
+      "train_positive_minutes": 31650
+    },
+    "M3_GBM_rich|d3": {
+      "method": "M3_GBM_rich",
+      "definition": "d3",
+      "decline": 0.03682387320474019,
+      "threshold_2022": 0.6024967046465698,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 150,
+      "train_positive_minutes": 31650,
+      "model_file": "models/ETHUSDT_M3_GBM_rich_d3.joblib",
+      "model_sha256": "99076a46e182d66251990952601f364ce37e67a47a6882a1e89db94678fd29ca"
+    },
+    "M0_VF_logit|d4": {
+      "method": "M0_VF_logit",
+      "definition": "d4",
+      "decline": 0.049098497606320256,
+      "threshold_2022": 0.6763191060640841,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 90,
+      "train_positive_minutes": 18990,
+      "model_file": "models/ETHUSDT_M0_VF_logit_d4.joblib",
+      "model_sha256": "aa4a496f5a86d232ef9744b64348b61381becfd6d99b069a35f23a77d569d07e"
+    },
+    "M1_vol_threshold|d4": {
+      "method": "M1_vol_threshold",
+      "definition": "d4",
+      "decline": 0.049098497606320256,
+      "threshold_2022": 1.7095494972541931,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 90,
+      "train_positive_minutes": 18990
+    },
+    "M2_VPIN|d4": {
+      "method": "M2_VPIN",
+      "definition": "d4",
+      "decline": 0.049098497606320256,
+      "threshold_2022": 0.09883800894021988,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 90,
+      "train_positive_minutes": 18990
+    },
+    "M3_GBM_rich|d4": {
+      "method": "M3_GBM_rich",
+      "definition": "d4",
+      "decline": 0.049098497606320256,
+      "threshold_2022": 0.5401580346806052,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 90,
+      "train_positive_minutes": 18990,
+      "model_file": "models/ETHUSDT_M3_GBM_rich_d4.joblib",
+      "model_sha256": "bb2528558b3210d88e63113d09b018763d4432380a8b5ce7479e4b7ee09e368c"
+    },
+    "M0_VF_logit|d5": {
+      "method": "M0_VF_logit",
+      "definition": "d5",
+      "decline": 0.06137312200790032,
+      "threshold_2022": 0.7346065074043058,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 56,
+      "train_positive_minutes": 11816,
+      "model_file": "models/ETHUSDT_M0_VF_logit_d5.joblib",
+      "model_sha256": "204a976f73d839d4298107b88e99f4dafc0f2ea1d926bceef9e09915c6b6bdaa"
+    },
+    "M1_vol_threshold|d5": {
+      "method": "M1_vol_threshold",
+      "definition": "d5",
+      "decline": 0.06137312200790032,
+      "threshold_2022": 1.7095494972541931,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 56,
+      "train_positive_minutes": 11816
+    },
+    "M2_VPIN|d5": {
+      "method": "M2_VPIN",
+      "definition": "d5",
+      "decline": 0.06137312200790032,
+      "threshold_2022": 0.09883800894021988,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 56,
+      "train_positive_minutes": 11816
+    },
+    "M3_GBM_rich|d5": {
+      "method": "M3_GBM_rich",
+      "definition": "d5",
+      "decline": 0.06137312200790032,
+      "threshold_2022": 0.09125815325670347,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 56,
+      "train_positive_minutes": 11816,
+      "model_file": "models/ETHUSDT_M3_GBM_rich_d5.joblib",
+      "model_sha256": "9bf7c4b652003329d18dc48f2167556f2717708526dd9842a3454a454be048c6"
+    }
+  },
+  "excluded_definitions": {}
+}

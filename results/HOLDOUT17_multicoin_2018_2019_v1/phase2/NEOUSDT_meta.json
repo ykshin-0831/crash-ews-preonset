@@ -1,0 +1,26 @@
+{
+  "symbol": "NEOUSDT",
+  "eval_start": "2018-01-01",
+  "eval_days": 730.0,
+  "frozen_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee",
+  "manifest_sha256": "abaa95be4d53a84372d8690029c73ca0e75bf3e09b7dd5ed895eea92a22dc098",
+  "events": {
+    "d3": 166,
+    "d4": 109,
+    "d5": 68
+  },
+  "alerts": {
+    "M0_VF_logit|d3": 455,
+    "M1_vol_threshold|d3": 454,
+    "M2_VPIN|d3": 480,
+    "M3_GBM_rich|d3": 480,
+    "M0_VF_logit|d4": 455,
+    "M1_vol_threshold|d4": 454,
+    "M2_VPIN|d4": 480,
+    "M3_GBM_rich|d4": 480,
+    "M0_VF_logit|d5": 455,
+    "M1_vol_threshold|d5": 454,
+    "M2_VPIN|d5": 480,
+    "M3_GBM_rich|d5": 480
+  }
+}

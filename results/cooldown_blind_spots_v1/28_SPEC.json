@@ -1,0 +1,37 @@
+{
+  "blind_zone": "an alert with lead in (240, 270] min before the breach and no alert in the window",
+  "cooldown_reasons": {
+    "alert in window matched another event": "an alert falls inside but the matching rule gave it to another event",
+    "signal ended before the cooldown expired": "the cooldown ends inside the window part but no candidate follows",
+    "window hidden by an earlier alert": "the last alert before the first inside candidate keeps the cooldown running past the end of the window part"
+  },
+  "events": "notebook-2 4% catalog, dev events with breach in [2023-01-01 + 4h, 2026-05-01)",
+  "holdout": "notebook-11 stored alerts only: blind-zone count (post hoc, descriptive); no score is recomputed on the holdout",
+  "methods": {
+    "M0_VF_logit": "notebook-16 frozen, 4% definition",
+    "M1_vol_threshold": "notebook-16 frozen, 4% definition",
+    "M2_VPIN": "notebook-16 frozen, 4% definition",
+    "M3_GBM_rich": "notebook-16 frozen, 4% definition"
+  },
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "policies": {
+    "actual": "20/month, 240/yr, 240-min cooldown",
+    "actual_cd210": "20/month, 240/yr, 210-min cooldown",
+    "cooldown_only": "no caps, 240-min cooldown",
+    "cooldown_only_cd210": "no caps, 210-min cooldown"
+  },
+  "policy_note": "all replays use the notebook-16 frozen thresholds, start on 2023-01-01 and are descriptive; nothing is re-calibrated or selected",
+  "stages": {
+    "0 ineligible": "pre target only: no minute of the window is before the onset",
+    "1 no signal": "no candidate minute (score >= frozen threshold) from 240 min before the peak to the breach (pre: to the onset)",
+    "2 outside window": "candidates exist but none inside the window (pre: inside the pre-onset part of the window)",
+    "3 cooldown": "candidates inside, but the cooldown-only replay (no caps, 240-min cooldown) does not catch the event",
+    "4 budget": "the cooldown-only replay catches it but the actual budgeted replay does not",
+    "caught": "the actual budgeted replay catches it"
+  },
+  "targets": {
+    "any": "an alert 30-240 min before the breach (paper rule)",
+    "pre": "the matched alert is also before the 1% onset"
+  },
+  "title": "Where missed crashes were lost: signal, window, cooldown, budget (dev 2023-01..2026-04, descriptive)"
+}

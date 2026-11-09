@@ -1,0 +1,11 @@
+manifest,rows,file_sha256,has_sha256_column
+spot 2020-01..2026-04 (notebook 1),76,2a4f3062f5fb4613e64f10291f5dbf3bd9a1d1093278815b9102eaee13309869,True
+spot cache monthly files (notebook 1),76,ff52d71deba9443ff52aae6ef1c8733c7bdd357e2e0d0bd1afc0a54ed971173c,False
+futures cache monthly files (original notebook 1),76,eb3ee34c20693916ef17fbdff82e2846b86f81f01808e5a29dd2f3ce27294870,False
+spot 2017-08..2020-12 holdout (notebook 11),41,42218edfda5ae15995d1a959608ad7cd7256b22e677414df231361acde16d47f,True
+"futures 2019-09..2020-12 holdout (notebook 11, only if used)",0,missing,False
+2026 replay archives (notebook 7),6,17b922e02f92c893c89646734a1f964b68bba5e14cf0848178819c49c6bfc4f3,True
+ETHUSDT spot (notebook 10),76,2403640af65e62b8a6d88f0ce014ae34d97a263bce9fecb833af77a5a27bbaff,True
+SOLUSDT spot (notebook 10),76,8c7315d5b89bc86895215f788354d6aef9e28a65cec607d76caea4b074d97eaf,True
+DOGEUSDT spot (notebook 10),76,275b79fbe19a72e6bbdffcd752b63a4b3b8d110bed900878d451b6ff8165f2d9,True
+AVAXUSDT spot (notebook 10),76,03d7e296ab99503194a8a3d38e09129c5264c9bd7173b278e7bb8ac1bfb8b2da,True

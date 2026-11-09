@@ -1,0 +1,227 @@
+experiment,venue,period,status,row,alarms,early_warning_pre_onset,in_progress_detection_post_onset,composite_caught_reference,events,source
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V,188,1.0,1.0,2.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V,200,5.0,8.0,13.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F,186,1.0,1.0,2.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F,200,5.0,8.0,13.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+H,184,1.0,2.0,3.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+H,200,5.0,9.0,14.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F+H,181,1.0,1.0,2.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F+H,200,5.0,9.0,14.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=H+F,178,0.0,4.0,4.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=H+F,199,4.0,7.0,11.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V,360,2.0,3.0,5.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V,400,12.0,14.0,26.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F,363,2.0,3.0,5.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F,400,12.0,10.0,22.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+H,359,2.0,3.0,5.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+H,400,10.0,10.0,20.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F+H,362,1.0,4.0,5.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F+H,400,12.0,10.0,22.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=H+F,364,1.0,4.0,5.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=H+F,400,6.0,9.0,15.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V,735,5.0,0.0,5.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V,800,19.0,20.0,39.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F,735,5.0,0.0,5.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F,800,21.0,17.0,38.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+H,728,3.0,2.0,5.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+H,800,19.0,19.0,38.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F+H,734,5.0,0.0,5.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F+H,800,20.0,16.0,36.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=H+F,737,6.0,0.0,6.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=H+F,800,12.0,24.0,36.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V,1417,5.0,0.0,5.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V,1600,28.0,22.0,50.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F,1417,5.0,0.0,5.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F,1600,28.0,17.0,45.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+H,1417,5.0,0.0,5.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+H,1600,29.0,16.0,45.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F+H,1417,5.0,0.0,5.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=V+F+H,1600,27.0,24.0,51.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=H+F,1412,7.0,0.0,7.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F3,futures,2023-01-01..2026-05-01,exploratory,model=H+F,1600,25.0,20.0,45.0,84.0,btc_lead_cost_results_77months/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=fixed_threshold | B=60,200,5.0,4.0,9.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=recalibrated | B=60,200,5.0,4.0,9.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=fixed_threshold | B=60,190,2.0,9.0,11.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=recalibrated | B=60,196,3.0,5.0,8.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=paced | arm=fixed_threshold | B=60,199,3.0,5.0,8.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=paced | arm=recalibrated | B=60,199,3.0,5.0,8.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=fixed_threshold | B=60,196,3.0,4.0,7.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=recalibrated | B=60,199,6.0,7.0,13.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=fixed_threshold | B=120,400,12.0,15.0,27.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=recalibrated | B=120,400,12.0,15.0,27.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=fixed_threshold | B=120,369,4.0,13.0,17.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=recalibrated | B=120,394,8.0,10.0,18.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=paced | arm=fixed_threshold | B=120,387,6.0,12.0,18.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=paced | arm=recalibrated | B=120,399,6.0,8.0,14.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=fixed_threshold | B=120,383,7.0,16.0,23.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=recalibrated | B=120,396,4.0,9.0,13.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=fixed_threshold | B=240,800,19.0,16.0,35.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=recalibrated | B=240,800,19.0,16.0,35.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=fixed_threshold | B=240,752,10.0,22.0,32.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=recalibrated | B=240,791,8.0,17.0,25.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=paced | arm=fixed_threshold | B=240,778,14.0,17.0,31.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=paced | arm=recalibrated | B=240,790,17.0,13.0,30.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=fixed_threshold | B=240,783,14.0,20.0,34.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=recalibrated | B=240,783,14.0,20.0,34.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=fixed_threshold | B=480,1600,25.0,16.0,41.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=recalibrated | B=480,1600,25.0,16.0,41.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=fixed_threshold | B=480,1562,18.0,18.0,36.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=recalibrated | B=480,1589,14.0,13.0,27.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=paced | arm=fixed_threshold | B=480,1581,18.0,20.0,38.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=paced | arm=recalibrated | B=480,1593,16.0,18.0,34.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=fixed_threshold | B=480,1594,26.0,14.0,40.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F4,futures,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=recalibrated | B=480,1588,19.0,20.0,39.0,84.0,btc_lead_cost_results_77months/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+F5,futures,2023-01-01..2026-05-01,exploratory,policy=first_eligible,800,19.0,16.0,35.0,,btc_lead_cost_results_77months/causal_alert_selection_v1/selection_policy_comparison.csv
+F5,futures,2023-01-01..2026-05-01,exploratory,policy=absolute_high_score,800,20.0,20.0,40.0,,btc_lead_cost_results_77months/causal_alert_selection_v1/selection_policy_comparison.csv
+F5,futures,2023-01-01..2026-05-01,exploratory,policy=relative_surprise_7d,785,12.0,30.0,42.0,,btc_lead_cost_results_77months/causal_alert_selection_v1/selection_policy_comparison.csv
+F5,futures,2023-01-01..2026-05-01,exploratory,policy=past_peak_breakout_1h,800,20.0,19.0,39.0,,btc_lead_cost_results_77months/causal_alert_selection_v1/selection_policy_comparison.csv
+F6,futures,2023-01-01..2026-05-01,exploratory,policy=calendar_published | mode=calendar,800,19.0,16.0,35.0,84.0,btc_lead_cost_results_77months/FINAL_risk_adaptive_alert_capacity_v1/risk_adaptive_policy_comparison.csv
+F6,futures,2023-01-01..2026-05-01,exploratory,policy=high_score_published | mode=calendar,800,20.0,20.0,40.0,84.0,btc_lead_cost_results_77months/FINAL_risk_adaptive_alert_capacity_v1/risk_adaptive_policy_comparison.csv
+F6,futures,2023-01-01..2026-05-01,exploratory,policy=constant_bucket_fixedscore | mode=constant_bucket,817,10.0,20.0,30.0,84.0,btc_lead_cost_results_77months/FINAL_risk_adaptive_alert_capacity_v1/risk_adaptive_policy_comparison.csv
+F6,futures,2023-01-01..2026-05-01,exploratory,policy=risk_bucket_fixedscore | mode=risk_bucket,570,9.0,14.0,23.0,84.0,btc_lead_cost_results_77months/FINAL_risk_adaptive_alert_capacity_v1/risk_adaptive_policy_comparison.csv
+F6,futures,2023-01-01..2026-05-01,exploratory,policy=constant_bucket_recalibrated | mode=constant_bucket,799,18.0,28.0,46.0,84.0,btc_lead_cost_results_77months/FINAL_risk_adaptive_alert_capacity_v1/risk_adaptive_policy_comparison.csv
+F6,futures,2023-01-01..2026-05-01,exploratory,policy=risk_bucket_recalibrated | mode=risk_bucket,572,8.0,7.0,15.0,84.0,btc_lead_cost_results_77months/FINAL_risk_adaptive_alert_capacity_v1/risk_adaptive_policy_comparison.csv
+F7,futures,2026-05..2026-09,frozen replay,policy=calendar,100,0.0,1.0,1.0,2.0,btc_lead_cost_results_77months/FINAL_frozen_policy_May_Sep_2026_v2_source_verified/FROZEN_policy_comparison_May_Sep_2026.csv
+F7,futures,2026-05..2026-09,frozen replay,policy=high_score,100,0.0,1.0,1.0,2.0,btc_lead_cost_results_77months/FINAL_frozen_policy_May_Sep_2026_v2_source_verified/FROZEN_policy_comparison_May_Sep_2026.csv
+F7,futures,2026-05..2026-09,frozen replay,policy=constant_bucket,97,0.0,1.0,1.0,2.0,btc_lead_cost_results_77months/FINAL_frozen_policy_May_Sep_2026_v2_source_verified/FROZEN_policy_comparison_May_Sep_2026.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V,187,1.0,1.0,2.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V,200,6.0,7.0,13.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F,185,1.0,1.0,2.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F,200,5.0,8.0,13.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+H,188,1.0,2.0,3.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+H,200,5.0,8.0,13.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F+H,187,1.0,3.0,4.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F+H,200,5.0,9.0,14.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=H+F,186,0.0,3.0,3.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=H+F,199,4.0,8.0,12.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V,359,1.0,3.0,4.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V,400,13.0,14.0,27.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F,365,2.0,2.0,4.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F,400,12.0,12.0,24.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+H,362,0.0,4.0,4.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+H,400,12.0,11.0,23.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F+H,359,1.0,3.0,4.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F+H,400,12.0,11.0,23.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=H+F,363,0.0,4.0,4.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=H+F,400,7.0,11.0,18.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V,726,5.0,0.0,5.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V,800,20.0,20.0,40.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F,730,4.0,1.0,5.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F,800,20.0,17.0,37.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+H,726,4.0,1.0,5.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+H,800,20.0,21.0,41.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F+H,724,4.0,1.0,5.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F+H,800,21.0,19.0,40.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=H+F,745,5.0,0.0,5.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=H+F,800,14.0,24.0,38.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V,1415,5.0,0.0,5.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V,1600,28.0,17.0,45.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F,1415,5.0,0.0,5.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F,1600,25.0,15.0,40.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+H,1413,5.0,0.0,5.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+H,1600,28.0,18.0,46.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F+H,1414,5.0,0.0,5.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=V+F+H,1600,28.0,19.0,47.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=H+F,1418,6.0,0.0,6.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+3,spot,2023-01-01..2026-05-01,exploratory,model=H+F,1600,24.0,19.0,43.0,83.0,btc_lead_cost_results_77months_spot/gate_ablation_price_only_v1/gate_ablation_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=fixed_threshold | B=60,200,6.0,5.0,11.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=recalibrated | B=60,200,6.0,5.0,11.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=fixed_threshold | B=60,189,4.0,5.0,9.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=recalibrated | B=60,196,1.0,5.0,6.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=paced | arm=fixed_threshold | B=60,199,4.0,6.0,10.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=paced | arm=recalibrated | B=60,199,4.0,6.0,10.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=fixed_threshold | B=60,196,2.0,8.0,10.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=recalibrated | B=60,199,1.0,6.0,7.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=fixed_threshold | B=120,400,11.0,15.0,26.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=recalibrated | B=120,400,11.0,15.0,26.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=fixed_threshold | B=120,364,5.0,12.0,17.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=recalibrated | B=120,393,5.0,12.0,17.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=paced | arm=fixed_threshold | B=120,383,6.0,11.0,17.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=paced | arm=recalibrated | B=120,399,5.0,8.0,13.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=fixed_threshold | B=120,375,6.0,17.0,23.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=recalibrated | B=120,395,4.0,9.0,13.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=fixed_threshold | B=240,800,22.0,17.0,39.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=recalibrated | B=240,800,22.0,17.0,39.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=fixed_threshold | B=240,749,10.0,18.0,28.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=recalibrated | B=240,791,8.0,13.0,21.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=paced | arm=fixed_threshold | B=240,777,12.0,18.0,30.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=paced | arm=recalibrated | B=240,789,14.0,14.0,28.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=fixed_threshold | B=240,782,12.0,18.0,30.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=recalibrated | B=240,793,10.0,10.0,20.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=fixed_threshold | B=480,1600,24.0,15.0,39.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=calendar | arm=recalibrated | B=480,1600,24.0,15.0,39.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=fixed_threshold | B=480,1559,15.0,18.0,33.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=rolling30 | arm=recalibrated | B=480,1586,16.0,14.0,30.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=paced | arm=fixed_threshold | B=480,1577,17.0,21.0,38.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=paced | arm=recalibrated | B=480,1596,12.0,15.0,27.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=fixed_threshold | B=480,1593,25.0,15.0,40.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+4,spot,2023-01-01..2026-05-01,exploratory,mode=token_bucket | arm=recalibrated | B=480,1593,25.0,15.0,40.0,83.0,btc_lead_cost_results_77months_spot/systems_engineering_scheduler_oracle_value_v1/scheduler_policy_comparison.csv
+5,spot,2023-01-01..2026-05-01,exploratory,policy=first_eligible,800,22.0,17.0,39.0,,btc_lead_cost_results_77months_spot/causal_alert_selection_v1/selection_policy_comparison.csv
+5,spot,2023-01-01..2026-05-01,exploratory,policy=absolute_high_score,800,19.0,22.0,41.0,,btc_lead_cost_results_77months_spot/causal_alert_selection_v1/selection_policy_comparison.csv
+5,spot,2023-01-01..2026-05-01,exploratory,policy=relative_surprise_7d,781,13.0,28.0,41.0,,btc_lead_cost_results_77months_spot/causal_alert_selection_v1/selection_policy_comparison.csv
+5,spot,2023-01-01..2026-05-01,exploratory,policy=past_peak_breakout_1h,800,19.0,20.0,39.0,,btc_lead_cost_results_77months_spot/causal_alert_selection_v1/selection_policy_comparison.csv
+6,spot,2023-01-01..2026-05-01,exploratory,policy=calendar_published | mode=calendar,800,22.0,17.0,39.0,83.0,btc_lead_cost_results_77months_spot/FINAL_risk_adaptive_alert_capacity_v1/risk_adaptive_policy_comparison.csv
+6,spot,2023-01-01..2026-05-01,exploratory,policy=high_score_published | mode=calendar,800,19.0,22.0,41.0,83.0,btc_lead_cost_results_77months_spot/FINAL_risk_adaptive_alert_capacity_v1/risk_adaptive_policy_comparison.csv
+6,spot,2023-01-01..2026-05-01,exploratory,policy=constant_bucket_fixedscore | mode=constant_bucket,816,10.0,18.0,28.0,83.0,btc_lead_cost_results_77months_spot/FINAL_risk_adaptive_alert_capacity_v1/risk_adaptive_policy_comparison.csv
+6,spot,2023-01-01..2026-05-01,exploratory,policy=risk_bucket_fixedscore | mode=risk_bucket,565,7.0,13.0,20.0,83.0,btc_lead_cost_results_77months_spot/FINAL_risk_adaptive_alert_capacity_v1/risk_adaptive_policy_comparison.csv
+6,spot,2023-01-01..2026-05-01,exploratory,policy=constant_bucket_recalibrated | mode=constant_bucket,795,18.0,30.0,48.0,83.0,btc_lead_cost_results_77months_spot/FINAL_risk_adaptive_alert_capacity_v1/risk_adaptive_policy_comparison.csv
+6,spot,2023-01-01..2026-05-01,exploratory,policy=risk_bucket_recalibrated | mode=risk_bucket,565,7.0,13.0,20.0,83.0,btc_lead_cost_results_77months_spot/FINAL_risk_adaptive_alert_capacity_v1/risk_adaptive_policy_comparison.csv
+7,spot,2026-05..2026-09,frozen replay,policy=calendar,100,0.0,1.0,1.0,2.0,btc_lead_cost_results_77months_spot/FINAL_frozen_policy_May_Sep_2026_v2_source_verified/FROZEN_policy_comparison_May_Sep_2026.csv
+7,spot,2026-05..2026-09,frozen replay,policy=high_score,99,0.0,1.0,1.0,2.0,btc_lead_cost_results_77months_spot/FINAL_frozen_policy_May_Sep_2026_v2_source_verified/FROZEN_policy_comparison_May_Sep_2026.csv
+7,spot,2026-05..2026-09,frozen replay,policy=constant_bucket,97,0.0,1.0,1.0,2.0,btc_lead_cost_results_77months_spot/FINAL_frozen_policy_May_Sep_2026_v2_source_verified/FROZEN_policy_comparison_May_Sep_2026.csv
+8,spot,2023-01-01..2026-05-01,exploratory,model=M0_VF,800,22.0,17.0,39.0,,btc_lead_cost_results_77months_spot/crossvenue_information_v1/crossvenue_model_comparison.csv
+8,spot,2023-01-01..2026-05-01,exploratory,model=M1_VF_basis,800,18.0,16.0,34.0,,btc_lead_cost_results_77months_spot/crossvenue_information_v1/crossvenue_model_comparison.csv
+8,spot,2023-01-01..2026-05-01,exploratory,model=M2_VF_flowgap,800,18.0,12.0,30.0,,btc_lead_cost_results_77months_spot/crossvenue_information_v1/crossvenue_model_comparison.csv
+8,spot,2023-01-01..2026-05-01,exploratory,model=M3_VF_volratio,800,17.0,14.0,31.0,,btc_lead_cost_results_77months_spot/crossvenue_information_v1/crossvenue_model_comparison.csv
+8,spot,2023-01-01..2026-05-01,exploratory,model=M4_VF_all3,798,13.0,20.0,33.0,,btc_lead_cost_results_77months_spot/crossvenue_information_v1/crossvenue_model_comparison.csv
+9,spot,2023-01-01..2026-05-01,exploratory,policy=P0_calendar,800,22.0,17.0,39.0,,btc_lead_cost_results_77months_spot/capacity_design_v1/capacity_policy_comparison.csv
+9,spot,2023-01-01..2026-05-01,exploratory,policy=P1_constant_bucket,795,18.0,30.0,48.0,,btc_lead_cost_results_77months_spot/capacity_design_v1/capacity_policy_comparison.csv
+9,spot,2023-01-01..2026-05-01,exploratory,policy=P2_risk_bucket_budget_neutral,808,14.0,21.0,35.0,,btc_lead_cost_results_77months_spot/capacity_design_v1/capacity_policy_comparison.csv
+9,spot,2023-01-01..2026-05-01,exploratory,policy=P3_surge_reserve_calendar,792,21.0,15.0,36.0,,btc_lead_cost_results_77months_spot/capacity_design_v1/capacity_policy_comparison.csv
+10,spot 5 coins,2023-01-01..2026-05-01,exploratory,policy=S0_separate | coin=BTCUSDT,800,22.0,17.0,39.0,83.0,btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/multicoin_policy_by_coin.csv
+10,spot 5 coins,2023-01-01..2026-05-01,exploratory,policy=S0_separate | coin=ETHUSDT,800,9.0,26.0,35.0,94.0,btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/multicoin_policy_by_coin.csv
+10,spot 5 coins,2023-01-01..2026-05-01,exploratory,policy=S0_separate | coin=SOLUSDT,800,12.0,20.0,32.0,68.0,btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/multicoin_policy_by_coin.csv
+10,spot 5 coins,2023-01-01..2026-05-01,exploratory,policy=S0_separate | coin=DOGEUSDT,792,16.0,26.0,42.0,112.0,btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/multicoin_policy_by_coin.csv
+10,spot 5 coins,2023-01-01..2026-05-01,exploratory,policy=S0_separate | coin=AVAXUSDT,800,2.0,14.0,16.0,40.0,btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/multicoin_policy_by_coin.csv
+10,spot 5 coins,2023-01-01..2026-05-01,exploratory,policy=S1_pooled | coin=BTCUSDT,740,18.0,23.0,41.0,83.0,btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/multicoin_policy_by_coin.csv
+10,spot 5 coins,2023-01-01..2026-05-01,exploratory,policy=S1_pooled | coin=ETHUSDT,953,15.0,33.0,48.0,94.0,btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/multicoin_policy_by_coin.csv
+10,spot 5 coins,2023-01-01..2026-05-01,exploratory,policy=S1_pooled | coin=SOLUSDT,730,13.0,22.0,35.0,68.0,btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/multicoin_policy_by_coin.csv
+10,spot 5 coins,2023-01-01..2026-05-01,exploratory,policy=S1_pooled | coin=DOGEUSDT,638,17.0,31.0,48.0,112.0,btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/multicoin_policy_by_coin.csv
+10,spot 5 coins,2023-01-01..2026-05-01,exploratory,policy=S1_pooled | coin=AVAXUSDT,938,3.0,20.0,23.0,40.0,btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/multicoin_policy_by_coin.csv
+10,spot 5 coins,2023-01-01..2026-05-01,exploratory,policy=S1b_pooled_coincap | coin=BTCUSDT,740,18.0,23.0,41.0,83.0,btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/multicoin_policy_by_coin.csv
+10,spot 5 coins,2023-01-01..2026-05-01,exploratory,policy=S1b_pooled_coincap | coin=ETHUSDT,953,15.0,33.0,48.0,94.0,btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/multicoin_policy_by_coin.csv
+10,spot 5 coins,2023-01-01..2026-05-01,exploratory,policy=S1b_pooled_coincap | coin=SOLUSDT,730,13.0,22.0,35.0,68.0,btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/multicoin_policy_by_coin.csv
+10,spot 5 coins,2023-01-01..2026-05-01,exploratory,policy=S1b_pooled_coincap | coin=DOGEUSDT,638,17.0,31.0,48.0,112.0,btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/multicoin_policy_by_coin.csv
+10,spot 5 coins,2023-01-01..2026-05-01,exploratory,policy=S1b_pooled_coincap | coin=AVAXUSDT,938,3.0,20.0,23.0,40.0,btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/multicoin_policy_by_coin.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=calendar,713,13.0,23.0,36.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=calendar | year=2018.0,233,5.0,13.0,18.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=calendar | year=2019.0,240,5.0,5.0,10.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=calendar | year=2020.0,240,3.0,5.0,8.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=high_score,708,14.0,22.0,36.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=high_score | year=2018.0,228,5.0,14.0,19.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=high_score | year=2019.0,240,5.0,4.0,9.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=high_score | year=2020.0,240,4.0,4.0,8.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=constant_bucket,704,15.0,25.0,40.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=constant_bucket | year=2018.0,224,6.0,16.0,22.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=constant_bucket | year=2019.0,240,5.0,3.0,8.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=constant_bucket | year=2020.0,240,4.0,6.0,10.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_calendar,713,13.0,23.0,36.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_calendar | year=2018.0,233,5.0,13.0,18.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_calendar | year=2019.0,240,5.0,5.0,10.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_calendar | year=2020.0,240,3.0,5.0,8.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_rolling30,709,14.0,16.0,30.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_rolling30 | year=2018.0,230,6.0,9.0,15.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_rolling30 | year=2019.0,240,7.0,3.0,10.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_rolling30 | year=2020.0,239,1.0,4.0,5.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_paced,704,13.0,19.0,32.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_paced | year=2018.0,224,2.0,10.0,12.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_paced | year=2019.0,240,7.0,5.0,12.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_paced | year=2020.0,240,4.0,4.0,8.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_token_bucket,704,9.0,18.0,27.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_token_bucket | year=2018.0,226,2.0,10.0,12.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_token_bucket | year=2019.0,239,4.0,7.0,11.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+11,spot,2018-01..2020-12,confirmatory (secondary rows),policy=sched_token_bucket | year=2020.0,239,3.0,1.0,4.0,,btc_lead_cost_results_77months_spot/HOLDOUT_2018_2020_confirmatory_v1/secondary_policy_results.csv
+12,spot,2023-01-01..2026-05-01 and 2018-01..2020-12,exploratory,period=dev,800,22.0,17.0,39.0,83.0,btc_lead_cost_results_77months_spot/early_warning_reliability_v1/1_endpoint_table.csv
+12,spot,2023-01-01..2026-05-01 and 2018-01..2020-12,exploratory,period=holdout,713,13.0,23.0,36.0,199.0,btc_lead_cost_results_77months_spot/early_warning_reliability_v1/1_endpoint_table.csv
+13,spot+futures,2023-01-01..2026-05-01,descriptive,venue=spot,800,22.0,17.0,39.0,83.0,btc_lead_cost_results_77months_spot/spot_futures_same_event_v1/1_reproduced_baselines.csv
+13,spot+futures,2023-01-01..2026-05-01,descriptive,venue=futures,800,19.0,16.0,35.0,84.0,btc_lead_cost_results_77months_spot/spot_futures_same_event_v1/1_reproduced_baselines.csv

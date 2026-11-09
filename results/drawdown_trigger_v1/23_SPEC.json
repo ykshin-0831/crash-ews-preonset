@@ -1,0 +1,26 @@
+{
+  "event_level": "matched events (notebook-4 matching): drawdown from the event peak at entry, decline avoided to the breach close, share of the peak-to-24h-trough fall avoided (hindsight upper bound)",
+  "holdouts": "not used",
+  "per_minute": "notebook-18/21 decomposition of dd_240 (labels: 4% catalog, 30-240 min; in-decline split at the 1% onset), 500 x 7-day block bootstrap",
+  "reference": "M0 calendar alarms (notebook 5), valued identically; must reproduce notebook 15",
+  "rule": {
+    "X_percent": [
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "alert": "first minute with dd_240 >= X, then a 240-min cooldown; no annual budget (primary)",
+    "secondary": "same eligibility through the notebook-16 calendar scheduler (20/month, 240/year)"
+  },
+  "score": "dd_240 = 1 - close / max close over the trailing 240 minutes (min 120), as notebook-16 feature dd_240",
+  "seed": 20261106,
+  "selection": "no trigger is selected or recommended; the full curve is reported",
+  "title": "One-line drawdown trigger: standard AUC and loss trade-off curve (dev 2023-01..2026-04, exploratory)",
+  "uncertainty": "calendar-month block bootstrap, 2000 draws, 95% interval of the annual net value",
+  "value": "notebook-15 action: exit at the first positive-volume close within 5 min after the alert minute, re-enter after 240 min; value = -log return over the hold; one-way fees [0, 5, 10] bp charged on both legs; annual value = simple sum / years"
+}

@@ -1,0 +1,187 @@
+{
+  "symbol": "ETCUSDT",
+  "spec_sha256": "e1e10288ceb9a2d440b3707f48f49ad009e94d642cbe8488f2a02e0862bc588c",
+  "frozen_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee",
+  "manifest_sha256": "8b9aad2d1f9d6ccd6e3a0634d15a9147394c6b4b09af3b121565df1b9b709027",
+  "phase1_reproduced": {
+    "train_events_2021": 98,
+    "calibration": {
+      "M0_VF_logit": {
+        "threshold": 0.6853478415925016,
+        "threshold_17": 0.6853478415925016,
+        "alerts": 240,
+        "alerts_17": 240
+      },
+      "M1_vol_threshold": {
+        "threshold": 1.4974514839425686,
+        "threshold_17": 1.4974514839425686,
+        "alerts": 240,
+        "alerts_17": 240
+      },
+      "M3_GBM_rich": {
+        "threshold": 0.056990900028021305,
+        "threshold_17": 0.056990900028021305,
+        "alerts": 240,
+        "alerts_17": 240
+      }
+    }
+  },
+  "eval_start": "2023-01-01 00:00:00+00:00",
+  "eval_end": "2026-05-01 00:00:00+00:00",
+  "eval_days": 1216.0,
+  "coverage": {
+    "eval_minutes": 1750795,
+    "valid_minutes": 1649810,
+    "excluded_gap_ahead": 173,
+    "missing_months": [],
+    "common_minutes": 1649637,
+    "common_share": 0.9422216764384179,
+    "caution": false
+  },
+  "events": {
+    "240": 65,
+    "1440": 90
+  },
+  "F": {
+    "240": {
+      "feasible": 65,
+      "events": 65,
+      "F": 1.0
+    },
+    "1440": {
+      "feasible": 10,
+      "events": 90,
+      "F": 0.1111111111111111
+    }
+  },
+  "positives": {
+    "240": {
+      "pre": 5092,
+      "in_progress": 8623,
+      "negatives": 1635922,
+      "events_with_positives": 65,
+      "boundary_events": 0,
+      "boundary_positive_minutes": 0
+    },
+    "1440": {
+      "pre": 1157,
+      "in_progress": 17833,
+      "negatives": 1630647,
+      "events_with_positives": 90,
+      "boundary_events": 0,
+      "boundary_positive_minutes": 0
+    }
+  },
+  "common_minutes": 1649637,
+  "blocks_with_minutes": 174,
+  "guards": [
+    {
+      "guard": "phase1_manifest_exists|ETCUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT: notebook-17 phase-1 manifest not found (/content/drive/MyDrive/btc_lead_cost_results_77months_spot/HOLDOUT17_multicoin_2018_2019_v1/phase1/ETCUSDT_train_manifest.csv)"
+    },
+    {
+      "guard": "phase1_manifest|ETCUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT: 2020-11..2022-12 archives differ from the notebook-17 phase-1 manifest in []"
+    },
+    {
+      "guard": "train_events_2021|ETCUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT: 2021 events 98 / training positives 20678 differ from notebook 17 (98 / 20678)"
+    },
+    {
+      "guard": "model_sha|ETCUSDT|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT M0_VF_logit d4: model file missing or SHA-256 differs from the freeze"
+    },
+    {
+      "guard": "model_sha|ETCUSDT|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT M3_GBM_rich d4: model file missing or SHA-256 differs from the freeze"
+    },
+    {
+      "guard": "m0_refit|ETCUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT: M0 refit on 2021 differs from the frozen notebook-17 model"
+    },
+    {
+      "guard": "calibration_2022|ETCUSDT|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT M0_VF_logit: 2022 threshold 0.6853478415925016 / alerts 240 differ from notebook 17 (0.6853478415925016 / 240)"
+    },
+    {
+      "guard": "calibration_2022|ETCUSDT|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT M1_vol_threshold: 2022 threshold 1.4974514839425686 / alerts 240 differ from notebook 17 (1.4974514839425686 / 240)"
+    },
+    {
+      "guard": "calibration_2022|ETCUSDT|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT M3_GBM_rich: 2022 threshold 0.056990900028021305 / alerts 240 differ from notebook 17 (0.056990900028021305 / 240)"
+    },
+    {
+      "guard": "F_corollary1|ETCUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT: F at H=240 is 1.0 although Corollary 1 requires 1"
+    },
+    {
+      "guard": "decomposition_identity|ETCUSDT|240|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT H=240 M0_VF_logit: AUC decomposition identity off by 5.55e-17"
+    },
+    {
+      "guard": "decomposition_identity|ETCUSDT|240|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT H=240 M1_vol_threshold: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|ETCUSDT|240|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT H=240 M3_GBM_rich: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|ETCUSDT|240|B0_RV24h_baseline",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT H=240 B0_RV24h_baseline: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|ETCUSDT|1440|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT H=1440 M0_VF_logit: AUC decomposition identity off by 5.55e-17"
+    },
+    {
+      "guard": "decomposition_identity|ETCUSDT|1440|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT H=1440 M1_vol_threshold: AUC decomposition identity off by 5.55e-17"
+    },
+    {
+      "guard": "decomposition_identity|ETCUSDT|1440|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT H=1440 M3_GBM_rich: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|ETCUSDT|1440|B0_RV24h_baseline",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ETCUSDT H=1440 B0_RV24h_baseline: AUC decomposition identity off by 5.55e-17"
+    }
+  ]
+}

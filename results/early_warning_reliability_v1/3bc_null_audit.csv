@@ -1,0 +1,85 @@
+period,null,endpoint,observed,null_mean,p_one_sided
+dev,circular shift 4h-1d,pre,22,8.4412,0.0001999600079984003
+dev,circular shift 4h-1d,post,17,6.8334,0.0001999600079984003
+dev,circular shift 4h-1d,caught,39,15.2746,0.0001999600079984003
+dev,circular shift 4h-1d,onset_anchored,29,18.6698,0.10077984403119376
+dev,circular shift 4h-1d,episodes_pre,16,7.867,0.0013997200559888023
+dev,circular shift 4h-1d,episodes_caught,27,12.4368,0.0001999600079984003
+dev,circular shift 1-3d,pre,22,6.223,0.0001999600079984003
+dev,circular shift 1-3d,post,17,5.0638,0.003999200159968006
+dev,circular shift 1-3d,caught,39,11.2868,0.0001999600079984003
+dev,circular shift 1-3d,onset_anchored,29,12.7616,0.0001999600079984003
+dev,circular shift 1-3d,episodes_pre,16,5.8252,0.0001999600079984003
+dev,circular shift 1-3d,episodes_caught,27,9.0658,0.0001999600079984003
+dev,circular shift 3-7d,pre,22,5.8238,0.0001999600079984003
+dev,circular shift 3-7d,post,17,3.5446,0.0001999600079984003
+dev,circular shift 3-7d,caught,39,9.3684,0.0001999600079984003
+dev,circular shift 3-7d,onset_anchored,29,10.673,0.0001999600079984003
+dev,circular shift 3-7d,episodes_pre,16,5.5398,0.0001999600079984003
+dev,circular shift 3-7d,episodes_caught,27,8.3382,0.0001999600079984003
+dev,circular shift 7-30d,pre,22,3.8628,0.0001999600079984003
+dev,circular shift 7-30d,post,17,2.77,0.0001999600079984003
+dev,circular shift 7-30d,caught,39,6.6328,0.0001999600079984003
+dev,circular shift 7-30d,onset_anchored,29,7.4516,0.0003999200159968006
+dev,circular shift 7-30d,episodes_pre,16,3.7042,0.0001999600079984003
+dev,circular shift 7-30d,episodes_caught,27,6.0856,0.0001999600079984003
+dev,circular shift >30d,pre,22,4.693,0.0001999600079984003
+dev,circular shift >30d,post,17,3.327,0.0001999600079984003
+dev,circular shift >30d,caught,39,8.02,0.0001999600079984003
+dev,circular shift >30d,onset_anchored,29,9.1128,0.0003999200159968006
+dev,circular shift >30d,episodes_pre,16,4.4994,0.0001999600079984003
+dev,circular shift >30d,episodes_caught,27,7.2478,0.0001999600079984003
+dev,"regime-matched (same RV decile, +-30d)",pre,22,5.7658,0.0001999600079984003
+dev,"regime-matched (same RV decile, +-30d)",post,17,4.0558,0.0001999600079984003
+dev,"regime-matched (same RV decile, +-30d)",caught,39,9.8216,0.0001999600079984003
+dev,"regime-matched (same RV decile, +-30d)",onset_anchored,29,11.1682,0.0001999600079984003
+dev,"regime-matched (same RV decile, +-30d)",episodes_pre,16,5.559,0.0001999600079984003
+dev,"regime-matched (same RV decile, +-30d)",episodes_caught,27,9.0076,0.0001999600079984003
+dev,"circular shift >=7d (primary, section 2)",pre,22,4.6666,9.999000099990002e-05
+dev,"circular shift >=7d (primary, section 2)",post,17,3.2934,9.999000099990002e-05
+dev,"circular shift >=7d (primary, section 2)",caught,39,7.96,9.999000099990002e-05
+dev,"circular shift >=7d (primary, section 2)",onset_anchored,29,9.0713,0.00029997000299970003
+dev,"circular shift >=7d (primary, section 2)",episodes_pre,16,4.4728,9.999000099990002e-05
+dev,"circular shift >=7d (primary, section 2)",episodes_caught,27,7.197,9.999000099990002e-05
+holdout,circular shift 4h-1d,pre,13,13.641,0.6316736652669466
+holdout,circular shift 4h-1d,post,23,8.4152,0.0001999600079984003
+holdout,circular shift 4h-1d,caught,36,22.0562,0.0001999600079984003
+holdout,circular shift 4h-1d,onset_anchored,22,26.0222,0.8234353129374126
+holdout,circular shift 4h-1d,episodes_pre,10,11.253,0.6902619476104779
+holdout,circular shift 4h-1d,episodes_caught,28,15.9888,0.0001999600079984003
+holdout,circular shift 1-3d,pre,13,11.2394,0.32373525294941013
+holdout,circular shift 1-3d,post,23,7.588,0.0001999600079984003
+holdout,circular shift 1-3d,caught,36,18.8274,0.0001999600079984003
+holdout,circular shift 1-3d,onset_anchored,22,21.5928,0.5100979804039192
+holdout,circular shift 1-3d,episodes_pre,10,9.0608,0.41051789642071584
+holdout,circular shift 1-3d,episodes_caught,28,13.5134,0.0001999600079984003
+holdout,circular shift 3-7d,pre,13,10.2788,0.2451509698060388
+holdout,circular shift 3-7d,post,23,7.6308,0.0001999600079984003
+holdout,circular shift 3-7d,caught,36,17.9096,0.0001999600079984003
+holdout,circular shift 3-7d,onset_anchored,22,20.4914,0.4283143371325735
+holdout,circular shift 3-7d,episodes_pre,10,8.2782,0.30453909218156366
+holdout,circular shift 3-7d,episodes_caught,28,12.703,0.0001999600079984003
+holdout,circular shift 7-30d,pre,13,10.3844,0.2409518096380724
+holdout,circular shift 7-30d,post,23,7.1734,0.0001999600079984003
+holdout,circular shift 7-30d,caught,36,17.5578,0.0001999600079984003
+holdout,circular shift 7-30d,onset_anchored,22,19.89,0.35372925414917017
+holdout,circular shift 7-30d,episodes_pre,10,8.6522,0.3567286542691462
+holdout,circular shift 7-30d,episodes_caught,28,12.8696,0.0001999600079984003
+holdout,circular shift >30d,pre,13,11.3888,0.34833033393321333
+holdout,circular shift >30d,post,23,7.6672,0.0001999600079984003
+holdout,circular shift >30d,caught,36,19.056,0.0001999600079984003
+holdout,circular shift >30d,onset_anchored,22,21.612,0.4981003799240152
+holdout,circular shift >30d,episodes_pre,10,9.1136,0.42131573685262946
+holdout,circular shift >30d,episodes_caught,28,13.3428,0.0001999600079984003
+holdout,"regime-matched (same RV decile, +-30d)",pre,13,10.1904,0.21015796840631873
+holdout,"regime-matched (same RV decile, +-30d)",post,23,6.7676,0.0001999600079984003
+holdout,"regime-matched (same RV decile, +-30d)",caught,36,16.958,0.0001999600079984003
+holdout,"regime-matched (same RV decile, +-30d)",onset_anchored,22,19.5194,0.3025394921015797
+holdout,"regime-matched (same RV decile, +-30d)",episodes_pre,10,8.6032,0.33613277344531095
+holdout,"regime-matched (same RV decile, +-30d)",episodes_caught,28,12.9118,0.0001999600079984003
+holdout,"circular shift >=7d (primary, section 2)",pre,13,11.3724,0.3531646835316468
+holdout,"circular shift >=7d (primary, section 2)",post,23,7.6778,9.999000099990002e-05
+holdout,"circular shift >=7d (primary, section 2)",caught,36,19.0502,9.999000099990002e-05
+holdout,"circular shift >=7d (primary, section 2)",onset_anchored,22,21.624,0.5063493650634937
+holdout,"circular shift >=7d (primary, section 2)",episodes_pre,10,9.1075,0.4243575642435756
+holdout,"circular shift >=7d (primary, section 2)",episodes_caught,28,13.3535,9.999000099990002e-05

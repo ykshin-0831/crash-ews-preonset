@@ -1,0 +1,339 @@
+{
+  "status": "EXPLORATORY_POSTHOC_NOT_VALIDATION",
+  "original_47_reproduction": {
+    "M0": {
+      "breach": 22,
+      "onset": 15,
+      "alerts": 800
+    },
+    "HGB_Base": {
+      "breach": 13,
+      "onset": 9,
+      "alerts": 800
+    },
+    "HGB_HS": {
+      "breach": 12,
+      "onset": 16,
+      "alerts": 800
+    }
+  },
+  "source_sha256": {
+    "BTC_prices": "69193f493b7c30cd940f2535e895c79b8475fd8cc15c51b9d2b42f69ffd4dded",
+    "BTC_signals": "cb25f180364f585e457f8bdf0e00a39876daf7bbc5171a23ebd2ca8feffcceb0",
+    "ETHUSDT_price": "b6c0ab9f2bffd34e75af66c309521ed0e273387b8b19955f1dea241443f9a60d",
+    "SOLUSDT_price": "5e54566cbf7d8738f38d3384ac101c76a1edd538a249c31bf2fbe8b1876e878e",
+    "DOGEUSDT_price": "8950658b5b374294fe6cf131cb7d770422f588c9eb287935be0261eb02516e93",
+    "AVAXUSDT_price": "2589050e261ff11e8d6d34c4ff824883878603eb67ab9b3ef76d494001dc2d93"
+  },
+  "common_support": [
+    {
+      "period": "train_2021",
+      "btc_valid_minutes": 524087,
+      "common_support_minutes": 523823,
+      "retained_fraction": 0.9994962668411924
+    },
+    {
+      "period": "cal_2022",
+      "btc_valid_minutes": 525600,
+      "common_support_minutes": 525600,
+      "retained_fraction": 1.0
+    },
+    {
+      "period": "dev_2023_2026Apr",
+      "btc_valid_minutes": 1750612,
+      "common_support_minutes": 1750568,
+      "retained_fraction": 0.9999748659325995
+    }
+  ],
+  "2021_residual_fit": [
+    {
+      "symbol": "ETHUSDT",
+      "alpha_2021": 0.0001255601846884617,
+      "beta_2021": 1.0694121169982271,
+      "resid_sigma_2021": 0.006506598316896414,
+      "train_minutes": 524157,
+      "train_mean_std_resid": 2.602735540418982e-18
+    },
+    {
+      "symbol": "SOLUSDT",
+      "alpha_2021": 0.00047606477538911023,
+      "beta_2021": 1.1076952923193017,
+      "resid_sigma_2021": 0.01526537455099091,
+      "train_minutes": 524157,
+      "train_mean_std_resid": -1.0410942161675929e-17
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "alpha_2021": 0.00034434788181400864,
+      "beta_2021": 1.1157325732656755,
+      "resid_sigma_2021": 0.02288463781868253,
+      "train_minutes": 524157,
+      "train_mean_std_resid": -3.470314053891976e-18
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "alpha_2021": 0.00034515764742867286,
+      "beta_2021": 1.2442748377596569,
+      "resid_sigma_2021": 0.01627297059207049,
+      "train_minutes": 524157,
+      "train_mean_std_resid": 2.168946283682485e-18
+    }
+  ],
+  "fair_train_size": 523823,
+  "train_positive": 18779,
+  "calibration_alerts": {
+    "M0": 240,
+    "HGB_Base": 240,
+    "HGB_HS": 240,
+    "HGB_Stress": 240,
+    "HGB_HS_Stress": 240
+  },
+  "development_alerts": {
+    "M0": 800,
+    "HGB_Base": 800,
+    "HGB_HS": 800,
+    "HGB_Stress": 800,
+    "HGB_HS_Stress": 800
+  },
+  "four_hour_onset_results": [
+    {
+      "H": 240,
+      "anchor": "onset",
+      "model": "M0",
+      "events": 83,
+      "alerts": 800,
+      "cal_alerts_2022": 240,
+      "pre_catches": 15,
+      "catches_per_100_alerts": 1.875,
+      "pre_recall": 0.18072289156626506,
+      "median_lead_minutes": 72.0
+    },
+    {
+      "H": 240,
+      "anchor": "onset",
+      "model": "HGB_Base",
+      "events": 83,
+      "alerts": 800,
+      "cal_alerts_2022": 240,
+      "pre_catches": 14,
+      "catches_per_100_alerts": 1.75,
+      "pre_recall": 0.1686746987951807,
+      "median_lead_minutes": 131.0
+    },
+    {
+      "H": 240,
+      "anchor": "onset",
+      "model": "HGB_HS",
+      "events": 83,
+      "alerts": 800,
+      "cal_alerts_2022": 240,
+      "pre_catches": 15,
+      "catches_per_100_alerts": 1.875,
+      "pre_recall": 0.18072289156626506,
+      "median_lead_minutes": 149.0
+    },
+    {
+      "H": 240,
+      "anchor": "onset",
+      "model": "HGB_Stress",
+      "events": 83,
+      "alerts": 800,
+      "cal_alerts_2022": 240,
+      "pre_catches": 17,
+      "catches_per_100_alerts": 2.125,
+      "pre_recall": 0.20481927710843373,
+      "median_lead_minutes": 103.0
+    },
+    {
+      "H": 240,
+      "anchor": "onset",
+      "model": "HGB_HS_Stress",
+      "events": 83,
+      "alerts": 800,
+      "cal_alerts_2022": 240,
+      "pre_catches": 17,
+      "catches_per_100_alerts": 2.125,
+      "pre_recall": 0.20481927710843373,
+      "median_lead_minutes": 105.0
+    }
+  ],
+  "four_hour_original_breach_results": [
+    {
+      "H": 240,
+      "anchor": "breach",
+      "model": "M0",
+      "events": 83,
+      "alerts": 800,
+      "cal_alerts_2022": 240,
+      "pre_catches": 22,
+      "catches_per_100_alerts": 2.75,
+      "pre_recall": 0.26506024096385544,
+      "median_lead_minutes": 25.0
+    },
+    {
+      "H": 240,
+      "anchor": "breach",
+      "model": "HGB_Base",
+      "events": 83,
+      "alerts": 800,
+      "cal_alerts_2022": 240,
+      "pre_catches": 7,
+      "catches_per_100_alerts": 0.875,
+      "pre_recall": 0.08433734939759036,
+      "median_lead_minutes": 71.0
+    },
+    {
+      "H": 240,
+      "anchor": "breach",
+      "model": "HGB_HS",
+      "events": 83,
+      "alerts": 800,
+      "cal_alerts_2022": 240,
+      "pre_catches": 14,
+      "catches_per_100_alerts": 1.75,
+      "pre_recall": 0.1686746987951807,
+      "median_lead_minutes": 53.0
+    },
+    {
+      "H": 240,
+      "anchor": "breach",
+      "model": "HGB_Stress",
+      "events": 83,
+      "alerts": 800,
+      "cal_alerts_2022": 240,
+      "pre_catches": 19,
+      "catches_per_100_alerts": 2.375,
+      "pre_recall": 0.2289156626506024,
+      "median_lead_minutes": 53.0
+    },
+    {
+      "H": 240,
+      "anchor": "breach",
+      "model": "HGB_HS_Stress",
+      "events": 83,
+      "alerts": 800,
+      "cal_alerts_2022": 240,
+      "pre_catches": 19,
+      "catches_per_100_alerts": 2.375,
+      "pre_recall": 0.2289156626506024,
+      "median_lead_minutes": 34.0
+    }
+  ],
+  "four_hour_auc": [
+    {
+      "H": 240,
+      "model": "M0",
+      "auc_standard": 0.7632804140600976,
+      "auc_pre": 0.6728626703107761,
+      "auc_inprogress": 0.8914252577892948,
+      "auc_pre_within_rv_decile": 0.5923664688387585,
+      "pi_in": 0.4136926854336778,
+      "common_minutes": 1750568
+    },
+    {
+      "H": 240,
+      "model": "HGB_Base",
+      "auc_standard": 0.7553640916941601,
+      "auc_pre": 0.6755098712865257,
+      "auc_inprogress": 0.868537747338824,
+      "auc_pre_within_rv_decile": 0.5943095309422175,
+      "pi_in": 0.4136926854336778,
+      "common_minutes": 1750568
+    },
+    {
+      "H": 240,
+      "model": "HGB_HS",
+      "auc_standard": 0.759747231397061,
+      "auc_pre": 0.6761386834530996,
+      "auc_inprogress": 0.8782417200497311,
+      "auc_pre_within_rv_decile": 0.5975494163464926,
+      "pi_in": 0.4136926854336778,
+      "common_minutes": 1750568
+    },
+    {
+      "H": 240,
+      "model": "HGB_Stress",
+      "auc_standard": 0.7531756432892617,
+      "auc_pre": 0.6728957024384131,
+      "auc_inprogress": 0.866952652627635,
+      "auc_pre_within_rv_decile": 0.5940745401898219,
+      "pi_in": 0.4136926854336778,
+      "common_minutes": 1750568
+    },
+    {
+      "H": 240,
+      "model": "HGB_HS_Stress",
+      "auc_standard": 0.7580966646661571,
+      "auc_pre": 0.6748482251939596,
+      "auc_inprogress": 0.8760807884067401,
+      "auc_pre_within_rv_decile": 0.5976395743746147,
+      "pi_in": 0.4136926854336778,
+      "common_minutes": 1750568
+    }
+  ],
+  "exploratory_comparisons": [
+    {
+      "baseline": "HGB_Base",
+      "candidate": "HGB_Stress",
+      "delta_onset_catches": 3,
+      "delta_breach_catches": 12,
+      "delta_within_RV_pre_AUC": -0.00023499075239563627,
+      "delta_alerts": 0,
+      "same_budget_within_1pct": true,
+      "predefined_descriptive_hurdle": false,
+      "not_independent_evidence": true
+    },
+    {
+      "baseline": "HGB_HS",
+      "candidate": "HGB_HS_Stress",
+      "delta_onset_catches": 2,
+      "delta_breach_catches": 5,
+      "delta_within_RV_pre_AUC": 9.015802812206708e-05,
+      "delta_alerts": 0,
+      "same_budget_within_1pct": true,
+      "predefined_descriptive_hurdle": false,
+      "not_independent_evidence": true
+    },
+    {
+      "baseline": "HGB_Stress",
+      "candidate": "HGB_HS_Stress",
+      "delta_onset_catches": 0,
+      "delta_breach_catches": 0,
+      "delta_within_RV_pre_AUC": 0.0035650341847928146,
+      "delta_alerts": 0,
+      "same_budget_within_1pct": true,
+      "predefined_descriptive_hurdle": false,
+      "not_independent_evidence": true
+    },
+    {
+      "baseline": "HGB_Base",
+      "candidate": "HGB_HS",
+      "delta_onset_catches": 1,
+      "delta_breach_catches": 7,
+      "delta_within_RV_pre_AUC": 0.0032398854042751113,
+      "delta_alerts": 0,
+      "same_budget_within_1pct": true,
+      "predefined_descriptive_hurdle": false,
+      "not_independent_evidence": true
+    },
+    {
+      "baseline": "M0",
+      "candidate": "HGB_HS_Stress",
+      "delta_onset_catches": 2,
+      "delta_breach_catches": -3,
+      "delta_within_RV_pre_AUC": 0.005273105535856137,
+      "delta_alerts": 0,
+      "same_budget_within_1pct": true,
+      "predefined_descriptive_hurdle": false,
+      "not_independent_evidence": true
+    }
+  ],
+  "important_notes": [
+    "No unused BTC events or independent holdout; development sample repeatedly inspected.",
+    "Onset endpoint selected as a research objective after viewing previous results.",
+    "Cross-coin residuals estimated from contemporaneous historical 2021 alt and BTC returns, but all forecast features use t-75 to t-15.",
+    "For fair comparisons all predictors were fit on identical common-support rows; therefore do NOT compare common-support counts directly with original 47 22/13/12 reproduction.",
+    "The no-future-input test establishes a coding contract, not econometric causality.",
+    "Previously negative notebook 47 primary screen is unchanged; pre-registered Dec 2026\u2013Nov 2027 test untouched."
+  ]
+}

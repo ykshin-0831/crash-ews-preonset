@@ -1,0 +1,9 @@
+method,target,events,0 ineligible,1 no signal,2 outside window,3 cooldown,4 budget,caught,cooldown: window hidden by an earlier alert,cooldown: signal ended before the cooldown expired,cooldown: alert in window matched another event,"cooldown: hidden, blocking alert 240-270 min before breach",cooldown cases caught by cooldown_only_cd210
+M0_VF_logit,any,83,0,2,13,8,21,39,7,1,0,7,6
+M0_VF_logit,pre,83,0,32,12,10,7,22,9,1,0,7,1
+M1_vol_threshold,any,83,0,2,14,7,22,38,5,2,0,5,6
+M1_vol_threshold,pre,83,0,34,13,10,6,20,8,2,0,5,2
+M2_VPIN,any,83,0,2,0,8,60,13,8,0,0,8,8
+M2_VPIN,pre,83,0,3,0,33,38,9,33,0,0,9,9
+M3_GBM_rich,any,83,0,0,6,11,40,26,9,2,0,9,8
+M3_GBM_rich,pre,83,0,26,10,25,15,7,19,6,0,9,5

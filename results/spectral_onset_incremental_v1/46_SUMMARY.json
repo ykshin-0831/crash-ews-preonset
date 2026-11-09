@@ -1,0 +1,39 @@
+{
+  "status": "exploratory_posthoc",
+  "not_prospective_or_out_of_sample": true,
+  "spec_sha256": "7d9b64560c782d8cd2ac2e3ae6efdb2e6f216318b9b21d4e8d3e7212a536111a",
+  "source_data_spot": true,
+  "eval_events_4h": 83,
+  "eval_events_24h": 218,
+  "calibration_alerts": {
+    "Breach_M0": 240,
+    "Breach_M0_HS": 240,
+    "Onset_M0": 240,
+    "Onset_M0_HS": 240
+  },
+  "development_alerts": {
+    "Breach_M0": 800,
+    "Breach_M0_HS": 800,
+    "Onset_M0": 800,
+    "Onset_M0_HS": 800
+  },
+  "screens": [
+    {
+      "base": "Breach_M0",
+      "new": "Breach_M0_HS",
+      "d_auc_pre_within_decile": 0.001767858992220317,
+      "d_pre_catches_per_100_alerts": -0.5,
+      "extra_alerts": 0,
+      "screen_hurdle_met": false
+    },
+    {
+      "base": "Onset_M0",
+      "new": "Onset_M0_HS",
+      "d_auc_pre_within_decile": -0.005280601767414739,
+      "d_pre_catches_per_100_alerts": 0.0,
+      "extra_alerts": 0,
+      "screen_hurdle_met": false
+    }
+  ],
+  "note": "No look at historical backcasts or registered future results. Do not treat post hoc screening as model validation."
+}

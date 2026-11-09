@@ -1,0 +1,1 @@
+Wrote programming_sample/output/scores_around_onset.png

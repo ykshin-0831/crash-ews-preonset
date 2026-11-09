@@ -1,0 +1,32 @@
+{
+  "calibration": "2022, notebook-5 calendar rule, 20/month, 240/yr, 240-min cooldown, no outcome labels",
+  "evaluation": {
+    "alerts": "pre-onset, in-progress, pre-peak and lead >= 30/60 min before onset, dev 2023-01..2026-04",
+    "per_minute": "notebook-18/21 decomposition (L1 label, event split); paired differences vs A from one shared 500 x 7-day block bootstrap"
+  },
+  "holdout_use": "notebook-11 stored alerts only, re-scored under the nulls (post hoc, descriptive); no new model touches any holdout",
+  "label_use": "peak and onset times enter only the 2021 training labels; features and alert rules are causal",
+  "labels": {
+    "A_standard": "positive if a 4% breach occurs 30-240 min later (notebook 16)",
+    "B2_pre_onset_in_decline_negative": "as B, but positive minutes at or after the onset are kept as negatives",
+    "B_pre_onset": "positive only if also before the 1% onset of that event; positive minutes at or after the onset are dropped from training",
+    "C_pre_peak": "positive only if also before the peak of that event; positive minutes at or after the peak are dropped from training"
+  },
+  "methods": {
+    "M0_VF_logit": "logistic on z_vol and tsr (notebook 16)",
+    "M3_GBM_rich": "HistGradientBoosting, notebook-16 parameters, 17 features"
+  },
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "null_audit_rule": "Dev M0 pre-onset warning is called robust to the budget constraint if p < 0.05 under the budget-preserving null; the Bitcoin holdout reading is called unchanged if its pre-onset p >= 0.05 under that null.",
+  "nulls": {
+    "budget_preserving_regime": "each alert, in random order, to a random minute of the same calendar month and the same 24h-RV decile, >= 240 min from its original and >= 240 min from every alert already placed; nearest decile if none fits; 64 candidates per decile; monthly counts are identical by construction",
+    "circular": ">= 7 days, all alerts shifted together",
+    "draws": 1000,
+    "regime": "each alert to a random minute of the same 24h-RV decile within +-30 days, >= 240 min away"
+  },
+  "prospective": "B, B2 and C models and thresholds are frozen with SHA-256 hashes for a pre-registered test on data from November 2026 onward",
+  "reading_rule": "Label X improves early warning for method m only if (i) within-regime pre-onset AUC (X minus A) is at least 0.02 and its paired 95% block-bootstrap interval lies above 0, and (ii) X has at least 0.5 more above-chance pre-onset catches per 100 alerts than A under the budget-preserving null. \"Worse\" if the interval in (i) lies below 0; otherwise \"no material improvement\". Reported for every m and X; nothing is selected.",
+  "seed": 20261108,
+  "title": "Onset-aware training labels and a budget-preserving null (dev 2023-01..2026-04, exploratory)",
+  "training": "2021 minus last 245 min"
+}

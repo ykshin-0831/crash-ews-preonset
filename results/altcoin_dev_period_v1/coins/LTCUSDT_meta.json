@@ -1,0 +1,187 @@
+{
+  "symbol": "LTCUSDT",
+  "spec_sha256": "e1e10288ceb9a2d440b3707f48f49ad009e94d642cbe8488f2a02e0862bc588c",
+  "frozen_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee",
+  "manifest_sha256": "d4532e94ff53dc1b15bf9ceaf4509359bce151e59344145411c8145f4fe067db",
+  "phase1_reproduced": {
+    "train_events_2021": 80,
+    "calibration": {
+      "M0_VF_logit": {
+        "threshold": 0.7094786724712906,
+        "threshold_17": 0.7094786724712906,
+        "alerts": 240,
+        "alerts_17": 240
+      },
+      "M1_vol_threshold": {
+        "threshold": 1.496143798902631,
+        "threshold_17": 1.496143798902631,
+        "alerts": 240,
+        "alerts_17": 240
+      },
+      "M3_GBM_rich": {
+        "threshold": 0.08079130253106168,
+        "threshold_17": 0.08079130253106168,
+        "alerts": 240,
+        "alerts_17": 240
+      }
+    }
+  },
+  "eval_start": "2023-01-01 00:00:00+00:00",
+  "eval_end": "2026-05-01 00:00:00+00:00",
+  "eval_days": 1216.0,
+  "coverage": {
+    "eval_minutes": 1750795,
+    "valid_minutes": 1750611,
+    "excluded_gap_ahead": 173,
+    "missing_months": [],
+    "common_minutes": 1750438,
+    "common_share": 0.9997960926322043,
+    "caution": false
+  },
+  "events": {
+    "240": 91,
+    "1440": 228
+  },
+  "F": {
+    "240": {
+      "feasible": 91,
+      "events": 91,
+      "F": 1.0
+    },
+    "1440": {
+      "feasible": 18,
+      "events": 228,
+      "F": 0.07894736842105263
+    }
+  },
+  "positives": {
+    "240": {
+      "pre": 9205,
+      "in_progress": 9996,
+      "negatives": 1731237,
+      "events_with_positives": 91,
+      "boundary_events": 0,
+      "boundary_positive_minutes": 0
+    },
+    "1440": {
+      "pre": 1757,
+      "in_progress": 46351,
+      "negatives": 1702330,
+      "events_with_positives": 228,
+      "boundary_events": 0,
+      "boundary_positive_minutes": 0
+    }
+  },
+  "common_minutes": 1750438,
+  "blocks_with_minutes": 174,
+  "guards": [
+    {
+      "guard": "phase1_manifest_exists|LTCUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT: notebook-17 phase-1 manifest not found (/content/drive/MyDrive/btc_lead_cost_results_77months_spot/HOLDOUT17_multicoin_2018_2019_v1/phase1/LTCUSDT_train_manifest.csv)"
+    },
+    {
+      "guard": "phase1_manifest|LTCUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT: 2020-11..2022-12 archives differ from the notebook-17 phase-1 manifest in []"
+    },
+    {
+      "guard": "train_events_2021|LTCUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT: 2021 events 80 / training positives 16880 differ from notebook 17 (80 / 16880)"
+    },
+    {
+      "guard": "model_sha|LTCUSDT|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT M0_VF_logit d4: model file missing or SHA-256 differs from the freeze"
+    },
+    {
+      "guard": "model_sha|LTCUSDT|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT M3_GBM_rich d4: model file missing or SHA-256 differs from the freeze"
+    },
+    {
+      "guard": "m0_refit|LTCUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT: M0 refit on 2021 differs from the frozen notebook-17 model"
+    },
+    {
+      "guard": "calibration_2022|LTCUSDT|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT M0_VF_logit: 2022 threshold 0.7094786724712906 / alerts 240 differ from notebook 17 (0.7094786724712906 / 240)"
+    },
+    {
+      "guard": "calibration_2022|LTCUSDT|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT M1_vol_threshold: 2022 threshold 1.496143798902631 / alerts 240 differ from notebook 17 (1.496143798902631 / 240)"
+    },
+    {
+      "guard": "calibration_2022|LTCUSDT|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT M3_GBM_rich: 2022 threshold 0.08079130253106168 / alerts 240 differ from notebook 17 (0.08079130253106168 / 240)"
+    },
+    {
+      "guard": "F_corollary1|LTCUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT: F at H=240 is 1.0 although Corollary 1 requires 1"
+    },
+    {
+      "guard": "decomposition_identity|LTCUSDT|240|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT H=240 M0_VF_logit: AUC decomposition identity off by 5.55e-17"
+    },
+    {
+      "guard": "decomposition_identity|LTCUSDT|240|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT H=240 M1_vol_threshold: AUC decomposition identity off by 5.55e-17"
+    },
+    {
+      "guard": "decomposition_identity|LTCUSDT|240|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT H=240 M3_GBM_rich: AUC decomposition identity off by 5.55e-17"
+    },
+    {
+      "guard": "decomposition_identity|LTCUSDT|240|B0_RV24h_baseline",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT H=240 B0_RV24h_baseline: AUC decomposition identity off by 5.55e-17"
+    },
+    {
+      "guard": "decomposition_identity|LTCUSDT|1440|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT H=1440 M0_VF_logit: AUC decomposition identity off by 2.78e-17"
+    },
+    {
+      "guard": "decomposition_identity|LTCUSDT|1440|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT H=1440 M1_vol_threshold: AUC decomposition identity off by 5.55e-17"
+    },
+    {
+      "guard": "decomposition_identity|LTCUSDT|1440|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT H=1440 M3_GBM_rich: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|LTCUSDT|1440|B0_RV24h_baseline",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "LTCUSDT H=1440 B0_RV24h_baseline: AUC decomposition identity off by 8.33e-17"
+    }
+  ]
+}

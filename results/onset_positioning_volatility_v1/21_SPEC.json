@@ -1,0 +1,55 @@
+{
+  "A_onsets": {
+    "alerts": "notebook-16 dev alarms (4%), matching unchanged",
+    "changepoint": "two-segment least-squares fit of log close over [breach-240, breach]; break minimising total SSE with both segments >= 10 min, second slope negative and below the first; fallback to the 1% onset if no admissible break",
+    "peak": "argmax close in the 240 min before the breach (catalog peak); pre = alert before the peak",
+    "per_minute": "notebook-18 L1 decomposition with the in-decline split at each onset"
+  },
+  "B_positioning": {
+    "asof": "last finite positive value per field; an empty field never masks an earlier value",
+    "causality": "metrics usable 5 min after create_time (stale after 30 min); funding usable 1 min after calc_time (stale after 720 min)",
+    "comparison_mask": "per run: its evaluation window, minutes where its positioning features exist; notebook-16 and volatility models re-tested on a shorter window for reference",
+    "features": [
+      "oi_chg_60",
+      "oi_chg_240",
+      "z_oi_chg_1440",
+      "z_top_pos_ls",
+      "z_acct_ls",
+      "z_taker_ls_60",
+      "funding_bp",
+      "z_funding"
+    ],
+    "models": {
+      "P0_VF_refit": "logit on z_vol, tsr",
+      "P1_VF_positioning": "logit on z_vol, tsr + positioning",
+      "P2_positioning_only": "logit on positioning",
+      "P3_GBM_positioning": "notebook-16 GBM settings on FEATS + positioning"
+    },
+    "protocols": {
+      "A": "train 2021, calibrate 2022 (240 alerts), evaluate 2023-01..2026-04",
+      "B": "train 2022-01..06, calibrate 2022-07..12 (120 alerts), evaluate 2023-01..2026-04",
+      "C": "train 2023, calibrate 2024-01..06 (120 alerts), evaluate 2024-07..2026-04"
+    },
+    "run_rule": "a feature is usable in a protocol if present on >= 90% of valid minutes in each window (>= 95% for training in A). Main run: first of A, B in which the open-interest and funding features are usable, with all usable features. Supplementary run: C if it can use more features. Depends on data availability only. Evaluation alerts 240/yr, 20/month",
+    "source": "Binance USD-M futures BTCUSDT daily metrics (5-min open interest, top-trader and account long/short ratios, taker long/short volume ratio) and monthly funding-rate archives; SHA-256 checked when a .CHECKSUM is published",
+    "z_scores": "trailing 30 days, min 15 days, shifted one minute"
+  },
+  "C_volatility": {
+    "V1_GJR_GARCH_t": "5-min log returns, GJR-GARCH(1,1) Student-t fitted by ML on 2021; score = P(4h return <= ln 0.96) from the aggregated 48-bar variance forecast (t approximation)",
+    "V2_GARCH_drawdown": "same variance; score = P(4h return <= ln(0.96 / (1 - current drawdown from the trailing-240-min high)))",
+    "V3_HAR_RV": "OLS on 2021 of log next-4h realised variance on log 1h, 4h, 1d, 1w realised variance (5-min bars)",
+    "calibration": "2022, notebook-5 rule (240 alerts)",
+    "causality": "minute t uses the last completed 5-min bar"
+  },
+  "bootstrap": "500 x 7-day blocks",
+  "draws": 1000,
+  "holdouts": "not used",
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "nulls": {
+    "circular": ">= 7 days",
+    "regime": "24h-RV decile, +-30 days, >= 240 min away",
+    "short": "+-(240, 1440) minutes"
+  },
+  "seed": 20261104,
+  "title": "Reviewer checks: alternative onsets, futures positioning data, volatility models (dev 2023-01..2026-04, exploratory)"
+}

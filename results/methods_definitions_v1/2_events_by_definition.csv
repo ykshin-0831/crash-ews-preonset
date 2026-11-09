@@ -1,0 +1,4 @@
+definition,events_all,events_dev,median_onset_to_breach_min,gap_lt30,gap_gt240
+3pct,518,183,113.0,22,0
+4pct,269,83,119.0,8,0
+5pct,162,42,128.0,4,0

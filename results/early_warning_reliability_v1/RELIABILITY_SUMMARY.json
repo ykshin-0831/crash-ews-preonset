@@ -1,0 +1,171 @@
+{
+  "spec_sha256": "5a344cf58728c6043d1b26cb42b1b4ab327b59b910fb04674ccb93d124b57162",
+  "periods": {
+    "dev": [
+      "2023-01-01",
+      "2026-05-01"
+    ],
+    "holdout": [
+      "2018-01-01",
+      "2021-01-01"
+    ]
+  },
+  "endpoint_table": [
+    {
+      "period": "dev",
+      "events": 83,
+      "episodes": 55,
+      "alarms": 800,
+      "eligible_pre": 83,
+      "eligible_post": 75,
+      "gap_lt30": 8,
+      "gap_gt240": 0,
+      "median_gap_min": 119.0,
+      "pre_hits": 22,
+      "post_hits": 17,
+      "caught_composite": 39,
+      "pre_rate_of_eligible": 0.26506024096385544,
+      "post_rate_of_eligible": 0.22666666666666666,
+      "median_minutes_before_onset_pre": 25.0,
+      "median_minutes_after_onset_post": 29.0,
+      "median_lead_to_breach_post": 96.0,
+      "onset_anchored_hits": 29,
+      "pre_precision_per_alarm": 0.0275,
+      "post_precision_per_alarm": 0.02125
+    },
+    {
+      "period": "holdout",
+      "events": 199,
+      "episodes": 80,
+      "alarms": 713,
+      "eligible_pre": 199,
+      "eligible_post": 169,
+      "gap_lt30": 30,
+      "gap_gt240": 0,
+      "median_gap_min": 106.0,
+      "pre_hits": 13,
+      "post_hits": 23,
+      "caught_composite": 36,
+      "pre_rate_of_eligible": 0.06532663316582915,
+      "post_rate_of_eligible": 0.13609467455621302,
+      "median_minutes_before_onset_pre": 81.0,
+      "median_minutes_after_onset_post": 17.0,
+      "median_lead_to_breach_post": 66.0,
+      "onset_anchored_hits": 22,
+      "pre_precision_per_alarm": 0.0182328190743338,
+      "post_precision_per_alarm": 0.03225806451612903
+    }
+  ],
+  "dev": {
+    "pre": {
+      "observed": 22,
+      "p_primary": 9.999000099990002e-05,
+      "p_4h_1d": 0.0001999600079984003,
+      "p_regime_matched": 0.0001999600079984003,
+      "reading": "timing-specific skill"
+    },
+    "post": {
+      "observed": 17,
+      "p_primary": 9.999000099990002e-05,
+      "p_4h_1d": 0.0001999600079984003,
+      "p_regime_matched": 0.0001999600079984003,
+      "reading": "timing-specific skill"
+    },
+    "onset_anchored": {
+      "observed": 29,
+      "p_primary": 0.00029997000299970003,
+      "p_4h_1d": 0.10077984403119376,
+      "p_regime_matched": 0.0001999600079984003,
+      "reading": "regime-level skill only"
+    },
+    "episodes_pre": {
+      "observed": 16,
+      "p_primary": 9.999000099990002e-05,
+      "p_4h_1d": 0.0013997200559888023,
+      "p_regime_matched": 0.0001999600079984003,
+      "reading": "timing-specific skill"
+    },
+    "episodes_caught": {
+      "observed": 27,
+      "p_primary": 9.999000099990002e-05,
+      "p_4h_1d": 0.0001999600079984003,
+      "p_regime_matched": 0.0001999600079984003,
+      "reading": "timing-specific skill"
+    }
+  },
+  "holdout": {
+    "pre": {
+      "observed": 13,
+      "p_primary": 0.3531646835316468,
+      "p_4h_1d": 0.6316736652669466,
+      "p_regime_matched": 0.21015796840631873,
+      "reading": "no skill under the primary null"
+    },
+    "post": {
+      "observed": 23,
+      "p_primary": 9.999000099990002e-05,
+      "p_4h_1d": 0.0001999600079984003,
+      "p_regime_matched": 0.0001999600079984003,
+      "reading": "timing-specific skill"
+    },
+    "onset_anchored": {
+      "observed": 22,
+      "p_primary": 0.5063493650634937,
+      "p_4h_1d": 0.8234353129374126,
+      "p_regime_matched": 0.3025394921015797,
+      "reading": "no skill under the primary null"
+    },
+    "episodes_pre": {
+      "observed": 10,
+      "p_primary": 0.4243575642435756,
+      "p_4h_1d": 0.6902619476104779,
+      "p_regime_matched": 0.33613277344531095,
+      "reading": "no skill under the primary null"
+    },
+    "episodes_caught": {
+      "observed": 28,
+      "p_primary": 9.999000099990002e-05,
+      "p_4h_1d": 0.0001999600079984003,
+      "p_regime_matched": 0.0001999600079984003,
+      "reading": "timing-specific skill"
+    }
+  },
+  "pooling": {
+    "pre/event": {
+      "difference": 5,
+      "p": 0.5234447655523444
+    },
+    "pre/shock": {
+      "difference": 5,
+      "p": 0.5034349656503435
+    },
+    "pre/month": {
+      "difference": 5,
+      "p": 0.5010049899501005
+    },
+    "post/event": {
+      "difference": 26,
+      "p": 0.0009299907000929991
+    },
+    "post/shock": {
+      "difference": 26,
+      "p": 0.0012499875001249989
+    },
+    "post/month": {
+      "difference": 26,
+      "p": 0.0035399646003539966
+    },
+    "caught/event": {
+      "difference": 31,
+      "p": 0.00024999750002499977
+    },
+    "caught/shock": {
+      "difference": 31,
+      "p": 0.00047999520004799953
+    },
+    "caught/month": {
+      "difference": 31,
+      "p": 0.0005799942000579994
+    }
+  }
+}

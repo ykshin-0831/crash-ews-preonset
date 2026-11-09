@@ -1,0 +1,9 @@
+policy,anchor,alerts,calibration_2022_alerts,threshold,pre_catches,catches_per_100_alerts
+HGB_Base,onset,800,240,0.6213147944479045,9,1.125
+HGB_Base,breach,800,240,0.6213147944479045,13,1.625
+HGB_HS_original,onset,800,240,0.6266591400580771,16,2.0
+HGB_HS_original,breach,800,240,0.6266591400580771,12,1.5
+HS_median_fixed_2022_threshold,onset,800,240,0.6266591400580771,14,1.75
+HS_median_fixed_2022_threshold,breach,800,240,0.6266591400580771,9,1.125
+HS_median_recalibrated_2022_only,onset,800,240,0.6266591400580771,14,1.75
+HS_median_recalibrated_2022_only,breach,800,240,0.6266591400580771,9,1.125

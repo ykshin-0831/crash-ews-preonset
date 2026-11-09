@@ -1,0 +1,17 @@
+[
+  {
+    "utc": "2026-11-03T09:24:48.151466+00:00",
+    "event": "cell 1",
+    "spec_sha256": "994ec994626d023acf90241d3c90c3d4baaa78c930e2cea0a22c00571f3e5481",
+    "registration_doi": "10.17605/OSF.IO/BKJUQ"
+  },
+  {
+    "utc": "2026-11-03T09:25:01.346364+00:00",
+    "event": "phase 2 started",
+    "frozen_sha256": "edab20d2dd110fe93fe2a0623eba1761e88d4460db234718fd528d3ff998e50a"
+  },
+  {
+    "utc": "2026-11-03T09:39:18.037544+00:00",
+    "event": "phase 2 finished; locked"
+  }
+]

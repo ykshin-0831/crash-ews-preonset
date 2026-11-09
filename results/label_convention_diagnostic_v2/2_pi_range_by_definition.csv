@@ -1,0 +1,5 @@
+group,f,pi_min,pi_max,at_min,at_max,n_lower_bound_ge_half,rows
+"reconstructed conventions (7 studies, 8 specifications)",0.25,0.16775396085740912,0.8848484848484849,gsy_2019,le_hoang_2026_h1,6,8
+"reconstructed conventions (7 studies, 8 specifications)",0.5,0.05871388630009319,0.7696969696969697,gsy_2019,le_hoang_2026_h1,1,8
+"this paper, crash window 2 to 24 hours",0.25,0.27116438992658676,0.8952780555676334,this_paper_btc_1m_4pct_120,this_paper_btc_1m_4pct_1440,2,4
+"this paper, crash window 2 to 24 hours",0.5,0.08512220053898337,0.7071394408452542,this_paper_btc_1m_4pct_120,this_paper_btc_1m_4pct_1440,1,4

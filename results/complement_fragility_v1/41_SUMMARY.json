@@ -1,0 +1,716 @@
+{
+  "spec_sha256": "a61fa8887a1152ff7bcb60bd5a7ea72f2a338438a820eb79830ddae337c33c18",
+  "run_time": "2026-11-04 13:54:41+00:00",
+  "status": "exploratory; development sample only; no confirmatory plan changed",
+  "mock_bypass_used": false,
+  "guards": [
+    {
+      "guard": "catalog_nb2",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "H=240 catalog differs from the notebook-2 catalog"
+    },
+    {
+      "guard": "m0_refit_nb16",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "M0 refit differs from notebook 16"
+    },
+    {
+      "guard": "gbm_sha_nb16",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "notebook-16 GBM file SHA-256 differs"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=240, M0_VF_logit) by 0.00e+00"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=240, M1_vol_threshold) by 0.00e+00"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=240, M3_GBM_rich) by 0.00e+00"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=240, B0_RV24h_baseline) by 0.00e+00"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=1440, M0_VF_logit) by 0.00e+00"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=1440, M1_vol_threshold) by 0.00e+00"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=1440, M3_GBM_rich) by 0.00e+00"
+    },
+    {
+      "guard": "per_minute_nb22",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "per-minute point estimate differs from notebook 22 (H=1440, B0_RV24h_baseline) by 0.00e+00"
+    },
+    {
+      "guard": "nb33_point",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "GBM - M0 point differences differ from notebook 33 by 6.25e-17"
+    },
+    {
+      "guard": "pairs_nb32",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "common-event pairs (52) differ from notebook 32 (52)"
+    },
+    {
+      "guard": "unit_ones_vs_make_parts",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "unit calculator with all-ones weights differs from make_parts/stats_from by 0.00e+00"
+    },
+    {
+      "guard": "table7_nb32",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "Table 7 row H=240 all events differs from notebook 32 by 5.90e-17"
+    },
+    {
+      "guard": "table7_nb32",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "Table 7 row H=240 common events only differs from notebook 32 by 9.02e-17"
+    },
+    {
+      "guard": "table7_nb32",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "Table 7 row H=1440 all events differs from notebook 32 by 6.25e-17"
+    },
+    {
+      "guard": "table7_nb32",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "Table 7 row H=1440 common events only differs from notebook 32 by 8.67e-17"
+    },
+    {
+      "guard": "event_bootstrap_nb36",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "event bootstrap H=240 variant a standard AUC differs from notebook 36 by 7.63e-17"
+    },
+    {
+      "guard": "event_bootstrap_nb36",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "event bootstrap H=240 variant a pre-onset AUC differs from notebook 36 by 5.55e-17"
+    },
+    {
+      "guard": "event_bootstrap_nb36",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "event bootstrap H=240 variant a pre-onset AUC within regime differs from notebook 36 by 3.99e-17"
+    },
+    {
+      "guard": "event_bootstrap_nb36",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "event bootstrap H=240 variant b standard AUC differs from notebook 36 by 4.86e-17"
+    },
+    {
+      "guard": "event_bootstrap_nb36",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "event bootstrap H=240 variant b pre-onset AUC differs from notebook 36 by 7.98e-17"
+    },
+    {
+      "guard": "event_bootstrap_nb36",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "event bootstrap H=240 variant b pre-onset AUC within regime differs from notebook 36 by 4.16e-17"
+    },
+    {
+      "guard": "event_bootstrap_nb36",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "event bootstrap H=1440 variant a standard AUC differs from notebook 36 by 8.33e-17"
+    },
+    {
+      "guard": "event_bootstrap_nb36",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "event bootstrap H=1440 variant a pre-onset AUC differs from notebook 36 by 5.55e-17"
+    },
+    {
+      "guard": "event_bootstrap_nb36",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "event bootstrap H=1440 variant a pre-onset AUC within regime differs from notebook 36 by 6.25e-17"
+    },
+    {
+      "guard": "event_bootstrap_nb36",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "event bootstrap H=1440 variant b standard AUC differs from notebook 36 by 7.29e-17"
+    },
+    {
+      "guard": "event_bootstrap_nb36",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "event bootstrap H=1440 variant b pre-onset AUC differs from notebook 36 by 5.55e-17"
+    },
+    {
+      "guard": "event_bootstrap_nb36",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "event bootstrap H=1440 variant b pre-onset AUC within regime differs from notebook 36 by 8.33e-17"
+    },
+    {
+      "guard": "complement_algebraic",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "complement H=240: points differ from the algebraic complement by 2.22e-16 (positives 6541 vs 6541)"
+    },
+    {
+      "guard": "complement_algebraic",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "complement H=1440: points differ from the algebraic complement by 3.61e-15 (positives 35026 vs 35026)"
+    },
+    {
+      "guard": "loo_unit_check",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "vectorized leave-one-out differs from direct recomputation by 0.00e+00"
+    }
+  ],
+  "events": {
+    "240": 83,
+    "1440": 218
+  },
+  "common_events": 52,
+  "common_minutes": 1750612,
+  "subset_intervals": {
+    "H240|all|auc_standard": {
+      "diff": -0.008120513616611702,
+      "block": [
+        -0.03921200489919384,
+        0.02454998790102461
+      ],
+      "event_a": [
+        -0.038509517593015165,
+        0.021606292223112118
+      ],
+      "event_b": [
+        -0.044276824398030795,
+        0.0262875465239917
+      ],
+      "events": 83,
+      "events_with_pre_onset_minutes": 83,
+      "reading": "not distinguishable"
+    },
+    "H240|all|auc_pre": {
+      "diff": -0.018857304670287456,
+      "block": [
+        -0.06119435732795312,
+        0.025614114677665823
+      ],
+      "event_a": [
+        -0.06348355924247275,
+        0.02435193554742576
+      ],
+      "event_b": [
+        -0.06838800218654165,
+        0.029391338900700392
+      ],
+      "events": 83,
+      "events_with_pre_onset_minutes": 83,
+      "reading": "not distinguishable"
+    },
+    "H240|all|auc_in": {
+      "diff": 0.007096238700730506,
+      "block": [
+        -0.017190165703783806,
+        0.032702988797815795
+      ],
+      "event_a": [
+        -0.01389464017346266,
+        0.028144681445999742
+      ],
+      "event_b": [
+        -0.0168003298250815,
+        0.030088416050001218
+      ],
+      "events": 83,
+      "events_with_pre_onset_minutes": 83,
+      "reading": "not distinguishable"
+    },
+    "H240|all|auc_pre_within_regime": {
+      "diff": -0.04555458028752224,
+      "block": [
+        -0.09388279113268257,
+        0.004937533867058769
+      ],
+      "event_a": [
+        -0.0976893510332635,
+        0.008556458361539095
+      ],
+      "event_b": [
+        -0.10515396310921263,
+        0.015641655492484263
+      ],
+      "events": 83,
+      "events_with_pre_onset_minutes": 83,
+      "reading": "not distinguishable"
+    },
+    "H240|common|auc_standard": {
+      "diff": -0.02704717695607639,
+      "block": [
+        -0.06682021816066543,
+        0.015442150811227386
+      ],
+      "event_a": [
+        -0.06615304059273167,
+        0.011116642509850859
+      ],
+      "event_b": [
+        -0.07058883848479315,
+        0.01802154766496632
+      ],
+      "events": 52,
+      "events_with_pre_onset_minutes": 52,
+      "reading": "not distinguishable"
+    },
+    "H240|common|auc_pre": {
+      "diff": -0.0423525858050402,
+      "block": [
+        -0.09785669826019562,
+        0.016450118744145988
+      ],
+      "event_a": [
+        -0.1007216391659914,
+        0.012300058709229516
+      ],
+      "event_b": [
+        -0.10385277136336125,
+        0.019057664999623147
+      ],
+      "events": 52,
+      "events_with_pre_onset_minutes": 52,
+      "reading": "not distinguishable"
+    },
+    "H240|common|auc_in": {
+      "diff": 0.0004432719653039152,
+      "block": [
+        -0.02479236594939901,
+        0.027194195712761927
+      ],
+      "event_a": [
+        -0.025886635377861462,
+        0.024087910083854237
+      ],
+      "event_b": [
+        -0.027103129199099962,
+        0.026541293779565225
+      ],
+      "events": 52,
+      "events_with_pre_onset_minutes": 52,
+      "reading": "not distinguishable"
+    },
+    "H240|common|auc_pre_within_regime": {
+      "diff": -0.07138518361721358,
+      "block": [
+        -0.13490567345606255,
+        -0.0013654387577292058
+      ],
+      "event_a": [
+        -0.1375098254461452,
+        -0.009830550328804408
+      ],
+      "event_b": [
+        -0.14222051578925304,
+        2.1634482305643526e-05
+      ],
+      "events": 52,
+      "events_with_pre_onset_minutes": 52,
+      "reading": "distinguishable (-)"
+    },
+    "H240|other|auc_standard": {
+      "diff": 0.023627437791522876,
+      "block": [
+        -0.015925981163436943,
+        0.06652998888215185
+      ],
+      "event_a": [
+        -0.017327186964247503,
+        0.0654259181241872
+      ],
+      "event_b": [
+        -0.02029671063638134,
+        0.06739631647361527
+      ],
+      "events": 31,
+      "events_with_pre_onset_minutes": 31,
+      "reading": "not distinguishable"
+    },
+    "H240|other|auc_pre": {
+      "diff": 0.032569633664413566,
+      "block": [
+        -0.02138212971567419,
+        0.09030936621174114
+      ],
+      "event_a": [
+        -0.025092035737899396,
+        0.09184381997835007
+      ],
+      "event_b": [
+        -0.03046813305931313,
+        0.09600647757622036
+      ],
+      "events": 31,
+      "events_with_pre_onset_minutes": 31,
+      "reading": "not distinguishable"
+    },
+    "H240|other|auc_in": {
+      "diff": 0.014957196686220975,
+      "block": [
+        -0.02092948073347511,
+        0.04873496740477601
+      ],
+      "event_a": [
+        -0.022395446090434562,
+        0.048108463142765574
+      ],
+      "event_b": [
+        -0.023986083296853426,
+        0.04852871232263712
+      ],
+      "events": 31,
+      "events_with_pre_onset_minutes": 31,
+      "reading": "not distinguishable"
+    },
+    "H240|other|auc_pre_within_regime": {
+      "diff": 0.01131283199387001,
+      "block": [
+        -0.05762061845713656,
+        0.08730293453678367
+      ],
+      "event_a": [
+        -0.06436334587564445,
+        0.0944519548467103
+      ],
+      "event_b": [
+        -0.06942112986624284,
+        0.09847213908554454
+      ],
+      "events": 31,
+      "events_with_pre_onset_minutes": 31,
+      "reading": "not distinguishable"
+    },
+    "H1440|all|auc_standard": {
+      "diff": 0.05683565350076336,
+      "block": [
+        0.032258960587094265,
+        0.08144208822320653
+      ],
+      "event_a": [
+        0.034524824391876985,
+        0.07899126625539081
+      ],
+      "event_b": [
+        0.028523538494093236,
+        0.08462051468422808
+      ],
+      "events": 218,
+      "events_with_pre_onset_minutes": 30,
+      "reading": "distinguishable (+)"
+    },
+    "H1440|all|auc_pre": {
+      "diff": -0.09030963726812091,
+      "block": [
+        -0.1746124290687101,
+        -0.016216490424572978
+      ],
+      "event_a": [
+        -0.16839240197259298,
+        -0.014054702025619063
+      ],
+      "event_b": [
+        -0.1717981075249957,
+        -0.010407896407887638
+      ],
+      "events": 218,
+      "events_with_pre_onset_minutes": 30,
+      "reading": "distinguishable (-)"
+    },
+    "H1440|all|auc_in": {
+      "diff": 0.0707389525619202,
+      "block": [
+        0.04590387090287333,
+        0.09465149910520947
+      ],
+      "event_a": [
+        0.04820133278674596,
+        0.09290280046924557
+      ],
+      "event_b": [
+        0.04265418254050274,
+        0.0981809566369276
+      ],
+      "events": 218,
+      "events_with_pre_onset_minutes": 30,
+      "reading": "distinguishable (+)"
+    },
+    "H1440|all|auc_pre_within_regime": {
+      "diff": -0.1393590581311711,
+      "block": [
+        -0.2306653571913143,
+        -0.056121390264911926
+      ],
+      "event_a": [
+        -0.22697897154384164,
+        -0.05284209891295535
+      ],
+      "event_b": [
+        -0.2282503869938212,
+        -0.04877328442191873
+      ],
+      "events": 218,
+      "events_with_pre_onset_minutes": 30,
+      "reading": "distinguishable (-)"
+    },
+    "H1440|common|auc_standard": {
+      "diff": -0.028255572770986004,
+      "block": [
+        -0.06787752475799828,
+        0.015002807692989025
+      ],
+      "event_a": [
+        -0.07014378929772634,
+        0.01133568805856019
+      ],
+      "event_b": [
+        -0.07473402775825361,
+        0.015398936986763772
+      ],
+      "events": 52,
+      "events_with_pre_onset_minutes": 27,
+      "reading": "not distinguishable"
+    },
+    "H1440|common|auc_pre": {
+      "diff": -0.0843505303064549,
+      "block": [
+        -0.17045947101276895,
+        -0.0073184795222908565
+      ],
+      "event_a": [
+        -0.1686055117205103,
+        -0.011833177954083144
+      ],
+      "event_b": [
+        -0.16860097529761556,
+        -0.00715495168619932
+      ],
+      "events": 52,
+      "events_with_pre_onset_minutes": 27,
+      "reading": "distinguishable (-)"
+    },
+    "H1440|common|auc_in": {
+      "diff": 0.002165336165173559,
+      "block": [
+        -0.038376623653867036,
+        0.04752789790758637
+      ],
+      "event_a": [
+        -0.04079938554320514,
+        0.04040594867940342
+      ],
+      "event_b": [
+        -0.04352146592992547,
+        0.04489956886759215
+      ],
+      "events": 52,
+      "events_with_pre_onset_minutes": 27,
+      "reading": "not distinguishable"
+    },
+    "H1440|common|auc_pre_within_regime": {
+      "diff": -0.1333678305999133,
+      "block": [
+        -0.22552179536543354,
+        -0.048413632280660396
+      ],
+      "event_a": [
+        -0.22580192176271602,
+        -0.04894646306221971
+      ],
+      "event_b": [
+        -0.2281661873453548,
+        -0.046009218739369494
+      ],
+      "events": 52,
+      "events_with_pre_onset_minutes": 27,
+      "reading": "distinguishable (-)"
+    },
+    "H1440|other|auc_standard": {
+      "diff": 0.08349073642926319,
+      "block": [
+        0.05611208297095731,
+        0.10887746600084071
+      ],
+      "event_a": [
+        0.05756232661900482,
+        0.1098398637763098
+      ],
+      "event_b": [
+        0.0526442990307365,
+        0.11371309111412739
+      ],
+      "events": 166,
+      "events_with_pre_onset_minutes": 3,
+      "reading": "distinguishable (+)"
+    },
+    "H1440|other|auc_pre": {
+      "diff": -0.2937630413221727,
+      "block": [
+        -0.4268600070453015,
+        0.0008996136305439799
+      ],
+      "event_a": [
+        -0.4167785158151619,
+        -0.00738036098886119
+      ],
+      "event_b": [
+        -0.42446559556719443,
+        0.0009479739695886269
+      ],
+      "events": 166,
+      "events_with_pre_onset_minutes": 3,
+      "reading": "not interpretable (3 events with pre-onset minutes)"
+    },
+    "H1440|other|auc_in": {
+      "diff": 0.0847117623189293,
+      "block": [
+        0.05757459927899911,
+        0.10987048618882726
+      ],
+      "event_a": [
+        0.059063893564349365,
+        0.11039277427999335
+      ],
+      "event_b": [
+        0.054115575899500716,
+        0.11529698985772929
+      ],
+      "events": 166,
+      "events_with_pre_onset_minutes": 3,
+      "reading": "distinguishable (+)"
+    },
+    "H1440|other|auc_pre_within_regime": {
+      "diff": -0.340530864078865,
+      "block": [
+        -0.4489115557837148,
+        -0.05207643935016164
+      ],
+      "event_a": [
+        -0.43550696412414486,
+        -0.06811925396072094
+      ],
+      "event_b": [
+        -0.4528329476358003,
+        -0.042836346321150284
+      ],
+      "events": 166,
+      "events_with_pre_onset_minutes": 3,
+      "reading": "not interpretable (3 events with pre-onset minutes)"
+    }
+  },
+  "fragility": [
+    {
+      "target": "H1440|all|auc_standard",
+      "events": 218,
+      "events_with_pre_onset_minutes": 30,
+      "point": 0.05683565350076336,
+      "k_joint": 25,
+      "k_block": 24,
+      "k_event": 25,
+      "k_sign": NaN,
+      "steps_run": 40,
+      "stop_reason": null,
+      "loo_min": 0.05422822925256365,
+      "loo_max": 0.05933236432311606,
+      "label": "both intervals include zero after removing 25 events (greedy upper bound)"
+    },
+    {
+      "target": "H1440|all|auc_pre",
+      "events": 218,
+      "events_with_pre_onset_minutes": 30,
+      "point": -0.09030963726812091,
+      "k_joint": 2,
+      "k_block": 1,
+      "k_event": 2,
+      "k_sign": 7.0,
+      "steps_run": 7,
+      "stop_reason": null,
+      "loo_min": -0.10329362953799304,
+      "loo_max": -0.07401086945708724,
+      "label": "rests on one or two events"
+    },
+    {
+      "target": "H1440|all|auc_pre_within_regime",
+      "events": 218,
+      "events_with_pre_onset_minutes": 30,
+      "point": -0.1393590581311711,
+      "k_joint": 5,
+      "k_block": 5,
+      "k_event": 4,
+      "k_sign": 11.0,
+      "steps_run": 11,
+      "stop_reason": null,
+      "loo_min": -0.15833242648714307,
+      "loo_max": -0.1233244660275914,
+      "label": "both intervals include zero after removing 5 events (greedy upper bound)"
+    },
+    {
+      "target": "H1440|other|auc_standard",
+      "events": 166,
+      "events_with_pre_onset_minutes": 3,
+      "point": 0.08349073642926319,
+      "k_joint": 36,
+      "k_block": 34,
+      "k_event": 36,
+      "k_sign": NaN,
+      "steps_run": 40,
+      "stop_reason": null,
+      "loo_min": 0.08022312443574287,
+      "loo_max": 0.08693583540731797,
+      "label": "both intervals include zero after removing 36 events (greedy upper bound)"
+    }
+  ],
+  "outputs": [
+    "1_guards.csv",
+    "2_subset_intervals.csv",
+    "3_fragility_path.csv",
+    "3b_fragility_summary.csv",
+    "3c_leave_one_out.csv",
+    "41_SPEC.json"
+  ]
+}

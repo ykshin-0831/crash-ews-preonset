@@ -1,0 +1,69 @@
+{
+  "status": "registered secondary outputs computed after the notebook-38 lock; descriptive; Q1-Q4 unchanged",
+  "notebook38_lock": {
+    "evaluated_utc": "2026-11-03T09:39:18.018952+00:00",
+    "spec_sha256": "994ec994626d023acf90241d3c90c3d4baaa78c930e2cea0a22c00571f3e5481",
+    "frozen_sha256": "edab20d2dd110fe93fe2a0623eba1761e88d4460db234718fd528d3ff998e50a"
+  },
+  "spec_sha256": "994ec994626d023acf90241d3c90c3d4baaa78c930e2cea0a22c00571f3e5481",
+  "reproduction_guard": "11 files reproduced exactly",
+  "pooled_D20_M0": {
+    "S_in": {
+      "point": 0.8339848520599643,
+      "lo95": 0.7205384831776885,
+      "hi95": 0.986081417054123,
+      "finite_draws": 2000.0
+    },
+    "std": {
+      "point": 0.7046309205682779,
+      "lo95": 0.6672636250007188,
+      "hi95": 0.7437582807084303,
+      "finite_draws": 2000.0
+    },
+    "pre": {
+      "point": 0.5734608492135562,
+      "lo95": 0.5054652785267593,
+      "hi95": 0.6341103096438877,
+      "finite_draws": 2000.0
+    },
+    "inp": {
+      "point": 0.8174746446322202,
+      "lo95": 0.7885049798025391,
+      "hi95": 0.848269489332409,
+      "finite_draws": 2000.0
+    },
+    "reg": {
+      "point": 0.4905846125781724,
+      "lo95": 0.420986787026667,
+      "hi95": 0.5523563844072353,
+      "finite_draws": 2000.0
+    }
+  },
+  "episodes7": {
+    "episodes": 82,
+    "H1_in_progress": {
+      "M0": false,
+      "M1": false,
+      "GBM": false
+    },
+    "H2_pre_onset": {
+      "M0": false,
+      "M1": false,
+      "GBM": false
+    },
+    "diff_in_minus_pre_95": {
+      "M0": [
+        -0.5681465838509318,
+        11.715098136645961
+      ],
+      "M1": [
+        -4.3591567436208996,
+        6.365981166464154
+      ],
+      "GBM": [
+        -0.9582931276297333,
+        10.771831697054699
+      ]
+    }
+  }
+}

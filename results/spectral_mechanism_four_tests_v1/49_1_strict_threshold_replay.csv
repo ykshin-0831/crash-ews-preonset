@@ -1,0 +1,3 @@
+model,threshold,exact_threshold_alerts,exact_threshold_alert_frac,ordinary_2022_cal_alerts,strict_2022_cal_alerts,ordinary_development_alerts,strict_development_alerts,standard_onset_catches,strict_onset_catches,standard_breach_catches,strict_breach_catches
+HGB_Base,0.6213147944479045,71,0.08875,240,240,800,800,9,10,13,14
+HGB_HS,0.6266591400580771,128,0.16,240,240,800,800,16,15,12,15

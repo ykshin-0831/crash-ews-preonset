@@ -1,0 +1,108 @@
+{
+  "anchoring": "labels anchored at a past peak or fixed threshold give a decline already under way a mechanical head start; labels anchored at the current level (forward returns) do not, so the no-forecast drawdown score is expected near 0.5 there while pi still counts positives issued after the decline began",
+  "bootstrap": "500 draws, calendar-year blocks (daily and monthly rows), 7-day blocks (1-minute rows)",
+  "btc_rows": {
+    "bootstrap": "500 x 7-day blocks",
+    "decline": 0.04,
+    "guards": "positive count and event-anchored in-progress share equal notebook 22 at every H",
+    "labels": "notebook-22 catalogs (30-240 minutes before a breach)",
+    "minutes": "notebook-22 evaluation minutes for the 24-hour RV score",
+    "windows_min": [
+      120,
+      240,
+      480,
+      1440
+    ]
+  },
+  "caveat": "label conventions are reconstructed approximately on public data over longer samples than the original studies; no study result, sample or model is replicated or evaluated",
+  "changes_from_v1": [
+    "this paper rows recomputed with the common trailing-high rule at four windows (v1 used the event-anchored 1% onset)",
+    "share of excess removed from the table; not-yet and in-progress AUC and the lower-bound conditions reported",
+    "interval for pi(1/2)",
+    "VIX rows labelled run-up toward the threshold",
+    "renamed from label-only audit"
+  ],
+  "conventions": {
+    "coudert_gex_2008": {
+      "W": 24,
+      "anchor": "past peak (24-month max) incl. crisis months",
+      "data": "S&P 500 month-end (Yahoo ^GSPC)",
+      "freq": "M",
+      "source": "Coudert & Gex (2008), crisis model",
+      "theta": null
+    },
+    "gsy_2019": {
+      "W": 24,
+      "anchor": "current level and later peaks (forward drawdown)",
+      "data": "Fama-French 48 industries, monthly value-weighted",
+      "freq": "M",
+      "source": "Greenwood, Shleifer & You (2019), raw run-up",
+      "theta": 0.4
+    },
+    "le_hoang_2026_h1": {
+      "W": 20,
+      "anchor": "fixed threshold (VIX 25)",
+      "data": "CBOE VIX daily (saved by notebook 29)",
+      "freq": "D",
+      "source": "Le & Hoang (2026), h = 1",
+      "theta": null
+    },
+    "le_hoang_2026_h10": {
+      "W": 20,
+      "anchor": "fixed threshold (VIX 25)",
+      "data": "CBOE VIX daily (saved by notebook 29)",
+      "freq": "D",
+      "source": "Le & Hoang (2026), h = 10",
+      "theta": null
+    },
+    "lleo_ziemba_2015": {
+      "W": 252,
+      "anchor": "current level (forward return)",
+      "data": "S&P 500 daily (Yahoo ^GSPC)",
+      "freq": "D",
+      "source": "Lleo & Ziemba (2015)",
+      "theta": 0.1
+    },
+    "lleo_ziemba_2017": {
+      "W": 252,
+      "anchor": "past peak (breach date)",
+      "data": "S&P 500 daily (Yahoo ^GSPC)",
+      "freq": "D",
+      "source": "Lleo & Ziemba (2017)",
+      "theta": 0.1
+    },
+    "ranjan_spy_5d": {
+      "W": 5,
+      "anchor": "current level (forward return)",
+      "data": "SPY daily (Yahoo)",
+      "freq": "D",
+      "source": "Ranjan (2025)",
+      "theta": 0.01
+    },
+    "shu_zhu_2020": {
+      "W": 21,
+      "anchor": "current level (forward return)",
+      "data": "BTC-USD daily (Yahoo)",
+      "freq": "D",
+      "source": "Shu & Zhu (2020)",
+      "theta": 0.15
+    }
+  },
+  "data_end": "2026-09-30",
+  "f": [
+    0.25,
+    0.5
+  ],
+  "flags": "pi(f) lower bound >= 0.5 for f = 1/4 and for f = 1/2; drawdown AUC lower bound > 0.6: a no-forecast score looks skilled on this label",
+  "in_progress_rule": "drawdown from the trailing W-period high >= f * theta, for every row including this paper (W = H for the 1-minute BTC rows); VIX rows: rise from the trailing 20-day low >= f * distance to 25 (run-up toward the threshold, all on days with VIX < 25)",
+  "lower_bound": "pi is a lower bound on the in-progress share of above-chance AUC only for a score with AUC > 0.5 and in-progress AUC >= not-yet AUC; the signed contribution pi*(AUC_in - 0.5)/(AUC - 0.5) is kept in the csv only (it exceeds 1 when the not-yet AUC is below 0.5)",
+  "quantities": "pi(f) = share of positives whose event variable has covered at least f of the distance to its threshold; AUC overall, on not-yet positives and on in-progress positives, each against all negatives; the lower-bound conditions (AUC > 0.5 and in-progress AUC >= not-yet AUC) per score",
+  "scores": {
+    "drawdown": "current drawdown from the trailing W-period high (no forecast content)",
+    "realized_vol": "20-day (daily), 12-month (monthly) or 24-hour (1-minute) standard deviation of log returns",
+    "vix": "for VIX labels: rise from the trailing 20-day low (run-up) and the VIX level (proximity)"
+  },
+  "seed": 20261031,
+  "status": "descriptive, post hoc",
+  "title": "Model-free diagnostic of reconstructed crash-label conventions (descriptive, v2)"
+}

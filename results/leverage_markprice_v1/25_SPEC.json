@@ -1,0 +1,34 @@
+{
+  "bootstrap": 2000,
+  "changes_vs_nb24": {
+    "funding": "a held long pays notional * funding rate at every funding time in (entry, entry + 240 min] (notebook-21 funding cache)",
+    "liquidation": "mark-price 1m lows (data.binance.vision futures/um/monthly/markPriceKlines/BTCUSDT/1m, SHA-256 checked) over the 240 minutes after entry, against entry * (1 - 1/k) / (1 - mm) with entry = futures close",
+    "pnl": "BTCUSDT perpetual 1m close (notebook-13 futures cache)"
+  },
+  "fees_bp_one_way": [
+    0,
+    5
+  ],
+  "holdouts": "not used",
+  "leverage": [
+    1,
+    2,
+    5,
+    10,
+    20,
+    50
+  ],
+  "main_variant": "futures + mark + funding",
+  "maintenance_margin": 0.005,
+  "missing_data": "a 240-min window without a finite futures close at both ends and a finite mark low in every minute is dropped and counted",
+  "null_draws": 1000,
+  "reading_rule": "For the main variant at leverage k the alert stream is said to pay if the 95% lower bound of the mean value per alert after a 5-bp fee is > 0 and the observed mean exceeds the regime-matched null (p < 0.05). Reported for every k; no k is selected.",
+  "seed": 20261107,
+  "title": "Leverage value re-measured with futures prices, mark-price liquidation and funding (dev 2023-01..2026-04, exploratory)",
+  "unchanged": "M0 calendar alarms, entry minute (notebook-15 rule), leverage grid, mm, fees, nulls and seeds, month-block bootstrap, reading rule",
+  "variants": [
+    "spot (nb24)",
+    "futures + mark",
+    "futures + mark + funding"
+  ]
+}

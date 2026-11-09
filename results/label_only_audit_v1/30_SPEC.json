@@ -1,0 +1,87 @@
+{
+  "anchoring": "labels anchored at a past peak or fixed threshold give a decline already under way a mechanical head start; labels anchored at the current level (forward returns) do not, so the no-forecast drawdown score is expected near 0.5 there while pi still counts positives issued after the decline began",
+  "bootstrap": "500 draws, calendar-year blocks",
+  "caveat": "label conventions are reconstructed approximately on public data; no study result is replicated or evaluated",
+  "conventions": {
+    "coudert_gex_2008": {
+      "W": 24,
+      "anchor": "past peak (24-month max) incl. crisis months",
+      "data": "S&P 500 month-end (Yahoo ^GSPC)",
+      "freq": "M",
+      "source": "Coudert & Gex (2008), crisis model",
+      "theta": null
+    },
+    "gsy_2019": {
+      "W": 24,
+      "anchor": "current level and later peaks (forward drawdown)",
+      "data": "Fama-French 48 industries, monthly value-weighted",
+      "freq": "M",
+      "source": "Greenwood, Shleifer & You (2019), raw run-up",
+      "theta": 0.4
+    },
+    "le_hoang_2026_h1": {
+      "W": 20,
+      "anchor": "fixed threshold (VIX 25)",
+      "data": "CBOE VIX daily (saved by notebook 29)",
+      "freq": "D",
+      "source": "Le & Hoang (2026), h = 1",
+      "theta": null
+    },
+    "le_hoang_2026_h10": {
+      "W": 20,
+      "anchor": "fixed threshold (VIX 25)",
+      "data": "CBOE VIX daily (saved by notebook 29)",
+      "freq": "D",
+      "source": "Le & Hoang (2026), h = 10",
+      "theta": null
+    },
+    "lleo_ziemba_2015": {
+      "W": 252,
+      "anchor": "current level (forward return)",
+      "data": "S&P 500 daily (Yahoo ^GSPC)",
+      "freq": "D",
+      "source": "Lleo & Ziemba (2015)",
+      "theta": 0.1
+    },
+    "lleo_ziemba_2017": {
+      "W": 252,
+      "anchor": "past peak (breach date)",
+      "data": "S&P 500 daily (Yahoo ^GSPC)",
+      "freq": "D",
+      "source": "Lleo & Ziemba (2017)",
+      "theta": 0.1
+    },
+    "ranjan_spy_5d": {
+      "W": 5,
+      "anchor": "current level (forward return)",
+      "data": "SPY daily (Yahoo)",
+      "freq": "D",
+      "source": "Ranjan (2025)",
+      "theta": 0.01
+    },
+    "shu_zhu_2020": {
+      "W": 21,
+      "anchor": "current level (forward return)",
+      "data": "BTC-USD daily (Yahoo)",
+      "freq": "D",
+      "source": "Shu & Zhu (2020)",
+      "theta": 0.15
+    }
+  },
+  "data_end": "2026-09-30",
+  "f": [
+    0.25,
+    0.5
+  ],
+  "flags": "pi(1/4) lower bound >= 0.5: most positives already in progress; drawdown AUC lower bound > 0.6: a no-forecast score looks skilled on this label",
+  "in_progress_rule": "drawdown from the trailing W-period high >= f * theta (VIX: rise from the trailing 20-day low >= f * distance to 25)",
+  "quantities": "pi(f) = share of positives already in progress (label-only lower bound on the detection share); AUC overall, on not-yet-in-progress positives and on in-progress positives",
+  "scores": {
+    "drawdown": "current drawdown from the trailing W-period high (no forecast content)",
+    "realized_vol": "20-day (daily) or 12-month (monthly) standard deviation of log returns",
+    "vix": "for VIX labels: rise from the trailing 20-day low (progression) and the VIX level (proximity)"
+  },
+  "seed": 20261031,
+  "share_of_excess": "reported only when |AUC - 0.5| >= 0.02",
+  "title": "Label-only audit of crash-label conventions on public data (descriptive)"
+}

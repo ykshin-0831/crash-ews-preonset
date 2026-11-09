@@ -1,0 +1,26 @@
+{
+  "symbol": "TRXUSDT",
+  "eval_start": "2018-06-28",
+  "eval_days": 552.0,
+  "frozen_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee",
+  "manifest_sha256": "33d95b29d5ee0fa873c0c2d216f8bafff47e2dd3b8dbf193bba0c190adf0cbd0",
+  "events": {
+    "d3": 193,
+    "d4": 125,
+    "d5": 80
+  },
+  "alerts": {
+    "M0_VF_logit|d3": 363,
+    "M1_vol_threshold|d3": 363,
+    "M2_VPIN|d3": 360,
+    "M3_GBM_rich|d3": 374,
+    "M0_VF_logit|d4": 363,
+    "M1_vol_threshold|d4": 363,
+    "M2_VPIN|d4": 360,
+    "M3_GBM_rich|d4": 378,
+    "M0_VF_logit|d5": 363,
+    "M1_vol_threshold|d5": 363,
+    "M2_VPIN|d5": 360,
+    "M3_GBM_rich|d5": 378
+  }
+}

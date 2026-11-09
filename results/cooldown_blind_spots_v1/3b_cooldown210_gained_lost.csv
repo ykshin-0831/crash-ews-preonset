@@ -1,0 +1,9 @@
+method,target,actual,actual_cd210,gained,lost
+M0_VF_logit,any,39,38,2,3
+M0_VF_logit,pre,22,20,0,2
+M1_vol_threshold,any,38,38,3,3
+M1_vol_threshold,pre,20,20,1,1
+M2_VPIN,any,13,12,0,1
+M2_VPIN,pre,9,6,0,3
+M3_GBM_rich,any,26,28,3,1
+M3_GBM_rich,pre,7,7,2,2

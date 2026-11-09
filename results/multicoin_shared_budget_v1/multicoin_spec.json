@@ -1,0 +1,22 @@
+{
+  "S0": "separate calendar 20/month, 240/yr per coin; notebook-5 calibration rule per coin on 2022",
+  "S1": "pooled calendar 100/month, 1200/yr; per-coin 240-min cooldown; score = coin-specific 2022 percentile; one percentile threshold calibrated on 2022 (most alerts reachable, then strictest)",
+  "S1b": "S1 plus at most 40 alerts per coin per month",
+  "coins": [
+    "BTCUSDT",
+    "ETHUSDT",
+    "SOLUSDT",
+    "DOGEUSDT",
+    "AVAXUSDT"
+  ],
+  "evaluation": "2023-01-01 to 2026-05-01 exclusive",
+  "event_rule": "4% x sigma_coin/sigma_BTC (median 2021 daily realized vol of 1m log returns); 240-min peak; 5 closes; 24h refractory",
+  "model": "V+F logistic per coin, 2021 train (BTC identical to notebook 5)",
+  "months": [
+    "2020-01",
+    "2026-04"
+  ],
+  "primary_endpoint": "pre-1%-onset hits summed over coins",
+  "status": "exploratory",
+  "study": "shared alert budget across coins, exploratory"
+}

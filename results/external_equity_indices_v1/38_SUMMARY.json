@@ -1,0 +1,97 @@
+{
+  "spec_sha256": "994ec994626d023acf90241d3c90c3d4baaa78c930e2cea0a22c00571f3e5481",
+  "frozen_sha256": "edab20d2dd110fe93fe2a0623eba1761e88d4460db234718fd528d3ff998e50a",
+  "registration_doi": "10.17605/OSF.IO/BKJUQ",
+  "indices": [
+    "^GSPC",
+    "^IXIC",
+    "^GSPTSE",
+    "^FTSE",
+    "^GDAXI",
+    "^FCHI",
+    "^SSMI",
+    "^N225",
+    "^HSI",
+    "^AXJO"
+  ],
+  "excluded": [],
+  "sources": {
+    "^GSPC": "yahoo",
+    "^IXIC": "yahoo",
+    "^GSPTSE": "yahoo",
+    "^FTSE": "yahoo",
+    "^GDAXI": "yahoo",
+    "^FCHI": "yahoo",
+    "^SSMI": "yahoo",
+    "^N225": "yahoo",
+    "^HSI": "yahoo",
+    "^AXJO": "yahoo"
+  },
+  "events": {
+    "20": 241,
+    "10": 146,
+    "60": 233
+  },
+  "episodes": 52,
+  "alerts": {
+    "M0": 805,
+    "M1": 823,
+    "GBM": 713
+  },
+  "readings": {
+    "Q1": {
+      "reading": "supported",
+      "S_in": 0.8074257904492735,
+      "lo95": 0.6896038495201482,
+      "hi95": 0.9525747160580819,
+      "above_half": true
+    },
+    "Q2": {
+      "reading": "inconclusive",
+      "H1_in_progress": {
+        "M0": false,
+        "M1": false,
+        "GBM": true
+      },
+      "H2_pre_onset": {
+        "M0": false,
+        "M1": false,
+        "GBM": false
+      },
+      "diff_in_minus_pre_95": {
+        "M0": [
+          -0.5823844720496891,
+          11.4123
+        ],
+        "M1": [
+          -4.561106925880923,
+          6.209188942891856
+        ],
+        "GBM": [
+          -0.9519747545582044,
+          10.658920757363255
+        ]
+      }
+    },
+    "Q3": {
+      "reading": "F < 1",
+      "F_D60_wmax20": 0.38626609442060084,
+      "F_D10": 1.0,
+      "F_D20": 1.0
+    },
+    "Q4": {
+      "reading": "inconclusive",
+      "std": {
+        "point": 0.027026260964644555,
+        "lo95": -0.018023922392079374,
+        "hi95": 0.07458955319744032
+      },
+      "pre": {
+        "point": 0.0058156046975536,
+        "lo95": -0.08971959255749558,
+        "hi95": 0.13066369147439205
+      }
+    }
+  },
+  "runtime_seconds": 856.7
+}

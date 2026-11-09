@@ -1,0 +1,46 @@
+{
+  "fragility": {
+    "bound": "greedy k_joint is an upper bound on the smallest number of events whose removal makes both intervals include zero",
+    "caveat": "events are removed after looking at their influence, so section 3 is an exploratory sensitivity analysis; intervals after removal are not inference",
+    "greedy": "at each step remove the remaining event whose removal gives the smallest sign(initial point) x point estimate (negatives fixed); recompute the point estimate, the block interval (the section-2 block draws at every step) and the event_a interval (step 0: the section-2 event draws; later steps: new draws among the remaining events, seed fixed per step)",
+    "interval_status": "an interval is undetermined (never counted as including zero) if an end is not finite or fewer than 95% of draws are finite; the path stops at an undetermined interval",
+    "k": "k_joint = first step at which the block and the event_a 95% intervals both include zero at that same step (the reading uses k_joint only); k_block, k_event = first step at which each interval includes zero on its own, and k_sign = first step at which the point estimate changes sign, reported only; step 0 = nothing removed",
+    "label": "k_joint <= 2 is described as resting on one or two events",
+    "max_steps": 40,
+    "stop_pre": "for pre-onset and within-regime pre-onset targets the path stops as not interpretable once fewer than 5 remaining events have pre-onset minutes",
+    "targets": [
+      "H=1440 all auc_standard",
+      "H=1440 all auc_pre",
+      "H=1440 all auc_pre_within_regime",
+      "H=1440 other auc_standard"
+    ]
+  },
+  "guards": "notebook-22 per-minute AUCs; notebook-33 GBM - M0 points; notebook-32 pairs, Table-7 points and 500-draw intervals; notebook-36 event-bootstrap intervals; complement points equal the algebraic complement of the notebook-32 rows",
+  "holdouts": "not used",
+  "inputs": "spot cache, notebook-2 catalog, notebook-16 frozen models; stored results of notebooks 22, 32, 33, 36 for guards; holdouts and the prospective folder not read",
+  "intervals": {
+    "block": "2000 draws, 7-day blocks, shared by both systems (paired)",
+    "event_a": "2000 draws: subset events resampled with replacement (all positive minutes of a drawn event, times its multiplicity), negatives fixed",
+    "event_b": "event_a draws plus negatives resampled by 7-day blocks (independent draws)",
+    "level": "95% percentile intervals over finite draws"
+  },
+  "minutes": "notebook-33 common minutes (valid, finite M0, M1, GBM, B0 scores, RV decile assigned, evaluation period)",
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "prospective_folder": "not read",
+  "quantities": {
+    "auc_in": "GBM - M0",
+    "auc_pre": "GBM - M0",
+    "auc_pre_within_regime": "GBM - M0",
+    "auc_standard": "GBM - M0"
+  },
+  "reading_section2": "distinguishable (+/-) if the block interval and the event_a interval both exclude zero on the same side; otherwise not distinguishable; pre-onset and within-regime pre-onset differences are \"not interpretable\" when fewer than 5 subset events have pre-onset minutes; \"not interpretable\" also when either interval has a non-finite end or fewer than 95% finite draws",
+  "seed": 20261141,
+  "status": "exploratory; development sample only; no confirmatory plan changed",
+  "subsets": {
+    "all": "every development event of the definition",
+    "common": "events paired across the 4-hour and 24-hour definitions (breaches within 60 min, notebook-32 pairing)",
+    "labels": "positives kept only for the subset events; negatives unchanged (Table 7 convention)",
+    "other": "events of the definition that have no counterpart under the other definition (exact complement of common)"
+  },
+  "title": "Table 7 complement intervals and fragility of the 24-hour ranking reversal (exploratory; development sample)"
+}

@@ -1,0 +1,4 @@
+policy,events,alarms,caught,before_1pct
+S0_separate,397,3992,164,61
+S1_pooled,397,3999,195,66
+S1b_pooled_coincap,397,3999,195,66

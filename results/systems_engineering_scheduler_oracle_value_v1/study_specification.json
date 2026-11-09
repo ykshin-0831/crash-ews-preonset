@@ -1,0 +1,29 @@
+{
+  "version": "v1",
+  "primary_budget": 240,
+  "budgets": [
+    60,
+    120,
+    240,
+    480
+  ],
+  "model": "V+F",
+  "score_features": [
+    "z_vol",
+    "tsr"
+  ],
+  "model_train_year": 2021,
+  "threshold_calibration_year": 2022,
+  "eval_start": "2023-01-01",
+  "eval_end_exclusive": "2026-05-01",
+  "event_catalog": "/content/drive/MyDrive/btc_lead_cost_results_77months_spot/event_definition_eligibility_audit/price_only_event_catalog.csv",
+  "lead_min": 30,
+  "lead_max": 240,
+  "cooldown_min": 240,
+  "preonset_metric": "before first 1pct drawdown",
+  "event_def": "4pct 240min peak close / 5min sustain / 24h refractory",
+  "primary_scheduler": "calendar",
+  "primary_value_fee_bps": 10,
+  "bucket_burst_rule": "ceil(B/48), minimum 2",
+  "research_status": "retrospective exploratory — evaluation periods repeatedly inspected"
+}

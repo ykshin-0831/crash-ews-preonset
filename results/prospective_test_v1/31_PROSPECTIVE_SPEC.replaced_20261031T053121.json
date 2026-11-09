@@ -1,0 +1,70 @@
+{
+  "H1_primary": {
+    "claim": "M0 (label A) pre-onset catches exceed the budget-preserving regime-matched null",
+    "decision": "supported if p < alpha; reported either way",
+    "null": "notebook-26 draw_budget",
+    "test": "one-sided, p = (1 + #draws >= observed) / (10000 + 1), alpha 0.05"
+  },
+  "P1": {
+    "claim": "at H = 1440: GBM - M0 standard AUC > 0 and GBM - M0 pre-onset AUC < 0",
+    "inference": "shared 500 x 7-day block bootstrap on the common minutes; read supported if both intervals exclude 0 in the predicted directions, contradicted if either excludes 0 in the other direction, inconclusive otherwise; within-regime pre-onset AUC also reported"
+  },
+  "P2": {
+    "claim": "at H = 240: M0 catches more events before onset than GBM under the frozen alerts",
+    "inference": "exact one-sided McNemar on discordant events; event counts reported; inconclusive if fewer than 10 events are caught pre-onset by either method"
+  },
+  "S1": "M0 in-progress catches under the same null (nominal p)",
+  "S2": "M1, M2, M3 on both endpoints under the same null; Holm across the three methods within each endpoint",
+  "S3": "labels B, B2, C for M0 and GBM: pre-onset catches under the same null; exact one-sided McNemar (variant better than A) on pre-onset catches, Holm within method",
+  "alpha": 0.05,
+  "block_days": 7,
+  "bootstrap": 500,
+  "bp_tries": 64,
+  "descriptive": [
+    "stage decomposition of missed events (signal / window / cooldown / budget) with the Python replay",
+    "no-monthly-cap and cooldown-only replays",
+    "lead-time distribution of pre-onset catches",
+    "all alerts and events listed with timestamps (no prices)"
+  ],
+  "draws": 10000,
+  "evaluation_period": {
+    "descriptive_update": "the same analysis at 24 months, reported as descriptive",
+    "end_utc": "2027-11-01 00:00:00+00:00",
+    "events": "breach in [start + 240 min, end); monthly archives only, SHA-256 verified; no API data in the confirmatory run",
+    "months": 12,
+    "start_utc": "2026-11-01 00:00:00+00:00"
+  },
+  "exclusions": "none; minutes with missing archive data are NaN and cannot host alerts or events; exchange incidents are reported, not excluded",
+  "frozen": {
+    "events": "price_only_catalog: 4% below the prior 240-min high, 5 closes sustained, 1440-min refractory; onset = first close >= 1% below the peak",
+    "judging_window": [
+      30,
+      240
+    ],
+    "scheduler": "calendar: 20/month, 240/year, 240-min cooldown, run from 2026-10-01 so the cooldown state at the start is right",
+    "systems": "notebook-16 METHODS_FROZEN.json (M0 logistic from stored coefficients and scaler; M1 z_vol; M2 VPIN; M3 GBM file); notebook-26 ONSET_AWARE_FROZEN.json (M0 and GBM retrained on labels B, B2, C); thresholds calibrated on 2022; nothing refitted",
+    "warm_up": "archives from 2026-02 for the 30-day feature baselines and the cache guard"
+  },
+  "frozen_input_sha256": {
+    "02_price_only_event_catalog": "9c9c035fda635b75f5f19598f34bb52dd55bbfe4b93c1179073b56d42af42187",
+    "05_spot_reference": "df54cddf8263cfa8bdd1b5483d891c32ff7d25f3f622cef05a45a7f67ca5aa90",
+    "06_spot_frozen_thresholds": "faef731db6f7612faf2adc8a01e6c5cffbcfc3515b6c43eaa080c47356de0412",
+    "16_METHODS_FROZEN": "2db183557433f15544c024b44761dd6665c36d39852c0b83addb5b89856882fa",
+    "16_METHODS_SPEC": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+    "26_ONSET_AWARE_FROZEN": "63d08c6e8e37515feef7843f2f8d4060b1304f2a3336d8f555e542ac1f90ba75",
+    "26_SPEC": "b061b78cb73807b0441c0a87722bc7b79bf39d7ac78ab7dd4566c0384c5a22bc",
+    "model_M3_GBM_rich": "176fdac46ff63729ed8f271540b356543a6e6bf1e977edb707eb460ef1ecc4b4",
+    "model_M3_GBM_rich|B2_pre_onset_in_decline_negative": "ca4ae55deeac65c0deebcb13d3536f68118c74ce0d78b7495195048c33e108f9",
+    "model_M3_GBM_rich|B_pre_onset": "a36d4d2894dbc4558da07d0bbbae5dad40bc1834786128912be37c4dfb90c736",
+    "model_M3_GBM_rich|C_pre_peak": "f2fc7cb10a326f127abae778bfddd0f60a922b3a5c8456b4faa054912c9dde2e"
+  },
+  "guards": [
+    "downloaded prices and recomputed signals equal the spot cache on the overlap (notebook-11 tolerances)",
+    "M0 rebuilt from stored parameters equals a 2021 refit when the cache is present",
+    "model file hashes equal their freeze records",
+    "compiled scheduler equals the Python replay"
+  ],
+  "rules": "all outcomes reported as observed; no rule, threshold or model changed after the data exist; second evaluation refused (lock file)",
+  "seed": 20261101,
+  "title": "Pre-registered prospective test of frozen crash-warning systems, Binance spot BTCUSDT 1-minute, from 2026-11-01"
+}

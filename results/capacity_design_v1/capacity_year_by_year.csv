@@ -1,0 +1,17 @@
+policy,year,alarms,events,caught,before_1pct
+P0_calendar,2023,240,17,7,3
+P0_calendar,2024,240,36,17,7
+P0_calendar,2025,240,21,12,9
+P0_calendar,2026,80,9,3,3
+P1_constant_bucket,2023,240,17,7,3
+P1_constant_bucket,2024,240,36,23,7
+P1_constant_bucket,2025,240,21,14,6
+P1_constant_bucket,2026,75,9,4,2
+P2_risk_bucket_budget_neutral,2023,225,17,2,2
+P2_risk_bucket_budget_neutral,2024,240,36,15,4
+P2_risk_bucket_budget_neutral,2025,240,21,14,6
+P2_risk_bucket_budget_neutral,2026,103,9,4,2
+P3_surge_reserve_calendar,2023,240,17,5,3
+P3_surge_reserve_calendar,2024,240,36,17,7
+P3_surge_reserve_calendar,2025,240,21,11,8
+P3_surge_reserve_calendar,2026,72,9,3,3

@@ -1,0 +1,17 @@
+{
+  "venue": "spot",
+  "market": "Binance spot BTCUSDT 1m klines",
+  "source_url_pattern": "https://data.binance.vision/data/spot/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-{ym}.zip",
+  "first_month": "2020-01",
+  "last_month": "2026-04",
+  "n_monthly_archives": 76,
+  "archive_sha256_manifest": "spot_download_manifest.csv",
+  "cache_first_utc": "2020-01-01 00:00:00+00:00",
+  "cache_last_utc": "2026-04-30 23:59:00+00:00",
+  "cache_minutes": 3329280,
+  "fingerprint_2026_04_01_0000_utc": {
+    "close": 68218.35,
+    "volume": 14.7537,
+    "taker_buy_vol": 6.20199
+  }
+}

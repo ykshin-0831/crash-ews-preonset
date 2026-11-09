@@ -1,0 +1,106 @@
+{
+  "downloaded_utc": "2026-11-03T09:24:49.212512+00:00",
+  "registration_doi": "10.17605/OSF.IO/BKJUQ",
+  "indices": {
+    "^GSPC": {
+      "included": true,
+      "source": "yahoo",
+      "file": "GSPC.csv",
+      "sha256": "9827d2396cc6947cff900a921106b75a22da16e8fb2d5e665813357698f0fd90",
+      "n": 19121,
+      "first": "1950-01-03",
+      "last": "2025-12-31",
+      "tried": []
+    },
+    "^IXIC": {
+      "included": true,
+      "source": "yahoo",
+      "file": "IXIC.csv",
+      "sha256": "f7a0b70dfcef17cc16de3cda82a96643a8c2722a6148fb4123d88baac60e5d98",
+      "n": 13843,
+      "first": "1971-02-05",
+      "last": "2025-12-31",
+      "tried": []
+    },
+    "^GSPTSE": {
+      "included": true,
+      "source": "yahoo",
+      "file": "GSPTSE.csv",
+      "sha256": "a9a2445a50fd7347eaa4d9eb39de8be9f80bda73e02114b68b6e1ceaff5b02f1",
+      "n": 11677,
+      "first": "1979-06-29",
+      "last": "2025-12-31",
+      "tried": []
+    },
+    "^FTSE": {
+      "included": true,
+      "source": "yahoo",
+      "file": "FTSE.csv",
+      "sha256": "f32c470cd757c876e96deb213074d3a6da171a499d113da45d10072d1fa612f6",
+      "n": 10609,
+      "first": "1984-01-03",
+      "last": "2025-12-31",
+      "tried": []
+    },
+    "^GDAXI": {
+      "included": true,
+      "source": "yahoo",
+      "file": "GDAXI.csv",
+      "sha256": "55e99dd6433d47212602b89d36338f698a355ce22bc5d7638d5f0e7cbed9d3e6",
+      "n": 9609,
+      "first": "1987-12-30",
+      "last": "2025-12-30",
+      "tried": []
+    },
+    "^FCHI": {
+      "included": true,
+      "source": "yahoo",
+      "file": "FCHI.csv",
+      "sha256": "9fd858a16662fc31dc82e14261c29bade3ca47e87643619ea1926dad81f107de",
+      "n": 9101,
+      "first": "1990-03-01",
+      "last": "2025-12-31",
+      "tried": []
+    },
+    "^SSMI": {
+      "included": true,
+      "source": "yahoo",
+      "file": "SSMI.csv",
+      "sha256": "f189488a1115014aac77ccbdbb74662c48dfd66fac4068af2109dc114c02c212",
+      "n": 8824,
+      "first": "1990-11-09",
+      "last": "2025-12-30",
+      "tried": []
+    },
+    "^N225": {
+      "included": true,
+      "source": "yahoo",
+      "file": "N225.csv",
+      "sha256": "19049d45a17adf3032ba12acfb30a4a015fe3bc22881fd3173aef177a918d4f1",
+      "n": 14996,
+      "first": "1965-01-05",
+      "last": "2025-12-30",
+      "tried": []
+    },
+    "^HSI": {
+      "included": true,
+      "source": "yahoo",
+      "file": "HSI.csv",
+      "sha256": "91106baf4feef0585fc7a83f5ed2f182be59584b5403e16912d10e6664aa1628",
+      "n": 9626,
+      "first": "1986-12-31",
+      "last": "2025-12-31",
+      "tried": []
+    },
+    "^AXJO": {
+      "included": true,
+      "source": "yahoo",
+      "file": "AXJO.csv",
+      "sha256": "167d8d6f2cbecca477044e01f61f01eaae249f53be71d2e4930c248f289922e3",
+      "n": 8369,
+      "first": "1992-11-23",
+      "last": "2025-12-31",
+      "tried": []
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "notebook": 51,
+  "status": "exploratory_posthoc_not_validation",
+  "coin_cache": "btc_lead_cost_results_77months_spot/multicoin_shared_budget_v1/cache",
+  "venue": "spot",
+  "coins": [
+    "ETHUSDT",
+    "SOLUSDT",
+    "DOGEUSDT",
+    "AVAXUSDT"
+  ],
+  "return_minutes": 60,
+  "lag_minutes": 15,
+  "min_valid_altcoins": 3,
+  "btc_beta_alpha_scale_fit": "2021_only",
+  "residual_breadth_z_threshold": -1.0,
+  "train": "2021 identical complete-case shared mask; breach label",
+  "2022": "unlabeled 20/month 240/year threshold calibration",
+  "development": "2023-01 through 2026-04 (repeatedly inspected)",
+  "lead_minutes": [
+    30,
+    240
+  ],
+  "cooldown_minutes": 240,
+  "hgb_params": {
+    "max_iter": 100,
+    "max_leaf_nodes": 7,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 100,
+    "l2_regularization": 5.0,
+    "max_bins": 127,
+    "early_stopping": false,
+    "random_state": 20261147
+  },
+  "fair_arms": [
+    "M0",
+    "HGB_Base",
+    "HGB_HS",
+    "HGB_Stress",
+    "HGB_HS_Stress"
+  ],
+  "new_features": [
+    "residual_downside",
+    "residual_breadth"
+  ],
+  "interaction": "clip(z_hs,-6,6)*clip(residual_downside,0,6)",
+  "onset_anchor": "exploratory posthoc after repeated inspection",
+  "original_breach_anchor": "report alongside onset; 47 primary previously negative",
+  "no_claim_of_independent_validation": true,
+  "do_not_use_existing_osf_prospective_period": "2026-12 through 2027-11"
+}

@@ -1,0 +1,5 @@
+milestone,pairs,futures_first,same_minute,spot_first,median_diff_min,mean_abs_diff_min
+peak,83,7,74,2,0.0,0.9759036144578314
+onset_1pct,83,10,65,8,0.0,1.8072289156626506
+breach,83,6,71,6,0.0,0.7951807228915663
+confirmed,83,6,71,6,0.0,0.7951807228915663

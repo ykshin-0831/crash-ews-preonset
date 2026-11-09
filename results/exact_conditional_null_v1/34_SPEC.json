@@ -1,0 +1,45 @@
+{
+  "alphas": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "exact_computation": "backward dynamic programme over the grid with per-month remaining-count states; saturating counter of T; factorial-moment pass for mean and variance; exact sampler by forward sampling from the same tables",
+  "holdouts": "not used",
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "notebook32_seed": 20261031,
+  "null_model": "Q_nu: alert set uniform over all sets on the notebook-32 placement grid with the observed counts per (calendar month, RV decile) cell and spacing >= 240 minutes",
+  "prospective_folder": "not read",
+  "pvalues": {
+    "exact": "P_Q(T >= T_obs), no Monte Carlo error",
+    "old": "notebook-32 draw_budget, (1 + #) / (B + 1) with B = 200 (Q row) or the stored notebook-32 value (R row, B = 400)",
+    "randomized_exact": "P_Q(T > T_obs) + U P_Q(T = T_obs)",
+    "valid_mc": "(1 + #(T* >= T_obs)) / (B + 1), B = 200 draws from the exact law (binomial representation)"
+  },
+  "q_row": {
+    "draws": 500,
+    "old_draws_per_test": 200,
+    "variants": [
+      "draw_budget as in notebook 32",
+      "draw_budget without the >= 240-minute exclusion around the original alert"
+    ]
+  },
+  "r_row": {
+    "max_hours": 10.0,
+    "min_report": 200,
+    "order": "interleaved: shift r, block r for r < 200, then shift 200-399",
+    "surrogates": "notebook-32 families regenerated with its seeds (400 circular shifts, 200 block derangements); guard: alerts and pre-onset catches equal the notebook-32 table"
+  },
+  "readings": {
+    "implementation": "randomized exact p in the Q row: rejection rate 99% interval must contain alpha at 0.01, 0.05, 0.10; otherwise stop interpreting",
+    "old_vs_exact": "paired difference of rejection decisions with 95% interval and one-sided discordance counts; McNemar exact p",
+    "old_vs_nominal": "Clopper-Pearson 95% interval of the rejection rate: covers alpha -> no evidence of size distortion; below -> conservative; above -> anti-conservative",
+    "r_row": "surrogates are not independent; intervals are descriptive; surrogate no-skill is not the same hypothesis as Q_nu",
+    "reporting": "the same tables are reported whatever the size or direction of the differences",
+    "separation": "exclusion = old - no-exclusion; sequential and nearest-decile = no-exclusion - valid MC from the exact law; MC resolution = valid MC - exact (Q row only)"
+  },
+  "seed": 20261102,
+  "statistic": "pre-onset catches T (notebook-32 fast_counts pre); equals the number of alerts on pre-onset minutes because the 210-minute judging windows are shorter than the cooldown and disjoint (checked)",
+  "status": "exploratory; appendix; no confirmatory plan changed",
+  "title": "Exact conditional null for the budget-preserving regime-matched alert null (exploratory; appendix)"
+}

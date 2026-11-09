@@ -1,0 +1,4 @@
+policy,alerts_may_sep,new_crashes,caught_any,caught_pre1pct,early_recall,all_recall,alert_precision,alerts_jan_apr,alerts_2026_to_sep
+calendar,100,2,1,0,0.0,0.5,0.01,80,180
+high_score,99,2,1,0,0.0,0.5,0.010101010101010102,80,179
+constant_bucket,97,2,1,0,0.0,0.5,0.010309278350515464,75,172

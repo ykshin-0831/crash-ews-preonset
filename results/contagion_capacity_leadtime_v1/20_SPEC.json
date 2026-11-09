@@ -1,0 +1,33 @@
+{
+  "A_contagion": {
+    "btc_led_event": "BTC >= 1% below its trailing high at the alt 1% onset",
+    "btc_state": "BTC close at the alert minute vs its trailing-240-min high",
+    "data": "notebook-17 stored alerts and d4 events (10 alts, 2018-2019); BTC 1m from notebook-11 archives (SHA-256 checked)",
+    "status": "post hoc, descriptive; notebook-17 hypotheses are not re-tested",
+    "thresholds": [
+      0.005,
+      0.01,
+      0.02
+    ]
+  },
+  "B_budget": {
+    "budgets_per_year": [
+      60,
+      120,
+      240,
+      480,
+      960
+    ],
+    "calibration": "notebook-5 rule on 2022 at each budget",
+    "cooldown_min": 240,
+    "guard": "budget 240 reproduces notebook-16 thresholds and alarms",
+    "monthly_cap": "budget/12",
+    "nulls": "circular >= 7d and regime-matched, 1000 draws",
+    "period": "2023-01-01..2026-05-01"
+  },
+  "C_lead": "matched alerts: minutes from the 1% onset; decline already realised at the alert (BTC samples only)",
+  "D_capacity": "alerts / calendar capacity (20 per month, 240 per year) and 2022 vs dev candidate rates",
+  "notebook16_spec_sha256": "23e3f879a7738de2dce272cf0d6b0646d2c74fddcc94d42c2c762a276e8c2608",
+  "seed": 20261103,
+  "title": "BTC contagion in alt early warnings, alert-budget sweep, lead times and capacity use (exploratory / post hoc)"
+}

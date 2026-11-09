@@ -1,0 +1,26 @@
+{
+  "symbol": "XRPUSDT",
+  "eval_start": "2018-05-21",
+  "eval_days": 590.0,
+  "frozen_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee",
+  "manifest_sha256": "573f3938e4df5c1ed80914b7d7eecfabe3755b92566c724fcb1e033bd0f0ce62",
+  "events": {
+    "d3": 105,
+    "d4": 65,
+    "d5": 36
+  },
+  "alerts": {
+    "M0_VF_logit|d3": 386,
+    "M1_vol_threshold|d3": 386,
+    "M2_VPIN|d3": 380,
+    "M3_GBM_rich|d3": 194,
+    "M0_VF_logit|d4": 386,
+    "M1_vol_threshold|d4": 386,
+    "M2_VPIN|d4": 380,
+    "M3_GBM_rich|d4": 241,
+    "M0_VF_logit|d5": 391,
+    "M1_vol_threshold|d5": 386,
+    "M2_VPIN|d5": 380,
+    "M3_GBM_rich|d5": 359
+  }
+}

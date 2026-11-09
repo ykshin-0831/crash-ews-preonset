@@ -1,0 +1,16 @@
+{
+  "components": "first minute z_vol / tsr >= own 2022 99th percentile in the common window",
+  "lead_lag": "correlation of 1-min returns and absolute returns, futures at t vs spot at t+k, k in [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]; whole evaluation period and pre-event windows",
+  "matching": "one-to-one greedy on |breach_spot - breach_futures| <= 60 min; sensitivity [15, 60, 240]",
+  "models": "notebook-5 V+F per venue, 2021 train, 2022 calibration, calendar 20/month 240/yr; reproduced exactly (guards), no new policy",
+  "signal_window": "common window [min breach - 240, min breach - 30]; onset reference = earlier of the two 1% onsets",
+  "status": "descriptive; no hypothesis tests",
+  "title": "Spot vs futures on the same crash events (descriptive only)",
+  "unmatched_reasons": [
+    "other venue refractory (its last event confirmed within 24 h before)",
+    "near-miss (other venue drawdown from its 240-min peak >= 3% within +-60 min)",
+    "other venue touched 4% but the 5-minute/other rule failed",
+    "different move",
+    "other venue data gap"
+  ]
+}

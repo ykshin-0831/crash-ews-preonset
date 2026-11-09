@@ -1,0 +1,4 @@
+policy,evaluation_start,evaluation_end_exclusive,events,alarms_scored,events_caught,event_recall,caught_before_1pct_onset,false_alarms_scored,mean_lead_to_first_breach_min
+fixed_H+F,2023-01-01 00:00:00+00:00,2026-05-01 00:00:00+00:00,83,1026,4,0.04819277108433735,4,1022,104.75
+optimized_H+F,2023-01-01 00:00:00+00:00,2026-05-01 00:00:00+00:00,83,332,3,0.03614457831325301,0,329,53.333333333333336
+optimized_V+F,2023-01-01 00:00:00+00:00,2026-05-01 00:00:00+00:00,83,168,1,0.012048192771084338,0,167,39.0

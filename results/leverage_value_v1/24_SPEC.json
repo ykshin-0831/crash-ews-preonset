@@ -1,0 +1,30 @@
+{
+  "action": "close at the first positive-volume close within 5 min after the alert minute (notebook 15), reopen after 240 min",
+  "alerts": "M0 calendar alarms (notebook 5), as in paper section 10",
+  "holdouts": "not used",
+  "nulls": {
+    "circular": ">= 7 days",
+    "draws": 1000,
+    "p": "one-sided, observed >= null",
+    "regime": "24h-RV decile, +-30 days, >= 240 min away"
+  },
+  "position": {
+    "leverage": [
+      1,
+      2,
+      5,
+      10,
+      20,
+      50
+    ],
+    "liquidation_check": "minute lows over the 240 minutes after entry",
+    "liquidation_price": "entry * (1 - 1/k) / (1 - mm)",
+    "maintenance_margin": 0.005,
+    "type": "isolated-margin long"
+  },
+  "reading_rule": "At leverage k the alert stream is said to pay if the 95% lower bound of the mean value per alert after a 5-bp fee is > 0 and the observed mean exceeds the regime-matched null (p < 0.05). Reported for every k; no k is selected.",
+  "seed": 20261107,
+  "title": "Value of acting on M0 alerts for leveraged long holders (dev 2023-01..2026-04, exploratory)",
+  "uncertainty": "calendar-month block bootstrap, 2000 draws, 95% interval of the mean value per alert",
+  "value": "percent of margin avoided: -(holding P&L), holding P&L = -100 if liquidated else 100*k*(simple 240-min return); fees [0, 5] bp one-way on notional, both legs; funding and slippage ignored"
+}

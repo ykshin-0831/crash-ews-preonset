@@ -1,0 +1,74 @@
+{
+  "alerts": "notebook-5 calendar (20/month, 240/yr, 240-min cooldown, TH_CAL); dev = recomputed, holdout = notebook-11 saved alarms",
+  "audit": {
+    "band_draws": 5000,
+    "bands": [
+      [
+        "4h-1d",
+        240,
+        1440
+      ],
+      [
+        "1-3d",
+        1440,
+        4320
+      ],
+      [
+        "3-7d",
+        4320,
+        10080
+      ],
+      [
+        "7-30d",
+        10080,
+        43200
+      ],
+      [
+        ">30d",
+        43200,
+        null
+      ]
+    ],
+    "episodes": "events with breach gaps <= 72 h form one episode; episode-level hit counts under the same nulls",
+    "regime_matched": "each alert moved to a random minute of the same RV decile within +-30 days, at least 240 min from the original; 5000 draws",
+    "regime_variable": "trailing 1440-min std of 1-min log returns, deciles within each period"
+  },
+  "endpoints": {
+    "caught": "composite = pre + post (reference only, not interpreted)",
+    "eligibility": "pre possible only if onset-to-breach gap < 240 min; post possible only if gap >= 30 min",
+    "onset_anchored": "secondary: alert within 240 min before the 1% onset (one alert per event), regardless of the breach window",
+    "post": "in-progress detection: matched alert 30-240 min before the breach, at or after the 1% onset",
+    "pre": "early warning: matched alert 30-240 min before the 4% breach AND before the 1% onset"
+  },
+  "holdout_use": "post-hoc audit of a locked test; notebook-11 hypotheses and results are not changed",
+  "null_primary": "circular shift of all alerts by U[7 days, L-7 days], 10000 draws, seed 20261029 (identical to holdout H1)",
+  "periods": {
+    "dev": [
+      "2023-01-01",
+      "2026-05-01"
+    ],
+    "holdout": [
+      "2018-01-01",
+      "2021-01-01"
+    ]
+  },
+  "pooling": {
+    "clusters": [
+      "event (= exact McNemar)",
+      "shock (cross-coin single linkage, gap <= 240 min)",
+      "month"
+    ],
+    "compare": "S1 pooled vs S0 separate (notebook 10)",
+    "endpoints": [
+      "pre",
+      "post",
+      "caught"
+    ],
+    "test": "two-sided sign-flip permutation of cluster sums, 100000 draws"
+  },
+  "reading": {
+    "skill": "an endpoint shows skill in a period if its one-sided p < 0.05 under the primary null",
+    "timing_vs_regime": "skill is timing-specific if it also holds under the 4h-1d band and the regime-matched null; regime-level only if it holds only for long shifts"
+  },
+  "title": "Early-warning reliability under capacity constraints (exploratory)"
+}

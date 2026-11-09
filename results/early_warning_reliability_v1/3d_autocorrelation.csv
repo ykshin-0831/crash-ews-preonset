@@ -1,0 +1,3 @@
+period,events,episodes,events_per_episode,alert_gap_median_real_min,alert_gap_median_regime_null_min,share_gaps_below_cooldown_real,share_gaps_below_cooldown_regime_null,note
+dev,83,55,1.509090909090909,677.0,1372.0,0.0,0.12639549436795994,circular shift preserves all inter-alert gaps (except one wrap); the regime-matched null does not
+holdout,199,80,2.4875,673.0,1401.0,0.0,0.12535814606741574,circular shift preserves all inter-alert gaps (except one wrap); the regime-matched null does not

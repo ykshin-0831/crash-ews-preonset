@@ -1,0 +1,7 @@
+H,events,events_with_pre_onset_set,max_sets_touching_one_month,max_events_in_one_year,monthly_cap,annual_cap,max_oracle_alerts_one_month,max_oracle_alerts_one_year,min_oracle_alert_spacing_min,cooldown_condition_c,cooldowns_satisfy_c,every_window_minute_valid,oracle_attainable,NF,budget_binds
+240,83,83,7,36,10,120,7,36,1446,C <= R - (W_max - W_min) = 1230,True,True,83,83,False
+240,83,83,7,36,20,240,7,36,1446,C <= R - (W_max - W_min) = 1230,True,True,83,83,False
+240,83,83,7,36,40,480,7,36,1446,C <= R - (W_max - W_min) = 1230,True,True,83,83,False
+1440,218,30,4,79,10,120,4,13,1600,C <= R - (W_max - W_min) = 1230,True,True,30,30,False
+1440,218,30,4,79,20,240,4,13,1600,C <= R - (W_max - W_min) = 1230,True,True,30,30,False
+1440,218,30,4,79,40,480,4,13,1600,C <= R - (W_max - W_min) = 1230,True,True,30,30,False

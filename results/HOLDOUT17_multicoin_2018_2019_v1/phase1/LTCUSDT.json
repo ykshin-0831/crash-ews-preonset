@@ -1,0 +1,131 @@
+{
+  "symbol": "LTCUSDT",
+  "sigma_2021": 0.0566384017699457,
+  "scale_vs_btc": 1.4644488327104421,
+  "train_rows": 524089,
+  "cal_rows": 525580,
+  "manifest_sha256": "4b7fc1b127fcc3c5768543e1fb1edbe5fafdb97e91b0a5a9dda4e9a1a7e847de",
+  "configs": {
+    "M0_VF_logit|d3": {
+      "method": "M0_VF_logit",
+      "definition": "d3",
+      "decline": 0.043933464981313265,
+      "threshold_2022": 0.6250772680903847,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 148,
+      "train_positive_minutes": 31228,
+      "model_file": "models/LTCUSDT_M0_VF_logit_d3.joblib",
+      "model_sha256": "30339a9d41273a48146b01a8bc3cc9c7a1771ff51101f7e42fc7603cc3dd7c95"
+    },
+    "M1_vol_threshold|d3": {
+      "method": "M1_vol_threshold",
+      "definition": "d3",
+      "decline": 0.043933464981313265,
+      "threshold_2022": 1.496143798902631,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 148,
+      "train_positive_minutes": 31228
+    },
+    "M2_VPIN|d3": {
+      "method": "M2_VPIN",
+      "definition": "d3",
+      "decline": 0.043933464981313265,
+      "threshold_2022": 0.14193785190582275,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 148,
+      "train_positive_minutes": 31228
+    },
+    "M3_GBM_rich|d3": {
+      "method": "M3_GBM_rich",
+      "definition": "d3",
+      "decline": 0.043933464981313265,
+      "threshold_2022": 0.30017734011853475,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 148,
+      "train_positive_minutes": 31228,
+      "model_file": "models/LTCUSDT_M3_GBM_rich_d3.joblib",
+      "model_sha256": "a2389f2ee8b2167396f24149cd9d44a0d62d3805ab7fad8a6bf3be8f1c6751ac"
+    },
+    "M0_VF_logit|d4": {
+      "method": "M0_VF_logit",
+      "definition": "d4",
+      "decline": 0.05857795330841769,
+      "threshold_2022": 0.7094786724712906,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 80,
+      "train_positive_minutes": 16880,
+      "model_file": "models/LTCUSDT_M0_VF_logit_d4.joblib",
+      "model_sha256": "3ac005826801e8d0ed3461e344209ac7688718b7b73c37f7b9ca030845b9b229"
+    },
+    "M1_vol_threshold|d4": {
+      "method": "M1_vol_threshold",
+      "definition": "d4",
+      "decline": 0.05857795330841769,
+      "threshold_2022": 1.496143798902631,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 80,
+      "train_positive_minutes": 16880
+    },
+    "M2_VPIN|d4": {
+      "method": "M2_VPIN",
+      "definition": "d4",
+      "decline": 0.05857795330841769,
+      "threshold_2022": 0.14193785190582275,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 80,
+      "train_positive_minutes": 16880
+    },
+    "M3_GBM_rich|d4": {
+      "method": "M3_GBM_rich",
+      "definition": "d4",
+      "decline": 0.05857795330841769,
+      "threshold_2022": 0.08079130253106168,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 80,
+      "train_positive_minutes": 16880,
+      "model_file": "models/LTCUSDT_M3_GBM_rich_d4.joblib",
+      "model_sha256": "bba51a083da569a7bc195069b2be20b0a4c4abae9ab3a9d60a7c37a76253fe46"
+    },
+    "M0_VF_logit|d5": {
+      "method": "M0_VF_logit",
+      "definition": "d5",
+      "decline": 0.0732224416355221,
+      "threshold_2022": 0.7798193338986427,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 51,
+      "train_positive_minutes": 10761,
+      "model_file": "models/LTCUSDT_M0_VF_logit_d5.joblib",
+      "model_sha256": "9f656bd081027f0f5e30e2fb27a32dde0a8687294e1003295990ddaba07d0640"
+    },
+    "M1_vol_threshold|d5": {
+      "method": "M1_vol_threshold",
+      "definition": "d5",
+      "decline": 0.0732224416355221,
+      "threshold_2022": 1.496143798902631,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 51,
+      "train_positive_minutes": 10761
+    },
+    "M2_VPIN|d5": {
+      "method": "M2_VPIN",
+      "definition": "d5",
+      "decline": 0.0732224416355221,
+      "threshold_2022": 0.14193785190582275,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 51,
+      "train_positive_minutes": 10761
+    },
+    "M3_GBM_rich|d5": {
+      "method": "M3_GBM_rich",
+      "definition": "d5",
+      "decline": 0.0732224416355221,
+      "threshold_2022": 0.015756881186912146,
+      "cal_alerts_2022": 240,
+      "train_events_2021": 51,
+      "train_positive_minutes": 10761,
+      "model_file": "models/LTCUSDT_M3_GBM_rich_d5.joblib",
+      "model_sha256": "fe106524e80e5da647ef8fe9307231597e57867cc746a69f5e64cfe97e994873"
+    }
+  },
+  "excluded_definitions": {}
+}

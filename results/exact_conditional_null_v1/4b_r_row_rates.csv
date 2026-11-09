@@ -1,0 +1,37 @@
+surrogates,alpha,test,n,rejections,rate,lo95,hi95,vs_nominal,diff,diff_lo,diff_hi,only_first,only_second,mcnemar_p
+shift,0.01,"old draw_budget (notebook 32, B=400)",107,2.0,0.018691588785046728,0.0022717083704052884,0.06589189699243267,no evidence of size distortion,,,,,,
+shift,0.01,exact (no MC error),107,1.0,0.009345794392523364,0.00023658703643428247,0.050972542569083464,no evidence of size distortion,,,,,,
+shift,0.01,randomized exact,107,1.0,0.009345794392523364,0.00023658703643428247,0.050972542569083464,no evidence of size distortion,,,,,,
+shift,0.01,paired: old - exact,107,,,,,,0.009345794392523364,-0.008886164688430417,0.027577753473477143,1.0,0.0,1.0
+shift,0.05,"old draw_budget (notebook 32, B=400)",107,6.0,0.056074766355140186,0.02085394406672172,0.11806157326441491,no evidence of size distortion,,,,,,
+shift,0.05,exact (no MC error),107,6.0,0.056074766355140186,0.02085394406672172,0.11806157326441491,no evidence of size distortion,,,,,,
+shift,0.05,randomized exact,107,9.0,0.08411214953271028,0.03918444062625153,0.15367206789956414,no evidence of size distortion,,,,,,
+shift,0.05,paired: old - exact,107,,,,,,0.0,0.0,0.0,0.0,0.0,1.0
+shift,0.1,"old draw_budget (notebook 32, B=400)",107,9.0,0.08411214953271028,0.03918444062625153,0.15367206789956414,no evidence of size distortion,,,,,,
+shift,0.1,exact (no MC error),107,9.0,0.08411214953271028,0.03918444062625153,0.15367206789956414,no evidence of size distortion,,,,,,
+shift,0.1,randomized exact,107,11.0,0.102803738317757,0.052447247492658826,0.17650214097815367,no evidence of size distortion,,,,,,
+shift,0.1,paired: old - exact,107,,,,,,0.0,0.0,0.0,0.0,0.0,1.0
+block_shuffle,0.01,"old draw_budget (notebook 32, B=400)",107,4.0,0.037383177570093455,0.010278000727758065,0.09295471054939443,anti-conservative,,,,,,
+block_shuffle,0.01,exact (no MC error),107,3.0,0.028037383177570093,0.005819728791503965,0.07975465583240314,no evidence of size distortion,,,,,,
+block_shuffle,0.01,randomized exact,107,5.0,0.04672897196261682,0.01534461054631299,0.10568611977830082,anti-conservative,,,,,,
+block_shuffle,0.01,paired: old - exact,107,,,,,,0.009345794392523364,-0.008886164688430417,0.027577753473477143,1.0,0.0,1.0
+block_shuffle,0.05,"old draw_budget (notebook 32, B=400)",107,11.0,0.102803738317757,0.052447247492658826,0.17650214097815367,anti-conservative,,,,,,
+block_shuffle,0.05,exact (no MC error),107,11.0,0.102803738317757,0.052447247492658826,0.17650214097815367,anti-conservative,,,,,,
+block_shuffle,0.05,randomized exact,107,13.0,0.12149532710280374,0.06630421254760363,0.1987971270469031,anti-conservative,,,,,,
+block_shuffle,0.05,paired: old - exact,107,,,,,,0.0,0.0,0.0,0.0,0.0,1.0
+block_shuffle,0.1,"old draw_budget (notebook 32, B=400)",107,13.0,0.12149532710280374,0.06630421254760363,0.1987971270469031,no evidence of size distortion,,,,,,
+block_shuffle,0.1,exact (no MC error),107,15.0,0.14018691588785046,0.08063646716190848,0.22065660091557263,no evidence of size distortion,,,,,,
+block_shuffle,0.1,randomized exact,107,19.0,0.17757009345794392,0.11042804704585706,0.26332600734851913,anti-conservative,,,,,,
+block_shuffle,0.1,paired: old - exact,107,,,,,,-0.018691588785046728,-0.04435356228693115,0.0069703847168376964,0.0,2.0,0.5
+both,0.01,"old draw_budget (notebook 32, B=400)",214,6.0,0.028037383177570093,0.010357283824400177,0.06002364886760559,anti-conservative,,,,,,
+both,0.01,exact (no MC error),214,4.0,0.018691588785046728,0.005115734522079616,0.047163821008624235,no evidence of size distortion,,,,,,
+both,0.01,randomized exact,214,6.0,0.028037383177570093,0.010357283824400177,0.06002364886760559,anti-conservative,,,,,,
+both,0.01,paired: old - exact,214,,,,,,0.009345794392523364,-0.0035461475079347094,0.02223773629298144,2.0,0.0,0.5
+both,0.05,"old draw_budget (notebook 32, B=400)",214,17.0,0.0794392523364486,0.04695629928208005,0.12414405696091203,no evidence of size distortion,,,,,,
+both,0.05,exact (no MC error),214,17.0,0.0794392523364486,0.04695629928208005,0.12414405696091203,no evidence of size distortion,,,,,,
+both,0.05,randomized exact,214,22.0,0.102803738317757,0.06555594010698988,0.15150385768826416,anti-conservative,,,,,,
+both,0.05,paired: old - exact,214,,,,,,0.0,0.0,0.0,0.0,0.0,1.0
+both,0.1,"old draw_budget (notebook 32, B=400)",214,22.0,0.102803738317757,0.06555594010698988,0.15150385768826416,no evidence of size distortion,,,,,,
+both,0.1,exact (no MC error),214,24.0,0.11214953271028037,0.07319198295160181,0.16226269826655737,no evidence of size distortion,,,,,,
+both,0.1,randomized exact,214,30.0,0.14018691588785046,0.09662390250504721,0.19403966711472326,no evidence of size distortion,,,,,,
+both,0.1,paired: old - exact,214,,,,,,-0.009345794392523364,-0.02223773629298144,0.0035461475079347094,0.0,2.0,0.5

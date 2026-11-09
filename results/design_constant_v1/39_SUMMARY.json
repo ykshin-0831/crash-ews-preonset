@@ -1,0 +1,76 @@
+{
+  "spec_sha256": "7d2d33b4953e712eb648887a40b2b4328e65aa2dc29d8b73705742240cd19d7d",
+  "run_time": "2026-11-03 15:07:04+00:00",
+  "status": "exploratory; appendix; no confirmatory plan changed",
+  "checks": {
+    "kernel_small_designs": 208,
+    "kernel_max_error": 1.1102230246251565e-15,
+    "exact_mean_relative_difference": 0.0,
+    "ones_and_cell_constant_max_abs_log_or": 4.476419235288631e-13,
+    "tilt_gamma2_vs_nb35": {
+      "this": 0.0007846471587271174,
+      "nb35": 0.0007846471587271
+    }
+  },
+  "design": {
+    "alerts": 800,
+    "months": 40,
+    "positions": 1414298,
+    "T_obs": 22,
+    "max_state_size": 25920
+  },
+  "packing": {
+    "cells": 262,
+    "alerts_per_cell_median": 2.0,
+    "alerts_per_cell_max": 17,
+    "utilisation_median": 0.09090909090909091,
+    "utilisation_p90": 0.20620689655172417,
+    "utilisation_max": 0.8333333333333334,
+    "cells_at_capacity": 0,
+    "month_utilisation_max": 0.20618556701030927
+  },
+  "kappa_lower_bounds": {
+    "1.5": {
+      "m_eff": 1.4939497677899738,
+      "kappa_lower": 1.8326160913178513,
+      "weighting": "phase",
+      "path": "draw 9"
+    },
+    "2.0": {
+      "m_eff": 1.5287570149750949,
+      "kappa_lower": 2.885371365899021,
+      "weighting": "phase",
+      "path": "draw 9"
+    }
+  },
+  "inclusion_reading": {
+    "1.5": {
+      "best_certifiable_gamma_via_inclusion_at_most": 1.4795792436253647
+    },
+    "2.0": {
+      "best_certifiable_gamma_via_inclusion_at_most": 1.4664405676564898
+    }
+  },
+  "gamma_star_upper": {
+    "bound": 3.170366813732877,
+    "table": [
+      {
+        "weighting": "avoid_block",
+        "smallest_grid_gamma_with_p_over_005": NaN
+      },
+      {
+        "weighting": "tilt",
+        "smallest_grid_gamma_with_p_over_005": NaN
+      },
+      {
+        "weighting": "tilt_avoid",
+        "smallest_grid_gamma_with_p_over_005": NaN
+      },
+      {
+        "weighting": "tilt (notebook 35, bisection)",
+        "smallest_grid_gamma_with_p_over_005": 3.170366813732877
+      }
+    ]
+  },
+  "gamma_star_lower": "not available from this notebook: needs a proof that kappa_D(Gamma) <= Gamma^k, which would give Gamma* >= 1.795^(1/k)"
+}

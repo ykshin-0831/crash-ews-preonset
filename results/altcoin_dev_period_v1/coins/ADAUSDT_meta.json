@@ -1,0 +1,187 @@
+{
+  "symbol": "ADAUSDT",
+  "spec_sha256": "e1e10288ceb9a2d440b3707f48f49ad009e94d642cbe8488f2a02e0862bc588c",
+  "frozen_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee",
+  "manifest_sha256": "fb1a550010c69c1981ad97140b24b8c7c4d1bcb5a21ae7e9b1f207e74cf51b7a",
+  "phase1_reproduced": {
+    "train_events_2021": 93,
+    "calibration": {
+      "M0_VF_logit": {
+        "threshold": 0.6762766006387256,
+        "threshold_17": 0.6762766006387256,
+        "alerts": 240,
+        "alerts_17": 240
+      },
+      "M1_vol_threshold": {
+        "threshold": 1.7517681336030366,
+        "threshold_17": 1.7517681336030366,
+        "alerts": 240,
+        "alerts_17": 240
+      },
+      "M3_GBM_rich": {
+        "threshold": 0.3059767181589478,
+        "threshold_17": 0.3059767181589478,
+        "alerts": 240,
+        "alerts_17": 240
+      }
+    }
+  },
+  "eval_start": "2023-01-01 00:00:00+00:00",
+  "eval_end": "2026-05-01 00:00:00+00:00",
+  "eval_days": 1216.0,
+  "coverage": {
+    "eval_minutes": 1750795,
+    "valid_minutes": 1749647,
+    "excluded_gap_ahead": 173,
+    "missing_months": [],
+    "common_minutes": 1749474,
+    "common_share": 0.9992454856222459,
+    "caution": false
+  },
+  "events": {
+    "240": 109,
+    "1440": 273
+  },
+  "F": {
+    "240": {
+      "feasible": 109,
+      "events": 109,
+      "F": 1.0
+    },
+    "1440": {
+      "feasible": 24,
+      "events": 273,
+      "F": 0.08791208791208792
+    }
+  },
+  "positives": {
+    "240": {
+      "pre": 10068,
+      "in_progress": 12931,
+      "negatives": 1726475,
+      "events_with_positives": 109,
+      "boundary_events": 0,
+      "boundary_positive_minutes": 0
+    },
+    "1440": {
+      "pre": 2719,
+      "in_progress": 54884,
+      "negatives": 1691871,
+      "events_with_positives": 273,
+      "boundary_events": 0,
+      "boundary_positive_minutes": 0
+    }
+  },
+  "common_minutes": 1749474,
+  "blocks_with_minutes": 174,
+  "guards": [
+    {
+      "guard": "phase1_manifest_exists|ADAUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT: notebook-17 phase-1 manifest not found (/content/drive/MyDrive/btc_lead_cost_results_77months_spot/HOLDOUT17_multicoin_2018_2019_v1/phase1/ADAUSDT_train_manifest.csv)"
+    },
+    {
+      "guard": "phase1_manifest|ADAUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT: 2020-11..2022-12 archives differ from the notebook-17 phase-1 manifest in []"
+    },
+    {
+      "guard": "train_events_2021|ADAUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT: 2021 events 93 / training positives 19623 differ from notebook 17 (93 / 19623)"
+    },
+    {
+      "guard": "model_sha|ADAUSDT|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT M0_VF_logit d4: model file missing or SHA-256 differs from the freeze"
+    },
+    {
+      "guard": "model_sha|ADAUSDT|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT M3_GBM_rich d4: model file missing or SHA-256 differs from the freeze"
+    },
+    {
+      "guard": "m0_refit|ADAUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT: M0 refit on 2021 differs from the frozen notebook-17 model"
+    },
+    {
+      "guard": "calibration_2022|ADAUSDT|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT M0_VF_logit: 2022 threshold 0.6762766006387256 / alerts 240 differ from notebook 17 (0.6762766006387256 / 240)"
+    },
+    {
+      "guard": "calibration_2022|ADAUSDT|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT M1_vol_threshold: 2022 threshold 1.7517681336030366 / alerts 240 differ from notebook 17 (1.7517681336030366 / 240)"
+    },
+    {
+      "guard": "calibration_2022|ADAUSDT|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT M3_GBM_rich: 2022 threshold 0.3059767181589478 / alerts 240 differ from notebook 17 (0.3059767181589478 / 240)"
+    },
+    {
+      "guard": "F_corollary1|ADAUSDT",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT: F at H=240 is 1.0 although Corollary 1 requires 1"
+    },
+    {
+      "guard": "decomposition_identity|ADAUSDT|240|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT H=240 M0_VF_logit: AUC decomposition identity off by 0.00e+00"
+    },
+    {
+      "guard": "decomposition_identity|ADAUSDT|240|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT H=240 M1_vol_threshold: AUC decomposition identity off by 5.55e-17"
+    },
+    {
+      "guard": "decomposition_identity|ADAUSDT|240|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT H=240 M3_GBM_rich: AUC decomposition identity off by 4.16e-17"
+    },
+    {
+      "guard": "decomposition_identity|ADAUSDT|240|B0_RV24h_baseline",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT H=240 B0_RV24h_baseline: AUC decomposition identity off by 8.33e-17"
+    },
+    {
+      "guard": "decomposition_identity|ADAUSDT|1440|M0_VF_logit",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT H=1440 M0_VF_logit: AUC decomposition identity off by 2.78e-17"
+    },
+    {
+      "guard": "decomposition_identity|ADAUSDT|1440|M1_vol_threshold",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT H=1440 M1_vol_threshold: AUC decomposition identity off by 2.78e-17"
+    },
+    {
+      "guard": "decomposition_identity|ADAUSDT|1440|M3_GBM_rich",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT H=1440 M3_GBM_rich: AUC decomposition identity off by 2.78e-17"
+    },
+    {
+      "guard": "decomposition_identity|ADAUSDT|1440|B0_RV24h_baseline",
+      "passed": true,
+      "bypassed_in_mock": false,
+      "detail": "ADAUSDT H=1440 B0_RV24h_baseline: AUC decomposition identity off by 8.33e-17"
+    }
+  ]
+}

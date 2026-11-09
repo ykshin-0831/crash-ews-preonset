@@ -1,0 +1,2 @@
+draws,spacing_violations,count_violations,mean_T_draws,exact_mean,chi_square_p,additivity_ok
+500,0,0,6.624,6.700735224560067,0.5136689864272593,True

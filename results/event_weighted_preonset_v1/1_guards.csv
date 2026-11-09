@@ -1,0 +1,9 @@
+H,score,unit_vs_make_parts,identity
+240,M3_GBM_rich,0.0,0.0
+240,M0_VF_logit,0.0,0.0
+1440,M3_GBM_rich,0.0,0.0
+1440,M0_VF_logit,0.0,0.0
+240,GBM-M0 auc_pre (nb41 intervals),,5.898059818321144e-17
+240,GBM-M0 auc_pre_within_regime (nb41 intervals),,9.540979117872439e-17
+1440,GBM-M0 auc_pre (nb41 intervals),,8.326672684688674e-17
+1440,GBM-M0 auc_pre_within_regime (nb41 intervals),,4.85722573273506e-17

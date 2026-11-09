@@ -1,0 +1,337 @@
+{
+  "spec_sha256": "ff25861e430f5bf6b8bff338e985960afacc211bc348053330c674923e41f9e8",
+  "runs": [
+    {
+      "tag": "A",
+      "role": "main",
+      "name": "A: train 2021, calibrate 2022, evaluate 2023-01..2026-04",
+      "train": [
+        "2021-01-01",
+        "2022-01-01"
+      ],
+      "cal": [
+        "2022-01-01",
+        "2023-01-01"
+      ],
+      "eval": [
+        "2023-01-01",
+        "2026-05-01"
+      ],
+      "B_cal": 240,
+      "feats": [
+        "oi_chg_60",
+        "oi_chg_240",
+        "z_oi_chg_1440",
+        "z_acct_ls",
+        "funding_bp",
+        "z_funding"
+      ],
+      "dropped": [
+        "z_top_pos_ls",
+        "z_taker_ls_60"
+      ]
+    },
+    {
+      "tag": "C",
+      "role": "supplementary",
+      "name": "C: train 2023, calibrate 2024-01..06, evaluate 2024-07..2026-04",
+      "train": [
+        "2023-01-01",
+        "2024-01-01"
+      ],
+      "cal": [
+        "2024-01-01",
+        "2024-07-01"
+      ],
+      "eval": [
+        "2024-07-01",
+        "2026-05-01"
+      ],
+      "B_cal": 120,
+      "feats": [
+        "oi_chg_60",
+        "oi_chg_240",
+        "z_oi_chg_1440",
+        "z_top_pos_ls",
+        "z_acct_ls",
+        "z_taker_ls_60",
+        "funding_bp",
+        "z_funding"
+      ],
+      "dropped": []
+    }
+  ],
+  "models": {
+    "P0_VF_refit[A]": {
+      "kind": "logit",
+      "run": "A",
+      "train_positives": 18387,
+      "train_minutes": 518929,
+      "threshold": 0.6686097286971487,
+      "cal_alerts": 220,
+      "eval_alerts": 800,
+      "features": [
+        "z_vol",
+        "tsr"
+      ],
+      "coef_standardized": {
+        "z_vol": 0.523291,
+        "tsr": 0.02335
+      },
+      "intercept": -0.12523609297125132
+    },
+    "P1_VF_positioning[A]": {
+      "kind": "logit",
+      "run": "A",
+      "train_positives": 18387,
+      "train_minutes": 518929,
+      "threshold": 0.6018465421817851,
+      "cal_alerts": 220,
+      "eval_alerts": 790,
+      "features": [
+        "z_vol",
+        "tsr",
+        "oi_chg_60",
+        "oi_chg_240",
+        "z_oi_chg_1440",
+        "z_acct_ls",
+        "funding_bp",
+        "z_funding"
+      ],
+      "coef_standardized": {
+        "z_vol": 0.570455,
+        "tsr": 0.021376,
+        "oi_chg_60": 0.074063,
+        "oi_chg_240": 0.177672,
+        "z_oi_chg_1440": 0.096809,
+        "z_acct_ls": 0.10255,
+        "funding_bp": 0.487269,
+        "z_funding": -0.474589
+      },
+      "intercept": -0.23453607085065165
+    },
+    "P2_positioning_only[A]": {
+      "kind": "logit",
+      "run": "A",
+      "train_positives": 18387,
+      "train_minutes": 518929,
+      "threshold": 0.4512651393213318,
+      "cal_alerts": 220,
+      "eval_alerts": 787,
+      "features": [
+        "oi_chg_60",
+        "oi_chg_240",
+        "z_oi_chg_1440",
+        "z_acct_ls",
+        "funding_bp",
+        "z_funding"
+      ],
+      "coef_standardized": {
+        "oi_chg_60": 0.026378,
+        "oi_chg_240": 0.157623,
+        "z_oi_chg_1440": -0.009043,
+        "z_acct_ls": 0.125562,
+        "funding_bp": 0.476079,
+        "z_funding": -0.481026
+      },
+      "intercept": -0.0908745319429252
+    },
+    "P3_GBM_positioning[A]": {
+      "kind": "gbm",
+      "run": "A",
+      "train_positives": 18387,
+      "train_minutes": 518929,
+      "threshold": 0.026455495949932274,
+      "cal_alerts": 220,
+      "eval_alerts": 650,
+      "features": [
+        "z_vol",
+        "tsr",
+        "z_hs",
+        "ret_5",
+        "ret_15",
+        "ret_60",
+        "ret_240",
+        "rv_15",
+        "rv_60",
+        "rv_240",
+        "rv_ratio_15_240",
+        "dd_240",
+        "dd_1440",
+        "vol_intensity_15",
+        "sell_ratio_15",
+        "sell_ratio_60",
+        "vpin",
+        "oi_chg_60",
+        "oi_chg_240",
+        "z_oi_chg_1440",
+        "z_acct_ls",
+        "funding_bp",
+        "z_funding"
+      ],
+      "model_file": "onset_positioning_volatility_v1/models/P3_GBM_positioning_A.joblib",
+      "model_sha256": "ae53c17fb75e1c498d3db3587c6fbcd25777769d4e2410ffebcddbf3144ec11d"
+    },
+    "P0_VF_refit[C]": {
+      "kind": "logit",
+      "run": "C",
+      "train_positives": 3587,
+      "train_minutes": 525156,
+      "threshold": 0.752725187746443,
+      "cal_alerts": 120,
+      "eval_alerts": 440,
+      "features": [
+        "z_vol",
+        "tsr"
+      ],
+      "coef_standardized": {
+        "z_vol": 1.034715,
+        "tsr": -0.022122
+      },
+      "intercept": -0.4541609451763003
+    },
+    "P1_VF_positioning[C]": {
+      "kind": "logit",
+      "run": "C",
+      "train_positives": 3587,
+      "train_minutes": 525156,
+      "threshold": 0.47543278524151655,
+      "cal_alerts": 120,
+      "eval_alerts": 440,
+      "features": [
+        "z_vol",
+        "tsr",
+        "oi_chg_60",
+        "oi_chg_240",
+        "z_oi_chg_1440",
+        "z_top_pos_ls",
+        "z_acct_ls",
+        "z_taker_ls_60",
+        "funding_bp",
+        "z_funding"
+      ],
+      "coef_standardized": {
+        "z_vol": 0.915268,
+        "tsr": -0.017148,
+        "oi_chg_60": -0.199146,
+        "oi_chg_240": 0.01958,
+        "z_oi_chg_1440": 0.718269,
+        "z_top_pos_ls": 0.146248,
+        "z_acct_ls": 0.089345,
+        "z_taker_ls_60": -0.347974,
+        "funding_bp": -0.537814,
+        "z_funding": 0.712685
+      },
+      "intercept": -0.814555186291551
+    },
+    "P2_positioning_only[C]": {
+      "kind": "logit",
+      "run": "C",
+      "train_positives": 3587,
+      "train_minutes": 525156,
+      "threshold": 0.30049310160562154,
+      "cal_alerts": 120,
+      "eval_alerts": 440,
+      "features": [
+        "oi_chg_60",
+        "oi_chg_240",
+        "z_oi_chg_1440",
+        "z_top_pos_ls",
+        "z_acct_ls",
+        "z_taker_ls_60",
+        "funding_bp",
+        "z_funding"
+      ],
+      "coef_standardized": {
+        "oi_chg_60": -0.325212,
+        "oi_chg_240": -0.075594,
+        "z_oi_chg_1440": 0.794545,
+        "z_top_pos_ls": 0.270661,
+        "z_acct_ls": -0.047786,
+        "z_taker_ls_60": -0.303385,
+        "funding_bp": -0.515093,
+        "z_funding": 0.714485
+      },
+      "intercept": -0.5318797895867647
+    },
+    "P3_GBM_positioning[C]": {
+      "kind": "gbm",
+      "run": "C",
+      "train_positives": 3587,
+      "train_minutes": 525156,
+      "threshold": 0.0019504929498471843,
+      "cal_alerts": 120,
+      "eval_alerts": 333,
+      "features": [
+        "z_vol",
+        "tsr",
+        "z_hs",
+        "ret_5",
+        "ret_15",
+        "ret_60",
+        "ret_240",
+        "rv_15",
+        "rv_60",
+        "rv_240",
+        "rv_ratio_15_240",
+        "dd_240",
+        "dd_1440",
+        "vol_intensity_15",
+        "sell_ratio_15",
+        "sell_ratio_60",
+        "vpin",
+        "oi_chg_60",
+        "oi_chg_240",
+        "z_oi_chg_1440",
+        "z_top_pos_ls",
+        "z_acct_ls",
+        "z_taker_ls_60",
+        "funding_bp",
+        "z_funding"
+      ],
+      "model_file": "onset_positioning_volatility_v1/models/P3_GBM_positioning_C.joblib",
+      "model_sha256": "ea3a14ac8bcc738c7935f9b4208dcb80a2f002d6d16fc9169d3d6a89c0cc4163"
+    },
+    "V1_GJR_GARCH_t": {
+      "kind": "volatility",
+      "threshold": 0.008681293323589674,
+      "cal_alerts": 240,
+      "dev_alerts": 788
+    },
+    "V2_GARCH_drawdown": {
+      "kind": "volatility",
+      "threshold": 0.021814856137714455,
+      "cal_alerts": 240,
+      "dev_alerts": 792
+    },
+    "V3_HAR_RV": {
+      "kind": "volatility",
+      "threshold": -0.3772704085472933,
+      "cal_alerts": 240,
+      "dev_alerts": 791
+    }
+  },
+  "volatility": {
+    "gjr_garch_t": {
+      "omega": 0.0006898377053590928,
+      "alpha": 0.05515175984286734,
+      "gamma": 0.05240897832996658,
+      "beta": 0.9122306224027309,
+      "nu": 5.128700303411305,
+      "persistence": 0.9935868714105816,
+      "nll": -10511.045499636562,
+      "train_bars": 104866,
+      "units": "percent 5-min log returns"
+    },
+    "har_rv": {
+      "coef": {
+        "const": -1.200986,
+        "lrv_1h": 0.156896,
+        "lrv_4h": 0.193134,
+        "lrv_1d": 0.323302,
+        "lrv_1w": 0.22337
+      },
+      "train_bars": 104686
+    }
+  }
+}

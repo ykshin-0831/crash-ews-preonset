@@ -1,0 +1,5 @@
+signal,venue,events_with_signal,before_common_onset,after_common_onset,median_min_before_onset
+raw_signal,spot,68,39,29,5.0
+raw_signal,futures,69,39,30,6.0
+alert,spot,39,22,17,4.0
+alert,futures,35,19,16,6.0

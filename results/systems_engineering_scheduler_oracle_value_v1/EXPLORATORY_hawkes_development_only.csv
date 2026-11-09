@@ -1,0 +1,2 @@
+n_events,hawkes_success,hawkes_mu_per_day,decay_beta_per_day,branching_ratio,mean_excitation_life_days,hawkes_AIC,homogeneous_poisson_AIC,limitation
+144,True,0.08372428637904114,0.11294683998848086,0.5756157720807448,8.853722690267274,734.9153644527585,757.4905955551336,preliminary nonstationary data; not proof of self-excitation

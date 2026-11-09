@@ -1,0 +1,15 @@
+item,value
+coverage: futures close (dev minutes),1.0
+coverage: mark-price low (dev minutes),0.9991764894005848
+funding settlements in dev,3648.0
+"funding rate per settlement, mean (bp)",0.6873227796052632
+"funding rate > 0, share of settlements",0.8621162280701754
+"mark low / spot low - 1, quantile 0.001",-0.0007088568943535715
+"mark low / spot low - 1, quantile 0.01",-0.0006230393917742826
+"mark low / spot low - 1, quantile 0.5",-0.00037417876469975075
+"mark low / spot low - 1, quantile 0.99",0.001006915908216595
+"mark low / spot low - 1, quantile 0.999",0.001676472467718554
+"minutes where the spot low is > 0.5% below the mark low, share",4.2868950190852565e-05
+"futures close / spot close - 1, quantile 0.01",-0.0006666330715518876
+"futures close / spot close - 1, quantile 0.5",-0.0004104568932969399
+"futures close / spot close - 1, quantile 0.99",0.0010199930881476988

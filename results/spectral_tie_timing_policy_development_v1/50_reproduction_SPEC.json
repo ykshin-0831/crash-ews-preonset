@@ -1,0 +1,58 @@
+{
+  "notebook": "47",
+  "status": "exploratory_posthoc",
+  "source": "BTC spot frozen cache",
+  "train": "2021",
+  "target": "4% breach 30-240 min ahead",
+  "threshold_calibration": "2022_unlabeled",
+  "evaluation": "2023-01 through 2026-04",
+  "models": [
+    "Base_Logit",
+    "HS_Linear",
+    "HS_Interactions",
+    "HGB_Base",
+    "HGB_HS"
+  ],
+  "interaction_features": [
+    "z_hs*z_vol",
+    "z_hs*(tsr-0.5)",
+    "z_hs^2"
+  ],
+  "clip": 6.0,
+  "HGB": {
+    "max_iter": 100,
+    "max_leaf_nodes": 7,
+    "learning_rate": 0.05,
+    "min_samples_leaf": 100,
+    "l2_regularization": 5.0,
+    "max_bins": 127,
+    "early_stopping": false,
+    "random_state": 20261147,
+    "class_weight": "balanced_via_sample_weight"
+  },
+  "comparisons": [
+    [
+      "HS_Linear",
+      "HS_Interactions"
+    ],
+    [
+      "HGB_Base",
+      "HGB_HS"
+    ]
+  ],
+  "lead_minutes": [
+    30,
+    240
+  ],
+  "monthly_cap": 20,
+  "annual_cap": 240,
+  "cooldown_minutes": 240,
+  "primary": "4h breach-anchored pre-onset catches per 100 alerts",
+  "secondary": "4h within-RV-decile pre-onset AUC; onset-anchor and H=1440 descriptive",
+  "stop_go": {
+    "within_rv_decile_auc_gain": 0.02,
+    "pre_catches_per_100_alerts_gain": 0.5
+  },
+  "selection_note": "Do not choose a winner from these repeatedly inspected development outcomes",
+  "no_holdout_or_prospective_inputs": true
+}

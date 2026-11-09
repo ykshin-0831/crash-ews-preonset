@@ -1,0 +1,299 @@
+{
+  "spec_sha256": "b1bdcfd9322ab5b18cf56d011f63667436569589b8d40c2cea614d389337875d",
+  "frozen_sha256": "15ad92add6970be94344562b8d2929a0375e637b50a1e6cd64f74ff471f44eee",
+  "coins_evaluated": [
+    "ETHUSDT",
+    "XRPUSDT",
+    "LTCUSDT",
+    "BNBUSDT",
+    "ADAUSDT",
+    "EOSUSDT",
+    "TRXUSDT",
+    "ETCUSDT",
+    "XLMUSDT",
+    "NEOUSDT"
+  ],
+  "coins_excluded": [],
+  "primary_decisions": [
+    {
+      "method": "M0_VF_logit",
+      "events": 943,
+      "alerts": 4101,
+      "composite": 206,
+      "composite_p_holm_joint": 0.0005998800239952009,
+      "pre": 67,
+      "pre_null_mean_regime": 42.0792,
+      "pre_p_holm_regime": 0.0005998800239952009,
+      "pre_p_holm_joint": 0.0011997600479904018,
+      "pre_excess_upper95": 35.0,
+      "post": 139,
+      "post_null_mean_regime": 47.7264,
+      "post_p_holm_regime": 0.0005998800239952009,
+      "post_p_holm_joint": 0.0005998800239952009,
+      "post_excess_lower95": 81.0,
+      "H1_supported": true,
+      "H2_supported": true,
+      "H3_illusion": false
+    },
+    {
+      "method": "M1_vol_threshold",
+      "events": 943,
+      "alerts": 4065,
+      "composite": 214,
+      "composite_p_holm_joint": 0.0005998800239952009,
+      "pre": 71,
+      "pre_null_mean_regime": 41.9282,
+      "pre_p_holm_regime": 0.0005998800239952009,
+      "pre_p_holm_joint": 0.0011997600479904018,
+      "pre_excess_upper95": 39.0,
+      "post": 143,
+      "post_null_mean_regime": 48.0218,
+      "post_p_holm_regime": 0.0005998800239952009,
+      "post_p_holm_joint": 0.0005998800239952009,
+      "post_excess_lower95": 84.0,
+      "H1_supported": true,
+      "H2_supported": true,
+      "H3_illusion": false
+    },
+    {
+      "method": "M3_GBM_rich",
+      "events": 943,
+      "alerts": 3260,
+      "composite": 106,
+      "composite_p_holm_joint": 0.0005998800239952009,
+      "pre": 35,
+      "pre_null_mean_regime": 32.5012,
+      "pre_p_holm_regime": 0.34973005398920215,
+      "pre_p_holm_joint": 0.36892621475704857,
+      "pre_excess_upper95": 11.0,
+      "post": 71,
+      "post_null_mean_regime": 37.6758,
+      "post_p_holm_regime": 0.0005998800239952009,
+      "post_p_holm_joint": 0.0005998800239952009,
+      "post_excess_lower95": 24.0,
+      "H1_supported": true,
+      "H2_supported": false,
+      "H3_illusion": true
+    }
+  ],
+  "H3_illusion_methods": 1,
+  "illusion_generalizes": false,
+  "secondary": [
+    {
+      "method": "M0_VF_logit",
+      "definition": "d3",
+      "endpoint": "pre",
+      "observed": 92,
+      "null_mean": 71.221,
+      "p_one_sided": 0.006993006993006993
+    },
+    {
+      "method": "M0_VF_logit",
+      "definition": "d3",
+      "endpoint": "post",
+      "observed": 190,
+      "null_mean": 69.975,
+      "p_one_sided": 0.000999000999000999
+    },
+    {
+      "method": "M0_VF_logit",
+      "definition": "d3",
+      "endpoint": "caught",
+      "observed": 282,
+      "null_mean": 141.196,
+      "p_one_sided": 0.000999000999000999
+    },
+    {
+      "method": "M0_VF_logit",
+      "definition": "d5",
+      "endpoint": "pre",
+      "observed": 47,
+      "null_mean": 24.444,
+      "p_one_sided": 0.000999000999000999
+    },
+    {
+      "method": "M0_VF_logit",
+      "definition": "d5",
+      "endpoint": "post",
+      "observed": 114,
+      "null_mean": 31.303,
+      "p_one_sided": 0.000999000999000999
+    },
+    {
+      "method": "M0_VF_logit",
+      "definition": "d5",
+      "endpoint": "caught",
+      "observed": 161,
+      "null_mean": 55.747,
+      "p_one_sided": 0.000999000999000999
+    },
+    {
+      "method": "M1_vol_threshold",
+      "definition": "d3",
+      "endpoint": "pre",
+      "observed": 100,
+      "null_mean": 70.675,
+      "p_one_sided": 0.000999000999000999
+    },
+    {
+      "method": "M1_vol_threshold",
+      "definition": "d3",
+      "endpoint": "post",
+      "observed": 192,
+      "null_mean": 70.067,
+      "p_one_sided": 0.000999000999000999
+    },
+    {
+      "method": "M1_vol_threshold",
+      "definition": "d3",
+      "endpoint": "caught",
+      "observed": 292,
+      "null_mean": 140.742,
+      "p_one_sided": 0.000999000999000999
+    },
+    {
+      "method": "M1_vol_threshold",
+      "definition": "d5",
+      "endpoint": "pre",
+      "observed": 53,
+      "null_mean": 24.531,
+      "p_one_sided": 0.000999000999000999
+    },
+    {
+      "method": "M1_vol_threshold",
+      "definition": "d5",
+      "endpoint": "post",
+      "observed": 109,
+      "null_mean": 31.633,
+      "p_one_sided": 0.000999000999000999
+    },
+    {
+      "method": "M1_vol_threshold",
+      "definition": "d5",
+      "endpoint": "caught",
+      "observed": 162,
+      "null_mean": 56.164,
+      "p_one_sided": 0.000999000999000999
+    },
+    {
+      "method": "M2_VPIN",
+      "definition": "d3",
+      "endpoint": "pre",
+      "observed": 45,
+      "null_mean": 65.674,
+      "p_one_sided": 0.999000999000999
+    },
+    {
+      "method": "M2_VPIN",
+      "definition": "d3",
+      "endpoint": "post",
+      "observed": 52,
+      "null_mean": 61.571,
+      "p_one_sided": 0.9230769230769231
+    },
+    {
+      "method": "M2_VPIN",
+      "definition": "d3",
+      "endpoint": "caught",
+      "observed": 97,
+      "null_mean": 127.245,
+      "p_one_sided": 1.0
+    },
+    {
+      "method": "M2_VPIN",
+      "definition": "d4",
+      "endpoint": "pre",
+      "observed": 24,
+      "null_mean": 40.22,
+      "p_one_sided": 0.999000999000999
+    },
+    {
+      "method": "M2_VPIN",
+      "definition": "d4",
+      "endpoint": "post",
+      "observed": 30,
+      "null_mean": 41.087,
+      "p_one_sided": 0.98001998001998
+    },
+    {
+      "method": "M2_VPIN",
+      "definition": "d4",
+      "endpoint": "caught",
+      "observed": 54,
+      "null_mean": 81.307,
+      "p_one_sided": 1.0
+    },
+    {
+      "method": "M2_VPIN",
+      "definition": "d5",
+      "endpoint": "pre",
+      "observed": 10,
+      "null_mean": 24.79,
+      "p_one_sided": 1.0
+    },
+    {
+      "method": "M2_VPIN",
+      "definition": "d5",
+      "endpoint": "post",
+      "observed": 18,
+      "null_mean": 26.283,
+      "p_one_sided": 0.974025974025974
+    },
+    {
+      "method": "M2_VPIN",
+      "definition": "d5",
+      "endpoint": "caught",
+      "observed": 28,
+      "null_mean": 51.073,
+      "p_one_sided": 1.0
+    },
+    {
+      "method": "M3_GBM_rich",
+      "definition": "d3",
+      "endpoint": "pre",
+      "observed": 82,
+      "null_mean": 60.456,
+      "p_one_sided": 0.001998001998001998
+    },
+    {
+      "method": "M3_GBM_rich",
+      "definition": "d3",
+      "endpoint": "post",
+      "observed": 105,
+      "null_mean": 59.613,
+      "p_one_sided": 0.000999000999000999
+    },
+    {
+      "method": "M3_GBM_rich",
+      "definition": "d3",
+      "endpoint": "caught",
+      "observed": 187,
+      "null_mean": 120.069,
+      "p_one_sided": 0.000999000999000999
+    },
+    {
+      "method": "M3_GBM_rich",
+      "definition": "d5",
+      "endpoint": "pre",
+      "observed": 34,
+      "null_mean": 24.673,
+      "p_one_sided": 0.03796203796203796
+    },
+    {
+      "method": "M3_GBM_rich",
+      "definition": "d5",
+      "endpoint": "post",
+      "observed": 95,
+      "null_mean": 33.085,
+      "p_one_sided": 0.000999000999000999
+    },
+    {
+      "method": "M3_GBM_rich",
+      "definition": "d5",
+      "endpoint": "caught",
+      "observed": 129,
+      "null_mean": 57.758,
+      "p_one_sided": 0.000999000999000999
+    }
+  ]
+}
