@@ -2,7 +2,7 @@
 
 Replication materials for Shin, Y. K. *How Much of Crash Early Warning Is Early? Separating Pre-Onset Warning from In-Progress Detection.* Manuscript under review at the *Journal of Forecasting*.
 
-> **Development history.** I wrote and maintained this code in Google Drive (Colab notebooks) from December 2025, when the work began in the Bitcoin drawdown project. Before publishing it here I tidied it and re-ran the notebooks in number order from a clean state in October–November 2026 to confirm that they reproduce. The one-shot evaluations (notebooks 11, 17 and 38) are the exception: each was run once, on the date in its lock file.
+> **Development history.** Notebooks 01–10 grew out of the Bitcoin drawdown project (from December 2025). Notebooks 12 onward reuse that pipeline to decompose the result of the one-shot holdout (notebook 11, 29 October 2026). The one-shot evaluations (11, 17, 38) each ran once, on the date in its lock file.
 
 [![Prospective test: OSF TB245](https://img.shields.io/badge/prospective%20test-OSF%20TB245-1f6feb)](https://doi.org/10.17605/OSF.IO/TB245)
 [![Equity validation: OSF BKJUQ](https://img.shields.io/badge/equity%20validation-OSF%20BKJUQ-1f6feb)](https://doi.org/10.17605/OSF.IO/BKJUQ)
@@ -31,7 +31,7 @@ A crash-warning model scores every minute. The usual evaluation labels a minute 
 
 ## Main results
 
-Most measured skill is detection: 62% of M0's AUC above 0.5 comes from minutes after the fall began. M0 warns before onset more often than chance in the development period (22 of 83 crashes, against 6.7 expected) but not in the one-shot 2018–2020 holdout (13 of 199, against 11.4 expected; p = 0.35). The earlier Bitcoin project had used January 2018 to September 2020 once, with a different event definition, to compare its spectral signal with volatility; this pipeline had never been evaluated on those years (notebook 11).
+Most measured skill is detection: 62% of M0's AUC above 0.5 comes from minutes after the fall began. M0 warns before onset more often than chance in the development period (22 of 83 crashes, against 6.7 expected) but not in the one-shot 2018–2020 holdout (13 of 199, against 11.4 expected; p = 0.35). The earlier Bitcoin project had used January 2018 to September 2020 once, with a different event definition, to compare its spectral signal with volatility; this pipeline had never been evaluated on those years (notebook 11). In the second one-shot holdout, ten altcoins in 2018–2019, M0 did warn before onset more often than chance (67 of 943 crashes, against 42.1 expected; Holm p = 0.0006), as did M1; M3 did not (notebook 17).
 
 A crash is a close 4% below the high of the previous 4 hours (Bitcoin, one-minute Binance spot data). I froze the definitions and thresholds of the four models in notebook 16:
 
@@ -49,13 +49,17 @@ A crash is a close 4% below the high of the previous 4 hours (Bitcoin, one-minut
 | Positive minutes already inside a decline | 41% | notebook 18 |
 | Share of the AUC above 0.5 from those minutes | 62% | notebook 18 |
 | Crashes warned before onset by 800 alerts (chance: 6.7) | 22 of 83 (p = 7.4 × 10⁻⁸) | notebook 34 |
-| **One-shot holdout, Bitcoin 2018 to 2020, 199 crashes, 713 alerts** | | |
+| **One-shot evaluation of the frozen pipeline, Bitcoin 2018 to 2020, 199 crashes, 713 alerts** | | |
 | Crashes warned before onset (chance: 11.4) | 13 of 199 (p = 0.35) | notebooks 11, 12 |
 | Crashes caught after onset (chance: 7.7) | 23 of 199 (p < 0.001) | notebooks 11, 12 |
+| **One-shot altcoin holdout, ten coins, 2018 to 2019, 943 crashes, 4,101 alerts** | | |
+| Crashes warned before onset (chance: 42.1) | 67 of 943 (Holm p = 0.0006) | notebook 17 |
 | **Ten equity indices, daily 2005 to 2025, 10% crashes, preregistered** | | |
 | Share of the AUC above 0.5 from days already in a decline | 81% (95% interval 69–95%) | notebook 38 |
 
-Chance is the expected count when I place the alerts at random within month × volatility decile (development period) or shift them in time (holdout).
+Chance is the expected count when I place the alerts at random within month × volatility decile (development period) or shift them in time (Bitcoin holdout); for the altcoin holdout it is the mean of the null pre-specified in notebook 17.
+
+Correction to the prior-contact statement registered for notebook 38 (`38_SPEC.json`): before that specification was frozen, notebook 29 (30 October 2026) used daily NASDAQ Composite data (1990–2026) as model features for a VIX ≥ 25 stress target, with logistic, L1-logistic, random forest and gradient boosting models. It did not use 10% index crashes as a target. The registered file is unchanged.
 
 ![Model scores around crash onset](programming_sample/output/scores_around_onset.png)
 
@@ -127,7 +131,7 @@ Notebooks 08, 11, 13 and 25 also read a one-minute USDⓈ-M futures cache from `
 
 The one-shot evaluations (11, 17, 38) refuse to run again once their lock file exists (`HOLDOUT_EVALUATED.lock`, `HOLDOUT17_EVALUATED.lock`, `EVALUATED.lock`). Each lock in `results/` records when I ran the evaluation and the hash of its specification, so a rerun needs a folder without the lock.
 
-`requirements.txt` lists the packages the notebooks import. I saved the frozen models with scikit-learn 1.6.1; load them with that version. I did not record the versions of the other packages. I developed the analyses in a Google Drive folder, growing out of the Bitcoin drawdown project (FBA Quant, from December 2025); to tidy them and check that they reproduce from a clean state, I re-ran all notebooks except the one-shot evaluations (11, 17, 38), which ran once, in number order on the Colab CPU runtime of October and November 2026, with random seeds set in the code. The `.joblib` files are pickles, so load them only after checking their hashes against `MANIFEST.sha256`.
+`requirements.txt` lists the packages the notebooks import. I saved the frozen models with scikit-learn 1.6.1; load them with that version. I did not record the versions of the other packages; the notebooks ran on the Colab CPU runtime of October and November 2026, with random seeds set in the code. The `.joblib` files are pickles, so load them only after checking their hashes against `MANIFEST.sha256`.
 
 ## Registered notebooks: 31 and 38
 

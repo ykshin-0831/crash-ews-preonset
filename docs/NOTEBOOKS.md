@@ -61,7 +61,7 @@ The "Cited in" column gives the sections of the main text (§), of the article's
 | [50](../notebooks/50_Spectral_Tie_Timing_Policy_Development_SPOT.ipynb) | Spectral timing and score plateaus as alert policies | `spectral_tie_timing_policy_development_v1` |  | §1, 7, 9.3; OA I.1, I.2, I.5 |
 | [51](../notebooks/51_CrossCoin_Leading_Stress_Spectral_SPOT.ipynb) | Lagged cross-coin downside stress and spectral warning | `crosscoin_leading_stress_spectral_v1` |  | §1, 4.3, 7, 9.3; OA I.1, I.2, I.3, I.6 |
 
-Notebooks 29 and 29b write to the same folder. Notebooks 21, 22, 32 and 36 hold robustness checks that I ran in response to comments on drafts of the paper; their specification titles and the folder name `review_r7_checks_v1` keep the labels I gave those checks at the time. The [README](../README.md#registered-notebooks-31-and-38) gives the registered hash of notebook 31.
+Notebooks 29 and 29b write to the same folder. Notebooks 21, 22, 32 and 36 hold robustness checks that I ran in response to comments on drafts of the paper. "Reviewer" and "review round" in notebook and specification names refer to pre-submission review rounds of the draft, not to journal peer review; their specification titles and the folder name `review_r7_checks_v1` keep the labels I gave those checks at the time. The [README](../README.md#registered-notebooks-31-and-38) gives the registered hash of notebook 31.
 
 ## Scripts and checks
 
@@ -78,3 +78,12 @@ Notebooks 29 and 29b write to the same folder. Notebooks 21, 22, 32 and 36 hold 
 | Table B.19 | `scripts/loco44_summary.py` | printed |
 | Online Appendix I.7 | `checks/half_month_null/half_month_null.py` | `checks/half_month_null/result_*.json` |
 
+## File-name suffixes
+
+| Suffix | Meaning |
+|---|---|
+| `_SPOT` | uses Binance spot data |
+| `_Colab` | written for the Google Colab runtime |
+| `_PREFLIGHT` | the notebook checks its inputs and specification before the main run |
+| `_AUDITED_rN` | Nth revision after I audited the notebook |
+| `_vN`, and letters such as `29b`, `30a`, `30b` | a later version of, or a follow-up to, the notebook with that number |
