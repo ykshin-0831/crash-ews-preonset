@@ -1,6 +1,8 @@
 # How Much of Crash Early Warning Is Early?
 
-Replication materials for Shin, Y. K. *How Much of Crash Early Warning Is Early? Separating Pre-Onset Warning from In-Progress Detection.* Manuscript submitted for publication.
+Replication materials for Shin, Y. K. *How Much of Crash Early Warning Is Early? Separating Pre-Onset Warning from In-Progress Detection.* Manuscript under review at the *Journal of Forecasting*.
+
+> **Development history.** I wrote and maintained this code in Google Drive (Colab notebooks) from December 2025, when the work began in the Bitcoin drawdown project. Before publishing it here I tidied it and re-ran the notebooks in number order from a clean state in October–November 2026 to confirm that they reproduce. The one-shot evaluations (notebooks 11, 17 and 38) are the exception: each was run once, on the date in its lock file.
 
 [![Prospective test: OSF TB245](https://img.shields.io/badge/prospective%20test-OSF%20TB245-1f6feb)](https://doi.org/10.17605/OSF.IO/TB245)
 [![Equity validation: OSF BKJUQ](https://img.shields.io/badge/equity%20validation-OSF%20BKJUQ-1f6feb)](https://doi.org/10.17605/OSF.IO/BKJUQ)
@@ -29,7 +31,7 @@ A crash-warning model scores every minute. The usual evaluation labels a minute 
 
 ## Main results
 
-Most measured skill is detection: 62% of M0's AUC above 0.5 comes from minutes after the fall began. M0 warns before onset more often than chance in the development period (22 of 83 crashes, against 6.7 expected) but not in the one-shot 2018–2020 holdout (13 of 199, against 11.4 expected; p = 0.35).
+Most measured skill is detection: 62% of M0's AUC above 0.5 comes from minutes after the fall began. M0 warns before onset more often than chance in the development period (22 of 83 crashes, against 6.7 expected) but not in the one-shot 2018–2020 holdout (13 of 199, against 11.4 expected; p = 0.35). The earlier Bitcoin project had used January 2018 to September 2020 once, with a different event definition, to compare its spectral signal with volatility; this pipeline had never been evaluated on those years (notebook 11).
 
 A crash is a close 4% below the high of the previous 4 hours (Bitcoin, one-minute Binance spot data). I froze the definitions and thresholds of the four models in notebook 16:
 
@@ -104,7 +106,7 @@ The crypto event tables with `peak_close` and `breach_close` columns give the cl
 
 ### Data sources and license
 
-- Binance Vision, https://data.binance.vision: spot and USDⓈ-M futures klines, futures metrics, funding rates and mark-price klines, accessed October–November 2026. The datasets are licensed under CC BY-NC-SA 4.0. I attribute the values derived from them and stored here (event closes, the cache fingerprint, the spread columns of the `case_oct2026_v1` spread file) to Binance Vision and share them under the same license.
+- Binance Vision, https://data.binance.vision: spot and USDⓈ-M futures klines, futures metrics, funding rates and mark-price klines, accessed for this package in October–November 2026. The datasets are licensed under CC BY-NC-SA 4.0. I attribute the values derived from them and stored here (event closes, the cache fingerprint, the spread columns of the `case_oct2026_v1` spread file) to Binance Vision and share them under the same license.
 - Binance and Coinbase Exchange REST APIs (notebook 27).
 - FRED, Federal Reserve Bank of St. Louis: `VIXCLS`, `NASDAQCOM` (notebooks 29, 29b, and `VIXCLS` in 30a, 30b).
 - Cboe Global Markets, `VIX_History.csv` (notebooks 29, 29b).
@@ -125,7 +127,7 @@ Notebooks 08, 11, 13 and 25 also read a one-minute USDⓈ-M futures cache from `
 
 The one-shot evaluations (11, 17, 38) refuse to run again once their lock file exists (`HOLDOUT_EVALUATED.lock`, `HOLDOUT17_EVALUATED.lock`, `EVALUATED.lock`). Each lock in `results/` records when I ran the evaluation and the hash of its specification, so a rerun needs a folder without the lock.
 
-`requirements.txt` lists the packages the notebooks import. I saved the frozen models with scikit-learn 1.6.1; load them with that version. I did not record the versions of the other packages; the notebooks ran on the Colab CPU runtime of October and November 2026, with random seeds set in the code. The `.joblib` files are pickles, so load them only after checking their hashes against `MANIFEST.sha256`.
+`requirements.txt` lists the packages the notebooks import. I saved the frozen models with scikit-learn 1.6.1; load them with that version. I did not record the versions of the other packages. I developed the analyses in a Google Drive folder, growing out of the Bitcoin drawdown project (FBA Quant, from December 2025); to tidy them and check that they reproduce from a clean state, I re-ran all notebooks except the one-shot evaluations (11, 17, 38), which ran once, in number order on the Colab CPU runtime of October and November 2026, with random seeds set in the code. The `.joblib` files are pickles, so load them only after checking their hashes against `MANIFEST.sha256`.
 
 ## Registered notebooks: 31 and 38
 
