@@ -2,7 +2,7 @@
 # October-November 2026, with google.colab mounting Drive. The scikit-learn version is
 # the one in the frozen model files; I recorded the other versions on that runtime on
 # 18 November 2026 (Python 3.13.18). Use pandas 2.x: the notebooks count time in
-# nanoseconds, and pandas 3 reads dates from CSV in microseconds.
+# nanoseconds, and pandas 3 parses dates to microseconds.
 numpy==2.4.6
 pandas==2.2.3
 scipy==1.16.3

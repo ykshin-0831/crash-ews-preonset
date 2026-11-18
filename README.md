@@ -79,7 +79,7 @@ python scripts/loco44_summary.py               # 32 of 32 cells match Table B.19
 python programming_sample/nb34_m0_exact_null.py
 ```
 
-Each script takes a few seconds and exits with status 1 if a value differs. I reran them on 10 November 2026 with Python 3.13 and the versions pinned in `requirements-check.txt`; every check matched, and `nb34_m0_exact_null.py` reproduced its stored output in `programming_sample/output/`. The notebooks need the data downloads described under [Data](#data).
+Each script takes a few seconds and exits with status 1 if a value differs. I reran them on 10 November 2026 with Python 3.13 and the versions pinned in `requirements-check.txt`; every check matched, and `nb34_m0_exact_null.py` reproduced its stored output in `programming_sample/output/`. That script also redraws `exact_null_m0.png`; the new file can differ in bytes from the stored one, so run `sha256sum -c` before the scripts. The notebooks need the data downloads described under [Data](#data).
 
 ## Layout
 
@@ -131,7 +131,7 @@ Notebooks 08, 11, 13 and 25 also read a one-minute USDⓈ-M futures cache from `
 
 The one-shot evaluations (11, 17, 38) refuse to run again once their lock file exists (`HOLDOUT_EVALUATED.lock`, `HOLDOUT17_EVALUATED.lock`, `EVALUATED.lock`). Each lock in `results/` records when I ran the evaluation and the hash of its specification, so a rerun needs a folder without the lock.
 
-`requirements.txt` lists the packages the notebooks import. I saved the frozen models with scikit-learn 1.6.1; load them with that version. The notebooks ran on the Colab CPU runtime of October and November 2026, with random seeds set in the code. I recorded the other package versions on that runtime on 18 November 2026, not at each run: Python 3.13.18, pandas 2.2.3, numpy 2.4.6, scipy 1.16.3, numba 0.64.0 and pyarrow 23.0.1; `requirements.txt` pins them. The notebooks need pandas 2.x: they count time in integer nanoseconds, and pandas 3 reads the event times from CSV in microseconds. The quick check runs with the pandas 3 pinned in `requirements-check.txt`. The `.joblib` files are pickles, so load them only after checking their hashes against `MANIFEST.sha256`.
+`requirements.txt` lists the packages the notebooks import. I saved the frozen models with scikit-learn 1.6.1; load them with that version. The notebooks ran on the Colab CPU runtime of October and November 2026, with random seeds set in the code. I recorded the other package versions on that runtime on 18 November 2026, not at each run: Python 3.13.18, pandas 2.2.3, numpy 2.4.6, scipy 1.16.3, numba 0.64.0 and pyarrow 23.0.1; `requirements.txt` pins them. Run the notebooks with pandas 2.x: they count time in integer nanoseconds, and pandas 3 parses the event times to microseconds. The quick check runs with the pandas 3 pinned in `requirements-check.txt`. The `.joblib` files are pickles, so load them only after checking their hashes against `MANIFEST.sha256`.
 
 ## Registered notebooks: 31 and 38
 
