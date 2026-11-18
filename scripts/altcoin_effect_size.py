@@ -135,3 +135,5 @@ check('GBM - M0, standard, 24 h, range by coin', f'{pc.min():+.3f} to {pc.max():
 check('GBM - M0, pre-onset, 24 h', pt((1440, 'GBM-M0', 'auc_pre')), '-0.037 [-0.085, +0.020]')
 check('GBM - M0, standard, 4 h', pt((240, 'GBM-M0', 'auc_standard')), '-0.036 [-0.067, -0.005]')
 print(f'\n{sum(RESULTS)} of {len(RESULTS)} values match the text.')
+if not all(RESULTS):
+    raise SystemExit(1)

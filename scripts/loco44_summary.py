@@ -85,3 +85,5 @@ pre = LOCO[(LOCO.metric == 'auc_pre') & (LOCO.left_out != 'NONE')]
 print(f'\n  pre-onset differences negative in every leave-one-out mean (both definitions): {bool((pre.point < 0).all())}')
 print(f'  notebook 44 reproduced notebook 43 in {S44["verified_43_reference_checks"]} checks (appendix: 169); bootstrap draws {S44["n_bootstrap_draws"]}')
 print(f'\n{n_ok} of {n_all} cells match Table B.19.')
+if n_ok != n_all:
+    raise SystemExit(1)

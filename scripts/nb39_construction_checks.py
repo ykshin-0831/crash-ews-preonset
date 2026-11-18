@@ -332,7 +332,10 @@ for n in range(2, 6):
         check(f'n = {n}, Gamma = {g}: OR_v at t = 1 vs Gamma(Gamma^n - 1)/((Gamma - 1)n)', r0, g * (g ** n - 1) / ((g - 1) * n))
 
 KC = pd.read_csv(ROOT / 'results' / 'design_constant_v1' / '1_kernel_check.csv')
+kc_ok = len(KC) == 208 and f'{KC.err.max():.1e}' == '1.1e-15'
 print(f'\nNotebook 39 stored kernel check (1_kernel_check.csv): {len(KC)} random small designs, largest |log OR| error '
       f'{KC.err.max():.1e}, {KC.decisions.sum()} decisions (text: 208 designs, 1.1e-15)  '
-      f'{"MATCH" if len(KC) == 208 and f"{KC.err.max():.1e}" == "1.1e-15" else "DIFFERS"}')
+      f'{"MATCH" if kc_ok else "DIFFERS"}')
 print(f'\n{sum(RESULTS)} of {len(RESULTS)} construction checks match.')
+if not (all(RESULTS) and kc_ok):
+    raise SystemExit(1)

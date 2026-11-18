@@ -1,6 +1,6 @@
 # How Much of Crash Early Warning Is Early?
 
-Replication materials for Shin, Y. K. *How Much of Crash Early Warning Is Early? Separating Pre-Onset Warning from In-Progress Detection.* Manuscript under review at the *Journal of Forecasting*.
+Replication materials for Shin, Y. K. *How Much of Crash Early Warning Is Early? Separating Pre-Onset Warning from In-Progress Detection.* Manuscript under review at the *Journal of Forecasting*; preprint at https://ssrn.com/abstract=7682931.
 
 > **Development history.** Notebooks 01–10 grew out of the Bitcoin drawdown project (from December 2025). Notebooks 12 onward reuse that pipeline to decompose the result of the one-shot holdout (notebook 11, 29 October 2026). The one-shot evaluations (11, 17, 38) each ran once, on the date in its lock file.
 
@@ -79,7 +79,7 @@ python scripts/loco44_summary.py               # 32 of 32 cells match Table B.19
 python programming_sample/nb34_m0_exact_null.py
 ```
 
-Each script takes a few seconds. I reran them on 10 November 2026 with Python 3.13 and the versions pinned in `requirements-check.txt`; every check matched, and `nb34_m0_exact_null.py` reproduced its stored output in `programming_sample/output/`. The notebooks need the data downloads described under [Data](#data).
+Each script takes a few seconds and exits with status 1 if a value differs. I reran them on 10 November 2026 with Python 3.13 and the versions pinned in `requirements-check.txt`; every check matched, and `nb34_m0_exact_null.py` reproduced its stored output in `programming_sample/output/`. The notebooks need the data downloads described under [Data](#data).
 
 ## Layout
 
@@ -131,7 +131,7 @@ Notebooks 08, 11, 13 and 25 also read a one-minute USDⓈ-M futures cache from `
 
 The one-shot evaluations (11, 17, 38) refuse to run again once their lock file exists (`HOLDOUT_EVALUATED.lock`, `HOLDOUT17_EVALUATED.lock`, `EVALUATED.lock`). Each lock in `results/` records when I ran the evaluation and the hash of its specification, so a rerun needs a folder without the lock.
 
-`requirements.txt` lists the packages the notebooks import. I saved the frozen models with scikit-learn 1.6.1; load them with that version. I did not record the versions of the other packages; the notebooks ran on the Colab CPU runtime of October and November 2026, with random seeds set in the code. The `.joblib` files are pickles, so load them only after checking their hashes against `MANIFEST.sha256`.
+`requirements.txt` lists the packages the notebooks import. I saved the frozen models with scikit-learn 1.6.1; load them with that version. The notebooks ran on the Colab CPU runtime of October and November 2026, with random seeds set in the code. I recorded the other package versions on that runtime on 18 November 2026, not at each run: Python 3.13.18, pandas 2.2.3, numpy 2.4.6, scipy 1.16.3, numba 0.64.0 and pyarrow 23.0.1; `requirements.txt` pins them. The notebooks need pandas 2.x: they count time in integer nanoseconds, and pandas 3 reads the event times from CSV in microseconds. The quick check runs with the pandas 3 pinned in `requirements-check.txt`. The `.joblib` files are pickles, so load them only after checking their hashes against `MANIFEST.sha256`.
 
 ## Registered notebooks: 31 and 38
 
@@ -145,7 +145,7 @@ The registered file is the one in commit [`7c4862f`](https://github.com/ykshin-0
 git show 7c4862f:notebooks/31_Prospective_Test_Frozen_Systems_Dec2026_start.ipynb | sha256sum
 ```
 
-The notebook is in hash mode (`RUN_ANALYSIS = False`), and it is the only notebook that keeps its Colab run metadata. I will run the analysis once, after the evaluation period ends, with the registered file.
+The notebook is in hash mode (`RUN_ANALYSIS = False`), and it is the only notebook that keeps its Colab run metadata. I will run the analysis once, after the evaluation period ends, with the registered file and pandas 2.2.3. If Colab has moved to pandas 3 by then, I will install 2.2.3 first and leave the registered file unchanged.
 
 Notebook 38 runs the equity-index validation I registered at https://doi.org/10.17605/OSF.IO/BKJUQ. Its registered code is `results/external_equity_indices_v1/38_core.py`, whose SHA-256 is recorded in `38_SPEC.json`.
 

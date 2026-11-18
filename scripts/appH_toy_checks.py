@@ -267,3 +267,5 @@ for n, K, g in ((2, 1, Fr(2)), (2, 2, Fr(3, 2)), (2, 3, Fr(2)), (3, 2, Fr(2)), (
               [(l / (1 + l)) ** K >= got[3] for l in lam_eq], [False, True, True])
 
 print(f'\n{sum(RESULTS)} of {len(RESULTS)} checks match.')
+if not all(RESULTS):
+    raise SystemExit(1)

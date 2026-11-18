@@ -1,12 +1,14 @@
 # Packages the notebooks import. I ran the notebooks on the Google Colab runtime of
-# October-November 2026, with google.colab mounting Drive, and recorded only the
-# scikit-learn version (in the frozen model files).
-numpy
-pandas
-scipy
+# October-November 2026, with google.colab mounting Drive. The scikit-learn version is
+# the one in the frozen model files; I recorded the other versions on that runtime on
+# 18 November 2026 (Python 3.13.18). Use pandas 2.x: the notebooks count time in
+# nanoseconds, and pandas 3 reads dates from CSV in microseconds.
+numpy==2.4.6
+pandas==2.2.3
+scipy==1.16.3
 scikit-learn==1.6.1
-numba
-pyarrow
+numba==0.64.0
+pyarrow==23.0.1
 joblib
 matplotlib
 ipython
